@@ -1,0 +1,1127 @@
+
+<!DOCTYPE html>
+<html class="no-js " lang="fr" prefix="og: http://ogp.me/ns#">
+
+<!-- Mirrored from openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1604534-organisez-votre-texte by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Sep 2021 23:36:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>
+                            Organisez votre texte - Apprenez à créer votre site web avec HTML5 et CSS3 - OpenClassrooms
+                    </title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-5b58725ce0d442079d0",applicationID:"156815673"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){"hidden"===t&&d("pageHide",[p.now()])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https:///")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1210.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<meta name="application-name" content="OpenClassrooms" />
+<meta name="msapplication-TileColor" content="#7451eb" />
+<meta name="msapplication-TileImage" content="/fav-icon.png?v=3" />
+<meta name="theme-color" content="#7451eb">
+<meta property="og:locale" content="fr" />
+<link rel="icon" sizes="144x144" href="https://openclassrooms.com/fav-icon.png?v=3">
+<link rel="apple-touch-icon" href="https://openclassrooms.com/apple-touch-icon.png?v=3" />
+<link rel="apple-touch-icon" href="https://openclassrooms.com/apple-touch-icon-iphone.png?v=3" />
+<link rel="apple-touch-icon" sizes="72x72" href="https://openclassrooms.com/apple-touch-icon-ipad.png?v=3" />
+<link rel="apple-touch-icon" sizes="114x114" href="https://openclassrooms.com/apple-touch-icon-iphone-retina-display.png?v=3" />
+<link rel="apple-touch-icon" sizes="144x144" href="https://openclassrooms.com/apple-touch-icon-ipad-retina-display.png?v=3" />
+<link rel="apple-touch-icon-precomposed" href="https://openclassrooms.com/apple-touch-icon-precomposed.png?v=3" />
+<link rel="shortcut icon" href="https://openclassrooms.com/favicon.ico?83212fe7" />
+<style>.async-hide { opacity: 0 !important} </style>
+<script>
+          window.dataLayer = window.dataLayer || [];
+
+          (function(a,s,y,n,c,h,i,d,e){
+            var isEnabled = [
+              /\/paths/,
+              /\/apprenticeship/,
+              /\/employer/,
+            ].reduce(function (acc, pathReg) {
+                var matchUrl = !!document.location.pathname.match(pathReg);
+                return acc || matchUrl;
+            }, false);
+
+            if (!isEnabled) {
+              return;
+            }
+
+            s.className+=' '+y;
+            h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+            (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);
+          })(window,document.documentElement,'async-hide','dataLayer',2000,{'GTM-5WM9PV':true});
+        </script>
+<link href="https://openclassrooms.com/bundles/common/css/master-8bf9878d.css" type="text/css" rel="stylesheet" media="all" />
+<link href="https://openclassrooms.com/bundles/course/css/main-29e81ced.css" type="text/css" rel="stylesheet" media="all" />
+<link href="https://vjs.zencdn.net/6.2.5/video-js.css" rel="stylesheet">
+<script>
+    /*! modernizr 3.3.1 (Custom Build) | MIT *
+    * https://modernizr.com/download/?-cssfilters-touchevents-setclasses !*/
+    !function(e,n,t){function o(e,n){return typeof e===n}function r(){var e,n,t,r,s,i,a;for(var l in C)if(C.hasOwnProperty(l)){if(e=[],n=C[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(r=o(n.fn,"function")?n.fn():n.fn,s=0;s<e.length;s++)i=e[s],a=i.split("."),1===a.length?Modernizr[a[0]]=r:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=r),g.push((r?"":"no-")+a.join("-"))}}function s(e){var n=w.className,t=Modernizr._config.classPrefix||"";if(x&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(o,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),x?w.className.baseVal=n:w.className=n)}function i(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):x?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function a(){var e=n.body;return e||(e=i(x?"svg":"body"),e.fake=!0),e}function l(e,t,o,r){var s,l,u,f,p="modernizr",c=i("div"),d=a();if(parseInt(o,10))for(;o--;)u=i("div"),u.id=r?r[o]:p+(o+1),c.appendChild(u);return s=i("style"),s.type="text/css",s.id="s"+p,(d.fake?d:c).appendChild(s),d.appendChild(c),s.styleSheet?s.styleSheet.cssText=e:s.appendChild(n.createTextNode(e)),c.id=p,d.fake&&(d.style.background="",d.style.overflow="hidden",f=w.style.overflow,w.style.overflow="hidden",w.appendChild(d)),l=t(c,e),d.fake?(d.parentNode.removeChild(d),w.style.overflow=f,w.offsetHeight):c.parentNode.removeChild(c),!!l}function u(e,n){return!!~(""+e).indexOf(n)}function f(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function p(e,n){return function(){return e.apply(n,arguments)}}function c(e,n,t){var r;for(var s in e)if(e[s]in n)return t===!1?e[s]:(r=n[e[s]],o(r,"function")?p(r,t||n):r);return!1}function d(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function m(n,o){var r=n.length;if("CSS"in e&&"supports"in e.CSS){for(;r--;)if(e.CSS.supports(d(n[r]),o))return!0;return!1}if("CSSSupportsRule"in e){for(var s=[];r--;)s.push("("+d(n[r])+":"+o+")");return s=s.join(" or "),l("@supports ("+s+") { #modernizr { position: absolute; } }",function(e){return"absolute"==getComputedStyle(e,null).position})}return t}function h(e,n,r,s){function a(){p&&(delete k.style,delete k.modElem)}if(s=o(s,"undefined")?!1:s,!o(r,"undefined")){var l=m(e,r);if(!o(l,"undefined"))return l}for(var p,c,d,h,v,y=["modernizr","tspan","samp"];!k.style&&y.length;)p=!0,k.modElem=i(y.shift()),k.style=k.modElem.style;for(d=e.length,c=0;d>c;c++)if(h=e[c],v=k.style[h],u(h,"-")&&(h=f(h)),k.style[h]!==t){if(s||o(r,"undefined"))return a(),"pfx"==n?h:!0;try{k.style[h]=r}catch(g){}if(k.style[h]!=v)return a(),"pfx"==n?h:!0}return a(),!1}function v(e,n,t,r,s){var i=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+j.join(i+" ")+i).split(" ");return o(n,"string")||o(n,"undefined")?h(a,n,r,s):(a=(e+" "+E.join(i+" ")+i).split(" "),c(a,n,t))}function y(e,n,o){return v(e,t,t,n,o)}var g=[],C=[],S={_version:"3.3.1",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){C.push({name:e,fn:n,options:t})},addAsyncTest:function(e){C.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=S,Modernizr=new Modernizr;var w=n.documentElement,x="svg"===w.nodeName.toLowerCase(),_=S._config.usePrefixes?" -webkit- -moz- -o- -ms- ".split(" "):["",""];S._prefixes=_;var b="CSS"in e&&"supports"in e.CSS,T="supportsCSS"in e;Modernizr.addTest("supports",b||T);var z=S.testStyles=l;Modernizr.addTest("touchevents",function(){var t;if("ontouchstart"in e||e.DocumentTouch&&n instanceof DocumentTouch)t=!0;else{var o=["@media (",_.join("touch-enabled),("),"heartz",")","{#modernizr{top:9px;position:absolute}}"].join("");z(o,function(e){t=9===e.offsetTop})}return t});var P="Moz O ms Webkit",j=S._config.usePrefixes?P.split(" "):[];S._cssomPrefixes=j;var E=S._config.usePrefixes?P.toLowerCase().split(" "):[];S._domPrefixes=E;var N={elem:i("modernizr")};Modernizr._q.push(function(){delete N.elem});var k={style:N.elem.style};Modernizr._q.unshift(function(){delete k.style}),S.testAllProps=v,S.testAllProps=y,Modernizr.addTest("cssfilters",function(){if(Modernizr.supports)return y("filter","blur(2px)");var e=i("a");return e.style.cssText=_.join("filter:blur(2px); "),!!e.style.length&&(n.documentMode===t||n.documentMode>9)}),r(),s(g),delete S.addTest,delete S.addAsyncTest;for(var A=0;A<Modernizr._q.length;A++)Modernizr._q[A]();e.Modernizr=Modernizr}(window,document);
+    </script>
+<script type="text/javascript">
+    var App = {
+        startTime: (new Date()).getTime(),
+        pageGenerationDate: 1631057724000
+    };
+
+    App.user = {
+                    locale: 'fr',
+            language: 'fr',
+            country: 'FR',
+            isPremium: false,
+            isMentor: false,
+            anonymous: true
+            };
+
+    App.preferences = {
+        debug: false,
+        assetVersion: '83212fe7',
+        contactPhone: '\u002B33\u00201\u002080\u002088\u002080\u002030',
+        phoneNumbersByCountry: {"uk":{"contact":"+44 16 1768 1880"},"ca":{"contact":"+1 929-376-0101"},"us":{"contact":"+1 929-376-0101"},"fr":{"contact":"+33 1 80 88 80 30","b2b_contact":"+33 1 80 88 80 40"},"es":{"contact":"+33 1 80 88 80 30"}},
+        adyenPublicKey: '10001\u007C889EBFD4D434B82683E21DCA26E77C3E20E0EE09A5ECE3830B0ED51F2FA721A2F7E9EC871C6AB9A1E12C4492F4717673047757E02C5256D8E265CD51E413E5EFCCFEAC41B39C662A424ADC13EE187C38C372A7FCCEC1EA5DF841989437D78B252A8EB51008E60BB55B1E55A7A80DE1A9D60D998C128A576BFAE1DDB97D514AF0A073AEDDE84CEE40D1F8F6ECE85D0FFA50C95C06DB274021C1371376C6EB16561FD65C5E2704B570A7504D617D0F3820F176A0609F6162BDF5890533289FDC3DA7DB03B50BB3BD60A613E1FF72060F22987627E8F1A29F0128A94EC4C8FF7CF6B7AB9558D8433BF86D7A388AB927641CD6C02689139CEE3AAC9ACBFFE83806CB',
+        application: {
+            form: {
+              funnelUrl: 'https\u003A\/\/www.tfaforms.com\/responses\/processor',
+              fields: {"firstname":"tfa_6","lastname":"tfa_4","email":"tfa_2","path_id":"tfa_138","source_name":"tfa_165","record_type_id":"tfa_217","utm_medium":"tfa_203","utm_source":"tfa_201","utm_term":"tfa_207","utm_campaign":"tfa_205","gclid":"tfa_209","fbclid":"tfa_211","consent":"tfa_150","user_locale":"tfa_125","userId":"tfa_3","gender":"tfa_10","user_study_motivation":"tfa_171","diploma_level":"tfa_30","user_diploma":"tfa_173","language_proficiency_fr":"tfa_40","language_proficiency_en":"tfa_42","ha_addressline_1":"tfa_16","ha_city":"tfa_18","ha_zip_code":"tfa_24","ha_state":"tfa_163","ha_country":"tfa_22","professional_status":"tfa_94","public_employment_agency_id":"tfa_159","user_public_employment_agency_certificate":"tfa_167","user_pe_advisor_email":"tfa_199","disabled_worker":"tfa_67","veteran":"tfa_73","athlete":"tfa_79","refugee":"tfa_85","rsa":"tfa_91","are":"tfa_175","api":"tfa_177","cui":"tfa_179","aah":"tfa_222","other_allocs":"tfa_223","can_work_in_france":"tfa_142","user_resume":"tfa_1","online_cv":"tfa_157","user_has_mobility":"tfa_193","user_mobility_departamental":"tfa_187","user_mobility_national":"tfa_189","user_mobility_regional":"tfa_191","user_mobility_cities":"tfa_195","work_location_1":"tfa_128","work_location_2":"tfa_130","work_location_3":"tfa_132","work_location_4":"tfa_134","work_location_5":"tfa_136","career_motivation":"tfa_123","has_computer":"tfa_43","has_mic":"tfa_49","has_webcam":"tfa_169","has_fast_internet_connection":"tfa_55","has_quiet_space":"tfa_61","has_online_courses_xp":"tfa_118","has_online_courses_xp_text":"tfa_121","found_a_company":"tfa_146","date_of_birth":"tfa_9","phone_number":"tfa_126","user_desired_start_date":"tfa_161","video_link":"tfa_213","tfa_dbFormId":"tfa_dbFormId","tfa_dbControl":"tfa_dbControl","experiment_id":"tfa_219","full_time_available":"tfa_220","with_prerequisite":"tfa_221"}
+            },
+        },
+        routes: {
+            COURSE_EVENT: '/components/courses/:courseId',
+            COURSE_PART_EVENT: '/components/courses/:courseId/parts/:partId',
+
+            ACCEPT_COOKIE: '\/ajax\/components\/user\u002Daccept\u002Dconsent\u002Dcookie'
+        },
+
+                    };
+
+    App.preferences.navigationPreference = {
+            };
+
+    App.preferences.modules = {
+        'smiley': {
+            basePath: '/bundles/common/images/smiley/'
+        }
+    };
+
+    App.notifications = {};
+    App.scripts = [];
+
+    if (App.user.id) {
+        (function(){
+            var userData = { userId: App.user.id };
+
+            if (App.user.premiumType) {
+                userData.status = (App.user.premiumType === 'Premium Solo') ? 'premium solo student' : 'path student';
+            } else {
+                userData.status = 'free student';
+            }
+
+            if (App.user.isMentor) {
+                userData.status = App.user.premiumType ? (userData.status + '|mentor') : 'mentor';
+            }
+
+            if (!window.dataLayer) {
+              return;
+            }
+            window.dataLayer.push(userData);
+        })();
+    }
+</script>
+<script>    
+    App.preferences.modules['course/view/internalFolding'] = {
+        isBigCourse: true
+    };
+
+    App.data = App.data || {};
+App.data.currentCourse = {"partId":1604534,"partTitle":"Organisez votre texte","partSlug":"organiser-son-texte","courseId":1603881,"courseTitle":"Apprenez \u00e0 cr\u00e9er votre site web avec HTML5 et CSS3","courseSlug":"apprenez-a-creer-votre-site-web-avec-html5-et-css3","courseLanguage":"fr","isIntroduction":false,"isCertifying":true};
+App.preferences.modules['view/currentCoursePage'] = App.data.currentCourse;
+
+</script>
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Organisez votre texte" />
+<meta property="og:url" content="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1604534-organisez-votre-texte" />
+<meta property="og:site_name" content="OpenClassrooms" />
+<meta property="og:image" content="https://course.oc-static.com/courses/1603881/1603881_teaser_picture_1614871846.jpg" />
+<meta property="og:description" content="Vous rêvez d&#039;apprendre à créer des sites web ? Débutez avec ce cours qui vous enseignera tout ce qu&#039;il faut savoir sur le développement de sites web en HTML5 et CSS3 !" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@OCFrance" />
+<meta name="twitter:title" content="Organisez votre texte" />
+<meta name="twitter:image" content="https://course.oc-static.com/courses/1603881/1603881_teaser_picture_1614871846.jpg" />
+<meta name="twitter:description" content="Vous rêvez d&#039;apprendre à créer des sites web ? Débutez avec ce cours qui vous enseignera tout ce qu&#039;il faut savoir sur le développement de sites web en HTML5 et CSS3 !" />
+<link rel="canonical" href="1604534-organisez-votre-texte.html" />
+</head>
+<body class="course oc-body   breadcrumbFluid breadcrumbOnContrasted">
+<ul class="skipLink">
+<li>
+<a class="skipLink__item" href="#mainContent">Aller au contenu</a>
+</li>
+<li>
+<a class="skipLink__item" href="#footerChangeLanguage">Choisir la langue</a>
+</li>
+<li id="skipLink_search">
+<a class="skipLink__item" href="#algolia-search-input">Aller à la recherche</a>
+</li>
+</ul>
+<script id="_EVENTS-IDENTIFY" type="application/json">
+        </script>
+<script id="_EVENTS-PAGE" type="application/json">
+        {"type":"page","integrations":{"Blueshift":false,"HubSpot":false},"properties":{"pageCategory":"courses","courseTitle":"Apprenez \u00e0 cr\u00e9er votre site web avec HTML5 et CSS3"}}
+    </script>
+<script id="fundingMechanisms" type="application/json">
+    {
+        "fundingMechanisms": [{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":24,"name":"Action de Formation Pr\u00e9alable au Recrutement","shortName":"AFPR","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":25,"name":"Aide collective priv\u00e9e \u00e0 la formation","shortName":"Aide priv\u00e9e","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":20,"name":"Aide Individuelle \u00e0 la Formation","shortName":"AIF","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":28,"name":"Aide individuelle priv\u00e9e \u00e0 la formation","shortName":"Aide priv\u00e9e","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":21,"name":"Compte Personnel de Formation","shortName":"CPF","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":15,"name":"Contrat d'apprentissage","shortName":"Apprentissage","type":"apprenticeship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":16,"name":"Contrat de professionnalisation","shortName":"Contrat pro","type":"apprenticeship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":19,"name":"P\u00e9riode de professionnalisation","shortName":"P\u00e9riode pro","type":"apprenticeship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":23,"name":"Pr\u00e9paration Op\u00e9rationnelle \u00e0 l'Emploi Collective","shortName":"POEC","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":17,"name":"Pr\u00e9paration Op\u00e9rationnelle \u00e0 l'Emploi Individuelle","shortName":"POEI","type":"apprenticeship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":22,"name":"Programme R\u00e9gional de Formation pour l'Emploi","shortName":"PRFE","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":18,"name":"Reconversion ou promotion par l'alternance","shortName":"Pro-A","type":"apprenticeship"}]
+    }
+</script>
+<div id="oc-header">
+<div class="oc-mainHeader oc-mainHeader--notLogged oc-mainHeader--skeleton">
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div style="display: flex;">
+<div class="oc-mainHeaderLogo oc-mainHeaderLogo--skeleton">
+<a href="https://openclassrooms.com/fr/" class="oc-mainHeaderLogo__link">
+<svg fill="none" height="51" width="668" viewBox="0 0 668 51" xmlns="http://www.w3.org/2000/svg">
+<title>OpenClassrooms.com</title>
+<path d="M406.011 35.018c0 2.82-.71 5.641-2.368 7.991-1.659 2.35-3.79 4.23-6.87 5.64-3.079 1.41-6.869 2.116-11.37 2.116-3.79 0-7.343-.47-10.897-1.41-3.553-.94-6.395-2.35-8.527-3.996l7.106-8.46c1.421.705 2.843 1.175 4.501 1.88 2.842.94 5.448 1.41 8.054 1.41 4.974 0 7.58-1.41 7.58-3.995 0-1.41-.711-2.35-2.132-3.056-1.421-.705-3.79-1.41-6.87-2.115-3.553-.705-6.395-1.645-8.764-2.585s-4.264-2.35-6.159-4.23c-1.658-1.88-2.606-4.701-2.606-7.991 0-3.056.711-5.641 2.369-7.991 1.658-2.35 3.79-4.23 6.87-5.64 3.079-1.41 6.869-2.116 11.37-2.116 3.079 0 6.159.47 9.001 1.175 3.08.705 5.685 1.88 7.817 3.055l-7.343 8.696c-3.316-1.41-6.633-2.115-9.712-2.115-2.606 0-4.501.47-5.685 1.175-1.185.705-1.895 1.88-1.895 3.056 0 1.41.711 2.35 2.132 2.82 1.421.705 3.79 1.41 6.869 2.115a49.4 49.4 0 0 1 8.765 2.585c2.369.94 4.264 2.35 6.159 4.23 1.658 1.646 2.605 4.466 2.605 7.756zm261.989 0c0 2.82-.711 5.641-2.369 7.991s-3.79 4.23-6.869 5.64c-3.08 1.41-6.87 2.116-11.371 2.116-3.79 0-7.343-.47-10.896-1.41s-6.396-2.35-8.528-3.996l7.107-8.46c1.421.705 2.842 1.175 4.501 1.88 2.842.94 5.448 1.41 8.053 1.41 4.975 0 7.581-1.41 7.581-3.995 0-1.41-.711-2.35-2.132-3.056-1.422-.705-3.791-1.41-6.87-2.115a49.361 49.361 0 0 1-8.764-2.585c-2.369-.94-4.264-2.35-6.159-4.23-1.658-1.88-2.606-4.701-2.606-7.991 0-3.056.711-5.641 2.369-7.991 1.658-2.35 3.79-4.23 6.869-5.64 3.08-1.41 6.87-2.116 11.371-2.116 3.079 0 6.158.47 9.001 1.175 3.079.705 5.685 1.88 7.817 3.055l-7.343 8.696c-3.317-1.41-6.633-2.115-9.712-2.115-2.606 0-4.501.47-5.685 1.175-1.185.705-1.896 1.88-1.896 3.056 0 1.41.711 2.35 2.132 2.82 1.422.705 3.791 1.41 6.87 2.115a49.361 49.361 0 0 1 8.764 2.585c2.369.94 4.264 2.35 6.159 4.23 1.895 1.646 2.606 4.466 2.606 7.756zM87.882 19.037c0 3.76-.947 6.816-2.605 9.4-1.659 2.586-4.027 4.701-7.107 6.111s-6.87 2.116-10.896 2.116H59.22v12.69H45.955V.706h21.319c4.264 0 7.817.705 10.896 2.115 3.08 1.41 5.448 3.526 7.107 6.346 1.895 3.055 2.605 6.346 2.605 9.87zm-13.265 0c0-2.35-.71-3.995-2.132-5.17s-3.316-1.88-6.159-1.88h-7.343v14.336h7.343c2.606 0 4.738-.706 6.16-1.88s2.131-3.056 2.131-5.406zm55.904 20.212v10.576h-37.19V1.175h36.242v10.576h-23.214v8.226h18.476v10.341h-18.476v8.93zm50.218-38.074v48.65h-10.896l-20.609-25.853v25.853h-13.028V1.175h10.896l20.609 25.853V1.175zm84.092 37.604v10.81h-32.926V.94h13.265v37.604h19.661zm56.851 11.046h-13.739l-3.553-9.401h-19.661l-3.553 9.4h-13.502l20.608-48.649h13.029zM300.6 30.083l-5.922-15.512-5.922 15.512zm62.536 4.935c0 2.82-.71 5.641-2.369 7.991-1.658 2.35-3.79 4.23-6.869 5.64-3.08 1.41-6.87 2.116-11.37 2.116-3.79 0-7.344-.47-10.897-1.41s-6.396-2.35-8.527-3.996l7.106-8.46c1.421.705 2.842 1.175 4.501 1.88 2.842.94 5.448 1.41 8.054 1.41 4.974 0 7.58-1.41 7.58-3.995 0-1.41-.711-2.35-2.132-3.056-1.421-.705-3.79-1.41-6.87-2.115-3.553-.705-6.395-1.645-8.764-2.585s-4.264-2.35-6.159-4.23c-1.658-1.88-2.606-4.701-2.606-7.991 0-3.056.711-5.641 2.369-7.991 1.658-2.35 3.79-4.23 6.87-5.64 3.079-1.41 6.869-2.116 11.37-2.116 3.079 0 6.159.47 9.001 1.175 3.08.705 5.448 1.88 7.817 3.055l-7.343 8.696c-3.316-1.41-6.633-2.115-9.712-2.115-2.606 0-4.501.47-5.685 1.175-1.185.705-1.895 1.88-1.895 3.056 0 1.41.71 2.35 2.132 2.82 1.421.705 3.79 1.41 6.869 2.115a49.4 49.4 0 0 1 8.765 2.585c2.368.94 4.263 2.35 6.158 4.23 1.659 1.646 2.606 4.466 2.606 7.756zm-322.63-9.636c0 13.867-11.37 25.383-25.583 25.383-5.685 0-10.66-1.88-14.923-4.936l8.528-10.105c1.895 1.175 4.027 1.88 6.395 1.88 6.633 0 12.081-5.406 12.081-11.986 0-6.581-5.448-11.987-12.08-11.987-2.37 0-4.501.705-6.396 1.88L0 5.407C4.264 2.35 9.475.47 14.923.47 29.136.235 40.506 11.516 40.506 25.383zm177.66 10.341l8.528 10.107c-4.264 3.055-9.476 4.935-14.924 4.935-13.976 0-25.583-11.281-25.583-25.383C186.187 11.517 197.557 0 211.77 0c5.685 0 10.66 1.88 14.924 4.936l-8.528 10.105c-1.895-1.175-4.027-1.88-6.396-1.88-6.632 0-12.081 5.406-12.081 11.986 0 6.581 5.449 11.987 12.081 11.987 2.369.47 4.501-.235 6.396-1.41zm236.169 14.102l-10.423-15.042c3.079-1.41 5.211-3.525 6.87-6.11 1.658-2.585 2.605-5.876 2.605-9.401 0-3.76-.947-6.816-2.605-9.636-1.659-2.82-4.027-4.7-7.107-6.346-3.079-1.41-6.869-2.115-10.896-2.115H411.46v48.65h13.028V37.134h6.159l8.764 12.69zm-29.847-37.839h7.58c2.606 0 4.738.705 6.159 1.88s2.132 3.056 2.132 5.17c0 2.351-.711 3.996-2.132 5.171s-3.316 1.88-6.159 1.88h-7.58zM483.945.235c13.976 0 25.583 11.281 25.583 25.382S498.157 51 483.945 51c-13.976 0-25.583-11.281-25.583-25.383S469.732.235 483.945.235zm-13.029 25.147c0 7.051 5.685 12.692 12.792 12.692 7.106 0 12.791-5.64 12.791-12.692s-5.685-12.69-12.791-12.69c-6.87 0-12.792 5.64-12.792 12.69zM538.901.235c13.976 0 25.583 11.281 25.583 25.382S553.114 51 538.901 51c-13.976 0-25.583-11.281-25.583-25.383S524.925.235 538.901.235zm-12.792 25.147c0 7.051 5.685 12.692 12.792 12.692 7.106 0 12.791-5.64 12.791-12.692s-5.685-12.69-12.791-12.69c-7.107 0-12.792 5.64-12.792 12.69zm70.353 6.816L580.828 1.175h-10.896v48.65h11.607V28.438l11.607 21.387h6.87l11.607-21.387v21.387h11.607V1.175h-10.897z" />
+</svg>
+</a>
+</div>
+<nav class="oc-mainHeader__navWrapper" role="navigation" aria-label="Menu principal">
+<div class="oc-mainHeader__linksWrapper">
+<div class="oc-mainHeader__navLinkWrapper"><a class="oc-mainHeader__navLink" data-event="click|Header|Trainings" href="https://openclassrooms.com/fr/paths">Formations</a></div>
+<div class="oc-mainHeader__navLinkWrapper"><a class="oc-mainHeader__navLink" data-event="click|Header|Apprenticeship" href="https://openclassrooms.com/fr/apprenticeship">Alternance</a></div>
+<div class="oc-mainHeader__navLinkWrapper"><a class="oc-mainHeader__navLink" data-event="click|Header|Funding" href="https://openclassrooms.com/fr/funding">Financements</a></div>
+<div class="oc-mainHeader__navLinkWrapper--separator"></div>
+<div class="oc-mainHeader__navLinkWrapper"><a class="oc-mainHeader__navLink" data-event="click|Header|Business" href="https://openclassrooms.com/fr/business">Pour les entreprises</a></div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="disclaimers-container" style="display:none;">
+<!--[if lt IE 10]>
+        <div class="alertMessage">
+        <span class="bullet bullet--small bullet--orange alertMessage__icon"> <i class="icon-exclamation"></i></span>
+        <p class="alertMessage__text">
+            Vous utilisez un navigateur obsolète, veuillez le <a href="https://browser-update.org/update.html">mettre à jour</a>.
+        </p>
+    </div>
+    <![endif]-->
+
+<div id="modern-ie-disclaimer" style="display:none">
+<div class="alertMessage">
+<span class="bullet bullet--small bullet--orange alertMessage__icon"> <i class="icon-exclamation"></i></span>
+<p class="alertMessage__text">
+Vous utilisez un navigateur obsolète, veuillez le <a href="https://browser-update.org/update.html">mettre à jour</a>.
+</p>
+</div>
+</div>
+<script id="webapp-ie-disclaimer" type="application/json">{"message":"Vous utilisez un navigateur obsol\u00e8te, veuillez le <a href=\"https:\/\/browser-update.org\/update.html\">mettre \u00e0 jour<\/a>."}</script>
+<script>
+      var isModernIE =  document.documentMode === 10 || document.documentMode === 11;
+      var isEdgeLegacy = navigator.userAgent.indexOf('Edge') > -1; // Luckily for us, Edge Chromium uses string "Edg" without final "e"
+
+      if (isModernIE || isEdgeLegacy) {
+        document.getElementById('modern-ie-disclaimer').style.display = 'block';
+        document.getElementById('webapp-ie-disclaimer').setAttribute('data-role', 'disclaimer-message-data');
+      }
+    </script>
+<noscript>
+        <div class="alertMessage">
+            <span class="bullet bullet--small bullet--orange alertMessage__icon"> <i class="icon-exclamation"></i></span>
+            <p class="alertMessage__text">
+                Veuillez utiliser un <a href="https://browser-update.org/update.html">navigateur internet moderne</a> avec JavaScript activé pour naviguer sur OpenClassrooms.com
+            </p>
+        </div>
+    </noscript>
+</div>
+<div id="mainContentWithHeader">
+<section class="breadcrumb  inset no-padding">
+<div class="grid-wrapper">
+<div class="grid-inner">
+<nav class="breadcrumb__wrapper" role="navigation" aria-label="Fil d&#039;Ariane">
+<ul class="breadcrumb__trail">
+<li class="breadcrumb__item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a class="breadcrumb__link" href="https://openclassrooms.com/fr/" itemprop="url">
+<span itemprop="title">Accueil</span
+                                    ></a>
+<span class="breadcrumb__separator"> > </span>
+</li>
+<li class="breadcrumb__item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a class="breadcrumb__link" href="https://openclassrooms.com/fr/courses" itemprop="url">
+<span itemprop="title">Cours</span
+                                    ></a>
+ <span class="breadcrumb__separator"> > </span>
+</li>
+<li class="breadcrumb__item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a class="breadcrumb__link" href="../1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css36f1b.html?status=published" itemprop="url">
+<span itemprop="title">Apprenez à créer votre site web avec HTML5 et CSS3</span
+                                    ></a>
+<span class="breadcrumb__separator"> > </span>
+</li>
+<li class="breadcrumb__item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+Organisez votre texte
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</section>
+<div id="pre-main-part">
+</div>
+<main class="claire clearfix" role="main" id="mainContent">
+<article itemscope itemtype="http://schema.org/Article" lang="fr">
+<header id="course-header" class="courseHeader" xmlns="http://www.w3.org/1999/html">
+<div class="grid-wrapper"><div class="grid-inner"><div class="grid-inner-content"><div class="courseHeader__topPart"><a itemprop="url" href="../1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3.html"><h1 class="oc-typography-h2 typoColorOnContrastedBg  courseHeader__title" data-course-title="Apprenez à créer votre site web avec HTML5 et CSS3">Apprenez à créer votre site web avec HTML5 et CSS3</h1></a></div></div></div></div><div class="grid-wrapper"><div class="grid-inner"><div class="grid-inner-content"><div class="courseHeader__bottomPart"><div class="courseHeader__details"><div class="courseHeader__detailsGroup"><ul class="courseHeader__detailsList"><li class="courseHeader__detailsItem"><img class="courseHeader__icon js-tooltip" src="https://openclassrooms.com/images/icons/schedule.svg?83212fe7" width="16" title="Ce cours demande en moyenne 20 heures de travail pour être réussi." /><span class="courseHeader__label">20 heures</span></li><li class="courseHeader__detailsItem"><i class="icon-level courseHeader__icon"></i><span class="courseHeader__label">Facile</span></li></ul></div><div class="courseHeader__detailsGroup courseHeader--license"><a class="courseHeader__license" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0"><span class="courseHeader__label">Licence</span><ul class="courseHeader__detailsList"><li class="iconBar__item"><i class="icon-cc iconBar__icon" title="CC"></i></li><li class="iconBar__item"><i class="icon-ccby iconBar__icon" title="BY"></i></li><li class="iconBar__item"><i class="icon-ccsa iconBar__icon" title="SA"></i></li></ul></a></div></div></div></div></div></div>
+<div id="popin-formats-availables" class="popin popin--course-formats-availables">
+<i class="popin__close-button icon-close js-close-button"></i>
+<div class="course-types course-types--withSpace">
+<a class="course-types__item" href="../1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3.html">
+<i class="icon-desktop course-types__icon"></i>
+</a>
+<a class="course-types__item" href="https://openclassrooms.com/fr/courses?video=true">
+<i class="icon-video course-types__icon"></i>
+</a>
+<a class="course-types__item" href="http://www.eyrolles.com/Informatique/Livre/realisez-votre-site-web-avec-html5-et-css3-9782953527889?societe=openclassrooms">
+<i class="icon-book course-types__icon"></i>
+</a>
+<a class="course-types__item" href="../1603881/certificate_example.pdf" target="_blank">
+<i class="icon-badge course-types__icon js-close-button"></i>
+</a>
+</div>
+<p>Ce cours est visible <a href="../1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3.html">gratuitement en ligne</a>.</p>
+<p>course.header.alt.is_video</p>
+<p>
+Ce cours existe en livre papier.
+</p>
+<p>
+course.header.alt.is_certifying
+</p>
+<a class="button button--primary js-close-button" href="#">J&#039;ai tout compris !</a>
+</div>
+</header>
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="grid-inner-content">
+<p class="courseHeader__updatedTime">
+Mis à jour le 25/06/2021 </p>
+</div>
+</div>
+</div>
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="grid-inner-content">
+<nav id="course-timeline" class="timeline">
+<div class="timeline__inner">
+<span class="timeline__iconContainer">
+<a href="../1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3.html" title="Retour sur le sommaire du cours" class="roundIcon timeline__roundIcon">
+<i class="icon-home roundIcon__icon"></i>
+</a>
+</span>
+<div class="timeline__steps">
+<span class="timeline__splitChapter"></span>
+<a href="1604192-decouvrez-le-fonctionnement-des-sites-web.html" class="timeline__step" title="Découvrez le fonctionnement des sites web">
+<span class="timeline__stepName">
+Découvrez le fonctionnement des sites web
+</span>
+</a>
+<a href="1604361-creez-votre-premiere-page-web-en-html.html" class="timeline__step" title="Créez votre première page web en HTML">
+<span class="timeline__stepName">
+Créez votre première page web en HTML
+</span>
+</a>
+<a href="1604534-organisez-votre-texte.html" class="timeline__step js-current-timeline-step" title="Organisez votre texte">
+<span class="timeline__stepName">
+Organisez votre texte
+</span>
+<span class="timeline__progressMarker"></span>
+</a>
+<a href="4004681-pratiquez.html" class="timeline__step" title="Pratiquez !">
+<span class="timeline__stepName">
+Pratiquez !
+</span>
+</a>
+<a href="1604646-creez-des-liens.html" class="timeline__step" title="Créez des liens">
+<span class="timeline__stepName">
+Créez des liens
+</span>
+</a>
+<a href="1604791-inserez-des-images.html" class="timeline__step" title="Insérez des images">
+<span class="timeline__stepName">
+Insérez des images
+</span>
+</a>
+<a href="6725196-entrainez-vous-en-structurant-votre-cv.html" class="timeline__step" title="Entraînez-vous en structurant votre CV">
+<span class="timeline__stepName">
+Entraînez-vous en structurant votre CV
+</span>
+</a>
+<span class="timeline__splitChapter"></span>
+<a href="1605060-mettez-en-place-le-css.html" class="timeline__step" title="Mettez en place le CSS">
+<span class="timeline__stepName">
+Mettez en place le CSS
+</span>
+</a>
+<a href="1605329-formatez-du-texte.html" class="timeline__step" title="Formatez du texte">
+<span class="timeline__stepName">
+Formatez du texte
+</span>
+</a>
+<a href="1605551-ajoutez-de-la-couleur-et-un-fond.html" class="timeline__step" title="Ajoutez de la couleur et un fond">
+<span class="timeline__stepName">
+Ajoutez de la couleur et un fond
+</span>
+</a>
+<a href="1605694-creez-des-bordures-et-des-ombres.html" class="timeline__step" title="Créez des bordures et des ombres">
+<span class="timeline__stepName">
+Créez des bordures et des ombres
+</span>
+</a>
+<a href="1605763-creez-des-apparences-dynamiques.html" class="timeline__step" title="Créez des apparences dynamiques">
+<span class="timeline__stepName">
+Créez des apparences dynamiques
+</span>
+</a>
+<a href="4214566-pratiquez.html" class="timeline__step" title="Pratiquez !">
+<span class="timeline__stepName">
+Pratiquez !
+</span>
+</a>
+<a href="6725256-entrainez-vous-en-mettant-en-forme-votre-cv.html" class="timeline__step" title="Entraînez-vous en mettant en forme votre CV">
+<span class="timeline__stepName">
+Entraînez-vous en mettant en forme votre CV
+</span>
+</a>
+<a href="exercises/92.html" class="timeline__step" title="Quiz : Utilisez du code CSS">
+<span class="timeline__stepName">
+Quiz : Utilisez du code CSS
+</span>
+</a>
+<span class="timeline__splitChapter"></span>
+<a href="1605881-structurez-votre-page.html" class="timeline__step" title="Structurez votre page">
+<span class="timeline__stepName">
+Structurez votre page
+</span>
+</a>
+<a href="1606168-decouvrez-le-modele-des-boites.html" class="timeline__step" title="Découvrez le modèle des boîtes">
+<span class="timeline__stepName">
+Découvrez le modèle des boîtes
+</span>
+</a>
+<a href="3298561-faites-votre-mise-en-page-avec-flexbox.html" class="timeline__step" title="Faites votre mise en page avec Flexbox">
+<span class="timeline__stepName">
+Faites votre mise en page avec Flexbox
+</span>
+</a>
+<a href="4214576-pratiquez.html" class="timeline__step" title="Pratiquez !">
+<span class="timeline__stepName">
+Pratiquez !
+</span>
+</a>
+<a href="1606402-decouvrez-dautres-techniques-de-mise-en-page.html" class="timeline__step" title="Découvrez d&#039;autres techniques de mise en page">
+<span class="timeline__stepName">
+Découvrez d&#039;autres techniques de mise en page
+</span>
+</a>
+<a href="1606688-tp-creez-un-site-pas-a-pas.html" class="timeline__step" title="TP : Créez un site pas à pas">
+<span class="timeline__stepName">
+TP : Créez un site pas à pas
+</span>
+</a>
+<a href="6725301-entrainez-vous-en-organisant-votre-cv.html" class="timeline__step" title="Entraînez-vous en organisant votre CV">
+<span class="timeline__stepName">
+Entraînez-vous en organisant votre CV
+</span>
+</a>
+<a href="exercises/1236.html" class="timeline__step" title="Quiz : Organisez les éléments d&#039;une page web grâce aux règles CSS">
+<span class="timeline__stepName">
+Quiz : Organisez les éléments d&#039;une page web grâce aux règles CSS
+</span>
+</a>
+<span class="timeline__splitChapter"></span>
+<a href="1606851-ajoutez-des-tableaux.html" class="timeline__step" title="Ajoutez des tableaux">
+<span class="timeline__stepName">
+Ajoutez des tableaux
+</span>
+</a>
+<a href="1607171-creez-des-formulaires.html" class="timeline__step" title="Créez des formulaires">
+<span class="timeline__stepName">
+Créez des formulaires
+</span>
+</a>
+<a href="1607438-enrichissez-votre-site-avec-de-la-video-et-de-laudio.html" class="timeline__step" title="Enrichissez votre site avec de la vidéo et de l&#039;audio">
+<span class="timeline__stepName">
+Enrichissez votre site avec de la vidéo et de l&#039;audio
+</span>
+</a>
+ <a href="1607616-utilisez-le-responsive-design-avec-les-media-queries.html" class="timeline__step" title="Utilisez le responsive design avec les Media Queries">
+<span class="timeline__stepName">
+Utilisez le responsive design avec les Media Queries
+</span>
+</a>
+<a href="1607717-allez-plus-loin.html" class="timeline__step" title="Allez plus loin">
+<span class="timeline__stepName">
+Allez plus loin
+</span>
+</a>
+<a href="6725346-entrainez-vous-en-adaptant-votre-cv-en-responsive.html" class="timeline__step" title="Entraînez-vous en adaptant votre CV en responsive">
+<span class="timeline__stepName">
+Entraînez-vous en adaptant votre CV en responsive
+</span>
+</a>
+<a href="exercises/96.html" class="timeline__step" title="Quiz : Intégrez des formulaires dans une page web">
+<span class="timeline__stepName">
+Quiz : Intégrez des formulaires dans une page web
+</span>
+</a>
+<span class="timeline__splitChapter"></span>
+<a href="1607901-envoyez-votre-site-sur-le-web.html" class="timeline__step" title="Envoyez votre site sur le Web">
+<span class="timeline__stepName">
+Envoyez votre site sur le Web
+</span>
+</a>
+<a href="1608357-memento-des-balises-html.html" class="timeline__step" title="Mémento des balises HTML">
+<span class="timeline__stepName">
+ Mémento des balises HTML
+</span>
+</a>
+<a href="1608902-memento-des-proprietes-css.html" class="timeline__step" title="Mémento des propriétés CSS">
+<span class="timeline__stepName">
+Mémento des propriétés CSS
+</span>
+</a>
+<span class="timeline__splitChapter"></span>
+</div>
+<span class="timeline__iconContainer">
+<a href="../1603881/certificate_example.pdf" title="Certificat de réussite (voir un exemple)" class="roundIcon timeline__roundIcon">
+<i class="icon-trophy roundIcon__icon"></i>
+</a>
+</span>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="contentWithSidebar  spacer  js-contentWithSidebar  grid-inner-content">
+<div class="contentWithSidebar__content">
+<div id="js-courseRedirection" data-courseInfo-course_id="1603881"></div>
+<div class="relative js-sidebar-container">
+<div class="static">
+<h2 itemprop="name" data-part-title="Organisez votre texte" class="part-title">Organisez votre texte</h2>
+<section class="space-bottom js-desktop-sticky-container">
+<div class="tooltipMessage tooltipMessage--noArrow">
+<i class="tooltipMessage__icon  icon-lock"></i>
+<a href="https://openclassrooms.com/fr/login">Connectez-vous</a> ou <a href="https://openclassrooms.com/fr/register">inscrivez-vous</a> gratuitement pour bénéficier de toutes les fonctionnalités de ce cours !
+</div>
+<div itemprop="articleBody" data-page-indentifier="/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1604534-organisez-votre-texte" class="js-isRestrictablePage js-course-container js-smilize " data-video-blocked-wrapper="<a href='https://openclassrooms.com/fr/login#popin-log-in' class='js-popin-activator'>">
+<div class="userContent js-userContent">
+<p id="r-4800651" data-claire-element-id="8796171"></p><video id="r-6967746" data-claire-element-id="30944091" src="https://vimeo.com/243805446"><a href="https://vimeo.com/243805446">https://vimeo.com/243805446</a></video><p id="r-4800653" data-claire-element-id="8796173">Bon, la page blanche c'est bien joli, mais votre site web risque d'avoir un succès mitigé si vous le laissez comme cela.</p><p id="r-1609458" data-claire-element-id="1632248">Nous allons découvrir de nombreuses balises HTML dans ce chapitre. Certaines existent depuis la toute première version de HTML, d'autres ont été introduites plus récemment dans HTML5.</p><p id="r-1609459" data-claire-element-id="1632249">Nous allons voir successivement dans ce chapitre :</p><ul id="r-1609468" data-claire-element-id="1632258"><li id="r-1609461" data-claire-element-id="1632251"><p id="r-1609460" data-claire-element-id="1632250">comment rédiger des paragraphes ;</p></li><li id="r-1609463" data-claire-element-id="1632253"><p id="r-1609462" data-claire-element-id="1632252">comment structurer sa page avec les titres ;</p></li><li id="r-1609465" data-claire-element-id="1632255"><p id="r-1609464" data-claire-element-id="1632254">comment donner de l'importance à certains mots de son texte ;</p></li><li id="r-1609467" data-claire-element-id="1632257"><p id="r-1609466" data-claire-element-id="1632256">comment organiser les informations sous forme de listes.</p></li></ul><p id="r-1609469" data-claire-element-id="30941282">Motivé ? Allez, vous allez voir, ce n'est pas compliqué.</p><h3 id="r-1604413" data-claire-element-id="30944095">Les paragraphes</h3><p id="r-1609470" data-claire-element-id="30941283">La plupart du temps, lorsqu'on écrit du texte dans une page web, on le fait à l'intérieur de paragraphes. Le langage HTML propose justement la balise <code data-claire-semantic="html">&lt;p&gt;</code>  pour délimiter les paragraphes.</p><pre id="r-1609471" data-claire-element-id="2256032"><code data-claire-semantic="html">&lt;p&gt;Bonjour et bienvenue sur mon site !&lt;/p&gt;</code></pre><ul id="r-1609476" data-claire-element-id="30941306"><li id="r-1609473" data-claire-element-id="30941303"><p id="r-1609472" data-claire-element-id="30941302"><code data-claire-semantic="html">&lt;p&gt;</code>  signifie « Début du paragraphe » ;</p></li><li id="r-1609475" data-claire-element-id="30941305"><p id="r-1609474" data-claire-element-id="30941304"><code data-claire-semantic="html">&lt;/p&gt;</code>  signifie « Fin du paragraphe ».</p></li></ul><p id="r-1609477" data-claire-element-id="30941307">Comme je vous l'ai dit au chapitre précédent, on écrit le contenu du site web entre les balises <code data-claire-semantic="html">&lt;body&gt;&lt;/body&gt;</code>  . Il nous suffit donc de mettre notre paragraphe entre ces deux balises et nous aurons enfin notre première vraie page web avec du texte !</p><p id="r-1609478" data-claire-element-id="1632268">Je reprends donc exactement le même code qu'au chapitre précédent et j'y ajoute mon paragraphe :</p><pre id="r-1609479" data-claire-element-id="6250082"><code data-claire-semantic="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot; /&gt;
+        &lt;title&gt;Paragraphes&lt;/title&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;p&gt;Bonjour et bienvenue sur mon site !&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre><p id="r-1609480" data-claire-element-id="30941332">Essayez, vous allez voir le résultat !<br /> Bon, OK, ce n'est pas encore le nirvana, mais c'est un bon début.</p><p id="r-1609481" data-claire-element-id="1632271">Mais ne nous arrêtons pas en si bon chemin. Nous allons voir maintenant quelque chose d'un peu particulier en HTML : le saut de ligne. Cela paraît simple et pourtant, cela ne fonctionne pas vraiment comme dans un traitement de texte habituel…</p><h4 id="r-1609507" data-claire-element-id="30944094">Sauter une ligne</h4><p id="r-1609482" data-claire-element-id="30941333">En HTML, si vous appuyez sur la touche <kbd>Entrée</kbd>  , cela ne crée pas une nouvelle ligne comme vous en avez l'habitude. Essayez donc ce code :</p><pre id="r-1609483" data-claire-element-id="6250083"><code data-claire-semantic="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot; /&gt;
+        &lt;title&gt;Essais de sauts de ligne&lt;/title&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;p&gt;Bonjour et bienvenue sur mon site !
+            Ceci est mon premier test alors soyez indulgents s'il vous plaît, j'apprends petit à petit comment cela marche.
+            Pour l'instant c'est un peu vide, mais revenez dans 2-3 jours quand j'aurai appris un peu plus de choses, je vous assure que vous allez être surpris !&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre><p id="r-1609484" data-claire-element-id="30941352">Tout le texte s'affiche sur la même ligne alors qu'on est bien allé à la ligne dans le code ! Taper frénétiquement sur la touche <kbd>Entrée</kbd>   dans l'éditeur de texte ne sert donc strictement à rien.</p><p id="r-1609485" data-claire-element-id="1632275">Comme vous devez vous en douter, il y a pourtant bien un moyen de faire des sauts de ligne en HTML.</p><p id="r-1609486" data-claire-element-id="30941353">En fait, si vous voulez écrire un deuxième paragraphe, il vous suffit d'utiliser une deuxième balise <code data-claire-semantic="html">&lt;p&gt;</code>  .<br /> Votre code HTML devrait donc être au final rempli de balises de paragraphe !</p><p id="r-1609487" data-claire-element-id="1632277">Un exemple :</p><pre id="r-1609488" data-claire-element-id="6250084"><code data-claire-semantic="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot; /&gt;
+        &lt;title&gt;Paragraphes&lt;/title&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;p&gt;Bonjour et bienvenue sur mon site !
+        Ceci est mon premier test alors soyez indulgents s'il vous plaît, j'apprends petit à petit comment cela marche.&lt;/p&gt;
+       
+        &lt;p&gt;Pour l'instant c'est un peu vide, mais revenez dans 2-3 jours quand j'aurai appris un peu plus de choses, je vous assure que vous allez être surpris !&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre><p id="r-1609489" data-claire-element-id="1632279">Le résultat se trouve à la figure suivante.</p><figure id="r-1609492" data-claire-element-id="30944093"><img id="r-1609490" data-claire-element-id="1632280" src="https://user.oc-static.com/files/380001_381000/380388.png" alt="Deux paragraphes avec 2 balises <p>" /><figcaption>Deux paragraphes avec 2 balises &lt;p&gt;</figcaption></figure><div id="r-1609494" data-claire-element-id="1632284" data-claire-semantic="question"><p id="r-1609493" data-claire-element-id="1632283">Oui, mais si je veux juste aller à la ligne dans un paragraphe et non pas sauter une ligne ?</p></div><p id="r-1609495" data-claire-element-id="30943584">Eh bien devinez quoi : il existe une balise « Aller à la ligne » !<br /> C'est une balise <strong>orpheline</strong> qui sert juste à indiquer qu'on doit aller à la ligne : <code data-claire-semantic="html">&lt;br /&gt;</code>  . Vous devez obligatoirement la mettre <em>à l'intérieur d'un paragraphe</em>.</p><p id="r-1609496" data-claire-element-id="1632286">Voici comment l'utiliser dans un code :</p><pre id="r-1609497" data-claire-element-id="6250087"><code data-claire-semantic="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot; /&gt;
+        &lt;title&gt;Sauts de ligne&lt;/title&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;p&gt;Bonjour et bienvenue sur mon site !&lt;br /&gt;
+        Ceci est mon premier test alors soyez indulgents s'il vous plaît, j'apprends petit à petit comment cela marche.&lt;/p&gt;
+
+        &lt;p&gt;Pour l'instant c'est un peu vide, mais revenez dans 2-3 jours quand j'aurai appris un peu plus de choses, je vous assure que vous allez être surpris !&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre><aside id="r-1609499" data-claire-element-id="30943605" data-claire-semantic="information"><p id="r-1609498" data-claire-element-id="30943604">Vous pouvez théoriquement mettre plusieurs balises <code data-claire-semantic="html">&lt;br /&gt;</code>  d'affilée pour faire plusieurs sauts de lignes, mais on considère que c'est une mauvaise pratique qui rend le code délicat à maintenir. Pour décaler un texte avec plus de précision, on utilisera le CSS, ce langage qui vient compléter le HTML et dont je vous parlerai un peu plus loin.</p></aside><p id="r-1609500" data-claire-element-id="1632290">Donc c'est compris ?</p><ul id="r-1609505" data-claire-element-id="30943610"><li id="r-1609502" data-claire-element-id="30943607"><p id="r-1609501" data-claire-element-id="30943606"><code data-claire-semantic="html">&lt;p&gt; &lt;/p&gt;</code>  : pour organiser son texte en paragraphes ;</p></li><li id="r-1609504" data-claire-element-id="30943609"><p id="r-1609503" data-claire-element-id="30943608"><code data-claire-semantic="html">&lt;br /&gt;</code>  : pour aller à la ligne.</p></li></ul><p id="r-1609506" data-claire-element-id="1632296">Maintenant qu'on sait écrire des paragraphes, voyons voir comment on crée des titres.</p><h3 id="r-1604443" data-claire-element-id="30943777">Les titres</h3><p id="r-1609508" data-claire-element-id="1632299">Lorsque le contenu de votre page va s'étoffer avec de nombreux paragraphes, il va devenir difficile pour vos visiteurs de se repérer. C'est là que les titres deviennent utiles.</p><p id="r-1735391" data-claire-element-id="1763551">En HTML, on est verni, on a le droit d'utiliser six niveaux de titres différents. Je veux dire par là qu'on peut dire « Ceci est un titre très important », « Ceci est un titre un peu moins important », « Ceci est un titre encore moins important », etc. On a donc six balises de titres différentes :</p><ul id="r-1609522" data-claire-element-id="30943648"><li id="r-1609511" data-claire-element-id="30943637"><p id="r-1609510" data-claire-element-id="30943636"><code data-claire-semantic="html">&lt;h1&gt; &lt;/h1&gt;</code>  : signifie « titre très important ». En général, on s'en sert pour afficher le titre de la page au début de celle-ci ;</p></li><li id="r-1609513" data-claire-element-id="30943639"><p id="r-1609512" data-claire-element-id="30943638"><code data-claire-semantic="html">&lt;h2&gt; &lt;/h2&gt;</code>  : signifie « titre important » ;</p></li><li id="r-1609515" data-claire-element-id="30943641"><p id="r-1609514" data-claire-element-id="30943640"><code data-claire-semantic="html">&lt;h3&gt; &lt;/h3&gt;</code>  : pareil, c'est un titre un peu moins important (on peut dire un « sous-titre », si vous voulez) ;</p></li><li id="r-1609517" data-claire-element-id="30943643"><p id="r-1609516" data-claire-element-id="30943642"><code data-claire-semantic="html">&lt;h4&gt; &lt;/h4&gt;</code>  : titre encore moins important ;</p></li><li id="r-1609519" data-claire-element-id="30943645"><p id="r-1609518" data-claire-element-id="30943644"><code data-claire-semantic="html">&lt;h5&gt; &lt;/h5&gt;</code>  : titre pas important ;</p></li><li id="r-1609521" data-claire-element-id="30943647"><p id="r-1609520" data-claire-element-id="30943646"><code data-claire-semantic="html">&lt;h6&gt; &lt;/h6&gt;</code>  : titre vraiment, mais alors là vraiment pas important du tout.</p></li></ul><aside id="r-1609524" data-claire-element-id="30943677" data-claire-semantic="warning"><p id="r-1609523" data-claire-element-id="30943676">Attention : ne confondez pas avec la balise <code data-claire-semantic="html">&lt;title&gt;</code>  ! La balise <code data-claire-semantic="html">&lt;title&gt;</code>  affiche le titre de la page dans la barre de titre du navigateur, comme nous l'avons vu. Les titres <code data-claire-semantic="html">&lt;h1&gt;</code>  et compagnie, eux, servent à créer des titres qui seront affichés <em>dans</em> la page web.</p></aside><p id="r-1609525" data-claire-element-id="30943716">Ne vous laissez pas impressionner par toutes ces balises. En fait, six niveaux de titres, c'est beaucoup. Dans la pratique, personnellement, je n'utilise que les balises <code data-claire-semantic="html">&lt;h1&gt;</code>  , <code data-claire-semantic="html">&lt;h2&gt;</code>  et <code data-claire-semantic="html">&lt;h3&gt;</code>  , et très rarement les autres (je n'ai pas souvent besoin de six niveaux de titres différents). Votre navigateur affiche le titre très important en très gros, le titre un peu moins important en un peu moins gros, etc.</p><aside id="r-1609527" data-claire-element-id="30943757" data-claire-semantic="error"><p id="r-1609526" data-claire-element-id="30943756">Ne choisissez pas votre balise de titre en fonction de la taille qu'elle applique au texte ! Il faut impérativement bien structurer sa page en commençant par un titre de niveau 1 ( <code data-claire-semantic="html">&lt;h1&gt;</code>  ), puis un titre de niveau 2 ( <code data-claire-semantic="html">&lt;h2&gt;</code>  ), etc. Il ne devrait pas y avoir de sous-titre sans titre principal !<br /> Si vous voulez modifier la taille du texte, sachez que nous apprendrons à faire cela en CSS un peu plus tard.</p></aside><p id="r-1609528" data-claire-element-id="1632319">Essayez de créer une page web avec des titres pour voir ce que cela donne :</p><pre id="r-1609529" data-claire-element-id="6250090"><code data-claire-semantic="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot; /&gt;
+        &lt;title&gt;Niveaux de titres&lt;/title&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;h1&gt;Titre super important&lt;/h1&gt;
+        &lt;h2&gt;Titre important&lt;/h2&gt;
+        &lt;h3&gt;Titre un peu moins important (sous-titre)&lt;/h3&gt;
+
+        &lt;h4&gt;Titre pas trop important&lt;/h4&gt;
+        &lt;h5&gt;Titre pas important&lt;/h5&gt;
+        &lt;h6&gt;Titre vraiment pas important du tout&lt;/h6&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre><p id="r-1609530" data-claire-element-id="1632321">Allez, je vous donne un exemple d'utilisation des titres dans une page web (vous allez voir que je ne me sers pas de toutes les balises) :</p><pre id="r-1609531" data-claire-element-id="6250091"><code data-claire-semantic="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;title&gt;Présentation d'OpenClassrooms&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h1&gt;Bienvenue sur OpenClassrooms !&lt;/h1&gt;
+
+    &lt;p&gt;Bonjour et bienvenue sur mon site : OpenClassrooms.&lt;br /&gt;
+       OpenClassrooms, qu'est-ce que c'est ?&lt;/p&gt;
+
+    &lt;h2&gt;Des cours pour débutants&lt;/h2&gt;
+    
+    &lt;p&gt;OpenClassrooms vous propose des cours (tutoriels) destinés aux débutants : aucune connaissance n'est requise pour lire ces cours !&lt;/p&gt;
+    
+    &lt;p&gt;Vous pourrez ainsi apprendre, sans rien y connaître auparavant, à créer un site web, à programmer, à construire des mondes en 3D !&lt;/p&gt;
+
+    &lt;h2&gt;Une communauté active&lt;/h2&gt;
+    
+    &lt;p&gt;Vous avez un problème, un élément du cours que vous ne comprenez pas ? Vous avez besoin d'aide pour créer votre site ?&lt;br /&gt;
+    Rendez-vous sur les forums ! Vous y découvrirez que vous n'êtes pas le seul dans ce cas et vous trouverez très certainement quelqu'un qui vous aidera aimablement à résoudre votre problème.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre><p id="r-1609532" data-claire-element-id="1632323">Voilà une page web qui prend forme !</p><div id="r-1609534" data-claire-element-id="1632325" data-claire-semantic="question"><p id="r-1609533" data-claire-element-id="1632324">Oui, mais moi je veux centrer mon titre, l'écrire en rouge et le souligner !</p></div><p id="r-1609535" data-claire-element-id="30943776">Nous ferons tout cela lorsque nous apprendrons le CSS (dès la deuxième partie du cours). Il faut savoir que <code data-claire-semantic="html">&lt;h1&gt;</code>  ne signifie pas « Times New Roman, taille 16 pt », mais « <em>Titre important</em> ».</p><p id="r-1609536" data-claire-element-id="1632327">Grâce au langage CSS, vous pourrez dire « Je veux que mes titres importants soient centrés, rouges et soulignés ». Pour le moment, en HTML, nous ne faisons que structurer notre page. <em>Nous rédigeons le contenu avant de nous amuser à le mettre en forme.</em></p><h3 id="r-1604474" data-claire-element-id="30943978">La mise en valeur</h3><p id="r-1609537" data-claire-element-id="1632329">Au sein de vos paragraphes, certains mots sont parfois plus importants que d'autres et vous aimeriez les faire ressortir. HTML vous propose différents moyens de mettre en valeur le texte de votre page.</p><h4 id="r-1609541" data-claire-element-id="30943817">Mettre un peu en valeur</h4><p id="r-1609538" data-claire-element-id="30943796">Pour mettre <em>un peu</em> en valeur votre texte, vous devez utiliser la balise <code data-claire-semantic="html">&lt;em&gt; &lt;/em&gt;</code>  .<br /> Son utilisation est très simple : encadrez les mots à mettre en valeur avec ces balises et c'est bon ! Je reprends un peu l'exemple de tout à l'heure et j'y mets quelques mots en évidence :</p><pre id="r-1609539" data-claire-element-id="6250093"><code data-claire-semantic="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;title&gt;Emphase&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;p&gt;Bonjour et bienvenue sur mon site !&lt;br /&gt;
+    Ceci est mon premier test alors &lt;em&gt;soyez indulgents&lt;/em&gt; s'il vous plaît, j'apprends petit à petit comment cela marche.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre><p id="r-1609540" data-claire-element-id="30943816">Comme vous pouvez le voir, utiliser la balise <code data-claire-semantic="html">&lt;em&gt;</code>  a pour conséquence de mettre le texte en <em>italique</em>. En fait, c'est le navigateur qui choisit comment afficher les mots. On lui dit que les mots sont assez importants et, pour faire ressortir cette information, il change l'apparence du texte en utilisant l'italique.</p><h4 id="r-1609546" data-claire-element-id="30943837">Mettre bien en valeur</h4><p id="r-1609542" data-claire-element-id="30943818">Pour mettre un texte bien en valeur, on utilise la balise <code data-claire-semantic="html">&lt;strong&gt;</code>  qui signifie « fort », ou « important » si vous préférez. Elle s'utilise exactement de la même manière que <code data-claire-semantic="html">&lt;em&gt;</code>  :</p><pre id="r-1609543" data-claire-element-id="6250095"><code data-claire-semantic="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;title&gt;Forte emphase&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;p&gt;Bonjour et bienvenue sur mon site !&lt;br /&gt;
+    Ceci est mon premier test alors &lt;strong&gt;soyez indulgents&lt;/strong&gt; s'il vous plaît, j'apprends petit à petit comment cela marche.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre><p id="r-1609544" data-claire-element-id="1632336">Vous voyez sûrement le texte s'afficher en gras. Là encore, le gras n'est qu'une <em>conséquence</em>. Le navigateur a choisi d'afficher en gras les mots importants pour les faire ressortir davantage.</p><p id="r-1609545" data-claire-element-id="30943836">La balise <code data-claire-semantic="html">&lt;strong&gt;</code>  ne signifie pas « mettre en gras », mais « important ». On pourra décider plus tard, en CSS, d'afficher les mots « importants » d'une autre façon que le gras si on le souhaite.</p><h4 id="r-1609550" data-claire-element-id="30943907">Marquer le texte</h4><p id="r-1609547" data-claire-element-id="30943856">La balise <code data-claire-semantic="html">&lt;mark&gt;</code>  permet de faire ressortir visuellement une portion de texte. L'extrait n'est pas forcément considéré comme important, mais on veut qu'il se distingue bien du reste du texte. Cela peut être utile pour faire ressortir un texte pertinent après une recherche sur votre site, par exemple.</p><pre id="r-1609548" data-claire-element-id="6250097"><code data-claire-semantic="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;title&gt;Marquage du texte&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;p&gt;Bonjour et bienvenue sur mon site !&lt;br /&gt;
+    Ceci est mon premier test alors &lt;mark&gt;soyez indulgents&lt;/mark&gt; s'il vous plaît, j'apprends petit à petit comment cela marche.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre><p id="r-1609549" data-claire-element-id="30943906">Par défaut, <code data-claire-semantic="html">&lt;mark&gt;</code>  a pour effet de surligner le texte. On pourra changer l'affichage en CSS (décider de surligner dans une autre couleur, d'encadrer le texte, etc.). C'est le même principe que ce que je vous disais pour les balises précédentes : elles indiquent le <em>sens</em> des mots et non pas comment ceux-ci doivent s'afficher.</p><h4 id="r-1609566" data-claire-element-id="30943977">N'oubliez pas : HTML pour le fond, CSS pour la forme</h4><p id="r-1609551" data-claire-element-id="30943908">Je vais peut-être vous sembler un peu lourd, mais il est très important qu'on se comprenne bien car les débutants font souvent la même grosse erreur à ce stade. Ils ont vu les balises <code data-claire-semantic="html">&lt;em&gt;</code>  ,<code data-claire-semantic="html">&lt;strong&gt;</code>  , <code data-claire-semantic="html">&lt;mark&gt;</code>  … et ils se disent : « Chouette, j'ai découvert comment mettre en italique, en gras et comment surligner du texte en HTML ! ».</p><p id="r-1609552" data-claire-element-id="30943909">Et pourtant… ce n'est pas à cela que servent ces balises ! Je sais, je sais, vous allez me dire « Oui mais quand j'utilise <code data-claire-semantic="html">&lt;strong&gt;</code>  , le texte apparaît en gras, donc c'est pour mettre en gras. » et pourtant, c'est une erreur de croire que cette balise sert à cela.</p><p id="r-1609553" data-claire-element-id="30943910">Le rôle des balises est d'indiquer le <em>sens</em> du texte. Ainsi, <code data-claire-semantic="html">&lt;strong&gt;</code>  indique à l'ordinateur « Ce texte est important ». C'est tout.<br /> Et pour <em>montrer</em> que le texte est important, l'ordinateur décide de le mettre en gras (mais il pourrait aussi bien l'écrire en rouge !). La plupart des navigateurs affichent les textes importants en gras, mais rien ne les y oblige.</p><div id="r-1609555" data-claire-element-id="30943937" data-claire-semantic="question"><p id="r-1609554" data-claire-element-id="30943936">Je ne comprends pas. À quoi cela sert-il que l'ordinateur sache qu'un texte est important ? <br /> Il n'est pas assez intelligent pour comprendre !</p></div><p id="r-1609556" data-claire-element-id="30943956">Détrompez-vous ! De nombreux programmes analysent le code source des pages web, à commencer par les robots de moteurs de recherche. Ces robots parcourent le Web en lisant le code HTML de tous les sites. C'est le cas des robots de Google et de Bing, par exemple. Les mots-clés « importants » ont tendance à avoir plus de valeur à leurs yeux, donc si quelqu'un fait une recherche sur ces mots, il a plus de chances de tomber sur votre site.<br /> Bien entendu, c'est une explication grossière et il ne faut pas croire qu'utiliser la balise <code data-claire-semantic="html">&lt;strong&gt;</code>  à tout-va améliorera votre référencement. Il faut simplement faire confiance aux ordinateurs : ils comprennent ce qu'un texte « important » veut dire et peuvent se servir de cette information.</p><div id="r-1609558" data-claire-element-id="1632350" data-claire-semantic="question"><p id="r-1609557" data-claire-element-id="1632349">Mais alors, comment fait-on pour mettre spécifiquement en gras, pour écrire en rouge, et tout et tout ?</p></div><p id="r-1609559" data-claire-element-id="1632351">Tout cela se fait en CSS. Souvenez-vous :</p><ul id="r-1609564" data-claire-element-id="1632356"><li id="r-1609561" data-claire-element-id="1632353"><p id="r-1609560" data-claire-element-id="1632352">le HTML définit le fond (contenu, logique des éléments) ;</p></li><li id="r-1609563" data-claire-element-id="1632355"><p id="r-1609562" data-claire-element-id="1632354">le CSS définit la forme (apparence).</p></li></ul><p id="r-1609565" data-claire-element-id="30943976">Nous verrons le CSS plus loin ; pour l'instant nous nous concentrons sur le HTML et ses balises, qui ont chacune un sens particulier.</p><h3 id="r-1604533" data-claire-element-id="30944104">Les listes</h3><p id="r-1609567" data-claire-element-id="1632360">Les listes nous permettent souvent de mieux structurer notre texte et d'ordonner nos informations.<br /> Nous allons découvrir ici deux types de listes :</p><ul id="r-1609572" data-claire-element-id="30943983"><li id="r-1609569" data-claire-element-id="30943980"><p id="r-1609568" data-claire-element-id="30943979">les listes non ordonnées ou <em>listes à puces</em> ;</p></li><li id="r-1609571" data-claire-element-id="30943982"><p id="r-1609570" data-claire-element-id="30943981">les listes ordonnées ou <em>listes numérotées</em>, ou encore <em>énumérations</em>.</p></li></ul><h4 id="r-1609600" data-claire-element-id="30944098">Liste non ordonnée</h4><p id="r-1609573" data-claire-element-id="1632366">Une liste non ordonnée ressemble à ceci :</p><ul id="r-1609580" data-claire-element-id="1632373"><li id="r-1609575" data-claire-element-id="1632368"><p id="r-1609574" data-claire-element-id="1632367">Fraises</p></li><li id="r-1609577" data-claire-element-id="1632370"><p id="r-1609576" data-claire-element-id="1632369">Framboises</p></li><li id="r-1609579" data-claire-element-id="1632372"><p id="r-1609578" data-claire-element-id="1632371">Cerises</p></li></ul><p id="r-1609581" data-claire-element-id="30944006">C'est un système qui nous permet de créer une liste d'éléments sans notion d'ordre (il n'y a pas de « premier » ni de « dernier »). Créer une liste non ordonnée est très simple. Il suffit d'utiliser la balise <code data-claire-semantic="html">&lt;ul&gt;</code>  que l'on referme un peu plus loin avec <code data-claire-semantic="html">&lt;/ul&gt;</code>  .<br /> Commencez donc à taper ceci :</p><pre id="r-1609582" data-claire-element-id="2256047"><code data-claire-semantic="html">&lt;ul&gt;&lt;/ul&gt;</code></pre><p id="r-1609583" data-claire-element-id="30944007">Et maintenant, voilà ce qu'on va faire : on va écrire chacun des éléments de la liste entre deux balises <code data-claire-semantic="html">&lt;li&gt;&lt;/li&gt;</code>  . Chacune de ces balises doit se trouver entre <code data-claire-semantic="html">&lt;ul&gt;</code>  et <code data-claire-semantic="html">&lt;/ul&gt;</code>  . Vous allez comprendre de suite avec cet exemple :</p><pre id="r-1609584" data-claire-element-id="6250100"><code data-claire-semantic="html">&lt;ul&gt;
+    &lt;li&gt;Fraises&lt;/li&gt;
+    &lt;li&gt;Framboises&lt;/li&gt;
+    &lt;li&gt;Cerises&lt;/li&gt;
+&lt;/ul&gt;</code></pre><p id="r-1609585" data-claire-element-id="1632378">Le résultat se trouve à la figure suivante.</p><figure id="r-1609588" data-claire-element-id="30944097"><img id="r-1609586" data-claire-element-id="1632379" src="https://user.oc-static.com/files/380001_381000/380390.png" alt="Une liste non ordonnée" /><figcaption>Une liste non ordonnée</figcaption></figure><aside id="r-3198249" data-claire-element-id="30944029" data-claire-semantic="information"><p id="r-1609589" data-claire-element-id="30944028">Notez que la liste doit être placée à l'intérieur de <code data-claire-semantic="html">&lt;body&gt;&lt;/body&gt;</code>  . À partir de maintenant, je ne mets pas tout le code de la page pour rester lisible.</p></aside><p id="r-1609590" data-claire-element-id="1632383">Retenez donc ces deux balises :</p><ul id="r-1609595" data-claire-element-id="30944034"><li id="r-1609592" data-claire-element-id="30944031"><p id="r-1609591" data-claire-element-id="30944030"><code data-claire-semantic="html">&lt;ul&gt;&lt;/ul&gt;</code>  délimite toute la liste ;</p></li><li id="r-1609594" data-claire-element-id="30944033"><p id="r-1609593" data-claire-element-id="30944032"><code data-claire-semantic="html">&lt;li&gt;&lt;/li&gt;</code>  délimite un élément de la liste (une puce).</p></li></ul><p id="r-1609596" data-claire-element-id="30944035">Vous pouvez mettre autant d'éléments que vous voulez dans la liste à puces, vous n'êtes pas limité à trois éléments.</p><p id="r-1609597" data-claire-element-id="1632390">Et voilà, vous savez créer une liste à puces ! Pas si dur une fois qu'on a compris comment imbriquer les balises.</p><aside id="r-1609599" data-claire-element-id="30944059" data-claire-semantic="information"><p id="r-1609598" data-claire-element-id="30944058">Pour ceux qui ont besoin de faire des listes complexes, sachez que vous pouvez <em>imbriquer</em> des listes à puces (créer une liste à puces <strong>dans </strong>une liste à puces). Si vous voulez faire ça, ouvrez une seconde balise <code data-claire-semantic="html">&lt;ul&gt;</code><strong>  à l'intérieur</strong> d'un élément <code data-claire-semantic="html">&lt;li&gt;&lt;/li&gt;</code>  .<br /> Si vous fermez les balises dans le bon ordre, vous n'aurez pas de problème. Attention néanmoins, cette technique est un peu compliquée à maîtriser.</p></aside><h4 id="r-1609612" data-claire-element-id="30944103">Liste ordonnée</h4><p id="r-1609601" data-claire-element-id="30944079">Une liste ordonnée fonctionne de la même façon, seule une balise change : il faut remplacer <code data-claire-semantic="html">&lt;ul&gt;&lt;/ul&gt;</code>  par <code data-claire-semantic="html">&lt;ol&gt;&lt;/ol&gt;</code>  .<br /> À l'intérieur de la liste, on ne change rien : on utilise toujours des balises <code data-claire-semantic="html">&lt;li&gt;&lt;/li&gt;</code>  pour délimiter les éléments.</p><aside id="r-1609603" data-claire-element-id="30944081" data-claire-semantic="warning"><p id="r-1609602" data-claire-element-id="30944080">L'ordre dans lequel vous placez les éléments de la liste est important. Le premier <code data-claire-semantic="html">&lt;li&gt;&lt;/li&gt;</code>  sera l'élément n° 1, le second sera le n° 2 ,etc…</p></aside><p id="r-1609604" data-claire-element-id="1632397">Comme c'est particulièrement intuitif, je vous laisse admirer la simplicité de cet exemple (résultat à la figure suivante) :</p><pre id="r-1609605" data-claire-element-id="6250104"><code data-claire-semantic="html">&lt;h1&gt;Ma journée&lt;/h1&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Je me lève.&lt;/li&gt;
+    &lt;li&gt;Je mange et je bois.&lt;/li&gt;
+    &lt;li&gt;Je retourne me coucher.&lt;/li&gt;
+&lt;/ol&gt;</code></pre><figure id="r-1609608" data-claire-element-id="30944100"><img id="r-1609606" data-claire-element-id="1632399" src="https://user.oc-static.com/files/380001_381000/380391.png" alt="Une liste ordonnée" /><figcaption>Une liste ordonnée</figcaption></figure><p id="r-1609609" data-claire-element-id="30944084">Par rapport à l'exemple précédent, tout ce qu'on a eu à changer est donc la balise <code data-claire-semantic="html">&lt;ol&gt;</code>  .</p><aside id="r-1609611" data-claire-element-id="30944102" data-claire-semantic="information"><p id="r-1609610" data-claire-element-id="30944101">Pour information, il existe un troisième type de liste, beaucoup plus rare : la liste de définitions. Elle fait intervenir les balises <code data-claire-semantic="html">&lt;dl&gt;</code>  (pour délimiter la liste), <code data-claire-semantic="html">&lt;dt&gt;</code>  (pour délimiter un terme) et <code data-claire-semantic="html">&lt;dd&gt;</code>  (pour délimiter la définition de ce terme).</p></aside><h3 id="r-3198205" data-claire-element-id="30944115">En résumé</h3><ul id="r-1609623" data-claire-element-id="30944113"><li id="r-1609614" data-claire-element-id="1632407"><p id="r-1609613" data-claire-element-id="1632406">Le HTML comporte de nombreuses balises qui nous permettent d'organiser le texte de notre page. Ces balises donnent des indications comme « Ceci est un paragraphe », « Ceci est un titre », etc.</p></li><li id="r-1609616" data-claire-element-id="30944106"><p id="r-1609615" data-claire-element-id="30944105">Les paragraphes sont définis par la balise <code data-claire-semantic="html">&lt;p&gt; &lt;/p&gt;</code>  , et les sauts de ligne par la balise <code data-claire-semantic="html">&lt;br /&gt;</code>  .</p></li><li id="r-1609618" data-claire-element-id="30944108"><p id="r-1609617" data-claire-element-id="30944107">Il existe six niveaux de titre, de <code data-claire-semantic="html">&lt;h1&gt; &lt;/h1&gt;</code>  à <code data-claire-semantic="html">&lt;h6&gt; &lt;/h6&gt;</code>  , à utiliser selon l'importance du titre.</p></li><li id="r-1609620" data-claire-element-id="30944110"><p id="r-1609619" data-claire-element-id="30944109">On peut mettre en valeur certains mots avec les balises <code data-claire-semantic="html">&lt;strong&gt;</code>  , <code data-claire-semantic="html">&lt;em&gt;</code>  et <code data-claire-semantic="html">&lt;mark&gt;</code>  .</p></li><li id="r-1609622" data-claire-element-id="30944112"><p id="r-1609621" data-claire-element-id="30944111">Pour créer des listes, on doit utiliser la balise <code data-claire-semantic="html">&lt;ul&gt;</code>  (liste à puces, non ordonnée) ou <code data-claire-semantic="html">&lt;ol&gt;</code>  (liste ordonnée). À l'intérieur, on insère les éléments avec une balise <code data-claire-semantic="html">&lt;li&gt;</code>  pour chaque item.</p></li></ul><aside id="r-3847091" data-claire-element-id="30845454" data-claire-semantic="information"><p id="r-3847090" data-claire-element-id="30845453"><a href="https://forms.gle/gyzQWZcqHaHq7snSA">Que pensez-vous de ce cours ?</a></p></aside><p id="r-6967750" data-claire-element-id="30944114"></p>
+</div>
+<div class="js-courseSelementActions sideActions">
+<ul class="sideActions__container">
+<li>
+<a class="sideActions__item  js-courseElementActions-copyUrl  js-tooltip" href="#" data-tooltip="Copier le lien" data-tooltip-done="Lien copié !">
+#
+</a>
+</li>
+</ul>
+</div>
+</div>
+<nav id="course-pagination" class="course-pagination    clearfix">
+<a href="1604361-creez-votre-premiere-page-web-en-html.html" class="button button--secondary  course-pagination__btn course-pagination__btn--previous">
+<i class="icon-previous"></i>
+<span>Créez votre première page web en HTML</span>
+</a>
+<span class="course-pagination__separator"></span>
+<a href="4004681-pratiquez.html" class="button button--secondary  course-pagination__btn course-pagination__btn--next">
+<span>Pratiquez !</span>
+<i class="icon-next"></i>
+</a>
+</nav>
+<div tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="popin-view-restriction_popin_title" class="popin popin--illustrated  js-popin" id="popin-view-restriction">
+<button class="popin__close-button  js-close-button" title="Fermer" aria-label="Fermer">
+<i class="icon-close" aria-hidden="true"></i>
+</button>
+<div class="popin__inner">
+<div class="popin__illustrationWrapper">
+<div class="popin__illustration illustration--balloon"></div>
+</div>
+<div class="popin__mainContainer">
+<div class="popin__gigTitleContainer js-popin-title">
+<div class="gigWorkersPopin__timeline">
+<div class="gigWorkersPopin__dot">1</div>
+<div class="gigWorkersPopin__line"></div>
+<div class="gigWorkersPopin__dot gigWorkersPopin__dot--disabled">2</div>
+</div>
+<div class="popin__title">Créez un compte <br /> OpenClassrooms</div>
+</div>
+<div id="popin-view-restriction_popin_title" class="popin__title  js-popin-title">Waouh !</div>
+<div class="popin__content  js-popin-content">
+<div class="popin__contentWrapper">
+<p>
+Très heureux de voir que nos cours vous plaisent, déjà 5 pages lues aujourd&#039;hui ! Vous pouvez continuer la lecture de nos cours en devenant un membre de la communauté d&#039;OpenClassrooms. C&#039;est gratuit !
+</p>
+<p>
+Vous pourrez aussi suivre votre avancement dans le cours, faire les exercices et discuter avec les autres membres.
+</p>
+</div>
+</div>
+<div class="popin__actions  js-popin-actions">
+<span class="u--inlineBlock">
+<a class="button button--primary " href="https://openclassrooms.com/fr/register">S'inscrire</a>
+</span>
+<span class="u--inlineBlock">
+<a class="button button--secondary " href="https://openclassrooms.com/fr/login">Se connecter</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script type="text/template" class="js-single-video-download-info">
+            <div class="videoDownload js-download-video-popin-link">
+                <a href="#popin-download-video" class="js-popin-activator">
+                    <i class="icon-download videoDownload__icon"></i> Télécharger la vidéo
+                </a>
+            </div>
+        </script>
+<script type="text/template" class="js-all-video-download-info">
+            <div class="videoDownload js-download-video-popin-link">
+                <a href="#popin-download-all-videos" class="js-popin-activator">
+                    <i class="icon-download videoDownload__icon"></i> Télécharger toutes les vidéos de ce cours
+                </a>
+            </div>
+        </script>
+<div id="popin-not-certifying-yet_868817" class="popin" data-popin-title="Vous ne pouvez pas encore obtenir de certificat de réussite à l&#039;issue de ce cours.
+                            <span><i class='icon-star'></i> Devenez Premium</span>
+                    ">
+<img alt="Exemple de certificat de réussite" src="http://static.oc-static.com/prod/images/courses/certif.jpg" />
+</div>
+<div tabindex="-1" role="dialog" aria-hidden="true" class="popin popin--small  js-popin" id="popin-download-video">
+<button class="popin__close-button  js-close-button" title="Fermer" aria-label="Fermer">
+<i class="icon-close" aria-hidden="true"></i>
+</button>
+<div class="popin__inner">
+<div class="popin__mainContainer">
+<div class="popin__gigTitleContainer js-popin-title">
+<div class="gigWorkersPopin__timeline">
+<div class="gigWorkersPopin__dot">1</div>
+<div class="gigWorkersPopin__line"></div>
+<div class="gigWorkersPopin__dot gigWorkersPopin__dot--disabled">2</div>
+</div>
+<div id="popin-download-video_popin_title" class="popin__title">Créez un compte <br /> OpenClassrooms</div>
+</div>
+<i class="icon-video popin__icon  js-popin-icon"></i>
+<div class="popin__content  js-popin-content">
+<div class="popin__contentWrapper">
+<p>
+Le téléchargement des vidéos de nos cours est accessible pour les membres Premium. Vous pouvez toutefois les visionner en streaming gratuitement.
+</p>
+</div>
+</div>
+<div class="popin__actions  js-popin-actions">
+<a class="button button--primary js-close-button" href="#">Devenez Premium</a>
+</div>
+</div>
+</div>
+</div>
+<div id="popin-not-certifying-yet_336458" class="popin" data-popin-title="Vous ne pouvez pas encore obtenir de certificat de réussite à l&#039;issue de ce cours.
+                            <span><i class='icon-star'></i> Devenez Premium</span>
+                    ">
+<img alt="Exemple de certificat de réussite" src="http://static.oc-static.com/prod/images/courses/certif.jpg" />
+</div>
+<div tabindex="-1" role="dialog" aria-hidden="true" class="popin popin--small  js-popin" id="popin-download-video">
+<button class="popin__close-button  js-close-button" title="Fermer" aria-label="Fermer">
+<i class="icon-close" aria-hidden="true"></i>
+</button>
+<div class="popin__inner">
+<div class="popin__mainContainer">
+<div class="popin__gigTitleContainer js-popin-title">
+<div class="gigWorkersPopin__timeline">
+<div class="gigWorkersPopin__dot">1</div>
+<div class="gigWorkersPopin__line"></div>
+<div class="gigWorkersPopin__dot gigWorkersPopin__dot--disabled">2</div>
+</div>
+<div id="popin-download-video_popin_title" class="popin__title">Créez un compte <br /> OpenClassrooms</div>
+</div>
+<i class="icon-video popin__icon  js-popin-icon"></i>
+<div class="popin__content  js-popin-content">
+<div class="popin__contentWrapper">
+<p>
+Le téléchargement des vidéos de nos cours est accessible pour les membres Premium. Vous pouvez toutefois les visionner en streaming gratuitement.
+</p>
+</div>
+</div>
+<div class="popin__actions  js-popin-actions">
+<a class="button button--primary js-close-button" href="#">Devenez Premium</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<aside id="content-with-sidebar" class="contentWithSidebar__sidebar  js-contentWithSidebar-slidingElement">
+<nav class="col-nav">
+<div id="tab-courseMenu" class="col-nav__inner js-sidebar-inner">
+<div class="col-nav__block  col-nav__block--summary">
+<div class="side-paginate">
+<a href="1604361-creez-votre-premiere-page-web-en-html.html" class="side-paginate__previous" title="Chapitre précédent">
+<i class="icon-previous"></i>
+</a>
+<span class="side-paginate__separator"></span>
+<h6 class="side-paginate__title">
+Découvrez les bases de HTML5
+</h6>
+<span class="side-paginate__separator"></span>
+<a href="4004681-pratiquez.html" class="side-paginate__next" title="Chapitre suivant">
+<i class="icon-next"></i>
+</a>
+</div>
+<div class="col-nav__block--summary-list">
+<ol class="col-nav__chapters">
+<li class="">
+<a class="col-nav__chapterTitle" href="1604192-decouvrez-le-fonctionnement-des-sites-web.html">Découvrez le fonctionnement des sites web</a>
+</li>
+<li class="">
+<a class="col-nav__chapterTitle" href="1604361-creez-votre-premiere-page-web-en-html.html">Créez votre première page web en HTML</a>
+</li>
+<li class="selected">
+<span class="col-nav__chapterTitle">Organisez votre texte</span>
+</li>
+<li class="">
+<a class="col-nav__chapterTitle" href="4004681-pratiquez.html">Pratiquez !</a>
+</li>
+<li class="">
+<a class="col-nav__chapterTitle" href="1604646-creez-des-liens.html">Créez des liens</a>
+</li>
+<li class="">
+<a class="col-nav__chapterTitle" href="1604791-inserez-des-images.html">Insérez des images</a>
+</li>
+<li class="">
+<a class="col-nav__chapterTitle" href="6725196-entrainez-vous-en-structurant-votre-cv.html">Entraînez-vous en structurant votre CV</a>
+</li>
+</ol>
+</div>
+</div>
+<div class="col-nav__block col-nav__block--button">
+<a href="https://openclassrooms.com/forum/categorie/html-css" class="button button--secondary">
+Accéder au forum
+</a>
+</div>
+
+<div class="socialNetwork col-nav__block">
+<ul class="socialButtons  js-socialButtons" data-options="
+                title: 'Organisez votre texte @OCFrance',
+        mailTitle: 'Cours &quot;Organisez votre texte&quot; sur OpenClassrooms',
+        mailContent: 'Découvrez le cours &quot;Organisez votre texte&quot; sur OpenClassrooms.'">
+<li>
+<a class="roundIcon  roundIcon--twitter addthis_button_twitter  js-socialButtons-btn" data-tooltip="Partagez sur Twitter">
+<i class="roundIcon__icon  icon-twitter"></i>
+</a>
+</li>
+<li>
+<a class="roundIcon  roundIcon--facebook  addthis_button_facebook  js-socialButtons-btn" data-tooltip="Partagez sur Facebook">
+<i class="roundIcon__icon  icon-facebook"></i>
+</a>
+</li>
+<li>
+<a class="roundIcon  addthis_button_email  js-socialButtons-btn  js-socialButtons-email" data-tooltip="Partagez par e-mail">
+<i class="roundIcon__icon  icon-letter"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</aside>
+</div>
+</div>
+</div>
+<footer id="course-footer" class="alt-section noMarginBottom">
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="grid-inner-content  courseFooter">
+<div class="courseFooter__authors course-bottom__category">
+<div class="course-bottom__title">
+Le professeur
+</div>
+<div>
+<div class="course-bottom__text-illustrated">
+<span data-author="Mathieu Nebra" data-image-cdn-background-image="https://user.oc-static.com/users/avatars/16010488280562_MathieuNebra_square.jpg" data-image-cdn-width="120"></span>
+<div class="course-bottom__subtitle" itemprop="name">Mathieu Nebra</div>
+<p itemprop="description">
+Entrepreneur à plein temps, auteur à plein temps et co-fondateur d&#039;OpenClassrooms :o)
+</p>
+</div>
+</div>
+</div>
+<div class="courseFooter__courseFormat course-bottom__category">
+<h2>Découvrez aussi ce cours en...</h2>
+<ul class="course-bottom__format">
+<li>
+<a href="http://www.eyrolles.com/Informatique/Livre/realisez-votre-site-web-avec-html5-et-css3-9782953527889?societe=openclassrooms" target="_blank" class="text-decoration-none">
+<div class="circle circle--x-small">
+<span class="circle__content"></span>
+<i class="icon-book"></i>
+</div>
+<div class="course-bottom__format-entitled">
+Livre
+</div>
+</a>
+</li>
+<li>
+<a href="https://openclassrooms.com/fr/old-courses-pdf" class="text-decoration-none">
+<div class="circle circle--x-small">
+<span class="circle__content"></span>
+<i class="icon-pdf"></i>
+</div>
+<div class="course-bottom__format-entitled">
+PDF
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</article>
+</main>
+</div>
+<div id="mainSearchLegacy" class="mainSearch"></div>
+<div id="footerWrapper">
+<footer id="footer" class="oc-footerSkeleton">
+<hr style="margin-bottom: 8px" />
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="oc-footerSkeleton__container">
+<div class="oc-footerSkeleton__item">
+<div class="oc-footerSkeleton__itemTitle"><span class="skeleton" style="height: 20px; width: 80%"></span></div>
+<ul class="oc-footerSkeleton__linksList">
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 70%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 60%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 65%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 40%"></span></a></p>
+</li>
+</ul>
+</div>
+<div class="oc-footerSkeleton__item">
+<div class="oc-footerSkeleton__itemTitle"><span class="skeleton" style="height: 20px; width: 85%"></span></div>
+<ul class="oc-footerSkeleton__linksList">
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 40%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 60%"></span></a></p>
+</li>
+</ul>
+</div>
+<div class="oc-footerSkeleton__item">
+<div class="oc-footerSkeleton__itemTitle"><span class="skeleton" style="height: 20px; width: 75%"></span></div>
+<ul class="oc-footerSkeleton__linksList">
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 65%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 40%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 50%"></span></a></p>
+ </li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 40%"></span></a></p>
+</li>
+</ul>
+</div>
+<div class="oc-footerSkeleton__item">
+<span class="skeleton" style="height: 25px; width: 65%"></span>
+<div class="oc-footerSkeleton__socialButtonWrapper">
+<div><span class="skeleton skeleton--round" style="width: 40px; height: 40px"></span></div>
+<div><span class="skeleton skeleton--round" style="width: 40px; height: 40px;"></span></div>
+<div><span class="skeleton skeleton--round" style="width: 40px; height: 40px;"></span></div>
+<div><span class="skeleton skeleton--round" style="width: 40px; height: 40px;"></span></div>
+<div><span class="skeleton skeleton--round" style="width: 40px; height: 40px;"></span></div>
+</div>
+<div><span class="skeleton skeleton--width50" style="height: 40px;"></span></div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div id="showDisclaimer" class="cookiesDisclaimer"></div>
+<script>
+  var isPrerender = !!navigator.userAgent.match(/github\.com\/prerender\/prerender/);
+  var preRenderBrowserFakeUa = "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163 Safari/537.36";
+  var polyfillUrl = "https://cdn.polyfill.io/v3/polyfill.min.js?unknown=polyfill&amp;features=default,es6,IntersectionObserver,Object.values,Array.prototype.includes,Array.prototype.findIndex,Array.prototype.find,Array.from,Promise.prototype.finally,fetch,String.prototype.includes,Object.entries,Array.prototype.entries,Intl.~locale,Array.prototype.flat.fr";
+
+    if (isPrerender) {
+    polyfillUrl+= "&ua=" + encodeURIComponent(preRenderBrowserFakeUa);
+  }
+
+  App.translations = {};
+
+  App.scripts.push(polyfillUrl);
+
+  App.script = {
+      DASHBOARD: 'dashboard',
+      MENTORSHIP_STUDENT_DASHBOARD: 'mentorshipStudentdashboard',
+      SHOP: 'shop',
+      PAYMENT: 'payment',
+      PROJECTS: 'projects',
+      TEAM: 'team',
+      COURSE_EDIT: 'course_edit',
+      COURSE_VIEW: 'course_view',
+      ADMIN: 'admin',
+      ADMIN_STUDENT_CREDENTIAL: 'adminStudentCredential',
+      ADMIN_STUDENT_CREDENTIAL_EDIT: 'adminStudentCredentialEdit',
+      POST_A_JOB: 'postAJob',
+      GIG_WORKERS: 'gigWorkers',
+      JOB_SURVEY: 'jobSurvey',
+      MCQ_EDIT: 'mcqEdit',
+      MCQ_VIEW: 'mcqView',
+      MENTOR_EDIT: 'mentorEdit',
+      MENTORSHIP_DASHBOARD: 'mentorshipDashboard',
+      MENTORSHIP_SESSION: 'mentorshipSession',
+      MENTORSHIP_SESSION_CREATE: 'mentorshipSessionCreate',
+      MENTORSHIP_SESSION_NON_ASSESSOR_CREATE: 'mentorshipSessionNonAssessorCreate',
+    PATHS: 'paths',
+    PRIVATE_CONVERSATIONS: 'privateConversations',
+    USER_PROFILE: 'userProfile',
+    WELCOME: 'welcome',
+    APPRENTICESHIP: 'apprenticeship',
+    WEBAPP: 'webapp',
+    PROJECTS_ADMIN: 'projectsAdmin',
+    SECURITY: 'security',
+  };
+</script>
+<script>App.scripts.push("https://openclassrooms.com/js/runtime.4c4ad3f6a13cc20ab325.js");</script>
+<script>App.scripts.push("https://openclassrooms.com/js/index.28cedfedcf6a0f3797d8.js");</script>
+<script type="text/javascript">
+        function getConsentedSegmentIntegrations() {
+            // getCookie from https://www.w3schools.com/js/js_cookies.asp
+            function getCookie(cname) {
+                var name = cname + "=";
+                var decodedCookie = decodeURIComponent(document.cookie);
+
+                var ca = decodedCookie.split(';');
+                for(var i = 0; i <ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) === ' ') {
+                        c = c.substring(1);
+                    }
+                    if (c.indexOf(name) === 0) {
+                        return c.substring(name.length, c.length);
+                    }
+                }
+                return "";
+            }
+
+            var consent = getCookie('cmapi_cookie_privacy');
+
+            function isCookieAllowedByConsent(consent, level) {
+              return !!consent && consent.search(level) !== -1;
+            }
+
+            var isFunctionalCookieAllowed = isCookieAllowedByConsent(consent, 2);
+            var isAdvertisingCookieAllowed = isCookieAllowedByConsent(consent, 3);
+
+            var isAppCuesPremiumUser = false;
+
+            var isOnPoleEmploiPage = !!window && window.location.pathname.indexOf('partners/pole-emploi/offers') >= 0;
+
+            return {
+                Amplitude: isFunctionalCookieAllowed,
+                'Bing Ads': isAdvertisingCookieAllowed,
+                'Google Ads': isAdvertisingCookieAllowed,
+                'Google Analytics': isFunctionalCookieAllowed,
+                'Zendesk': isFunctionalCookieAllowed,
+                Appcues: (isAppCuesPremiumUser || isOnPoleEmploiPage) && isFunctionalCookieAllowed,
+            };
+        }
+
+        var consentedSegmentIntegrations = getConsentedSegmentIntegrations();
+
+        !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+            window.loadAnalytics = function () { window.analytics.load('mou95e6tdn', {integrations: consentedSegmentIntegrations}) };
+        }}();
+    </script>
+
+<script>App.scriptToLoad = App.script.COURSE_VIEW</script>
+
+<script>
+    (function () {
+        function loadScripts(cb) {
+            App.scripts.forEach(function (src, index) {
+                var script = document.createElement('script');
+                script.src = src;
+                script.async = false;
+                document.body.appendChild(script);
+
+                if (cb && index === App.scripts.length - 1) {
+                    script.onload = cb;
+                }
+            });
+        }
+
+        function boot() {
+            loadScripts(function () {
+                if (App.modules) {
+                    App.modules.startAll();
+                }
+            });
+        }
+
+        if (window.addEventListener) {
+            window.addEventListener('load', boot, false);
+        } else if (window.attachEvent) {
+            window.attachEvent('onload', boot);
+        } else {
+            window.onload = boot;
+        }
+    }());
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.eu01.nr-data.net","licenseKey":"NRJS-5b58725ce0d442079d0","applicationID":"156815673","transactionName":"MhBSZQoZVhJWB0xfDAtac0QLDFcMGAtbaQAJFFlDHSdbDkIWS1M8FRRCRScIWRNDO05fBhI=","queueTime":0,"applicationTime":139,"atts":"HldRE0IDRRw=","errorBeacon":"bam.eu01.nr-data.net","agent":""}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"68b3c0d77a973fea","token":"8e698008242e427fae12788d79d12ecf","version":"2021.8.1","si":10}'></script>
+</body>
+
+<!-- Mirrored from openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1604534-organisez-votre-texte by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Sep 2021 23:36:20 GMT -->
+</html>

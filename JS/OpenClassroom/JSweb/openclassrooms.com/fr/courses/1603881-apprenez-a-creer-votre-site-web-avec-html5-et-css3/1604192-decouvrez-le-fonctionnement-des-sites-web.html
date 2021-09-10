@@ -1,0 +1,995 @@
+
+<!DOCTYPE html>
+<html class="no-js " lang="fr" prefix="og: http://ogp.me/ns#">
+
+<!-- Mirrored from openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1604192-decouvrez-le-fonctionnement-des-sites-web by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Sep 2021 23:36:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>
+                            Découvrez le fonctionnement des sites web - Apprenez à créer votre site web avec HTML5 et CSS3 - OpenClassrooms
+                    </title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-5b58725ce0d442079d0",applicationID:"156815673"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){"hidden"===t&&d("pageHide",[p.now()])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https:///")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1210.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<meta name="application-name" content="OpenClassrooms" />
+<meta name="msapplication-TileColor" content="#7451eb" />
+<meta name="msapplication-TileImage" content="/fav-icon.png?v=3" />
+<meta name="theme-color" content="#7451eb">
+<meta property="og:locale" content="fr" />
+<link rel="icon" sizes="144x144" href="https://openclassrooms.com/fav-icon.png?v=3">
+<link rel="apple-touch-icon" href="https://openclassrooms.com/apple-touch-icon.png?v=3" />
+<link rel="apple-touch-icon" href="https://openclassrooms.com/apple-touch-icon-iphone.png?v=3" />
+<link rel="apple-touch-icon" sizes="72x72" href="https://openclassrooms.com/apple-touch-icon-ipad.png?v=3" />
+<link rel="apple-touch-icon" sizes="114x114" href="https://openclassrooms.com/apple-touch-icon-iphone-retina-display.png?v=3" />
+<link rel="apple-touch-icon" sizes="144x144" href="https://openclassrooms.com/apple-touch-icon-ipad-retina-display.png?v=3" />
+<link rel="apple-touch-icon-precomposed" href="https://openclassrooms.com/apple-touch-icon-precomposed.png?v=3" />
+<link rel="shortcut icon" href="https://openclassrooms.com/favicon.ico?83212fe7" />
+<style>.async-hide { opacity: 0 !important} </style>
+<script>
+          window.dataLayer = window.dataLayer || [];
+
+          (function(a,s,y,n,c,h,i,d,e){
+            var isEnabled = [
+              /\/paths/,
+              /\/apprenticeship/,
+              /\/employer/,
+            ].reduce(function (acc, pathReg) {
+                var matchUrl = !!document.location.pathname.match(pathReg);
+                return acc || matchUrl;
+            }, false);
+
+            if (!isEnabled) {
+              return;
+            }
+
+            s.className+=' '+y;
+            h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+            (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);
+          })(window,document.documentElement,'async-hide','dataLayer',2000,{'GTM-5WM9PV':true});
+        </script>
+<link href="https://openclassrooms.com/bundles/common/css/master-8bf9878d.css" type="text/css" rel="stylesheet" media="all" />
+<link href="https://openclassrooms.com/bundles/course/css/main-29e81ced.css" type="text/css" rel="stylesheet" media="all" />
+<link href="https://vjs.zencdn.net/6.2.5/video-js.css" rel="stylesheet">
+<script>
+    /*! modernizr 3.3.1 (Custom Build) | MIT *
+    * https://modernizr.com/download/?-cssfilters-touchevents-setclasses !*/
+    !function(e,n,t){function o(e,n){return typeof e===n}function r(){var e,n,t,r,s,i,a;for(var l in C)if(C.hasOwnProperty(l)){if(e=[],n=C[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(r=o(n.fn,"function")?n.fn():n.fn,s=0;s<e.length;s++)i=e[s],a=i.split("."),1===a.length?Modernizr[a[0]]=r:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=r),g.push((r?"":"no-")+a.join("-"))}}function s(e){var n=w.className,t=Modernizr._config.classPrefix||"";if(x&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(o,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),x?w.className.baseVal=n:w.className=n)}function i(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):x?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function a(){var e=n.body;return e||(e=i(x?"svg":"body"),e.fake=!0),e}function l(e,t,o,r){var s,l,u,f,p="modernizr",c=i("div"),d=a();if(parseInt(o,10))for(;o--;)u=i("div"),u.id=r?r[o]:p+(o+1),c.appendChild(u);return s=i("style"),s.type="text/css",s.id="s"+p,(d.fake?d:c).appendChild(s),d.appendChild(c),s.styleSheet?s.styleSheet.cssText=e:s.appendChild(n.createTextNode(e)),c.id=p,d.fake&&(d.style.background="",d.style.overflow="hidden",f=w.style.overflow,w.style.overflow="hidden",w.appendChild(d)),l=t(c,e),d.fake?(d.parentNode.removeChild(d),w.style.overflow=f,w.offsetHeight):c.parentNode.removeChild(c),!!l}function u(e,n){return!!~(""+e).indexOf(n)}function f(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function p(e,n){return function(){return e.apply(n,arguments)}}function c(e,n,t){var r;for(var s in e)if(e[s]in n)return t===!1?e[s]:(r=n[e[s]],o(r,"function")?p(r,t||n):r);return!1}function d(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function m(n,o){var r=n.length;if("CSS"in e&&"supports"in e.CSS){for(;r--;)if(e.CSS.supports(d(n[r]),o))return!0;return!1}if("CSSSupportsRule"in e){for(var s=[];r--;)s.push("("+d(n[r])+":"+o+")");return s=s.join(" or "),l("@supports ("+s+") { #modernizr { position: absolute; } }",function(e){return"absolute"==getComputedStyle(e,null).position})}return t}function h(e,n,r,s){function a(){p&&(delete k.style,delete k.modElem)}if(s=o(s,"undefined")?!1:s,!o(r,"undefined")){var l=m(e,r);if(!o(l,"undefined"))return l}for(var p,c,d,h,v,y=["modernizr","tspan","samp"];!k.style&&y.length;)p=!0,k.modElem=i(y.shift()),k.style=k.modElem.style;for(d=e.length,c=0;d>c;c++)if(h=e[c],v=k.style[h],u(h,"-")&&(h=f(h)),k.style[h]!==t){if(s||o(r,"undefined"))return a(),"pfx"==n?h:!0;try{k.style[h]=r}catch(g){}if(k.style[h]!=v)return a(),"pfx"==n?h:!0}return a(),!1}function v(e,n,t,r,s){var i=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+j.join(i+" ")+i).split(" ");return o(n,"string")||o(n,"undefined")?h(a,n,r,s):(a=(e+" "+E.join(i+" ")+i).split(" "),c(a,n,t))}function y(e,n,o){return v(e,t,t,n,o)}var g=[],C=[],S={_version:"3.3.1",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){C.push({name:e,fn:n,options:t})},addAsyncTest:function(e){C.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=S,Modernizr=new Modernizr;var w=n.documentElement,x="svg"===w.nodeName.toLowerCase(),_=S._config.usePrefixes?" -webkit- -moz- -o- -ms- ".split(" "):["",""];S._prefixes=_;var b="CSS"in e&&"supports"in e.CSS,T="supportsCSS"in e;Modernizr.addTest("supports",b||T);var z=S.testStyles=l;Modernizr.addTest("touchevents",function(){var t;if("ontouchstart"in e||e.DocumentTouch&&n instanceof DocumentTouch)t=!0;else{var o=["@media (",_.join("touch-enabled),("),"heartz",")","{#modernizr{top:9px;position:absolute}}"].join("");z(o,function(e){t=9===e.offsetTop})}return t});var P="Moz O ms Webkit",j=S._config.usePrefixes?P.split(" "):[];S._cssomPrefixes=j;var E=S._config.usePrefixes?P.toLowerCase().split(" "):[];S._domPrefixes=E;var N={elem:i("modernizr")};Modernizr._q.push(function(){delete N.elem});var k={style:N.elem.style};Modernizr._q.unshift(function(){delete k.style}),S.testAllProps=v,S.testAllProps=y,Modernizr.addTest("cssfilters",function(){if(Modernizr.supports)return y("filter","blur(2px)");var e=i("a");return e.style.cssText=_.join("filter:blur(2px); "),!!e.style.length&&(n.documentMode===t||n.documentMode>9)}),r(),s(g),delete S.addTest,delete S.addAsyncTest;for(var A=0;A<Modernizr._q.length;A++)Modernizr._q[A]();e.Modernizr=Modernizr}(window,document);
+    </script>
+<script type="text/javascript">
+    var App = {
+        startTime: (new Date()).getTime(),
+        pageGenerationDate: 1631057722000
+    };
+
+    App.user = {
+                    locale: 'fr',
+            language: 'fr',
+            country: 'FR',
+            isPremium: false,
+            isMentor: false,
+            anonymous: true
+            };
+
+    App.preferences = {
+        debug: false,
+        assetVersion: '83212fe7',
+        contactPhone: '\u002B33\u00201\u002080\u002088\u002080\u002030',
+        phoneNumbersByCountry: {"uk":{"contact":"+44 16 1768 1880"},"ca":{"contact":"+1 929-376-0101"},"us":{"contact":"+1 929-376-0101"},"fr":{"contact":"+33 1 80 88 80 30","b2b_contact":"+33 1 80 88 80 40"},"es":{"contact":"+33 1 80 88 80 30"}},
+        adyenPublicKey: '10001\u007C889EBFD4D434B82683E21DCA26E77C3E20E0EE09A5ECE3830B0ED51F2FA721A2F7E9EC871C6AB9A1E12C4492F4717673047757E02C5256D8E265CD51E413E5EFCCFEAC41B39C662A424ADC13EE187C38C372A7FCCEC1EA5DF841989437D78B252A8EB51008E60BB55B1E55A7A80DE1A9D60D998C128A576BFAE1DDB97D514AF0A073AEDDE84CEE40D1F8F6ECE85D0FFA50C95C06DB274021C1371376C6EB16561FD65C5E2704B570A7504D617D0F3820F176A0609F6162BDF5890533289FDC3DA7DB03B50BB3BD60A613E1FF72060F22987627E8F1A29F0128A94EC4C8FF7CF6B7AB9558D8433BF86D7A388AB927641CD6C02689139CEE3AAC9ACBFFE83806CB',
+        application: {
+            form: {
+              funnelUrl: 'https\u003A\/\/www.tfaforms.com\/responses\/processor',
+              fields: {"firstname":"tfa_6","lastname":"tfa_4","email":"tfa_2","path_id":"tfa_138","source_name":"tfa_165","record_type_id":"tfa_217","utm_medium":"tfa_203","utm_source":"tfa_201","utm_term":"tfa_207","utm_campaign":"tfa_205","gclid":"tfa_209","fbclid":"tfa_211","consent":"tfa_150","user_locale":"tfa_125","userId":"tfa_3","gender":"tfa_10","user_study_motivation":"tfa_171","diploma_level":"tfa_30","user_diploma":"tfa_173","language_proficiency_fr":"tfa_40","language_proficiency_en":"tfa_42","ha_addressline_1":"tfa_16","ha_city":"tfa_18","ha_zip_code":"tfa_24","ha_state":"tfa_163","ha_country":"tfa_22","professional_status":"tfa_94","public_employment_agency_id":"tfa_159","user_public_employment_agency_certificate":"tfa_167","user_pe_advisor_email":"tfa_199","disabled_worker":"tfa_67","veteran":"tfa_73","athlete":"tfa_79","refugee":"tfa_85","rsa":"tfa_91","are":"tfa_175","api":"tfa_177","cui":"tfa_179","aah":"tfa_222","other_allocs":"tfa_223","can_work_in_france":"tfa_142","user_resume":"tfa_1","online_cv":"tfa_157","user_has_mobility":"tfa_193","user_mobility_departamental":"tfa_187","user_mobility_national":"tfa_189","user_mobility_regional":"tfa_191","user_mobility_cities":"tfa_195","work_location_1":"tfa_128","work_location_2":"tfa_130","work_location_3":"tfa_132","work_location_4":"tfa_134","work_location_5":"tfa_136","career_motivation":"tfa_123","has_computer":"tfa_43","has_mic":"tfa_49","has_webcam":"tfa_169","has_fast_internet_connection":"tfa_55","has_quiet_space":"tfa_61","has_online_courses_xp":"tfa_118","has_online_courses_xp_text":"tfa_121","found_a_company":"tfa_146","date_of_birth":"tfa_9","phone_number":"tfa_126","user_desired_start_date":"tfa_161","video_link":"tfa_213","tfa_dbFormId":"tfa_dbFormId","tfa_dbControl":"tfa_dbControl","experiment_id":"tfa_219","full_time_available":"tfa_220","with_prerequisite":"tfa_221"}
+            },
+        },
+        routes: {
+            COURSE_EVENT: '/components/courses/:courseId',
+            COURSE_PART_EVENT: '/components/courses/:courseId/parts/:partId',
+
+            ACCEPT_COOKIE: '\/ajax\/components\/user\u002Daccept\u002Dconsent\u002Dcookie'
+        },
+
+                    };
+
+    App.preferences.navigationPreference = {
+            };
+
+    App.preferences.modules = {
+        'smiley': {
+            basePath: '/bundles/common/images/smiley/'
+        }
+    };
+
+    App.notifications = {};
+    App.scripts = [];
+
+    if (App.user.id) {
+        (function(){
+            var userData = { userId: App.user.id };
+
+            if (App.user.premiumType) {
+                userData.status = (App.user.premiumType === 'Premium Solo') ? 'premium solo student' : 'path student';
+            } else {
+                userData.status = 'free student';
+            }
+
+            if (App.user.isMentor) {
+                userData.status = App.user.premiumType ? (userData.status + '|mentor') : 'mentor';
+            }
+
+            if (!window.dataLayer) {
+              return;
+            }
+            window.dataLayer.push(userData);
+        })();
+    }
+</script>
+<script>    
+    App.preferences.modules['course/view/internalFolding'] = {
+        isBigCourse: true
+    };
+
+    App.data = App.data || {};
+App.data.currentCourse = {"partId":1604192,"partTitle":"D\u00e9couvrez le fonctionnement des sites web","partSlug":"comment-fait-on-pour-creer-des-sites-web","courseId":1603881,"courseTitle":"Apprenez \u00e0 cr\u00e9er votre site web avec HTML5 et CSS3","courseSlug":"apprenez-a-creer-votre-site-web-avec-html5-et-css3","courseLanguage":"fr","isIntroduction":false,"isCertifying":true};
+App.preferences.modules['view/currentCoursePage'] = App.data.currentCourse;
+
+</script>
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Découvrez le fonctionnement des sites web" />
+<meta property="og:url" content="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1604192-decouvrez-le-fonctionnement-des-sites-web" />
+<meta property="og:site_name" content="OpenClassrooms" />
+<meta property="og:image" content="https://course.oc-static.com/courses/1603881/1603881_teaser_picture_1614871846.jpg" />
+<meta property="og:description" content="Vous rêvez d&#039;apprendre à créer des sites web ? Débutez avec ce cours qui vous enseignera tout ce qu&#039;il faut savoir sur le développement de sites web en HTML5 et CSS3 !" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@OCFrance" />
+<meta name="twitter:title" content="Découvrez le fonctionnement des sites web" />
+<meta name="twitter:image" content="https://course.oc-static.com/courses/1603881/1603881_teaser_picture_1614871846.jpg" />
+<meta name="twitter:description" content="Vous rêvez d&#039;apprendre à créer des sites web ? Débutez avec ce cours qui vous enseignera tout ce qu&#039;il faut savoir sur le développement de sites web en HTML5 et CSS3 !" />
+<link rel="canonical" href="1604192-decouvrez-le-fonctionnement-des-sites-web.html" />
+</head>
+<body class="course oc-body   breadcrumbFluid breadcrumbOnContrasted">
+<ul class="skipLink">
+<li>
+<a class="skipLink__item" href="#mainContent">Aller au contenu</a>
+</li>
+<li>
+<a class="skipLink__item" href="#footerChangeLanguage">Choisir la langue</a>
+</li>
+<li id="skipLink_search">
+<a class="skipLink__item" href="#algolia-search-input">Aller à la recherche</a>
+</li>
+</ul>
+<script id="_EVENTS-IDENTIFY" type="application/json">
+        </script>
+<script id="_EVENTS-PAGE" type="application/json">
+        {"type":"page","integrations":{"Blueshift":false,"HubSpot":false},"properties":{"pageCategory":"courses","courseTitle":"Apprenez \u00e0 cr\u00e9er votre site web avec HTML5 et CSS3"}}
+    </script>
+<script id="fundingMechanisms" type="application/json">
+    {
+        "fundingMechanisms": [{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":24,"name":"Action de Formation Pr\u00e9alable au Recrutement","shortName":"AFPR","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":25,"name":"Aide collective priv\u00e9e \u00e0 la formation","shortName":"Aide priv\u00e9e","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":20,"name":"Aide Individuelle \u00e0 la Formation","shortName":"AIF","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":28,"name":"Aide individuelle priv\u00e9e \u00e0 la formation","shortName":"Aide priv\u00e9e","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":21,"name":"Compte Personnel de Formation","shortName":"CPF","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":15,"name":"Contrat d'apprentissage","shortName":"Apprentissage","type":"apprenticeship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":16,"name":"Contrat de professionnalisation","shortName":"Contrat pro","type":"apprenticeship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":19,"name":"P\u00e9riode de professionnalisation","shortName":"P\u00e9riode pro","type":"apprenticeship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":23,"name":"Pr\u00e9paration Op\u00e9rationnelle \u00e0 l'Emploi Collective","shortName":"POEC","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":17,"name":"Pr\u00e9paration Op\u00e9rationnelle \u00e0 l'Emploi Individuelle","shortName":"POEI","type":"apprenticeship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":22,"name":"Programme R\u00e9gional de Formation pour l'Emploi","shortName":"PRFE","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":18,"name":"Reconversion ou promotion par l'alternance","shortName":"Pro-A","type":"apprenticeship"}]
+    }
+</script>
+<div id="oc-header">
+<div class="oc-mainHeader oc-mainHeader--notLogged oc-mainHeader--skeleton">
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div style="display: flex;">
+<div class="oc-mainHeaderLogo oc-mainHeaderLogo--skeleton">
+<a href="https://openclassrooms.com/fr/" class="oc-mainHeaderLogo__link">
+<svg fill="none" height="51" width="668" viewBox="0 0 668 51" xmlns="http://www.w3.org/2000/svg">
+<title>OpenClassrooms.com</title>
+<path d="M406.011 35.018c0 2.82-.71 5.641-2.368 7.991-1.659 2.35-3.79 4.23-6.87 5.64-3.079 1.41-6.869 2.116-11.37 2.116-3.79 0-7.343-.47-10.897-1.41-3.553-.94-6.395-2.35-8.527-3.996l7.106-8.46c1.421.705 2.843 1.175 4.501 1.88 2.842.94 5.448 1.41 8.054 1.41 4.974 0 7.58-1.41 7.58-3.995 0-1.41-.711-2.35-2.132-3.056-1.421-.705-3.79-1.41-6.87-2.115-3.553-.705-6.395-1.645-8.764-2.585s-4.264-2.35-6.159-4.23c-1.658-1.88-2.606-4.701-2.606-7.991 0-3.056.711-5.641 2.369-7.991 1.658-2.35 3.79-4.23 6.87-5.64 3.079-1.41 6.869-2.116 11.37-2.116 3.079 0 6.159.47 9.001 1.175 3.08.705 5.685 1.88 7.817 3.055l-7.343 8.696c-3.316-1.41-6.633-2.115-9.712-2.115-2.606 0-4.501.47-5.685 1.175-1.185.705-1.895 1.88-1.895 3.056 0 1.41.711 2.35 2.132 2.82 1.421.705 3.79 1.41 6.869 2.115a49.4 49.4 0 0 1 8.765 2.585c2.369.94 4.264 2.35 6.159 4.23 1.658 1.646 2.605 4.466 2.605 7.756zm261.989 0c0 2.82-.711 5.641-2.369 7.991s-3.79 4.23-6.869 5.64c-3.08 1.41-6.87 2.116-11.371 2.116-3.79 0-7.343-.47-10.896-1.41s-6.396-2.35-8.528-3.996l7.107-8.46c1.421.705 2.842 1.175 4.501 1.88 2.842.94 5.448 1.41 8.053 1.41 4.975 0 7.581-1.41 7.581-3.995 0-1.41-.711-2.35-2.132-3.056-1.422-.705-3.791-1.41-6.87-2.115a49.361 49.361 0 0 1-8.764-2.585c-2.369-.94-4.264-2.35-6.159-4.23-1.658-1.88-2.606-4.701-2.606-7.991 0-3.056.711-5.641 2.369-7.991 1.658-2.35 3.79-4.23 6.869-5.64 3.08-1.41 6.87-2.116 11.371-2.116 3.079 0 6.158.47 9.001 1.175 3.079.705 5.685 1.88 7.817 3.055l-7.343 8.696c-3.317-1.41-6.633-2.115-9.712-2.115-2.606 0-4.501.47-5.685 1.175-1.185.705-1.896 1.88-1.896 3.056 0 1.41.711 2.35 2.132 2.82 1.422.705 3.791 1.41 6.87 2.115a49.361 49.361 0 0 1 8.764 2.585c2.369.94 4.264 2.35 6.159 4.23 1.895 1.646 2.606 4.466 2.606 7.756zM87.882 19.037c0 3.76-.947 6.816-2.605 9.4-1.659 2.586-4.027 4.701-7.107 6.111s-6.87 2.116-10.896 2.116H59.22v12.69H45.955V.706h21.319c4.264 0 7.817.705 10.896 2.115 3.08 1.41 5.448 3.526 7.107 6.346 1.895 3.055 2.605 6.346 2.605 9.87zm-13.265 0c0-2.35-.71-3.995-2.132-5.17s-3.316-1.88-6.159-1.88h-7.343v14.336h7.343c2.606 0 4.738-.706 6.16-1.88s2.131-3.056 2.131-5.406zm55.904 20.212v10.576h-37.19V1.175h36.242v10.576h-23.214v8.226h18.476v10.341h-18.476v8.93zm50.218-38.074v48.65h-10.896l-20.609-25.853v25.853h-13.028V1.175h10.896l20.609 25.853V1.175zm84.092 37.604v10.81h-32.926V.94h13.265v37.604h19.661zm56.851 11.046h-13.739l-3.553-9.401h-19.661l-3.553 9.4h-13.502l20.608-48.649h13.029zM300.6 30.083l-5.922-15.512-5.922 15.512zm62.536 4.935c0 2.82-.71 5.641-2.369 7.991-1.658 2.35-3.79 4.23-6.869 5.64-3.08 1.41-6.87 2.116-11.37 2.116-3.79 0-7.344-.47-10.897-1.41s-6.396-2.35-8.527-3.996l7.106-8.46c1.421.705 2.842 1.175 4.501 1.88 2.842.94 5.448 1.41 8.054 1.41 4.974 0 7.58-1.41 7.58-3.995 0-1.41-.711-2.35-2.132-3.056-1.421-.705-3.79-1.41-6.87-2.115-3.553-.705-6.395-1.645-8.764-2.585s-4.264-2.35-6.159-4.23c-1.658-1.88-2.606-4.701-2.606-7.991 0-3.056.711-5.641 2.369-7.991 1.658-2.35 3.79-4.23 6.87-5.64 3.079-1.41 6.869-2.116 11.37-2.116 3.079 0 6.159.47 9.001 1.175 3.08.705 5.448 1.88 7.817 3.055l-7.343 8.696c-3.316-1.41-6.633-2.115-9.712-2.115-2.606 0-4.501.47-5.685 1.175-1.185.705-1.895 1.88-1.895 3.056 0 1.41.71 2.35 2.132 2.82 1.421.705 3.79 1.41 6.869 2.115a49.4 49.4 0 0 1 8.765 2.585c2.368.94 4.263 2.35 6.158 4.23 1.659 1.646 2.606 4.466 2.606 7.756zm-322.63-9.636c0 13.867-11.37 25.383-25.583 25.383-5.685 0-10.66-1.88-14.923-4.936l8.528-10.105c1.895 1.175 4.027 1.88 6.395 1.88 6.633 0 12.081-5.406 12.081-11.986 0-6.581-5.448-11.987-12.08-11.987-2.37 0-4.501.705-6.396 1.88L0 5.407C4.264 2.35 9.475.47 14.923.47 29.136.235 40.506 11.516 40.506 25.383zm177.66 10.341l8.528 10.107c-4.264 3.055-9.476 4.935-14.924 4.935-13.976 0-25.583-11.281-25.583-25.383C186.187 11.517 197.557 0 211.77 0c5.685 0 10.66 1.88 14.924 4.936l-8.528 10.105c-1.895-1.175-4.027-1.88-6.396-1.88-6.632 0-12.081 5.406-12.081 11.986 0 6.581 5.449 11.987 12.081 11.987 2.369.47 4.501-.235 6.396-1.41zm236.169 14.102l-10.423-15.042c3.079-1.41 5.211-3.525 6.87-6.11 1.658-2.585 2.605-5.876 2.605-9.401 0-3.76-.947-6.816-2.605-9.636-1.659-2.82-4.027-4.7-7.107-6.346-3.079-1.41-6.869-2.115-10.896-2.115H411.46v48.65h13.028V37.134h6.159l8.764 12.69zm-29.847-37.839h7.58c2.606 0 4.738.705 6.159 1.88s2.132 3.056 2.132 5.17c0 2.351-.711 3.996-2.132 5.171s-3.316 1.88-6.159 1.88h-7.58zM483.945.235c13.976 0 25.583 11.281 25.583 25.382S498.157 51 483.945 51c-13.976 0-25.583-11.281-25.583-25.383S469.732.235 483.945.235zm-13.029 25.147c0 7.051 5.685 12.692 12.792 12.692 7.106 0 12.791-5.64 12.791-12.692s-5.685-12.69-12.791-12.69c-6.87 0-12.792 5.64-12.792 12.69zM538.901.235c13.976 0 25.583 11.281 25.583 25.382S553.114 51 538.901 51c-13.976 0-25.583-11.281-25.583-25.383S524.925.235 538.901.235zm-12.792 25.147c0 7.051 5.685 12.692 12.792 12.692 7.106 0 12.791-5.64 12.791-12.692s-5.685-12.69-12.791-12.69c-7.107 0-12.792 5.64-12.792 12.69zm70.353 6.816L580.828 1.175h-10.896v48.65h11.607V28.438l11.607 21.387h6.87l11.607-21.387v21.387h11.607V1.175h-10.897z" />
+</svg>
+</a>
+</div>
+<nav class="oc-mainHeader__navWrapper" role="navigation" aria-label="Menu principal">
+<div class="oc-mainHeader__linksWrapper">
+<div class="oc-mainHeader__navLinkWrapper"><a class="oc-mainHeader__navLink" data-event="click|Header|Trainings" href="https://openclassrooms.com/fr/paths">Formations</a></div>
+<div class="oc-mainHeader__navLinkWrapper"><a class="oc-mainHeader__navLink" data-event="click|Header|Apprenticeship" href="https://openclassrooms.com/fr/apprenticeship">Alternance</a></div>
+ <div class="oc-mainHeader__navLinkWrapper"><a class="oc-mainHeader__navLink" data-event="click|Header|Funding" href="https://openclassrooms.com/fr/funding">Financements</a></div>
+<div class="oc-mainHeader__navLinkWrapper--separator"></div>
+<div class="oc-mainHeader__navLinkWrapper"><a class="oc-mainHeader__navLink" data-event="click|Header|Business" href="https://openclassrooms.com/fr/business">Pour les entreprises</a></div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="disclaimers-container" style="display:none;">
+<!--[if lt IE 10]>
+        <div class="alertMessage">
+        <span class="bullet bullet--small bullet--orange alertMessage__icon"> <i class="icon-exclamation"></i></span>
+        <p class="alertMessage__text">
+            Vous utilisez un navigateur obsolète, veuillez le <a href="https://browser-update.org/update.html">mettre à jour</a>.
+        </p>
+    </div>
+    <![endif]-->
+
+<div id="modern-ie-disclaimer" style="display:none">
+<div class="alertMessage">
+<span class="bullet bullet--small bullet--orange alertMessage__icon"> <i class="icon-exclamation"></i></span>
+<p class="alertMessage__text">
+Vous utilisez un navigateur obsolète, veuillez le <a href="https://browser-update.org/update.html">mettre à jour</a>.
+</p>
+</div>
+</div>
+<script id="webapp-ie-disclaimer" type="application/json">{"message":"Vous utilisez un navigateur obsol\u00e8te, veuillez le <a href=\"https:\/\/browser-update.org\/update.html\">mettre \u00e0 jour<\/a>."}</script>
+<script>
+      var isModernIE =  document.documentMode === 10 || document.documentMode === 11;
+      var isEdgeLegacy = navigator.userAgent.indexOf('Edge') > -1; // Luckily for us, Edge Chromium uses string "Edg" without final "e"
+
+      if (isModernIE || isEdgeLegacy) {
+        document.getElementById('modern-ie-disclaimer').style.display = 'block';
+        document.getElementById('webapp-ie-disclaimer').setAttribute('data-role', 'disclaimer-message-data');
+      }
+    </script>
+<noscript>
+        <div class="alertMessage">
+            <span class="bullet bullet--small bullet--orange alertMessage__icon"> <i class="icon-exclamation"></i></span>
+            <p class="alertMessage__text">
+                Veuillez utiliser un <a href="https://browser-update.org/update.html">navigateur internet moderne</a> avec JavaScript activé pour naviguer sur OpenClassrooms.com
+            </p>
+        </div>
+    </noscript>
+</div>
+<div id="mainContentWithHeader">
+<section class="breadcrumb  inset no-padding">
+<div class="grid-wrapper">
+<div class="grid-inner">
+<nav class="breadcrumb__wrapper" role="navigation" aria-label="Fil d&#039;Ariane">
+<ul class="breadcrumb__trail">
+<li class="breadcrumb__item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a class="breadcrumb__link" href="https://openclassrooms.com/fr/" itemprop="url">
+<span itemprop="title">Accueil</span
+                                    ></a>
+<span class="breadcrumb__separator"> > </span>
+</li>
+<li class="breadcrumb__item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a class="breadcrumb__link" href="https://openclassrooms.com/fr/courses" itemprop="url">
+<span itemprop="title">Cours</span
+                                    ></a>
+<span class="breadcrumb__separator"> > </span>
+</li>
+<li class="breadcrumb__item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a class="breadcrumb__link" href="../1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css36f1b.html?status=published" itemprop="url">
+<span itemprop="title">Apprenez à créer votre site web avec HTML5 et CSS3</span
+                                    ></a>
+<span class="breadcrumb__separator"> > </span>
+</li>
+<li class="breadcrumb__item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+Découvrez le fonctionnement des sites web
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</section>
+<div id="pre-main-part">
+</div>
+<main class="claire clearfix" role="main" id="mainContent">
+<article itemscope itemtype="http://schema.org/Article" lang="fr">
+<header id="course-header" class="courseHeader" xmlns="http://www.w3.org/1999/html">
+<div class="grid-wrapper"><div class="grid-inner"><div class="grid-inner-content"><div class="courseHeader__topPart"><a itemprop="url" href="../1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3.html"><h1 class="oc-typography-h2 typoColorOnContrastedBg  courseHeader__title" data-course-title="Apprenez à créer votre site web avec HTML5 et CSS3">Apprenez à créer votre site web avec HTML5 et CSS3</h1></a></div></div></div></div><div class="grid-wrapper"><div class="grid-inner"><div class="grid-inner-content"><div class="courseHeader__bottomPart"><div class="courseHeader__details"><div class="courseHeader__detailsGroup"><ul class="courseHeader__detailsList"><li class="courseHeader__detailsItem"><img class="courseHeader__icon js-tooltip" src="https://openclassrooms.com/images/icons/schedule.svg?83212fe7" width="16" title="Ce cours demande en moyenne 20 heures de travail pour être réussi." /><span class="courseHeader__label">20 heures</span></li><li class="courseHeader__detailsItem"><i class="icon-level courseHeader__icon"></i><span class="courseHeader__label">Facile</span></li></ul></div><div class="courseHeader__detailsGroup courseHeader--license"><a class="courseHeader__license" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0"><span class="courseHeader__label">Licence</span><ul class="courseHeader__detailsList"><li class="iconBar__item"><i class="icon-cc iconBar__icon" title="CC"></i></li><li class="iconBar__item"><i class="icon-ccby iconBar__icon" title="BY"></i></li><li class="iconBar__item"><i class="icon-ccsa iconBar__icon" title="SA"></i></li></ul></a></div></div></div></div></div></div>
+<div id="popin-formats-availables" class="popin popin--course-formats-availables">
+<i class="popin__close-button icon-close js-close-button"></i>
+<div class="course-types course-types--withSpace">
+<a class="course-types__item" href="../1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3.html">
+<i class="icon-desktop course-types__icon"></i>
+</a>
+<a class="course-types__item" href="https://openclassrooms.com/fr/courses?video=true">
+<i class="icon-video course-types__icon"></i>
+</a>
+<a class="course-types__item" href="http://www.eyrolles.com/Informatique/Livre/realisez-votre-site-web-avec-html5-et-css3-9782953527889?societe=openclassrooms">
+<i class="icon-book course-types__icon"></i>
+</a>
+<a class="course-types__item" href="../1603881/certificate_example.pdf" target="_blank">
+<i class="icon-badge course-types__icon js-close-button"></i>
+</a>
+</div>
+<p>Ce cours est visible <a href="../1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3.html">gratuitement en ligne</a>.</p>
+<p>course.header.alt.is_video</p>
+<p>
+Ce cours existe en livre papier.
+</p>
+<p>
+course.header.alt.is_certifying
+</p>
+<a class="button button--primary js-close-button" href="#">J&#039;ai tout compris !</a>
+</div>
+</header>
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="grid-inner-content">
+<p class="courseHeader__updatedTime">
+Mis à jour le 25/06/2021 </p>
+</div>
+</div>
+</div>
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="grid-inner-content">
+<nav id="course-timeline" class="timeline">
+<div class="timeline__inner">
+<span class="timeline__iconContainer">
+<a href="../1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3.html" title="Retour sur le sommaire du cours" class="roundIcon timeline__roundIcon">
+<i class="icon-home roundIcon__icon"></i>
+</a>
+</span>
+<div class="timeline__steps">
+<span class="timeline__splitChapter"></span>
+<a href="1604192-decouvrez-le-fonctionnement-des-sites-web.html" class="timeline__step js-current-timeline-step" title="Découvrez le fonctionnement des sites web">
+<span class="timeline__stepName">
+Découvrez le fonctionnement des sites web
+</span>
+<span class="timeline__progressMarker"></span>
+</a>
+<a href="1604361-creez-votre-premiere-page-web-en-html.html" class="timeline__step" title="Créez votre première page web en HTML">
+<span class="timeline__stepName">
+Créez votre première page web en HTML
+</span>
+</a>
+<a href="1604534-organisez-votre-texte.html" class="timeline__step" title="Organisez votre texte">
+<span class="timeline__stepName">
+Organisez votre texte
+</span>
+</a>
+<a href="4004681-pratiquez.html" class="timeline__step" title="Pratiquez !">
+<span class="timeline__stepName">
+Pratiquez !
+</span>
+</a>
+<a href="1604646-creez-des-liens.html" class="timeline__step" title="Créez des liens">
+<span class="timeline__stepName">
+Créez des liens
+</span>
+</a>
+<a href="1604791-inserez-des-images.html" class="timeline__step" title="Insérez des images">
+<span class="timeline__stepName">
+Insérez des images
+</span>
+</a>
+<a href="6725196-entrainez-vous-en-structurant-votre-cv.html" class="timeline__step" title="Entraînez-vous en structurant votre CV">
+<span class="timeline__stepName">
+Entraînez-vous en structurant votre CV
+</span>
+</a>
+<span class="timeline__splitChapter"></span>
+<a href="1605060-mettez-en-place-le-css.html" class="timeline__step" title="Mettez en place le CSS">
+<span class="timeline__stepName">
+Mettez en place le CSS
+</span>
+</a>
+<a href="1605329-formatez-du-texte.html" class="timeline__step" title="Formatez du texte">
+<span class="timeline__stepName">
+Formatez du texte
+</span>
+</a>
+<a href="1605551-ajoutez-de-la-couleur-et-un-fond.html" class="timeline__step" title="Ajoutez de la couleur et un fond">
+<span class="timeline__stepName">
+Ajoutez de la couleur et un fond
+</span>
+</a>
+<a href="1605694-creez-des-bordures-et-des-ombres.html" class="timeline__step" title="Créez des bordures et des ombres">
+<span class="timeline__stepName">
+Créez des bordures et des ombres
+</span>
+</a>
+<a href="1605763-creez-des-apparences-dynamiques.html" class="timeline__step" title="Créez des apparences dynamiques">
+<span class="timeline__stepName">
+Créez des apparences dynamiques
+</span>
+</a>
+<a href="4214566-pratiquez.html" class="timeline__step" title="Pratiquez !">
+<span class="timeline__stepName">
+Pratiquez !
+</span>
+</a>
+<a href="6725256-entrainez-vous-en-mettant-en-forme-votre-cv.html" class="timeline__step" title="Entraînez-vous en mettant en forme votre CV">
+<span class="timeline__stepName">
+Entraînez-vous en mettant en forme votre CV
+</span>
+</a>
+<a href="exercises/92.html" class="timeline__step" title="Quiz : Utilisez du code CSS">
+<span class="timeline__stepName">
+Quiz : Utilisez du code CSS
+</span>
+</a>
+<span class="timeline__splitChapter"></span>
+<a href="1605881-structurez-votre-page.html" class="timeline__step" title="Structurez votre page">
+<span class="timeline__stepName">
+Structurez votre page
+</span>
+</a>
+<a href="1606168-decouvrez-le-modele-des-boites.html" class="timeline__step" title="Découvrez le modèle des boîtes">
+<span class="timeline__stepName">
+Découvrez le modèle des boîtes
+</span>
+</a>
+<a href="3298561-faites-votre-mise-en-page-avec-flexbox.html" class="timeline__step" title="Faites votre mise en page avec Flexbox">
+<span class="timeline__stepName">
+Faites votre mise en page avec Flexbox
+</span>
+</a>
+<a href="4214576-pratiquez.html" class="timeline__step" title="Pratiquez !">
+<span class="timeline__stepName">
+Pratiquez !
+</span>
+</a>
+<a href="1606402-decouvrez-dautres-techniques-de-mise-en-page.html" class="timeline__step" title="Découvrez d&#039;autres techniques de mise en page">
+<span class="timeline__stepName">
+Découvrez d&#039;autres techniques de mise en page
+</span>
+</a>
+<a href="1606688-tp-creez-un-site-pas-a-pas.html" class="timeline__step" title="TP : Créez un site pas à pas">
+<span class="timeline__stepName">
+TP : Créez un site pas à pas
+</span>
+</a>
+<a href="6725301-entrainez-vous-en-organisant-votre-cv.html" class="timeline__step" title="Entraînez-vous en organisant votre CV">
+<span class="timeline__stepName">
+Entraînez-vous en organisant votre CV
+</span>
+</a>
+<a href="exercises/1236.html" class="timeline__step" title="Quiz : Organisez les éléments d&#039;une page web grâce aux règles CSS">
+<span class="timeline__stepName">
+Quiz : Organisez les éléments d&#039;une page web grâce aux règles CSS
+</span>
+</a>
+<span class="timeline__splitChapter"></span>
+<a href="1606851-ajoutez-des-tableaux.html" class="timeline__step" title="Ajoutez des tableaux">
+<span class="timeline__stepName">
+Ajoutez des tableaux
+</span>
+</a>
+<a href="1607171-creez-des-formulaires.html" class="timeline__step" title="Créez des formulaires">
+<span class="timeline__stepName">
+Créez des formulaires
+</span>
+</a>
+<a href="1607438-enrichissez-votre-site-avec-de-la-video-et-de-laudio.html" class="timeline__step" title="Enrichissez votre site avec de la vidéo et de l&#039;audio">
+<span class="timeline__stepName">
+Enrichissez votre site avec de la vidéo et de l&#039;audio
+</span>
+</a>
+<a href="1607616-utilisez-le-responsive-design-avec-les-media-queries.html" class="timeline__step" title="Utilisez le responsive design avec les Media Queries">
+<span class="timeline__stepName">
+Utilisez le responsive design avec les Media Queries
+</span>
+</a>
+<a href="1607717-allez-plus-loin.html" class="timeline__step" title="Allez plus loin">
+<span class="timeline__stepName">
+Allez plus loin
+</span>
+</a>
+<a href="6725346-entrainez-vous-en-adaptant-votre-cv-en-responsive.html" class="timeline__step" title="Entraînez-vous en adaptant votre CV en responsive">
+<span class="timeline__stepName">
+Entraînez-vous en adaptant votre CV en responsive
+</span>
+</a>
+ <a href="exercises/96.html" class="timeline__step" title="Quiz : Intégrez des formulaires dans une page web">
+<span class="timeline__stepName">
+Quiz : Intégrez des formulaires dans une page web
+</span>
+</a>
+<span class="timeline__splitChapter"></span>
+<a href="1607901-envoyez-votre-site-sur-le-web.html" class="timeline__step" title="Envoyez votre site sur le Web">
+<span class="timeline__stepName">
+Envoyez votre site sur le Web
+</span>
+</a>
+<a href="1608357-memento-des-balises-html.html" class="timeline__step" title="Mémento des balises HTML">
+<span class="timeline__stepName">
+Mémento des balises HTML
+</span>
+</a>
+<a href="1608902-memento-des-proprietes-css.html" class="timeline__step" title="Mémento des propriétés CSS">
+<span class="timeline__stepName">
+Mémento des propriétés CSS
+</span>
+</a>
+<span class="timeline__splitChapter"></span>
+</div>
+<span class="timeline__iconContainer">
+<a href="../1603881/certificate_example.pdf" title="Certificat de réussite (voir un exemple)" class="roundIcon timeline__roundIcon">
+<i class="icon-trophy roundIcon__icon"></i>
+</a>
+</span>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="contentWithSidebar  spacer  js-contentWithSidebar  grid-inner-content">
+<div class="contentWithSidebar__content">
+<div id="js-courseRedirection" data-courseInfo-course_id="1603881"></div>
+<div class="relative js-sidebar-container">
+<div class="static">
+<h2 itemprop="name" data-part-title="Découvrez le fonctionnement des sites web" class="part-title">Découvrez le fonctionnement des sites web</h2>
+<section class="space-bottom js-desktop-sticky-container">
+<div class="tooltipMessage tooltipMessage--noArrow">
+ <i class="tooltipMessage__icon  icon-lock"></i>
+<a href="https://openclassrooms.com/fr/login">Connectez-vous</a> ou <a href="https://openclassrooms.com/fr/register">inscrivez-vous</a> gratuitement pour bénéficier de toutes les fonctionnalités de ce cours !
+</div>
+<div itemprop="articleBody" data-page-indentifier="/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1604192-decouvrez-le-fonctionnement-des-sites-web" class="js-isRestrictablePage js-course-container js-smilize " data-video-blocked-wrapper="<a href='https://openclassrooms.com/fr/login#popin-log-in' class='js-popin-activator'>">
+<div class="userContent js-userContent">
+<video id="r-7159531" data-claire-element-id="31432851" src="https://vimeo.com/243805207"><a href="https://vimeo.com/243805207">https://vimeo.com/243805207</a></video><p id="r-4800617" data-claire-element-id="8796072">Bonjour et bienvenue à toutes et à tous !</p><p id="r-1609022" data-claire-element-id="4712542">Voici donc le premier chapitre de ce cours pour débutants, qui va vous apprendre à créer votre site web !</p><p id="r-1609023" data-claire-element-id="4712543">Nous allons passer un certain temps ensemble, tout dépendra de la vitesse à laquelle vous apprendrez. Si vous lisez ce cours régulièrement et à une bonne vitesse, vous l'aurez terminé en une à deux semaines. Mais si vous avez besoin d'un peu plus de temps, ne vous inquiétez pas : le principal est que vous y alliez à votre rythme, de préférence en prenant du bon temps.</p><p id="r-1609024" data-claire-element-id="1631804">Je vous propose de commencer par la question la plus simple mais aussi la plus importante : <strong>comment fonctionnent les sites web ?</strong></p><h3 id="r-1603943" data-claire-element-id="31432858">Le fonctionnement des sites web</h3><div id="r-1609026" data-claire-element-id="1631806" data-claire-semantic="question"><p id="r-1609025" data-claire-element-id="1631805">Comment fonctionnent les sites web ?</p></div><p id="r-1609027" data-claire-element-id="30938842">Non, n'ayez pas peur de poser des questions, même si vous pensez qu'elles sont « bêtes ». Il est très important que nous en parlions un peu avant de nous lancer à fond dans la création de sites !</p><p id="r-1609028" data-claire-element-id="30938902">Je suis certain que vous consultez des sites web tous les jours. Pour cela, vous lancez un programme appelé le <em>navigateur web</em>, en cliquant sur l'une des icônes représentées à la figure suivante.</p><figure id="r-1609031" data-claire-element-id="31432853"><img id="r-1609029" data-claire-element-id="29454592" src="https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/navigateurs1.png" alt="Les icônes des navigateurs web les plus répandus : chrome, safari, explorer et firefox" /><figcaption>Les icônes des navigateurs web les plus répandus</figcaption></figure><p id="r-1609032" data-claire-element-id="4712734">Avec le navigateur, vous pouvez consulter n'importe quel site web. Voici par exemple un navigateur affichant le célèbre site web Wikipédia :</p><figure id="r-1609035" data-claire-element-id="31432855"><img id="r-1609033" data-claire-element-id="1631813" src="https://user.oc-static.com/files/339001_340000/339310.png" alt="Le site web Wikipédia" /><figcaption>Le site web Wikipédia</figcaption></figure><p id="r-1609036" data-claire-element-id="1631816">Je suis sûr que vous avez l'habitude d'utiliser un navigateur web ! Aujourd'hui, tout le monde sait aller sur le Web… mais qui sait vraiment comment le Web fonctionne ? Comment créer des sites web comme celui-ci ?</p><div id="r-1609038" data-claire-element-id="1631818" data-claire-semantic="question"><p id="r-1609037" data-claire-element-id="1631817">J'ai entendu parler de HTML, de CSS, est-ce que cela a un rapport avec le fonctionnement des sites web ?</p></div><p id="r-1609039" data-claire-element-id="30938986">Tout à fait ! <br /> Il s'agit de <strong>langages informatiques</strong> qui permettent de créer des sites web. Tous les sites web sont basés sur ces langages, ils sont incontournables et universels aujourd'hui. Ils sont la base même du Web. Le langage HTML a été inventé par un certain Tim Berners-Lee en 1991…</p><p id="r-1609040" data-claire-element-id="30939106">Tim Berners-Lee suit encore aujourd'hui avec attention l'évolution du Web. Il a créé le <em>World Wide Web Consortium</em> (<a href="https://www.w3.org/">W3C</a>), qui définit les nouvelles versions des langages liés au Web. Il a par ailleurs créé plus récemment la <em>World Wide Web Foundation</em>, qui analyse et suit l'évolution du Web.</p><aside id="r-1609042" data-claire-element-id="1631822" data-claire-semantic="warning"><p id="r-1609041" data-claire-element-id="1631821">De nombreuses personnes confondent (à tort) Internet et le Web. Il faut savoir que le Web <em>fait partie</em> d'Internet.<br /> Internet est un grand ensemble qui comprend, entre autres : le Web, les e-mails, la messagerie instantanée, etc.<br /> Tim Berners-Lee n'est donc pas l'inventeur d'Internet, c'est « seulement » l'inventeur du Web.</p></aside><p id="r-1609043" data-claire-element-id="1631823">Les langages HTML et CSS sont à la base du fonctionnement de tous les sites web. Quand vous consultez un site avec votre navigateur, il faut savoir que, en coulisses, des rouages s'activent pour permettre au site web de s'afficher. L'ordinateur se base sur ce qu'on lui a expliqué en HTML et CSS pour savoir ce qu'il doit afficher, comme le montre la figure suivante.</p><figure id="r-1609046" data-claire-element-id="31432857"><img id="r-1609044" data-claire-element-id="1631824" src="https://user.oc-static.com/files/339001_340000/339311.png" alt="Du HTML à l'écran" /><figcaption>Du HTML à l'écran</figcaption></figure><p id="r-1609047" data-claire-element-id="1631827">HTML et CSS sont deux « langues » qu'il faut savoir parler pour créer des sites web. C'est le navigateur web qui fera la traduction entre ces langages informatiques et ce que vous verrez s'afficher à l'écran.<br /> Vous vous demandez sûrement pourquoi il faut connaître deux langages pour créer des sites web ? Je vous réponds sans plus tarder !</p><aside id="r-6314016" data-claire-element-id="30304009" data-claire-semantic="information"><p id="r-6314015" data-claire-element-id="30304008">Pour valider vos compétences avec un diplôme bac +2, suivez notre <a href="https://openclassrooms.com/fr/paths/185-developpeur-web">formation de développeur web</a> d’environ 6 mois. Cette <a href="https://openclassrooms.com/fr/paths">formation à distance</a> peut être suivie en <a href="https://openclassrooms.com/fr/apprenticeship">alternance</a>.</p></aside><h3 id="r-1603989" data-claire-element-id="31432862">HTML et CSS : deux langages pour créer un site web</h3><p id="r-1609048" data-claire-element-id="1631829">Pour créer un site web, on doit donner des instructions à l'ordinateur. Il ne suffit pas simplement de taper le texte qui devra figurer dans le site (comme on le ferait dans un traitement de texte Word, par exemple), il faut aussi indiquer où placer ce texte, insérer des images, faire des liens entre les pages, etc.</p><h4 id="r-1609067" data-claire-element-id="31432861">Les rôles de HTML et CSS</h4><p id="r-1609049" data-claire-element-id="1631830">Pour expliquer à l'ordinateur ce que vous voulez faire, il va falloir utiliser un langage qu'il comprend. Et c'est là que les choses se corsent, parce qu'<em>il va falloir apprendre deux langages</em> !</p><div id="r-1609051" data-claire-element-id="1631832" data-claire-semantic="question"><p id="r-1609050" data-claire-element-id="1631831">Pourquoi avoir créé deux langages ? Un seul aurait suffi, non ?</p></div><p id="r-1609052" data-claire-element-id="1631833">Vous devez vous dire que manipuler deux langages va être deux fois plus complexe et deux fois plus long à apprendre… mais ce n'est pas le cas ! Je vous rassure, s'il y a deux langages c'est, au contraire, pour faciliter les choses. Nous allons avoir affaire à deux langages qui <em>se complètent</em> car ils ont des rôles différents :</p><ul id="r-1609057" data-claire-element-id="30939173"><li id="r-1609054" data-claire-element-id="30939170"><p id="r-1609053" data-claire-element-id="30939169"><strong>HTML </strong>(<em>HyperText Markup Language</em>) : il a fait son apparition dès 1991 lors du lancement du Web. Son rôle est de gérer et organiser le contenu. C'est donc en HTML que vous écrirez ce qui doit être affiché sur la page : du texte, des liens, des images… Vous direz par exemple : « Ceci est mon titre, ceci est mon menu, voici le texte principal de la page, voici une image à afficher, etc. » ;</p></li><li id="r-1609056" data-claire-element-id="30939172"><p id="r-1609055" data-claire-element-id="30939171"><strong>CSS </strong>(<em>Cascading Style Sheets</em>, aussi appelées <em>feuilles de style</em>) : le rôle du CSS est de gérer l'apparence de la page web (agencement, positionnement, décoration, couleurs, taille du texte…). Ce langage est venu compléter le HTML en 1996.</p></li></ul><aside id="r-1609059" data-claire-element-id="4712811" data-claire-semantic="information"><p id="r-1609058" data-claire-element-id="4712809">Vous avez peut-être aussi entendu parler du langage XHTML. Il s'agit d'une variante du HTML qui se veut plus rigoureuse et qui est donc un peu plus délicate à manipuler. Elle n'est plus vraiment utilisée aujourd'hui.</p><p id="r-3196435" data-claire-element-id="4712810">Dans ce cours, nous allons travailler sur la dernière version de HTML (HTML5) qui est aujourd'hui le langage d'avenir que tout le monde est incité à utiliser.</p></aside><p id="r-1609060" data-claire-element-id="1631841">Vous pouvez très bien créer un site web uniquement en HTML, mais celui-ci ne sera pas très beau : l'information apparaîtra « brute ». C'est pour cela que le langage CSS vient toujours le compléter.</p><p id="r-1609061" data-claire-element-id="30939229">Pour vous donner une idée, la figure suivante montre ce que donne la même page sans CSS, puis avec le CSS.</p><figure id="r-1609064" data-claire-element-id="31432860"><img id="r-1609062" data-claire-element-id="1631843" src="https://user.oc-static.com/files/339001_340000/339428.png" alt="Avec et sans CSS" /><figcaption>Avec et sans CSS</figcaption></figure><p id="r-1609065" data-claire-element-id="1631846">Le HTML définit le contenu (comme vous pouvez le voir, c'est brut de décoffrage !). Le CSS permet, lui, d'arranger le contenu et de définir la présentation : couleurs, image de fond, marges, taille du texte…</p><p id="r-1609066" data-claire-element-id="1631847">Comme vous vous en doutez, le CSS a besoin d'une page HTML pour fonctionner. C'est pour cela que nous allons d'abord apprendre les bases du HTML avant de nous occuper de la décoration en CSS. <br /> Vos premières pages ne seront donc pas les plus esthétiques, mais qu'importe ! Cela ne durera pas longtemps.</p><h4 id="r-1609092" data-claire-element-id="30939476">Les différentes versions de HTML et CSS</h4><p id="r-1609068" data-claire-element-id="30939352">Au fil du temps, les langages HTML et CSS ont beaucoup évolué. Dans la toute première version de HTML (HTML 1.0), il n'était même pas possible d'afficher des images !</p><p id="r-1609069" data-claire-element-id="1631850">Voici un très bref historique de ces langages pour votre culture générale.</p><h5 id="r-1609081" data-claire-element-id="30939475">Les versions de HTML</h5><ul id="r-1609080" data-claire-element-id="30939474"><li id="r-1609071" data-claire-element-id="1631852"><p id="r-1609070" data-claire-element-id="1631851"><strong>HTML 1</strong> : c'est la toute première version créée par Tim Berners-Lee en 1991.</p></li><li id="r-1609073" data-claire-element-id="4712816"><p id="r-1609072" data-claire-element-id="4712815"><strong>HTML 2</strong> : la deuxième version du HTML apparaît en 1994 et prend fin en 1996 avec l'apparition du HTML 3.0. C'est cette version qui posera en fait les bases des versions suivantes du HTML. Les règles et le fonctionnement de cette version sont donnés par le W3C (tandis que la première version avait été créée par un seul homme).</p></li><li id="r-1609075" data-claire-element-id="30939293"><p id="r-1609074" data-claire-element-id="30939292"><strong>HTML 3</strong> : apparue en 1996, cette nouvelle version du HTML rajoute de nombreuses possibilités au langage, comme les tableaux, les applets, les scripts, le positionnement du texte autour des images, etc.</p></li><li id="r-1609077" data-claire-element-id="4712818"><p id="r-1609076" data-claire-element-id="4712817"><strong>HTML 4</strong> : cette version aura été utilisée un long moment durant les années 2000. Elle apparaît pour la première fois en 1998 et propose l'utilisation de frames (qui découpent une page web en plusieurs parties), des tableaux plus complexes, des améliorations sur les formulaires, etc. Mais surtout, cette version permet pour la première fois d'exploiter des feuilles de style, notre fameux CSS !</p></li><li id="r-1609079" data-claire-element-id="30939473"><p id="r-1609078" data-claire-element-id="30939472"><strong>HTML 5</strong> : c'est LA dernière version. De plus en plus répandue, elle fait beaucoup parler d'elle car elle apporte de nombreuses améliorations, comme la possibilité d'inclure facilement des vidéos, un meilleur agencement du contenu, de nouvelles fonctionnalités pour les formulaires, etc. C'est cette version que nous allons découvrir ensemble.</p></li></ul><h5 id="r-1609091" data-claire-element-id="30939415">Les versions de CSS</h5><ul id="r-1609088" data-claire-element-id="30939414"><li id="r-1609083" data-claire-element-id="1631864"><p id="r-1609082" data-claire-element-id="1631863"><strong>CSS 1</strong> : dès 1996, on dispose de la première version du CSS. Elle pose les bases de ce langage qui permet de présenter sa page web, comme les couleurs, les marges, les polices de caractères, etc.</p></li><li id="r-1609085" data-claire-element-id="30939413"><p id="r-1609084" data-claire-element-id="30939412"><strong>CSS 2</strong> : apparue en 1999 puis complétée par CSS 2.1, cette nouvelle version de CSS ajoute de nombreuses options. On peut désormais utiliser des techniques de positionnement très précises, qui nous permettent d'afficher des éléments où on le souhaite sur la page.</p></li><li id="r-1609087" data-claire-element-id="1631868"><p id="r-1609086" data-claire-element-id="1631867"><strong>CSS 3</strong> : c'est la dernière version, qui apporte des fonctionnalités particulièrement attendues comme les bordures arrondies, les dégradés, les ombres, etc.</p></li></ul><aside id="r-1609090" data-claire-element-id="4712824" data-claire-semantic="information"><p id="r-1609089" data-claire-element-id="4712823">Notez que HTML5 et CSS3 ne sont pas encore des versions &quot;officiellement&quot; finalisées par le W3C. Cependant, même s'il peut y avoir des changements mineurs dans ces langages, je vous recommande chaudement de commencer dès aujourd'hui avec ces nouvelles versions. Leurs apports sont nombreux et valent vraiment le coup. La plupart des sites web professionnels se construisent aujourd'hui sur ces dernières versions.</p></aside><h3 id="r-1604050" data-claire-element-id="31432868">L'éditeur de texte</h3><div id="r-1609094" data-claire-element-id="1631876" data-claire-semantic="question"><p id="r-1609093" data-claire-element-id="1631875">De quel logiciel vais-je avoir besoin pour créer mon site web ?<br /> Vais-je devoir casser ma tirelire pour acheter un logiciel très complexe que je vais mettre des mois à comprendre ?</p></div><p id="r-1609095" data-claire-element-id="1631877">Il existe effectivement de nombreux logiciels dédiés à la création de sites web. Mais, je vous rassure, vous n'aurez pas à débourser un seul centime. Pourquoi aller chercher un logiciel payant et compliqué, alors que vous avez déjà tout ce qu'il faut chez vous ?</p><p id="r-1609096" data-claire-element-id="4713623">Eh oui, accrochez-vous bien parce qu'il suffit de… Bloc-Notes !</p><figure id="r-1609099" data-claire-element-id="31432864"><img id="r-1609097" data-claire-element-id="1631879" src="https://user.oc-static.com/files/339001_340000/339441.png" alt="Le logiciel Bloc-notes de Windows" /><figcaption>Le logiciel Bloc-Notes de Windows</figcaption></figure><p id="r-1609100" data-claire-element-id="1631882">Incroyable mais vrai : on peut tout à fait créer un site web uniquement avec Bloc-Notes, le logiciel d'édition de texte intégré par défaut à Windows. D'ailleurs, j'avoue, c'est comme cela que j'ai commencé moi-même il y a quelques années.</p><p id="r-1609101" data-claire-element-id="1631883">Il y a cependant des logiciels plus puissants aujourd'hui et personne n'utilise vraiment Bloc-Notes. On peut classer ces logiciels de <strong>création de site web</strong> en deux catégories :</p><ul id="r-1609106" data-claire-element-id="30939597"><li id="r-1609103" data-claire-element-id="30939596"><p id="r-1609102" data-claire-element-id="30939595">les <strong>WYSIWYG </strong>(<em>What You See Is What You Get</em> – &quot;ce que vous voyez est ce que vous obtenez&quot;) : ce sont des programmes qui se veulent très faciles d'emploi, ils permettent de créer des sites web sans apprendre de langage particulier. Parmi les plus connus d'entre eux : Mozilla Composer, Microsoft Expression Web, Dreamweaver… et même Word ! Leur principal défaut est la qualité souvent assez mauvaise du code HTML et CSS qui est automatiquement généré par ces outils. Un bon créateur de site web doit tôt ou tard connaître HTML et CSS ; c'est pourquoi je ne recommande pas l'usage de ces outils ;</p></li><li id="r-1609105" data-claire-element-id="30939538"><p id="r-1609104" data-claire-element-id="30939537">les <strong>éditeurs de texte</strong> : ce sont des programmes dédiés à l'écriture de code. On peut en général les utiliser pour de multiples langages, pas seulement HTML et CSS. Ils se révèlent être de puissants alliés pour les créateurs de sites web !</p></li></ul><p id="r-1609107" data-claire-element-id="4713626">Vous l'aurez compris, je vais vous inviter à utiliser un éditeur de texte dans ce cours.</p><p id="r-3196767" data-claire-element-id="30939655">De nombreux éditeurs de texte fonctionnent, que vous soyez sous Windows, Mac OS X ou Linux (ils sont disponibles partout). Je vais vous en proposer plusieurs pour que vous ayez le choix, mais, comme je sais que vous allez me demander celui que j'utilise, je vais commencer par vous présenter... Sublime Text !</p><h4 id="r-3196775" data-claire-element-id="31432867">Sublime Text : mon éditeur</h4><p id="r-3196768" data-claire-element-id="4713985">Sublime Text est un éditeur de texte devenu très populaire parmi les développeurs. On l'utilise aussi bien pour développer en HTML et CSS que dans d'autres langages (Python, Ruby, etc.). Il fonctionne sur Windows, Mac OS X et Linux.</p><p id="r-3196897" data-claire-element-id="30938917"><a href="https://www.sublimetext.com/">Site web de Sublime Text</a></p><p id="r-3196769" data-claire-element-id="4713629">Il a l'avantage d'être simple, épuré et facile à lire dès le départ. Pas de centaines de boutons dont on ne comprend pas à quoi ils servent.</p><figure id="r-3196934" data-claire-element-id="31432866"><img id="r-3196932" data-claire-element-id="4714065" src="https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/sublimetext1.png" alt="L'éditeur Sublime Text" /><figcaption>L'éditeur Sublime Text : c'est beau, c'est propre, c'est pur</figcaption></figure><p id="r-3196770" data-claire-element-id="30939717">Malgré les apparences, il ne faut pas croire qu'il est limité. Au contraire : il est possible de l'étendre avec tout un système de plugins. Ça devient un peu plus compliqué et on ne rentrera pas là-dedans, mais il faut savoir que certains personnalisent énormément leur Sublime Text pour gagner du temps !</p><p id="r-3196771" data-claire-element-id="4713631">En somme, <strong>Sublime Text est à la fois simple et puissant</strong>. Même pour l'usage basique que nous allons avoir, il s'avèrera très pratique.</p><aside id="r-3196774" data-claire-element-id="30939719" data-claire-semantic="information"><p id="r-3196772" data-claire-element-id="30939718">Sublime Text peut tout à fait être utilisé gratuitement, mais son auteur demande à payer au bout d'un certain temps d'usage. Vous pourrez toujours continuer à l'utiliser gratuitement, mais de temps en temps un écran vous rappellera que ce serait bien de payer pour le logiciel. ;)</p><p id="r-3196773" data-claire-element-id="4713633">Personnellement, je considère qu'il en vaut vraiment le coup et je l'ai acheté. Je vous laisse choisir et vous faire votre propre idée à ce sujet.</p></aside><h4 id="r-1609130" data-claire-element-id="30939781">Sous Windows</h4><p id="r-1609108" data-claire-element-id="4714128">Voici quelques logiciels que vous pouvez essayer sous Windows si vous voulez en tester plusieurs :</p><ul id="r-1609129" data-claire-element-id="30939780"><li id="r-3196954" data-claire-element-id="30938922"><p id="r-3196953" data-claire-element-id="30938921"><a href="https://www.sublimetext.com/">Sublime Text</a> (j'insiste ;o) ;</p></li><li id="r-3196901" data-claire-element-id="4713993"><p id="r-3196900" data-claire-element-id="4713992"><a href="https://notepad-plus-plus.org/fr/">Notepad++</a> ;</p></li><li id="r-3196903" data-claire-element-id="4713995"><p id="r-3196902" data-claire-element-id="4713994"><a href="http://brackets.io/">Brackets</a> ;</p></li><li id="r-3196905" data-claire-element-id="4713997"><p id="r-3196904" data-claire-element-id="4713996"><a href="http://jedit.org/">jEdit</a> ;</p></li><li id="r-3196907" data-claire-element-id="30939779"><p id="r-3196906" data-claire-element-id="30939778"><a href="http://telecharger.tomsguide.fr/PSPad,0301-1325.html">PSPad </a>;</p></li><li id="r-3196909" data-claire-element-id="4714001"><p id="r-3196908" data-claire-element-id="4714000"><a href="http://telecharger.tomsguide.fr/ConTEXT,0301-918.html">ConTEXT </a>;</p></li><li id="r-3196911" data-claire-element-id="4714003"><p id="r-3196910" data-claire-element-id="4714002">… et bien d'autres si vous recherchez « Éditeur de texte » sur le Web.</p></li></ul><h4 id="r-1609139" data-claire-element-id="30939849">Sous Mac OS X</h4><p id="r-1609131" data-claire-element-id="30939848">Je recommande la plupart des mêmes logiciels car ils sont multiplateformes. Voici une petite sélection :</p><ul id="r-1609138" data-claire-element-id="30938927"><li id="r-3196913" data-claire-element-id="30938926"><p id="r-3196912" data-claire-element-id="30938925"><a href="https://www.sublimetext.com/">Sublime Text</a> ;</p></li><li id="r-3196915" data-claire-element-id="4714010"><p id="r-3196914" data-claire-element-id="4714009"><a href="http://brackets.io/">Brackets</a> ;</p></li><li id="r-1609133" data-claire-element-id="1631915"><p id="r-1609132" data-claire-element-id="1631914"><a href="http://telecharger.tomsguide.fr/jEdit,0301-5665-3233.html">jEdit </a>;</p></li><li id="r-1609135" data-claire-element-id="1631917"><p id="r-1609134" data-claire-element-id="1631916"><a href="http://telecharger.tomsguide.fr/Smultron,0301-5969.html">Smultron</a> ;</p></li><li id="r-1609137" data-claire-element-id="1631919"><p id="r-1609136" data-claire-element-id="1631918"><a href="http://telecharger.tomsguide.fr/TextWrangler,0301-46204.html">TextWrangler</a>.</p></li></ul><h4 id="r-1609152" data-claire-element-id="30939921">Sous Linux</h4><p id="r-1609140" data-claire-element-id="30939850">Les éditeurs de texte sont légion sous Linux. Certains d'entre eux sont installés par défaut, d'autres peuvent être téléchargés facilement <em>via</em> le centre de téléchargement (sous Ubuntu notamment), ou au moyen de commandes comme <code data-claire-semantic="html">apt-get</code>  et <code data-claire-semantic="html">aptitude</code>  . Voici quelques logiciels que vous pouvez tester :</p><ul id="r-1609151" data-claire-element-id="30939920"><li id="r-3196917" data-claire-element-id="30938930"><p id="r-3196916" data-claire-element-id="30938929"><a href="https://www.sublimetext.com/">Sublime Text</a> ;</p></li><li id="r-3196919" data-claire-element-id="4714016"><p id="r-3196918" data-claire-element-id="4714015"><a href="http://brackets.io/">Brackets</a> ;</p></li><li id="r-1609142" data-claire-element-id="30939919"><p id="r-1609141" data-claire-element-id="30939918">gedit ;</p></li><li id="r-1609144" data-claire-element-id="1631926"><p id="r-1609143" data-claire-element-id="1631925">Kate ;</p></li><li id="r-1609146" data-claire-element-id="1631928"><p id="r-1609145" data-claire-element-id="1631927"><a href="http://telecharger.tomsguide.fr/Vim,0301-11950-6689.html">vim </a>;</p></li><li id="r-1609148" data-claire-element-id="1631930"><p id="r-1609147" data-claire-element-id="1631929">Emacs ;</p></li><li id="r-1609150" data-claire-element-id="1631932"><p id="r-1609149" data-claire-element-id="1631931"><a href="http://telecharger.tomsguide.fr/jEdit,0301-5665-3234.html">jEdit</a>.</p></li></ul><h3 id="r-1604191" data-claire-element-id="31432902">Les navigateurs</h3><h4 id="r-1609155" data-claire-element-id="1631938">Pourquoi le navigateur est important</h4><p id="r-1609153" data-claire-element-id="1631936">Le navigateur est le programme qui nous permet de voir les sites web. Comme je vous l'ai expliqué plus tôt, le travail du navigateur est de lire le code HTML et CSS pour afficher un résultat visuel à l'écran. Si votre code CSS dit « Les titres sont en rouge », alors le navigateur affichera les titres en rouge. Le rôle du navigateur est donc essentiel !</p><p id="r-1609154" data-claire-element-id="1631937">On ne dirait pas, mais un navigateur est un programme extrêmement complexe. En effet, comprendre le code HTML et CSS n'est pas une mince affaire. Le principal problème, vous vous en rendrez vite compte, c'est que <em>les différents navigateurs n'affichent pas le même site exactement de la même façon</em> ! Il faudra vous y faire et prendre l'habitude de vérifier régulièrement que votre site fonctionne correctement sur la plupart des navigateurs.</p><h4 id="r-1609257" data-claire-element-id="31432901">Les navigateurs sur ordinateur</h4><h5 id="r-1609235" data-claire-element-id="31432900">Télécharger les navigateurs</h5><p id="r-1609156" data-claire-element-id="1631939">Il existe de nombreux navigateurs différents. Voici les principaux à connaître :</p><table id="r-1609228" data-claire-element-id="31432897"><thead id="r-1609166" data-claire-element-id="1631949"><tr id="r-1609165" data-claire-element-id="1631948"><th id="r-1609158" data-claire-element-id="1631941"><p id="r-1609157" data-claire-element-id="1631940">Navigateur</p></th><th id="r-1609160" data-claire-element-id="1631943"><p id="r-1609159" data-claire-element-id="1631942">OS</p></th><th id="r-1609162" data-claire-element-id="1631945"><p id="r-1609161" data-claire-element-id="1631944">Téléchargement</p></th><th id="r-1609164" data-claire-element-id="1631947"><p id="r-1609163" data-claire-element-id="1631946">Commentaires</p></th></tr></thead><tbody id="r-1609227" data-claire-element-id="31432896"><tr id="r-1609178" data-claire-element-id="31432872"><td id="r-1609171" data-claire-element-id="31432871"><p id="r-1609167" data-claire-element-id="1631950"><strong>Google Chrome</strong></p><figure id="r-1609170" data-claire-element-id="31432870"><img id="r-1609168" data-claire-element-id="1631951" src="https://user.oc-static.com/files/314001_315000/314312.png" alt="Google Chrome" /><figcaption>Google Chrome</figcaption></figure></td><td id="r-1609173" data-claire-element-id="1631956"><p id="r-1609172" data-claire-element-id="1631955">Windows<br /> Mac<br /> Linux</p></td><td id="r-1609175" data-claire-element-id="1631958"><p id="r-1609174" data-claire-element-id="1631957"><a href="http://telecharger.tomsguide.fr/Google-Chrome,0301-22858-15489.html"><strong>Téléchargement</strong></a></p></td><td id="r-1609177" data-claire-element-id="1631960"><p id="r-1609176" data-claire-element-id="1631959">Le navigateur de Google, simple d'emploi et très rapide.<br /><strong>C'est le navigateur que j'utilise au quotidien.</strong></p></td></tr><tr id="r-1609190" data-claire-element-id="31432876"><td id="r-1609183" data-claire-element-id="31432875"><p id="r-1609179" data-claire-element-id="1631962"><strong>Mozilla Firefox</strong></p><p id="r-3196984" data-claire-element-id="8796094"> </p><figure id="r-3196987" data-claire-element-id="31432874"><img id="r-3196985" data-claire-element-id="4714244" src="https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/firefox_logo.png" alt="Firefox" /><figcaption>Firefox</figcaption></figure><p id="r-3196988" data-claire-element-id="4714247"> </p></td><td id="r-1609185" data-claire-element-id="1631968"><p id="r-1609184" data-claire-element-id="1631967">Windows<br /> Mac<br /> Linux</p></td><td id="r-1609187" data-claire-element-id="1631970"><p id="r-1609186" data-claire-element-id="1631969"><a href="http://telecharger.tomsguide.fr/Mozilla-Firefox,0301-7374-39660.html"><strong>Téléchargement</strong></a></p></td><td id="r-1609189" data-claire-element-id="1631972"><p id="r-1609188" data-claire-element-id="1631971">Le navigateur de la fondation Mozilla, célèbre et réputé.<br /> Je l'utilise fréquemment pour tester mes sites web.</p></td></tr><tr id="r-1609202" data-claire-element-id="31432880"><td id="r-1609195" data-claire-element-id="31432879"><p id="r-1609191" data-claire-element-id="1631974"><strong>Internet Explorer</strong></p><figure id="r-1609194" data-claire-element-id="31432878"><img id="r-1609192" data-claire-element-id="1631975" src="https://user.oc-static.com/files/314001_315000/314310.png" alt="IE9" /><figcaption>IE9</figcaption></figure></td><td id="r-1609197" data-claire-element-id="1631980"><p id="r-1609196" data-claire-element-id="1631979">Windows</p></td><td id="r-1609199" data-claire-element-id="4714254"><p id="r-1609198" data-claire-element-id="4714253">(Déjà installé sur Windows)</p></td><td id="r-1609201" data-claire-element-id="4714256"><p id="r-1609200" data-claire-element-id="4714255">Le navigateur de Microsoft, qui équipe tous les PC Windows jusqu'à Windows 10.</p></td></tr><tr id="r-3197002" data-claire-element-id="31432887"><td id="r-3196995" data-claire-element-id="31432883"><p id="r-3196990" data-claire-element-id="4714351"><strong>Edge</strong></p><p id="r-3196991" data-claire-element-id="8796103"> </p><figure id="r-3196994" data-claire-element-id="31432882"><img id="r-3196992" data-claire-element-id="4714260" src="https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/edge_logo1.png" alt="Edge" /><figcaption>Edge</figcaption></figure></td><td id="r-3196997" data-claire-element-id="4714265"><p id="r-3196996" data-claire-element-id="4714264"> Windows</p></td><td id="r-3196999" data-claire-element-id="4714267"><p id="r-3196998" data-claire-element-id="4714266"> (Déjà installé sur Windows 10)</p></td><td id="r-3197001" data-claire-element-id="31432886"><p id="r-3197000" data-claire-element-id="4715944">Le nouveau navigateur de Microsoft, qui équipe tous les PC à partir de Windows 10.<br />Il ressemble à Internet Explorer (les logos sont proches !) mais c'est une toute nouvelle version bien plus à jour. Edge est le remplaçant d'Internet Explorer. </p><figure id="r-3197469" data-claire-element-id="31432885"><img id="r-3197467" data-claire-element-id="4715354" src="https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/ie-edge.png" alt="Edge remplace Internet Explorer" /><figcaption>Internet Explorer est remplacé par Edge</figcaption></figure></td></tr><tr id="r-1609214" data-claire-element-id="31432891"><td id="r-1609207" data-claire-element-id="31432890"><p id="r-1609203" data-claire-element-id="1631986"><strong>Safari</strong></p><figure id="r-1609206" data-claire-element-id="31432889"><img id="r-1609204" data-claire-element-id="4714271" src="https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/safari_logo.png" alt="Safari" /><figcaption>Safari</figcaption></figure></td><td id="r-1609209" data-claire-element-id="1631992"><p id="r-1609208" data-claire-element-id="1631991">Windows<br /> Mac</p></td><td id="r-1609211" data-claire-element-id="1631994"><p id="r-1609210" data-claire-element-id="1631993"><a href="http://telecharger.tomsguide.fr/Safari-navigateur-internet,0301-9899-38100.html">Téléchargement</a><br /> (Déjà installé sur Mac OS X)</p></td><td id="r-1609213" data-claire-element-id="1631996"><p id="r-1609212" data-claire-element-id="1631995">Le navigateur d'Apple, qui équipe tous les Mac.</p></td></tr><tr id="r-1609226" data-claire-element-id="31432895"><td id="r-1609219" data-claire-element-id="31432894"><p id="r-1609215" data-claire-element-id="1631998"><strong>Opera</strong></p><figure id="r-1609218" data-claire-element-id="31432893"><img id="r-1609216" data-claire-element-id="1631999" src="https://user.oc-static.com/files/339001_340000/339450.png" alt="Logo Opera" /><figcaption>Opera</figcaption></figure></td><td id="r-1609221" data-claire-element-id="1632004"><p id="r-1609220" data-claire-element-id="1632003">Windows<br /> Mac<br /> Linux</p></td><td id="r-1609223" data-claire-element-id="1632006"><p id="r-1609222" data-claire-element-id="1632005"><a href="http://telecharger.tomsguide.fr/Opera,0301-24290-47848.html">Téléchargement</a></p></td><td id="r-1609225" data-claire-element-id="30940006"><p id="r-1609224" data-claire-element-id="30940005">L'éternel <em>outsider</em>.<br /> Il est moins utilisé, mais propose de nombreuses fonctionnalités.</p></td></tr></tbody></table><aside id="r-1609230" data-claire-element-id="4714283" data-claire-semantic="information"><p id="r-1609229" data-claire-element-id="4714282"><em>Il est conseillé d'installer plusieurs navigateurs sur son ordinateur</em> pour s'assurer que son site fonctionne correctement sur chacun d'eux. De manière générale, je conseille de tester son site web régulièrement au moins sur Google Chrome, Mozilla Firefox et Internet Explorer/Edge.<br /> Notez que Safari et Google Chrome affichent les sites web quasiment de la même façon. Il n'est pas forcément nécessaire de tester son site sur Safari et Google Chrome, même si c'est toujours plus sûr.</p></aside><p id="r-1609231" data-claire-element-id="1632014">La figure suivante vous montre un aperçu du résultat produit par quelques-uns de ces principaux navigateurs sur la page d'accueil de Google.</p><figure id="r-1609234" data-claire-element-id="31432899"><img id="r-1609232" data-claire-element-id="4715818" src="https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/fenetres_navigateurs.png" alt="Aperçu de quelques navigateurs" /><figcaption>Aperçu de quelques navigateurs</figcaption></figure><h5 id="r-1609256" data-claire-element-id="30940282">Comprendre les différences entre navigateurs</h5><p id="r-1609236" data-claire-element-id="30940071">À vue de nez, ces navigateurs se ressemblent beaucoup. Mais comme je vous le disais plus tôt, les navigateurs n'affichent pas toujours un même site web <em>exactement</em> de la même façon. Pourquoi ? Cela est dû au fait que les navigateurs ne connaissent pas toujours les dernières fonctionnalités de HTML et CSS. Par exemple, Internet Explorer a longtemps été en retard sur certaines fonctionnalités CSS (et paradoxalement, il a aussi été en avance sur quelques autres).</p><p id="r-1609237" data-claire-element-id="30940072">Pour compliquer les choses, <strong>plusieurs versions des navigateurs coexistent</strong>. Aujourd'hui, un navigateur comme Chrome sort une nouvelle version presque tous les mois. Les mises à jour sont (heureusement) de plus en plus fréquentes.</p><p id="r-1609247" data-claire-element-id="30940073">Chaque version prend en charge de nouvelles fonctionnalités mais, si les utilisateurs ne mettent pas à jour leur(s) navigateur(s), cela devient un problème pour les <strong>webmasters</strong>, comme vous, qui créent des sites web.</p><p id="r-3197741" data-claire-element-id="30940221">Chrome a résolu en grande partie le problème en mettant en place des mises à jour automatiques, sans intervention de l'utilisateur. Firefox a semble-t-il décidé de suivre le rythme lui aussi. Internet Explorer est de plus en plus à jour, et son remplaçant Edge n'a pas à rougir de la comparaison avec les autres navigateurs.</p><p id="r-3197742" data-claire-element-id="30940131">Bref, j'ai un peu le sentiment de parler comme un ancêtre du Web en disant ça, mais on a beaucoup de chance aujourd'hui : les navigateurs supportent un grand nombre de fonctionnalités. La compatibilité reste toujours un problème malgré tout, mais ce n'est pas aussi grave qu'à une époque.</p><p id="r-3197743" data-claire-element-id="30938966">Le célèbre site <a href="https://caniuse.com/"><strong>caniuse.com</strong></a> tient à jour une liste des fonctionnalités prises en charge par les différentes versions de chaque navigateur (figure suivante).</p><figure id="r-1609251" data-claire-element-id="4716022"><p id="r-1609250" data-claire-element-id="4716021"><img id="r-1609249" data-claire-element-id="4715828" src="https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/caniuse1.png" alt="caniuse.com vous permet de savoir quel navigateur gère quelle fonctionnalité" /></p><figcaption>caniuse.com vous permet de connaître la compatibilité d'une fonctionnalité</figcaption></figure><p id="r-1609252" data-claire-element-id="30940281">Ça peut paraître un peu compliqué, mais comme je vous le disais, les navigateurs supportent aujourd'hui très bien un grand nombre de fonctionnalités. Les problèmes viennent le plus souvent d'anciennes versions d'Internet Explorer (IE7, IE8...), mais celles-ci sont si peu utilisées que je vous recommande de les ignorer.</p><aside id="r-1609255" data-claire-element-id="10576562" data-claire-semantic="information"><p id="r-1609254" data-claire-element-id="10576561">Il est possible de tester son site sous le navigateur Internet Explorer à l'aide d'une machine virtuelle comme <a href="https://www.virtualbox.org/">VirtualBox</a> (gratuit). Le site <a href="https://developer.microsoft.com/en-us/microsoft-edge/">modern.ie</a> de Microsoft offre des &quot;images disque&quot; qui vous permettent de faire tourner sur votre ordinateur n'importe quelle version de Windows avec Internet Explorer ou Edge. Attention cependant : ces images sont grosses et consomment de la mémoire.</p></aside><h4 id="r-1609273" data-claire-element-id="30940439">Les navigateurs sur mobile</h4><p id="r-1609258" data-claire-element-id="30940432">En plus des navigateurs que je vous ai présentés, il faut savoir qu'il existe des variantes de ces navigateurs conçues pour les téléphones portables, en particulier pour les <strong>smartphones</strong>.<br /> De plus en plus de personnes consultent aujourd'hui des sites web sur leur portable ; il faut donc connaître un minimum le fonctionnement des navigateurs des téléphones.</p><p id="r-1609259" data-claire-element-id="30940342">En fait, vous n'allez pas être dépaysé : la plupart des navigateurs sur smartphones sont les mêmes que sur ordinateur, dans une version plus légère adaptée aux mobiles. Tout dépend du type de téléphone.</p><ul id="r-1609268" data-claire-element-id="30940435"><li id="r-1609261" data-claire-element-id="1632044"><p id="r-1609260" data-claire-element-id="1632043"><strong>iPhone</strong> : sur l'iPhone d'Apple, le navigateur utilisé est Safari Mobile. Il s'agit d'une version <em>light</em> et néanmoins très complète de Safari pour ordinateur.</p></li><li id="r-1609263" data-claire-element-id="1632046"><p id="r-1609262" data-claire-element-id="1632045"><strong>Android</strong> : les portables sous Android bénéficient du navigateur Chrome Mobile. Là encore, il s'agit d'une version adaptée aux mobiles.</p></li><li id="r-1609265" data-claire-element-id="4715837"><p id="r-1609264" data-claire-element-id="4715836"><strong>Windows Phone</strong> : sous Windows Phone, on retrouve… Internet Explorer/Edge Mobile ! Le principe est le même que pour les précédents navigateurs : il s'agit d'une version dédiée aux mobiles.</p></li><li id="r-1609267" data-claire-element-id="30940434"><p id="r-1609266" data-claire-element-id="30940433"><strong>Blackberry</strong> : les Blackberry font exception car ils ont leur propre navigateur (il n'existe pas d'équivalent sur ordinateur). Néanmoins, les versions les plus récentes de ce navigateur se basent sur un noyau commun à Safari et Chrome (il s'agit du moteur de rendu WebKit). Par conséquent, l'affichage est en général proche de celui proposé par Safari et Chrome. Enfin, il faut reconnaître que les Blackberry sont de moins en moins utilisés.</p></li></ul><p id="r-1609269" data-claire-element-id="1632052">Les navigateurs pour mobiles prennent en charge la plupart des dernières fonctionnalités de HTML et CSS. De plus, le système de mise à jour automatisé des mobiles nous garantit que les utilisateurs auront le plus souvent les dernières versions.</p><p id="r-1609270" data-claire-element-id="30940436">Sachez néanmoins que des différences existent entre ces différents navigateurs mobiles, et qu'il est conseillé de tester son site sur ces appareils aussi ! En particulier, l'écran étant beaucoup moins large, il faudra vérifier que votre site s'affiche correctement.</p><aside id="r-1609272" data-claire-element-id="30940438" data-claire-semantic="information"><p id="r-1609271" data-claire-element-id="30940437">Les tablettes tactiles sont équipées des mêmes navigateurs ; l'écran est simplement plus large. Ainsi, l'iPad est fourni avec Safari Mobile.</p></aside><h3 id="r-3197744" data-claire-element-id="4715906">En résumé</h3><ul id="r-1609291" data-claire-element-id="4715905"><li id="r-1609275" data-claire-element-id="1632058"><p id="r-1609274" data-claire-element-id="1632057">Le Web a été inventé par Tim Berners-Lee au début des années 1990.</p></li><li id="r-1609282" data-claire-element-id="1632065"><p id="r-1609276" data-claire-element-id="1632059">Pour créer des sites web, on utilise deux langages informatiques :</p><ul id="r-1609281" data-claire-element-id="1632064"><li id="r-1609278" data-claire-element-id="1632061"><p id="r-1609277" data-claire-element-id="1632060">HTML : permet d'écrire et organiser le contenu de la page (paragraphes, titres…) ;</p></li><li id="r-1609280" data-claire-element-id="1632063"><p id="r-1609279" data-claire-element-id="1632062">CSS : permet de mettre en forme la page (couleur, taille…).</p></li></ul></li><li id="r-1609284" data-claire-element-id="1632067"><p id="r-1609283" data-claire-element-id="1632066">Il y a eu plusieurs versions des langages HTML et CSS. Les dernières versions sont HTML5 et CSS3.</p></li><li id="r-1609286" data-claire-element-id="1632069"><p id="r-1609285" data-claire-element-id="1632068">Le navigateur web est un programme qui permet d'afficher des sites web. Il lit les langages HTML et CSS pour savoir ce qu'il doit afficher.</p></li><li id="r-1609288" data-claire-element-id="1632071"><p id="r-1609287" data-claire-element-id="1632070">Il existe de nombreux navigateurs web différents : Google Chrome, Mozilla Firefox, Internet Explorer, Safari, Opera… Chacun affiche un site web de manière légèrement différente des autres navigateurs.</p></li><li id="r-1609290" data-claire-element-id="4715904"><p id="r-1609289" data-claire-element-id="4715903">Dans ce cours, nous allons apprendre à utiliser les langages HTML et CSS. Nous travaillerons dans un programme appelé « éditeur de texte » (Sublime Text, Notepad++, jEdit, vim…).</p></li></ul>
+</div>
+<div class="js-courseSelementActions sideActions">
+<ul class="sideActions__container">
+<li>
+<a class="sideActions__item  js-courseElementActions-copyUrl  js-tooltip" href="#" data-tooltip="Copier le lien" data-tooltip-done="Lien copié !">
+#
+</a>
+</li>
+</ul>
+</div>
+</div>
+<nav id="course-pagination" class="course-pagination    clearfix">
+<a href="../1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3.html" class="button button--secondary  course-pagination__btn course-pagination__btn--previous">
+<i class="icon-previous"></i>
+<span>Apprenez à créer votre site web avec HTML5 et CSS3</span>
+</a>
+<span class="course-pagination__separator"></span>
+<a href="1604361-creez-votre-premiere-page-web-en-html.html" class="button button--secondary  course-pagination__btn course-pagination__btn--next">
+<span>Créez votre première page web en HTML</span>
+<i class="icon-next"></i>
+</a>
+</nav>
+<div tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="popin-view-restriction_popin_title" class="popin popin--illustrated  js-popin" id="popin-view-restriction">
+<button class="popin__close-button  js-close-button" title="Fermer" aria-label="Fermer">
+<i class="icon-close" aria-hidden="true"></i>
+</button>
+<div class="popin__inner">
+<div class="popin__illustrationWrapper">
+<div class="popin__illustration illustration--balloon"></div>
+</div>
+<div class="popin__mainContainer">
+<div class="popin__gigTitleContainer js-popin-title">
+<div class="gigWorkersPopin__timeline">
+<div class="gigWorkersPopin__dot">1</div>
+<div class="gigWorkersPopin__line"></div>
+<div class="gigWorkersPopin__dot gigWorkersPopin__dot--disabled">2</div>
+</div>
+<div class="popin__title">Créez un compte <br /> OpenClassrooms</div>
+</div>
+<div id="popin-view-restriction_popin_title" class="popin__title  js-popin-title">Waouh !</div>
+<div class="popin__content  js-popin-content">
+<div class="popin__contentWrapper">
+<p>
+Très heureux de voir que nos cours vous plaisent, déjà 5 pages lues aujourd&#039;hui ! Vous pouvez continuer la lecture de nos cours en devenant un membre de la communauté d&#039;OpenClassrooms. C&#039;est gratuit !
+</p>
+<p>
+Vous pourrez aussi suivre votre avancement dans le cours, faire les exercices et discuter avec les autres membres.
+</p>
+</div>
+</div>
+<div class="popin__actions  js-popin-actions">
+<span class="u--inlineBlock">
+<a class="button button--primary " href="https://openclassrooms.com/fr/register">S'inscrire</a>
+</span>
+<span class="u--inlineBlock">
+<a class="button button--secondary " href="https://openclassrooms.com/fr/login">Se connecter</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script type="text/template" class="js-single-video-download-info">
+            <div class="videoDownload js-download-video-popin-link">
+                <a href="#popin-download-video" class="js-popin-activator">
+                    <i class="icon-download videoDownload__icon"></i> Télécharger la vidéo
+                </a>
+            </div>
+        </script>
+<script type="text/template" class="js-all-video-download-info">
+            <div class="videoDownload js-download-video-popin-link">
+                <a href="#popin-download-all-videos" class="js-popin-activator">
+                    <i class="icon-download videoDownload__icon"></i> Télécharger toutes les vidéos de ce cours
+                </a>
+            </div>
+        </script>
+<div id="popin-not-certifying-yet_950440" class="popin" data-popin-title="Vous ne pouvez pas encore obtenir de certificat de réussite à l&#039;issue de ce cours.
+                            <span><i class='icon-star'></i> Devenez Premium</span>
+                    ">
+<img alt="Exemple de certificat de réussite" src="http://static.oc-static.com/prod/images/courses/certif.jpg" />
+</div>
+<div tabindex="-1" role="dialog" aria-hidden="true" class="popin popin--small  js-popin" id="popin-download-video">
+<button class="popin__close-button  js-close-button" title="Fermer" aria-label="Fermer">
+<i class="icon-close" aria-hidden="true"></i>
+</button>
+<div class="popin__inner">
+<div class="popin__mainContainer">
+<div class="popin__gigTitleContainer js-popin-title">
+<div class="gigWorkersPopin__timeline">
+<div class="gigWorkersPopin__dot">1</div>
+<div class="gigWorkersPopin__line"></div>
+<div class="gigWorkersPopin__dot gigWorkersPopin__dot--disabled">2</div>
+</div>
+<div id="popin-download-video_popin_title" class="popin__title">Créez un compte <br /> OpenClassrooms</div>
+</div>
+<i class="icon-video popin__icon  js-popin-icon"></i>
+<div class="popin__content  js-popin-content">
+<div class="popin__contentWrapper">
+<p>
+Le téléchargement des vidéos de nos cours est accessible pour les membres Premium. Vous pouvez toutefois les visionner en streaming gratuitement.
+</p>
+</div>
+</div>
+<div class="popin__actions  js-popin-actions">
+<a class="button button--primary js-close-button" href="#">Devenez Premium</a>
+</div>
+</div>
+</div>
+</div>
+<div id="popin-not-certifying-yet_93294" class="popin" data-popin-title="Vous ne pouvez pas encore obtenir de certificat de réussite à l&#039;issue de ce cours.
+                            <span><i class='icon-star'></i> Devenez Premium</span>
+                    ">
+<img alt="Exemple de certificat de réussite" src="http://static.oc-static.com/prod/images/courses/certif.jpg" />
+</div>
+<div tabindex="-1" role="dialog" aria-hidden="true" class="popin popin--small  js-popin" id="popin-download-video">
+<button class="popin__close-button  js-close-button" title="Fermer" aria-label="Fermer">
+<i class="icon-close" aria-hidden="true"></i>
+</button>
+<div class="popin__inner">
+<div class="popin__mainContainer">
+<div class="popin__gigTitleContainer js-popin-title">
+<div class="gigWorkersPopin__timeline">
+<div class="gigWorkersPopin__dot">1</div>
+<div class="gigWorkersPopin__line"></div>
+<div class="gigWorkersPopin__dot gigWorkersPopin__dot--disabled">2</div>
+</div>
+<div id="popin-download-video_popin_title" class="popin__title">Créez un compte <br /> OpenClassrooms</div>
+</div>
+<i class="icon-video popin__icon  js-popin-icon"></i>
+<div class="popin__content  js-popin-content">
+<div class="popin__contentWrapper">
+<p>
+Le téléchargement des vidéos de nos cours est accessible pour les membres Premium. Vous pouvez toutefois les visionner en streaming gratuitement.
+</p>
+</div>
+</div>
+<div class="popin__actions  js-popin-actions">
+<a class="button button--primary js-close-button" href="#">Devenez Premium</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<aside id="content-with-sidebar" class="contentWithSidebar__sidebar  js-contentWithSidebar-slidingElement">
+<nav class="col-nav">
+<div id="tab-courseMenu" class="col-nav__inner js-sidebar-inner">
+<div class="col-nav__block  col-nav__block--summary">
+<div class="side-paginate">
+<a href="../1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3.html" class="side-paginate__previous" title="Chapitre précédent">
+<i class="icon-previous"></i>
+</a>
+<span class="side-paginate__separator"></span>
+<h6 class="side-paginate__title">
+Découvrez les bases de HTML5
+</h6>
+<span class="side-paginate__separator"></span>
+<a href="1604361-creez-votre-premiere-page-web-en-html.html" class="side-paginate__next" title="Chapitre suivant">
+<i class="icon-next"></i>
+</a>
+</div>
+<div class="col-nav__block--summary-list">
+<ol class="col-nav__chapters">
+<li class="selected">
+<span class="col-nav__chapterTitle">Découvrez le fonctionnement des sites web</span>
+</li>
+<li class="">
+<a class="col-nav__chapterTitle" href="1604361-creez-votre-premiere-page-web-en-html.html">Créez votre première page web en HTML</a>
+</li>
+ <li class="">
+<a class="col-nav__chapterTitle" href="1604534-organisez-votre-texte.html">Organisez votre texte</a>
+</li>
+<li class="">
+<a class="col-nav__chapterTitle" href="4004681-pratiquez.html">Pratiquez !</a>
+</li>
+<li class="">
+<a class="col-nav__chapterTitle" href="1604646-creez-des-liens.html">Créez des liens</a>
+</li>
+<li class="">
+<a class="col-nav__chapterTitle" href="1604791-inserez-des-images.html">Insérez des images</a>
+</li>
+<li class="">
+<a class="col-nav__chapterTitle" href="6725196-entrainez-vous-en-structurant-votre-cv.html">Entraînez-vous en structurant votre CV</a>
+</li>
+</ol>
+</div>
+</div>
+<div class="col-nav__block col-nav__block--button">
+<a href="https://openclassrooms.com/forum/categorie/html-css" class="button button--secondary">
+Accéder au forum
+</a>
+</div>
+<div class="socialNetwork col-nav__block">
+<ul class="socialButtons  js-socialButtons" data-options="
+                title: 'Découvrez le fonctionnement des sites web @OCFrance',
+        mailTitle: 'Cours &quot;Découvrez le fonctionnement des sites web&quot; sur OpenClassrooms',
+        mailContent: 'Découvrez le cours &quot;Découvrez le fonctionnement des sites web&quot; sur OpenClassrooms.'">
+<li>
+<a class="roundIcon  roundIcon--twitter addthis_button_twitter  js-socialButtons-btn" data-tooltip="Partagez sur Twitter">
+<i class="roundIcon__icon  icon-twitter"></i>
+</a>
+</li>
+<li>
+<a class="roundIcon  roundIcon--facebook  addthis_button_facebook  js-socialButtons-btn" data-tooltip="Partagez sur Facebook">
+<i class="roundIcon__icon  icon-facebook"></i>
+</a>
+</li>
+<li>
+<a class="roundIcon  addthis_button_email  js-socialButtons-btn  js-socialButtons-email" data-tooltip="Partagez par e-mail">
+<i class="roundIcon__icon  icon-letter"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</aside>
+</div>
+</div>
+</div>
+<footer id="course-footer" class="alt-section noMarginBottom">
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="grid-inner-content  courseFooter">
+<div class="courseFooter__authors course-bottom__category">
+<div class="course-bottom__title">
+Le professeur
+</div>
+ <div>
+<div class="course-bottom__text-illustrated">
+<span data-author="Mathieu Nebra" data-image-cdn-background-image="https://user.oc-static.com/users/avatars/16010488280562_MathieuNebra_square.jpg" data-image-cdn-width="120"></span>
+<div class="course-bottom__subtitle" itemprop="name">Mathieu Nebra</div>
+<p itemprop="description">
+Entrepreneur à plein temps, auteur à plein temps et co-fondateur d&#039;OpenClassrooms :o)
+</p>
+</div>
+</div>
+</div>
+<div class="courseFooter__courseFormat course-bottom__category">
+<h2>Découvrez aussi ce cours en...</h2>
+<ul class="course-bottom__format">
+<li>
+<a href="http://www.eyrolles.com/Informatique/Livre/realisez-votre-site-web-avec-html5-et-css3-9782953527889?societe=openclassrooms" target="_blank" class="text-decoration-none">
+<div class="circle circle--x-small">
+<span class="circle__content"></span>
+<i class="icon-book"></i>
+</div>
+<div class="course-bottom__format-entitled">
+Livre
+</div>
+</a>
+</li>
+<li>
+<a href="https://openclassrooms.com/fr/old-courses-pdf" class="text-decoration-none">
+<div class="circle circle--x-small">
+<span class="circle__content"></span>
+<i class="icon-pdf"></i>
+</div>
+<div class="course-bottom__format-entitled">
+PDF
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</article>
+</main>
+</div>
+<div id="mainSearchLegacy" class="mainSearch"></div>
+<div id="footerWrapper">
+<footer id="footer" class="oc-footerSkeleton">
+<hr style="margin-bottom: 8px" />
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="oc-footerSkeleton__container">
+<div class="oc-footerSkeleton__item">
+<div class="oc-footerSkeleton__itemTitle"><span class="skeleton" style="height: 20px; width: 80%"></span></div>
+<ul class="oc-footerSkeleton__linksList">
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 70%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 60%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 65%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 40%"></span></a></p>
+</li>
+</ul>
+</div>
+<div class="oc-footerSkeleton__item">
+<div class="oc-footerSkeleton__itemTitle"><span class="skeleton" style="height: 20px; width: 85%"></span></div>
+<ul class="oc-footerSkeleton__linksList">
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 40%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 60%"></span></a></p>
+</li>
+</ul>
+</div>
+<div class="oc-footerSkeleton__item">
+<div class="oc-footerSkeleton__itemTitle"><span class="skeleton" style="height: 20px; width: 75%"></span></div>
+<ul class="oc-footerSkeleton__linksList">
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 65%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 40%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 50%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 40%"></span></a></p>
+</li>
+</ul>
+</div>
+<div class="oc-footerSkeleton__item">
+<span class="skeleton" style="height: 25px; width: 65%"></span>
+<div class="oc-footerSkeleton__socialButtonWrapper">
+<div><span class="skeleton skeleton--round" style="width: 40px; height: 40px"></span></div>
+<div><span class="skeleton skeleton--round" style="width: 40px; height: 40px;"></span></div>
+<div><span class="skeleton skeleton--round" style="width: 40px; height: 40px;"></span></div>
+<div><span class="skeleton skeleton--round" style="width: 40px; height: 40px;"></span></div>
+<div><span class="skeleton skeleton--round" style="width: 40px; height: 40px;"></span></div>
+</div>
+<div><span class="skeleton skeleton--width50" style="height: 40px;"></span></div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div id="showDisclaimer" class="cookiesDisclaimer"></div>
+<script>
+  var isPrerender = !!navigator.userAgent.match(/github\.com\/prerender\/prerender/);
+  var preRenderBrowserFakeUa = "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163 Safari/537.36";
+  var polyfillUrl = "https://cdn.polyfill.io/v3/polyfill.min.js?unknown=polyfill&amp;features=default,es6,IntersectionObserver,Object.values,Array.prototype.includes,Array.prototype.findIndex,Array.prototype.find,Array.from,Promise.prototype.finally,fetch,String.prototype.includes,Object.entries,Array.prototype.entries,Intl.~locale,Array.prototype.flat.fr";
+
+    if (isPrerender) {
+    polyfillUrl+= "&ua=" + encodeURIComponent(preRenderBrowserFakeUa);
+  }
+
+  App.translations = {};
+
+  App.scripts.push(polyfillUrl);
+
+  App.script = {
+      DASHBOARD: 'dashboard',
+      MENTORSHIP_STUDENT_DASHBOARD: 'mentorshipStudentdashboard',
+      SHOP: 'shop',
+      PAYMENT: 'payment',
+      PROJECTS: 'projects',
+      TEAM: 'team',
+      COURSE_EDIT: 'course_edit',
+      COURSE_VIEW: 'course_view',
+      ADMIN: 'admin',
+      ADMIN_STUDENT_CREDENTIAL: 'adminStudentCredential',
+      ADMIN_STUDENT_CREDENTIAL_EDIT: 'adminStudentCredentialEdit',
+      POST_A_JOB: 'postAJob',
+      GIG_WORKERS: 'gigWorkers',
+      JOB_SURVEY: 'jobSurvey',
+      MCQ_EDIT: 'mcqEdit',
+      MCQ_VIEW: 'mcqView',
+      MENTOR_EDIT: 'mentorEdit',
+      MENTORSHIP_DASHBOARD: 'mentorshipDashboard',
+      MENTORSHIP_SESSION: 'mentorshipSession',
+      MENTORSHIP_SESSION_CREATE: 'mentorshipSessionCreate',
+      MENTORSHIP_SESSION_NON_ASSESSOR_CREATE: 'mentorshipSessionNonAssessorCreate',
+    PATHS: 'paths',
+    PRIVATE_CONVERSATIONS: 'privateConversations',
+    USER_PROFILE: 'userProfile',
+    WELCOME: 'welcome',
+    APPRENTICESHIP: 'apprenticeship',
+    WEBAPP: 'webapp',
+    PROJECTS_ADMIN: 'projectsAdmin',
+    SECURITY: 'security',
+  };
+</script>
+<script>App.scripts.push("https://openclassrooms.com/js/runtime.4c4ad3f6a13cc20ab325.js");</script>
+<script>App.scripts.push("https://openclassrooms.com/js/index.28cedfedcf6a0f3797d8.js");</script>
+<script type="text/javascript">
+        function getConsentedSegmentIntegrations() {
+            // getCookie from https://www.w3schools.com/js/js_cookies.asp
+            function getCookie(cname) {
+                var name = cname + "=";
+                var decodedCookie = decodeURIComponent(document.cookie);
+
+                var ca = decodedCookie.split(';');
+                for(var i = 0; i <ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) === ' ') {
+                        c = c.substring(1);
+                    }
+                    if (c.indexOf(name) === 0) {
+                        return c.substring(name.length, c.length);
+                    }
+                }
+                return "";
+            }
+
+            var consent = getCookie('cmapi_cookie_privacy');
+
+            function isCookieAllowedByConsent(consent, level) {
+              return !!consent && consent.search(level) !== -1;
+            }
+
+            var isFunctionalCookieAllowed = isCookieAllowedByConsent(consent, 2);
+            var isAdvertisingCookieAllowed = isCookieAllowedByConsent(consent, 3);
+
+            var isAppCuesPremiumUser = false;
+
+            var isOnPoleEmploiPage = !!window && window.location.pathname.indexOf('partners/pole-emploi/offers') >= 0;
+
+            return {
+                Amplitude: isFunctionalCookieAllowed,
+                'Bing Ads': isAdvertisingCookieAllowed,
+                'Google Ads': isAdvertisingCookieAllowed,
+                'Google Analytics': isFunctionalCookieAllowed,
+                'Zendesk': isFunctionalCookieAllowed,
+                Appcues: (isAppCuesPremiumUser || isOnPoleEmploiPage) && isFunctionalCookieAllowed,
+            };
+        }
+
+        var consentedSegmentIntegrations = getConsentedSegmentIntegrations();
+
+        !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+            window.loadAnalytics = function () { window.analytics.load('mou95e6tdn', {integrations: consentedSegmentIntegrations}) };
+        }}();
+    </script>
+
+<script>App.scriptToLoad = App.script.COURSE_VIEW</script>
+
+<script>
+    (function () {
+        function loadScripts(cb) {
+            App.scripts.forEach(function (src, index) {
+                var script = document.createElement('script');
+                script.src = src;
+                script.async = false;
+                document.body.appendChild(script);
+
+                if (cb && index === App.scripts.length - 1) {
+                    script.onload = cb;
+                }
+            });
+        }
+
+        function boot() {
+            loadScripts(function () {
+                if (App.modules) {
+                    App.modules.startAll();
+                }
+            });
+        }
+
+        if (window.addEventListener) {
+            window.addEventListener('load', boot, false);
+        } else if (window.attachEvent) {
+            window.attachEvent('onload', boot);
+        } else {
+            window.onload = boot;
+        }
+    }());
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.eu01.nr-data.net","licenseKey":"NRJS-5b58725ce0d442079d0","applicationID":"156815673","transactionName":"MhBSZQoZVhJWB0xfDAtac0QLDFcMGAtbaQAJFFlDHSdbDkIWS1M8FRRCRScIWRNDO05fBhI=","queueTime":0,"applicationTime":135,"atts":"HldRE0IDRRw=","errorBeacon":"bam.eu01.nr-data.net","agent":""}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"68b3c0cbdc2d0897","token":"8e698008242e427fae12788d79d12ecf","version":"2021.8.1","si":10}'></script>
+</body>
+
+<!-- Mirrored from openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1604192-decouvrez-le-fonctionnement-des-sites-web by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Sep 2021 23:36:20 GMT -->
+</html>

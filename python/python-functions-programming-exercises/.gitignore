@@ -1,0 +1,22 @@
+# Ignore everything
+/*
+
+!.gitignore
+!.gitpod.yml
+!.gitpod.Dockerfile
+!bc.json
+!learn.json
+!README.md
+!README.*.md
+
+!/exercises
+!/exercises/*
+
+*.pyc
+__pycache__/
+.pytest_cache/
+
+!/.learn
+/.learn/**
+!/.learn/resets
+!/.learn/resets/**

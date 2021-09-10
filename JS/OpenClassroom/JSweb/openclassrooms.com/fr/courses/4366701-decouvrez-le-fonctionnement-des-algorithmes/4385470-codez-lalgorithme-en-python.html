@@ -1,0 +1,1093 @@
+
+<!DOCTYPE html>
+<html class="no-js " lang="fr" prefix="og: http://ogp.me/ns#">
+
+<!-- Mirrored from openclassrooms.com/fr/courses/4366701-decouvrez-le-fonctionnement-des-algorithmes/4385470-codez-lalgorithme-en-python by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Sep 2021 23:37:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>
+                            Codez l&#039;algorithme en Python - Découvrez le fonctionnement des algorithmes - OpenClassrooms
+                    </title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-5b58725ce0d442079d0",applicationID:"156815673"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){"hidden"===t&&d("pageHide",[p.now()])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https:///")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1210.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<meta name="application-name" content="OpenClassrooms" />
+<meta name="msapplication-TileColor" content="#7451eb" />
+<meta name="msapplication-TileImage" content="/fav-icon.png?v=3" />
+<meta name="theme-color" content="#7451eb">
+<meta property="og:locale" content="fr" />
+<link rel="icon" sizes="144x144" href="https://openclassrooms.com/fav-icon.png?v=3">
+<link rel="apple-touch-icon" href="https://openclassrooms.com/apple-touch-icon.png?v=3" />
+<link rel="apple-touch-icon" href="https://openclassrooms.com/apple-touch-icon-iphone.png?v=3" />
+<link rel="apple-touch-icon" sizes="72x72" href="https://openclassrooms.com/apple-touch-icon-ipad.png?v=3" />
+<link rel="apple-touch-icon" sizes="114x114" href="https://openclassrooms.com/apple-touch-icon-iphone-retina-display.png?v=3" />
+<link rel="apple-touch-icon" sizes="144x144" href="https://openclassrooms.com/apple-touch-icon-ipad-retina-display.png?v=3" />
+<link rel="apple-touch-icon-precomposed" href="https://openclassrooms.com/apple-touch-icon-precomposed.png?v=3" />
+<link rel="shortcut icon" href="https://openclassrooms.com/favicon.ico?83212fe7" />
+<style>.async-hide { opacity: 0 !important} </style>
+<script>
+          window.dataLayer = window.dataLayer || [];
+
+          (function(a,s,y,n,c,h,i,d,e){
+            var isEnabled = [
+              /\/paths/,
+              /\/apprenticeship/,
+              /\/employer/,
+            ].reduce(function (acc, pathReg) {
+                var matchUrl = !!document.location.pathname.match(pathReg);
+                return acc || matchUrl;
+            }, false);
+
+            if (!isEnabled) {
+              return;
+            }
+
+            s.className+=' '+y;
+            h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+            (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);
+          })(window,document.documentElement,'async-hide','dataLayer',2000,{'GTM-5WM9PV':true});
+        </script>
+<link href="https://openclassrooms.com/bundles/common/css/master-8bf9878d.css" type="text/css" rel="stylesheet" media="all" />
+<link href="https://openclassrooms.com/bundles/course/css/main-29e81ced.css" type="text/css" rel="stylesheet" media="all" />
+<link href="https://vjs.zencdn.net/6.2.5/video-js.css" rel="stylesheet">
+<script>
+    /*! modernizr 3.3.1 (Custom Build) | MIT *
+    * https://modernizr.com/download/?-cssfilters-touchevents-setclasses !*/
+    !function(e,n,t){function o(e,n){return typeof e===n}function r(){var e,n,t,r,s,i,a;for(var l in C)if(C.hasOwnProperty(l)){if(e=[],n=C[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(r=o(n.fn,"function")?n.fn():n.fn,s=0;s<e.length;s++)i=e[s],a=i.split("."),1===a.length?Modernizr[a[0]]=r:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=r),g.push((r?"":"no-")+a.join("-"))}}function s(e){var n=w.className,t=Modernizr._config.classPrefix||"";if(x&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(o,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),x?w.className.baseVal=n:w.className=n)}function i(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):x?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function a(){var e=n.body;return e||(e=i(x?"svg":"body"),e.fake=!0),e}function l(e,t,o,r){var s,l,u,f,p="modernizr",c=i("div"),d=a();if(parseInt(o,10))for(;o--;)u=i("div"),u.id=r?r[o]:p+(o+1),c.appendChild(u);return s=i("style"),s.type="text/css",s.id="s"+p,(d.fake?d:c).appendChild(s),d.appendChild(c),s.styleSheet?s.styleSheet.cssText=e:s.appendChild(n.createTextNode(e)),c.id=p,d.fake&&(d.style.background="",d.style.overflow="hidden",f=w.style.overflow,w.style.overflow="hidden",w.appendChild(d)),l=t(c,e),d.fake?(d.parentNode.removeChild(d),w.style.overflow=f,w.offsetHeight):c.parentNode.removeChild(c),!!l}function u(e,n){return!!~(""+e).indexOf(n)}function f(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function p(e,n){return function(){return e.apply(n,arguments)}}function c(e,n,t){var r;for(var s in e)if(e[s]in n)return t===!1?e[s]:(r=n[e[s]],o(r,"function")?p(r,t||n):r);return!1}function d(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function m(n,o){var r=n.length;if("CSS"in e&&"supports"in e.CSS){for(;r--;)if(e.CSS.supports(d(n[r]),o))return!0;return!1}if("CSSSupportsRule"in e){for(var s=[];r--;)s.push("("+d(n[r])+":"+o+")");return s=s.join(" or "),l("@supports ("+s+") { #modernizr { position: absolute; } }",function(e){return"absolute"==getComputedStyle(e,null).position})}return t}function h(e,n,r,s){function a(){p&&(delete k.style,delete k.modElem)}if(s=o(s,"undefined")?!1:s,!o(r,"undefined")){var l=m(e,r);if(!o(l,"undefined"))return l}for(var p,c,d,h,v,y=["modernizr","tspan","samp"];!k.style&&y.length;)p=!0,k.modElem=i(y.shift()),k.style=k.modElem.style;for(d=e.length,c=0;d>c;c++)if(h=e[c],v=k.style[h],u(h,"-")&&(h=f(h)),k.style[h]!==t){if(s||o(r,"undefined"))return a(),"pfx"==n?h:!0;try{k.style[h]=r}catch(g){}if(k.style[h]!=v)return a(),"pfx"==n?h:!0}return a(),!1}function v(e,n,t,r,s){var i=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+j.join(i+" ")+i).split(" ");return o(n,"string")||o(n,"undefined")?h(a,n,r,s):(a=(e+" "+E.join(i+" ")+i).split(" "),c(a,n,t))}function y(e,n,o){return v(e,t,t,n,o)}var g=[],C=[],S={_version:"3.3.1",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){C.push({name:e,fn:n,options:t})},addAsyncTest:function(e){C.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=S,Modernizr=new Modernizr;var w=n.documentElement,x="svg"===w.nodeName.toLowerCase(),_=S._config.usePrefixes?" -webkit- -moz- -o- -ms- ".split(" "):["",""];S._prefixes=_;var b="CSS"in e&&"supports"in e.CSS,T="supportsCSS"in e;Modernizr.addTest("supports",b||T);var z=S.testStyles=l;Modernizr.addTest("touchevents",function(){var t;if("ontouchstart"in e||e.DocumentTouch&&n instanceof DocumentTouch)t=!0;else{var o=["@media (",_.join("touch-enabled),("),"heartz",")","{#modernizr{top:9px;position:absolute}}"].join("");z(o,function(e){t=9===e.offsetTop})}return t});var P="Moz O ms Webkit",j=S._config.usePrefixes?P.split(" "):[];S._cssomPrefixes=j;var E=S._config.usePrefixes?P.toLowerCase().split(" "):[];S._domPrefixes=E;var N={elem:i("modernizr")};Modernizr._q.push(function(){delete N.elem});var k={style:N.elem.style};Modernizr._q.unshift(function(){delete k.style}),S.testAllProps=v,S.testAllProps=y,Modernizr.addTest("cssfilters",function(){if(Modernizr.supports)return y("filter","blur(2px)");var e=i("a");return e.style.cssText=_.join("filter:blur(2px); "),!!e.style.length&&(n.documentMode===t||n.documentMode>9)}),r(),s(g),delete S.addTest,delete S.addAsyncTest;for(var A=0;A<Modernizr._q.length;A++)Modernizr._q[A]();e.Modernizr=Modernizr}(window,document);
+    </script>
+<script type="text/javascript">
+    var App = {
+        startTime: (new Date()).getTime(),
+        pageGenerationDate: 1631057803000
+    };
+
+    App.user = {
+                    locale: 'fr',
+            language: 'fr',
+            country: 'FR',
+            isPremium: false,
+            isMentor: false,
+            anonymous: true
+            };
+
+    App.preferences = {
+        debug: false,
+        assetVersion: '83212fe7',
+        contactPhone: '\u002B33\u00201\u002080\u002088\u002080\u002030',
+        phoneNumbersByCountry: {"uk":{"contact":"+44 16 1768 1880"},"ca":{"contact":"+1 929-376-0101"},"us":{"contact":"+1 929-376-0101"},"fr":{"contact":"+33 1 80 88 80 30","b2b_contact":"+33 1 80 88 80 40"},"es":{"contact":"+33 1 80 88 80 30"}},
+        adyenPublicKey: '10001\u007C889EBFD4D434B82683E21DCA26E77C3E20E0EE09A5ECE3830B0ED51F2FA721A2F7E9EC871C6AB9A1E12C4492F4717673047757E02C5256D8E265CD51E413E5EFCCFEAC41B39C662A424ADC13EE187C38C372A7FCCEC1EA5DF841989437D78B252A8EB51008E60BB55B1E55A7A80DE1A9D60D998C128A576BFAE1DDB97D514AF0A073AEDDE84CEE40D1F8F6ECE85D0FFA50C95C06DB274021C1371376C6EB16561FD65C5E2704B570A7504D617D0F3820F176A0609F6162BDF5890533289FDC3DA7DB03B50BB3BD60A613E1FF72060F22987627E8F1A29F0128A94EC4C8FF7CF6B7AB9558D8433BF86D7A388AB927641CD6C02689139CEE3AAC9ACBFFE83806CB',
+        application: {
+            form: {
+              funnelUrl: 'https\u003A\/\/www.tfaforms.com\/responses\/processor',
+              fields: {"firstname":"tfa_6","lastname":"tfa_4","email":"tfa_2","path_id":"tfa_138","source_name":"tfa_165","record_type_id":"tfa_217","utm_medium":"tfa_203","utm_source":"tfa_201","utm_term":"tfa_207","utm_campaign":"tfa_205","gclid":"tfa_209","fbclid":"tfa_211","consent":"tfa_150","user_locale":"tfa_125","userId":"tfa_3","gender":"tfa_10","user_study_motivation":"tfa_171","diploma_level":"tfa_30","user_diploma":"tfa_173","language_proficiency_fr":"tfa_40","language_proficiency_en":"tfa_42","ha_addressline_1":"tfa_16","ha_city":"tfa_18","ha_zip_code":"tfa_24","ha_state":"tfa_163","ha_country":"tfa_22","professional_status":"tfa_94","public_employment_agency_id":"tfa_159","user_public_employment_agency_certificate":"tfa_167","user_pe_advisor_email":"tfa_199","disabled_worker":"tfa_67","veteran":"tfa_73","athlete":"tfa_79","refugee":"tfa_85","rsa":"tfa_91","are":"tfa_175","api":"tfa_177","cui":"tfa_179","aah":"tfa_222","other_allocs":"tfa_223","can_work_in_france":"tfa_142","user_resume":"tfa_1","online_cv":"tfa_157","user_has_mobility":"tfa_193","user_mobility_departamental":"tfa_187","user_mobility_national":"tfa_189","user_mobility_regional":"tfa_191","user_mobility_cities":"tfa_195","work_location_1":"tfa_128","work_location_2":"tfa_130","work_location_3":"tfa_132","work_location_4":"tfa_134","work_location_5":"tfa_136","career_motivation":"tfa_123","has_computer":"tfa_43","has_mic":"tfa_49","has_webcam":"tfa_169","has_fast_internet_connection":"tfa_55","has_quiet_space":"tfa_61","has_online_courses_xp":"tfa_118","has_online_courses_xp_text":"tfa_121","found_a_company":"tfa_146","date_of_birth":"tfa_9","phone_number":"tfa_126","user_desired_start_date":"tfa_161","video_link":"tfa_213","tfa_dbFormId":"tfa_dbFormId","tfa_dbControl":"tfa_dbControl","experiment_id":"tfa_219","full_time_available":"tfa_220","with_prerequisite":"tfa_221"}
+            },
+        },
+        routes: {
+            COURSE_EVENT: '/components/courses/:courseId',
+            COURSE_PART_EVENT: '/components/courses/:courseId/parts/:partId',
+
+            ACCEPT_COOKIE: '\/ajax\/components\/user\u002Daccept\u002Dconsent\u002Dcookie'
+        },
+
+                    };
+
+    App.preferences.navigationPreference = {
+            };
+
+    App.preferences.modules = {
+        'smiley': {
+            basePath: '/bundles/common/images/smiley/'
+        }
+    };
+
+    App.notifications = {};
+    App.scripts = [];
+
+    if (App.user.id) {
+        (function(){
+            var userData = { userId: App.user.id };
+
+            if (App.user.premiumType) {
+                userData.status = (App.user.premiumType === 'Premium Solo') ? 'premium solo student' : 'path student';
+            } else {
+                userData.status = 'free student';
+            }
+
+            if (App.user.isMentor) {
+                userData.status = App.user.premiumType ? (userData.status + '|mentor') : 'mentor';
+            }
+
+            if (!window.dataLayer) {
+              return;
+            }
+            window.dataLayer.push(userData);
+        })();
+    }
+</script>
+<script>    
+    App.preferences.modules['course/view/internalFolding'] = {
+        isBigCourse: true
+    };
+
+    App.data = App.data || {};
+App.data.currentCourse = {"partId":4385470,"partTitle":"Codez l'algorithme en Python","partSlug":"codez-lalgorithme-en-python","courseId":4366701,"courseTitle":"D\u00e9couvrez le fonctionnement des algorithmes","courseSlug":"decouvrez-le-fonctionnement-des-algorithmes","courseLanguage":"fr","isIntroduction":false,"isCertifying":true};
+App.preferences.modules['view/currentCoursePage'] = App.data.currentCourse;
+
+</script>
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Codez l&#039;algorithme en Python" />
+<meta property="og:url" content="https://openclassrooms.com/fr/courses/4366701-decouvrez-le-fonctionnement-des-algorithmes/4385470-codez-lalgorithme-en-python" />
+<meta property="og:site_name" content="OpenClassrooms" />
+<meta property="og:image" content="https://course.oc-static.com/courses/4366701/4366701_teaser_picture_1614871924.jpg" />
+<meta property="og:description" content="L’algorithmique est l’art de décomposer les étapes d’une solution à un problème sous forme d’instructions précises pour des programmes informatiques. Apprenez à faire votre algorithme !" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@OCFrance" />
+<meta name="twitter:title" content="Codez l&#039;algorithme en Python" />
+<meta name="twitter:image" content="https://course.oc-static.com/courses/4366701/4366701_teaser_picture_1614871924.jpg" />
+<meta name="twitter:description" content="L’algorithmique est l’art de décomposer les étapes d’une solution à un problème sous forme d’instructions précises pour des programmes informatiques. Apprenez à faire votre algorithme !" />
+<link rel="canonical" href="4385470-codez-lalgorithme-en-python.html" />
+</head>
+<body class="course oc-body   breadcrumbFluid breadcrumbOnContrasted">
+<ul class="skipLink">
+<li>
+<a class="skipLink__item" href="#mainContent">Aller au contenu</a>
+</li>
+<li>
+<a class="skipLink__item" href="#footerChangeLanguage">Choisir la langue</a>
+</li>
+<li id="skipLink_search">
+<a class="skipLink__item" href="#algolia-search-input">Aller à la recherche</a>
+</li>
+</ul>
+<script id="_EVENTS-IDENTIFY" type="application/json">
+        </script>
+<script id="_EVENTS-PAGE" type="application/json">
+        {"type":"page","integrations":{"Blueshift":false,"HubSpot":false},"properties":{"pageCategory":"courses","courseTitle":"D\u00e9couvrez le fonctionnement des algorithmes"}}
+    </script>
+<script id="fundingMechanisms" type="application/json">
+    {
+        "fundingMechanisms": [{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":24,"name":"Action de Formation Pr\u00e9alable au Recrutement","shortName":"AFPR","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":25,"name":"Aide collective priv\u00e9e \u00e0 la formation","shortName":"Aide priv\u00e9e","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":20,"name":"Aide Individuelle \u00e0 la Formation","shortName":"AIF","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":28,"name":"Aide individuelle priv\u00e9e \u00e0 la formation","shortName":"Aide priv\u00e9e","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":21,"name":"Compte Personnel de Formation","shortName":"CPF","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":15,"name":"Contrat d'apprentissage","shortName":"Apprentissage","type":"apprenticeship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":16,"name":"Contrat de professionnalisation","shortName":"Contrat pro","type":"apprenticeship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":19,"name":"P\u00e9riode de professionnalisation","shortName":"P\u00e9riode pro","type":"apprenticeship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":23,"name":"Pr\u00e9paration Op\u00e9rationnelle \u00e0 l'Emploi Collective","shortName":"POEC","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":17,"name":"Pr\u00e9paration Op\u00e9rationnelle \u00e0 l'Emploi Individuelle","shortName":"POEI","type":"apprenticeship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":22,"name":"Programme R\u00e9gional de Formation pour l'Emploi","shortName":"PRFE","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":18,"name":"Reconversion ou promotion par l'alternance","shortName":"Pro-A","type":"apprenticeship"}]
+    }
+</script>
+<div id="oc-header">
+<div class="oc-mainHeader oc-mainHeader--notLogged oc-mainHeader--skeleton">
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div style="display: flex;">
+<div class="oc-mainHeaderLogo oc-mainHeaderLogo--skeleton">
+<a href="https://openclassrooms.com/fr/" class="oc-mainHeaderLogo__link">
+<svg fill="none" height="51" width="668" viewBox="0 0 668 51" xmlns="http://www.w3.org/2000/svg">
+<title>OpenClassrooms.com</title>
+<path d="M406.011 35.018c0 2.82-.71 5.641-2.368 7.991-1.659 2.35-3.79 4.23-6.87 5.64-3.079 1.41-6.869 2.116-11.37 2.116-3.79 0-7.343-.47-10.897-1.41-3.553-.94-6.395-2.35-8.527-3.996l7.106-8.46c1.421.705 2.843 1.175 4.501 1.88 2.842.94 5.448 1.41 8.054 1.41 4.974 0 7.58-1.41 7.58-3.995 0-1.41-.711-2.35-2.132-3.056-1.421-.705-3.79-1.41-6.87-2.115-3.553-.705-6.395-1.645-8.764-2.585s-4.264-2.35-6.159-4.23c-1.658-1.88-2.606-4.701-2.606-7.991 0-3.056.711-5.641 2.369-7.991 1.658-2.35 3.79-4.23 6.87-5.64 3.079-1.41 6.869-2.116 11.37-2.116 3.079 0 6.159.47 9.001 1.175 3.08.705 5.685 1.88 7.817 3.055l-7.343 8.696c-3.316-1.41-6.633-2.115-9.712-2.115-2.606 0-4.501.47-5.685 1.175-1.185.705-1.895 1.88-1.895 3.056 0 1.41.711 2.35 2.132 2.82 1.421.705 3.79 1.41 6.869 2.115a49.4 49.4 0 0 1 8.765 2.585c2.369.94 4.264 2.35 6.159 4.23 1.658 1.646 2.605 4.466 2.605 7.756zm261.989 0c0 2.82-.711 5.641-2.369 7.991s-3.79 4.23-6.869 5.64c-3.08 1.41-6.87 2.116-11.371 2.116-3.79 0-7.343-.47-10.896-1.41s-6.396-2.35-8.528-3.996l7.107-8.46c1.421.705 2.842 1.175 4.501 1.88 2.842.94 5.448 1.41 8.053 1.41 4.975 0 7.581-1.41 7.581-3.995 0-1.41-.711-2.35-2.132-3.056-1.422-.705-3.791-1.41-6.87-2.115a49.361 49.361 0 0 1-8.764-2.585c-2.369-.94-4.264-2.35-6.159-4.23-1.658-1.88-2.606-4.701-2.606-7.991 0-3.056.711-5.641 2.369-7.991 1.658-2.35 3.79-4.23 6.869-5.64 3.08-1.41 6.87-2.116 11.371-2.116 3.079 0 6.158.47 9.001 1.175 3.079.705 5.685 1.88 7.817 3.055l-7.343 8.696c-3.317-1.41-6.633-2.115-9.712-2.115-2.606 0-4.501.47-5.685 1.175-1.185.705-1.896 1.88-1.896 3.056 0 1.41.711 2.35 2.132 2.82 1.422.705 3.791 1.41 6.87 2.115a49.361 49.361 0 0 1 8.764 2.585c2.369.94 4.264 2.35 6.159 4.23 1.895 1.646 2.606 4.466 2.606 7.756zM87.882 19.037c0 3.76-.947 6.816-2.605 9.4-1.659 2.586-4.027 4.701-7.107 6.111s-6.87 2.116-10.896 2.116H59.22v12.69H45.955V.706h21.319c4.264 0 7.817.705 10.896 2.115 3.08 1.41 5.448 3.526 7.107 6.346 1.895 3.055 2.605 6.346 2.605 9.87zm-13.265 0c0-2.35-.71-3.995-2.132-5.17s-3.316-1.88-6.159-1.88h-7.343v14.336h7.343c2.606 0 4.738-.706 6.16-1.88s2.131-3.056 2.131-5.406zm55.904 20.212v10.576h-37.19V1.175h36.242v10.576h-23.214v8.226h18.476v10.341h-18.476v8.93zm50.218-38.074v48.65h-10.896l-20.609-25.853v25.853h-13.028V1.175h10.896l20.609 25.853V1.175zm84.092 37.604v10.81h-32.926V.94h13.265v37.604h19.661zm56.851 11.046h-13.739l-3.553-9.401h-19.661l-3.553 9.4h-13.502l20.608-48.649h13.029zM300.6 30.083l-5.922-15.512-5.922 15.512zm62.536 4.935c0 2.82-.71 5.641-2.369 7.991-1.658 2.35-3.79 4.23-6.869 5.64-3.08 1.41-6.87 2.116-11.37 2.116-3.79 0-7.344-.47-10.897-1.41s-6.396-2.35-8.527-3.996l7.106-8.46c1.421.705 2.842 1.175 4.501 1.88 2.842.94 5.448 1.41 8.054 1.41 4.974 0 7.58-1.41 7.58-3.995 0-1.41-.711-2.35-2.132-3.056-1.421-.705-3.79-1.41-6.87-2.115-3.553-.705-6.395-1.645-8.764-2.585s-4.264-2.35-6.159-4.23c-1.658-1.88-2.606-4.701-2.606-7.991 0-3.056.711-5.641 2.369-7.991 1.658-2.35 3.79-4.23 6.87-5.64 3.079-1.41 6.869-2.116 11.37-2.116 3.079 0 6.159.47 9.001 1.175 3.08.705 5.448 1.88 7.817 3.055l-7.343 8.696c-3.316-1.41-6.633-2.115-9.712-2.115-2.606 0-4.501.47-5.685 1.175-1.185.705-1.895 1.88-1.895 3.056 0 1.41.71 2.35 2.132 2.82 1.421.705 3.79 1.41 6.869 2.115a49.4 49.4 0 0 1 8.765 2.585c2.368.94 4.263 2.35 6.158 4.23 1.659 1.646 2.606 4.466 2.606 7.756zm-322.63-9.636c0 13.867-11.37 25.383-25.583 25.383-5.685 0-10.66-1.88-14.923-4.936l8.528-10.105c1.895 1.175 4.027 1.88 6.395 1.88 6.633 0 12.081-5.406 12.081-11.986 0-6.581-5.448-11.987-12.08-11.987-2.37 0-4.501.705-6.396 1.88L0 5.407C4.264 2.35 9.475.47 14.923.47 29.136.235 40.506 11.516 40.506 25.383zm177.66 10.341l8.528 10.107c-4.264 3.055-9.476 4.935-14.924 4.935-13.976 0-25.583-11.281-25.583-25.383C186.187 11.517 197.557 0 211.77 0c5.685 0 10.66 1.88 14.924 4.936l-8.528 10.105c-1.895-1.175-4.027-1.88-6.396-1.88-6.632 0-12.081 5.406-12.081 11.986 0 6.581 5.449 11.987 12.081 11.987 2.369.47 4.501-.235 6.396-1.41zm236.169 14.102l-10.423-15.042c3.079-1.41 5.211-3.525 6.87-6.11 1.658-2.585 2.605-5.876 2.605-9.401 0-3.76-.947-6.816-2.605-9.636-1.659-2.82-4.027-4.7-7.107-6.346-3.079-1.41-6.869-2.115-10.896-2.115H411.46v48.65h13.028V37.134h6.159l8.764 12.69zm-29.847-37.839h7.58c2.606 0 4.738.705 6.159 1.88s2.132 3.056 2.132 5.17c0 2.351-.711 3.996-2.132 5.171s-3.316 1.88-6.159 1.88h-7.58zM483.945.235c13.976 0 25.583 11.281 25.583 25.382S498.157 51 483.945 51c-13.976 0-25.583-11.281-25.583-25.383S469.732.235 483.945.235zm-13.029 25.147c0 7.051 5.685 12.692 12.792 12.692 7.106 0 12.791-5.64 12.791-12.692s-5.685-12.69-12.791-12.69c-6.87 0-12.792 5.64-12.792 12.69zM538.901.235c13.976 0 25.583 11.281 25.583 25.382S553.114 51 538.901 51c-13.976 0-25.583-11.281-25.583-25.383S524.925.235 538.901.235zm-12.792 25.147c0 7.051 5.685 12.692 12.792 12.692 7.106 0 12.791-5.64 12.791-12.692s-5.685-12.69-12.791-12.69c-7.107 0-12.792 5.64-12.792 12.69zm70.353 6.816L580.828 1.175h-10.896v48.65h11.607V28.438l11.607 21.387h6.87l11.607-21.387v21.387h11.607V1.175h-10.897z" />
+</svg>
+</a>
+</div>
+<nav class="oc-mainHeader__navWrapper" role="navigation" aria-label="Menu principal">
+<div class="oc-mainHeader__linksWrapper">
+<div class="oc-mainHeader__navLinkWrapper"><a class="oc-mainHeader__navLink" data-event="click|Header|Trainings" href="https://openclassrooms.com/fr/paths">Formations</a></div>
+<div class="oc-mainHeader__navLinkWrapper"><a class="oc-mainHeader__navLink" data-event="click|Header|Apprenticeship" href="https://openclassrooms.com/fr/apprenticeship">Alternance</a></div>
+<div class="oc-mainHeader__navLinkWrapper"><a class="oc-mainHeader__navLink" data-event="click|Header|Funding" href="https://openclassrooms.com/fr/funding">Financements</a></div>
+<div class="oc-mainHeader__navLinkWrapper--separator"></div>
+<div class="oc-mainHeader__navLinkWrapper"><a class="oc-mainHeader__navLink" data-event="click|Header|Business" href="https://openclassrooms.com/fr/business">Pour les entreprises</a></div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="disclaimers-container" style="display:none;">
+<!--[if lt IE 10]>
+        <div class="alertMessage">
+        <span class="bullet bullet--small bullet--orange alertMessage__icon"> <i class="icon-exclamation"></i></span>
+        <p class="alertMessage__text">
+            Vous utilisez un navigateur obsolète, veuillez le <a href="https://browser-update.org/update.html">mettre à jour</a>.
+        </p>
+    </div>
+    <![endif]-->
+
+<div id="modern-ie-disclaimer" style="display:none">
+<div class="alertMessage">
+<span class="bullet bullet--small bullet--orange alertMessage__icon"> <i class="icon-exclamation"></i></span>
+<p class="alertMessage__text">
+Vous utilisez un navigateur obsolète, veuillez le <a href="https://browser-update.org/update.html">mettre à jour</a>.
+</p>
+</div>
+</div>
+<script id="webapp-ie-disclaimer" type="application/json">{"message":"Vous utilisez un navigateur obsol\u00e8te, veuillez le <a href=\"https:\/\/browser-update.org\/update.html\">mettre \u00e0 jour<\/a>."}</script>
+<script>
+      var isModernIE =  document.documentMode === 10 || document.documentMode === 11;
+      var isEdgeLegacy = navigator.userAgent.indexOf('Edge') > -1; // Luckily for us, Edge Chromium uses string "Edg" without final "e"
+
+      if (isModernIE || isEdgeLegacy) {
+        document.getElementById('modern-ie-disclaimer').style.display = 'block';
+        document.getElementById('webapp-ie-disclaimer').setAttribute('data-role', 'disclaimer-message-data');
+      }
+    </script>
+<noscript>
+        <div class="alertMessage">
+            <span class="bullet bullet--small bullet--orange alertMessage__icon"> <i class="icon-exclamation"></i></span>
+            <p class="alertMessage__text">
+                Veuillez utiliser un <a href="https://browser-update.org/update.html">navigateur internet moderne</a> avec JavaScript activé pour naviguer sur OpenClassrooms.com
+            </p>
+        </div>
+    </noscript>
+</div>
+<div id="mainContentWithHeader">
+<section class="breadcrumb  inset no-padding">
+<div class="grid-wrapper">
+<div class="grid-inner">
+<nav class="breadcrumb__wrapper" role="navigation" aria-label="Fil d&#039;Ariane">
+<ul class="breadcrumb__trail">
+<li class="breadcrumb__item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a class="breadcrumb__link" href="https://openclassrooms.com/fr/" itemprop="url">
+<span itemprop="title">Accueil</span
+                                    ></a>
+<span class="breadcrumb__separator"> > </span>
+</li>
+<li class="breadcrumb__item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a class="breadcrumb__link" href="https://openclassrooms.com/fr/courses" itemprop="url">
+<span itemprop="title">Cours</span
+                                    ></a>
+<span class="breadcrumb__separator"> > </span>
+</li>
+<li class="breadcrumb__item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a class="breadcrumb__link" href="../4366701-decouvrez-le-fonctionnement-des-algorithmes6f1b.html?status=published" itemprop="url">
+<span itemprop="title">Découvrez le fonctionnement des algorithmes</span
+                                    ></a>
+<span class="breadcrumb__separator"> > </span>
+</li>
+<li class="breadcrumb__item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+Codez l&#039;algorithme en Python
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</section>
+<div id="pre-main-part">
+</div>
+<main class="claire clearfix" role="main" id="mainContent">
+<article itemscope itemtype="http://schema.org/Article" lang="fr">
+<header id="course-header" class="courseHeader" xmlns="http://www.w3.org/1999/html">
+<div class="grid-wrapper"><div class="grid-inner"><div class="grid-inner-content"><div class="courseHeader__topPart"><a itemprop="url" href="../4366701-decouvrez-le-fonctionnement-des-algorithmes.html"><h1 class="oc-typography-h2 typoColorOnContrastedBg  courseHeader__title" data-course-title="Découvrez le fonctionnement des algorithmes">Découvrez le fonctionnement des algorithmes</h1></a></div></div></div></div><div class="grid-wrapper"><div class="grid-inner"><div class="grid-inner-content"><div class="courseHeader__bottomPart"><div class="courseHeader__details"><div class="courseHeader__detailsGroup"><ul class="courseHeader__detailsList"><li class="courseHeader__detailsItem"><img class="courseHeader__icon js-tooltip" src="https://openclassrooms.com/images/icons/schedule.svg?83212fe7" width="16" title="Ce cours demande en moyenne 4 heures de travail pour être réussi." /><span class="courseHeader__label">4 heures</span></li><li class="courseHeader__detailsItem"><i class="icon-level courseHeader__icon"></i><span class="courseHeader__label">Facile</span></li></ul></div><div class="courseHeader__detailsGroup courseHeader--license"><a class="courseHeader__license" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0"><span class="courseHeader__label">Licence</span><ul class="courseHeader__detailsList"><li class="iconBar__item"><i class="icon-cc iconBar__icon" title="CC"></i></li><li class="iconBar__item"><i class="icon-ccby iconBar__icon" title="BY"></i></li><li class="iconBar__item"><i class="icon-ccsa iconBar__icon" title="SA"></i></li></ul></a></div></div></div></div></div></div>
+<div id="popin-formats-availables" class="popin popin--course-formats-availables">
+<i class="popin__close-button icon-close js-close-button"></i>
+
+<div class="course-types course-types--withSpace">
+<a class="course-types__item" href="../4366701-decouvrez-le-fonctionnement-des-algorithmes.html">
+<i class="icon-desktop course-types__icon"></i>
+</a>
+<a class="course-types__item" href="https://openclassrooms.com/fr/courses?video=true">
+<i class="icon-video course-types__icon"></i>
+</a>
+<a class="course-types__item" href="../4366701/certificate_example.pdf" target="_blank">
+<i class="icon-badge course-types__icon js-close-button"></i>
+</a>
+</div>
+<p>Ce cours est visible <a href="../4366701-decouvrez-le-fonctionnement-des-algorithmes.html">gratuitement en ligne</a>.</p>
+<p>course.header.alt.is_video</p>
+<p>
+course.header.alt.is_certifying
+</p>
+<a class="button button--primary js-close-button" href="#">J&#039;ai tout compris !</a>
+</div>
+</header>
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="grid-inner-content">
+<p class="courseHeader__updatedTime">
+Mis à jour le 09/07/2020 </p>
+</div>
+</div>
+</div>
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="grid-inner-content">
+<nav id="course-timeline" class="timeline">
+<div class="timeline__inner">
+<span class="timeline__iconContainer">
+<a href="../4366701-decouvrez-le-fonctionnement-des-algorithmes.html" title="Retour sur le sommaire du cours" class="roundIcon timeline__roundIcon">
+<i class="icon-home roundIcon__icon"></i>
+</a>
+</span>
+<div class="timeline__steps">
+<span class="timeline__splitChapter"></span>
+<a href="4384756-tirez-pleinement-parti-de-ce-cours.html" class="timeline__step" title="Tirez pleinement parti de ce cours">
+<span class="timeline__stepName">
+Tirez pleinement parti de ce cours
+</span>
+</a>
+<a href="4384797-decouvrez-linteret-des-algorithmes.html" class="timeline__step" title="Découvrez l&#039;intérêt des algorithmes">
+<span class="timeline__stepName">
+Découvrez l&#039;intérêt des algorithmes
+</span>
+</a>
+<span class="timeline__splitChapter"></span>
+<a href="4384884-posez-les-fondations.html" class="timeline__step" title="Posez les fondations">
+<span class="timeline__stepName">
+Posez les fondations
+</span>
+</a>
+<a href="4384913-ajoutez-une-boucle.html" class="timeline__step" title="Ajoutez une boucle">
+<span class="timeline__stepName">
+Ajoutez une boucle
+</span>
+</a>
+<a href="4384937-decouvrez-les-structures-conditionnelles.html" class="timeline__step" title="Découvrez les structures conditionnelles">
+<span class="timeline__stepName">
+Découvrez les structures conditionnelles
+</span>
+</a>
+<a href="exercises/1619.html" class="timeline__step" title="Quiz : Les algorithmes et la programmation structurée">
+<span class="timeline__stepName">
+Quiz : Les algorithmes et la programmation structurée
+</span>
+</a>
+<span class="timeline__splitChapter"></span>
+<a href="4384952-decouvrez-les-types-de-donnees-les-plus-frequents.html" class="timeline__step" title="Découvrez les types de données les plus fréquents">
+<span class="timeline__stepName">
+Découvrez les types de données les plus fréquents
+</span>
+</a>
+<a href="4385034-agencez-les-informations-entre-elles.html" class="timeline__step" title="Agencez les informations entre elles">
+<span class="timeline__stepName">
+Agencez les informations entre elles
+</span>
+</a>
+<a href="4385096-decouvrez-les-piles-et-les-files.html" class="timeline__step" title="Découvrez les piles et les files">
+<span class="timeline__stepName">
+Découvrez les piles et les files
+</span>
+</a>
+<a href="4385117-familiarisez-vous-avec-les-arbres.html" class="timeline__step" title="Familiarisez-vous avec les arbres">
+<span class="timeline__stepName">
+Familiarisez-vous avec les arbres
+</span>
+</a>
+<a href="exercises/1620.html" class="timeline__step" title="Quiz : Choisissez le type et la structure de données adéquats">
+<span class="timeline__stepName">
+Quiz : Choisissez le type et la structure de données adéquats
+</span>
+</a>
+<span class="timeline__splitChapter"></span>
+<a href="4385150-triez-des-informations.html" class="timeline__step" title="Triez des informations">
+<span class="timeline__stepName">
+Triez des informations
+</span>
+</a>
+<a href="4420551-comprenez-la-complexite-algorithmique.html" class="timeline__step" title="Comprenez la complexité algorithmique">
+<span class="timeline__stepName">
+Comprenez la complexité algorithmique
+</span>
+</a>
+<a href="4385343-voyez-le-monde-autrement-avec-la-recursivite.html" class="timeline__step" title="Voyez le monde autrement avec la récursivité">
+<span class="timeline__stepName">
+Voyez le monde autrement avec la récursivité
+</span>
+</a>
+ <a href="4385470-codez-lalgorithme-en-python.html" class="timeline__step js-current-timeline-step" title="Codez l&#039;algorithme en Python">
+<span class="timeline__stepName">
+Codez l&#039;algorithme en Python
+</span>
+<span class="timeline__progressMarker"></span>
+</a>
+<a href="4385496-plongez-dans-le-monde-des-algorithmes.html" class="timeline__step" title="Plongez dans le monde des algorithmes">
+<span class="timeline__stepName">
+Plongez dans le monde des algorithmes
+</span>
+</a>
+<a href="exercises/1621.html" class="timeline__step" title="Quiz : Vers l&#039;infini et au-delà !">
+<span class="timeline__stepName">
+Quiz : Vers l&#039;infini et au-delà !
+</span>
+</a>
+<span class="timeline__splitChapter"></span>
+</div>
+<span class="timeline__iconContainer">
+<a href="../4366701/certificate_example.pdf" title="Certificat de réussite (voir un exemple)" class="roundIcon timeline__roundIcon">
+<i class="icon-trophy roundIcon__icon"></i>
+</a>
+</span>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="contentWithSidebar  spacer  js-contentWithSidebar  grid-inner-content">
+<div class="contentWithSidebar__content">
+<div id="js-courseRedirection" data-courseInfo-course_id="4366701"></div>
+<div class="relative js-sidebar-container">
+<div class="static">
+<h2 itemprop="name" data-part-title="Codez l&#039;algorithme en Python" class="part-title">Codez l&#039;algorithme en Python</h2>
+<section class="space-bottom js-desktop-sticky-container">
+<div class="tooltipMessage tooltipMessage--noArrow">
+<i class="tooltipMessage__icon  icon-lock"></i>
+<a href="https://openclassrooms.com/fr/login">Connectez-vous</a> ou <a href="https://openclassrooms.com/fr/register">inscrivez-vous</a> gratuitement pour bénéficier de toutes les fonctionnalités de ce cours !
+</div>
+<div itemprop="articleBody" data-page-indentifier="/fr/courses/4366701-decouvrez-le-fonctionnement-des-algorithmes/4385470-codez-lalgorithme-en-python" class="js-isRestrictablePage js-course-container js-smilize " data-video-blocked-wrapper="<a href='https://openclassrooms.com/fr/login#popin-log-in' class='js-popin-activator'>">
+<div class="userContent js-userContent">
+<aside id="r-4386162" data-claire-element-id="29081832" data-claire-semantic="information"><p id="r-4386161" data-claire-element-id="29081831">Ce chapitre nécessite l’apprentissage de Python, un langage de programmation très utilisé dans la sphère scientifique. Vous voulez apprendre ? Cela tombe bien : j’ai justement écrit <a href="https://openclassrooms.com/courses/demarrez-votre-projet-avec-python">un cours ô combien passionnant</a> qui vous permettra de commencer en douceur.</p></aside><aside id="r-4599611" data-claire-element-id="29081834" data-claire-semantic="warning"><p id="r-4517801" data-claire-element-id="29081833"> La version textuelle de ce chapitre diffère <strong>légèrement</strong> de la vidéo, car j’ai amélioré le code à la suite des retours avisés de plusieurs lecteurs.</p></aside><video id="r-6564956" data-claire-element-id="29925351" src="https://vimeo.com/213636575"><a href="https://vimeo.com/213636575">https://vimeo.com/213636575</a></video><p id="r-4386163" data-claire-element-id="29042648"></p><p id="r-4385346" data-claire-element-id="29081836">Pour rappel, voici les règles de notre programme :</p><ul id="r-4385353" data-claire-element-id="29081841"><li id="r-4385348" data-claire-element-id="29081643"><p id="r-4385347" data-claire-element-id="29081642">Chaque candidat a une mention entre &quot;Excellent&quot; et &quot;À rejeter&quot;.</p></li><li id="r-4385350" data-claire-element-id="29081838"><p id="r-4385349" data-claire-element-id="29081837">La mention majoritaire de chaque candidat est calculée sur une médiane et non sur une moyenne. 50 % au moins des votants trouvent cette mention valable.</p></li><li id="r-4385352" data-claire-element-id="29081840"><p id="r-4385351" data-claire-element-id="29081839">En cas d’égalité de mentions majoritaires : celle ou celui ayant le pourcentage de mentions supérieures à la mention majoritaire le plus important est le mieux classé.</p></li></ul><p id="r-4385354" data-claire-element-id="29081842">Et voici les mentions :</p><ul id="r-4385369" data-claire-element-id="29071117"><li id="r-4385356" data-claire-element-id="8016903"><p id="r-4385355" data-claire-element-id="8016902">Excellent [0]</p></li><li id="r-4385358" data-claire-element-id="8016905"><p id="r-4385357" data-claire-element-id="8016904">Très bien [1]</p></li><li id="r-4385360" data-claire-element-id="8016907"><p id="r-4385359" data-claire-element-id="8016906">Bien [2]</p></li><li id="r-4385362" data-claire-element-id="7744682"><p id="r-4385361" data-claire-element-id="7744681">Assez Bien [3]</p></li><li id="r-4385364" data-claire-element-id="8378363"><p id="r-4385363" data-claire-element-id="8378362">Passable [4]</p></li><li id="r-4385366" data-claire-element-id="8016911"><p id="r-4385365" data-claire-element-id="8016910">Insuffisant [5]</p></li><li id="r-4385368" data-claire-element-id="29071116"><p id="r-4385367" data-claire-element-id="29071115">À rejeter [6]</p></li></ul><p id="r-4385370" data-claire-element-id="29081843">Vous souhaitez coder en même temps que moi ? Youpi, vous avez entièrement raison ! Téléchargez <a href="https://github.com/celine-m-s/majoritary-judgment/blob/starter/program.py">ce code pour commencer</a>. Il vous permettra de créer aléatoirement 100 000 votes.</p><p id="r-4385371" data-claire-element-id="7767493">Le fichier de départ inclut un dictionnaire et un tableau qui vous seront bien utiles. Le premier, <code data-claire-semantic="text">CANDIDATES</code>, contient le nom de chaque candidat associé à sa clé. Le second, <code data-claire-semantic="text">MENTIONS</code>, contient la liste de toutes les mentions dans un format agréable à lire.</p><pre id="r-4385372" data-claire-element-id="8016915"><code data-claire-semantic="python">CANDIDATES = {
+    &quot;hermione&quot;: &quot;Hermione Granger&quot;,
+    &quot;balou&quot;: &quot;Balou&quot;,
+    &quot;chuck-norris&quot;: &quot;Chuck Norris&quot;,
+    &quot;elsa&quot;: &quot;Elsa&quot;,
+    &quot;gandalf&quot;: &quot;Gandalf&quot;,
+    &quot;beyonce&quot;: &quot;Beyoncé&quot;
+}
+
+MENTIONS = [
+    &quot;Excellent&quot;,
+    &quot;Très bien&quot;,
+    &quot;Bien&quot;,
+    &quot;Assez Bien&quot;,
+    &quot;Passable&quot;,
+    &quot;Insuffisant&quot;,
+    &quot;A rejeter&quot;
+]
+</code></pre><p id="r-4385373" data-claire-element-id="7744693">Nous y reviendrons plus tard.</p><h3 id="r-4385380" data-claire-element-id="29081848">Format de données en entrée</h3><p id="r-4385374" data-claire-element-id="29081844">Quelle structure de données choisir pour qu’elle soit le plus facilement interprétable ? Commençons par nous questionner sur les opérations que nous allons effectuer. Nous allons lire les données, les trier et trouver l’élément qui se situe à la moitié.</p><p id="r-4392916" data-claire-element-id="29081845">Regardons sur la <a href="http://bigocheatsheet.com/">Big O Cheat Sheet</a> ce qui nous est conseillé. Il semblerait que ce soient la table de hachage (Hash table) et les tableaux (Array) qui l’emportent en ce qui concerne l’accès et la recherche. Vous souvenez-vous pourquoi ? Un tableau a un index qui le rend plus facile à parcourir pour en extraire des données. Quant à la table de hachage, vous retrouvez des données via des clés. Le tableau est moins flexible, mais ce n’est pas vraiment notre souci dans le cas présent, puisque nous ne le modifierons pas.</p><p id="r-4385375" data-claire-element-id="7744695">Je vous propose de créer un tableau pour regrouper tous nos votes.</p><p id="r-4385376" data-claire-element-id="29081846">Chaque vote sera représenté par une table de hachage dont les clés seront les différents candidats et leur valeur la mention sous forme de numéro. Par exemple :</p><pre id="r-4385377" data-claire-element-id="7744697"><code data-claire-semantic="python">{ &quot;Hermione&quot;: 6 }
+</code></pre><p id="r-4385378" data-claire-element-id="29081847">Voici un extrait de nos données en entrée :</p><pre id="r-4385379" data-claire-element-id="7744699"><code data-claire-semantic="python">[{&quot;hermione&quot;: 1, &quot;balou&quot;: 2, &quot;chuck-norris&quot;: 3, &quot;elsa&quot;: 4, &quot;gandalf&quot;: 5, &quot;beyonce&quot;: 6},
+{&quot;hermione&quot;: 2, &quot;balou&quot;: 3, &quot;chuck-norris&quot;: 4, &quot;elsa&quot;: 5, &quot;gandalf&quot;: 6, &quot;beyonce&quot;: 0}
+]
+</code></pre><p id="r-6225627" data-claire-element-id="29081648"></p><h3 id="r-4385385" data-claire-element-id="29081852">Format de données en sortie</h3><p id="r-4385381" data-claire-element-id="29081849">Notre programme sera lancé en ligne de commandes et devra imprimer, dans notre terminal, une liste affichant ainsi :</p><pre id="r-4385382" data-claire-element-id="8016922"><code data-claire-semantic="sh">Gagnant : Hermione avec 70% de mentions Bien
+Suivants : 
+- Balou avec 50% de mentions bien
+- Chuck Norris avec 50% de mentions assez bien
+- Elsa avec 70% de mentions passable
+- Gandalf avec 60% de mentions passable
+- Beyoncé avec 50% de mentions à rejeter
+</code></pre><aside id="r-4385384" data-claire-element-id="29081851" data-claire-semantic="information"><p id="r-4385383" data-claire-element-id="29081850">Ceci n’est qu’un exemple, car je pense que les résultats seront bien différents !</p></aside><h3 id="r-4385408" data-claire-element-id="29925355">Algorithme</h3><h4 id="r-4385407" data-claire-element-id="29925354">Créer un tableau intermédiaire</h4><p id="r-4385386" data-claire-element-id="29081853">C’est parti !</p><p id="r-4385387" data-claire-element-id="29081854">Nous avons vu que notre tableau intermédiaire ressemblerait à ceci :</p><table id="r-4395312" data-claire-element-id="29071123"><tbody id="r-4395311" data-claire-element-id="29071122"><tr id="r-4395205" data-claire-element-id="7775245"><td id="r-4395192" data-claire-element-id="7775232"><p id="r-4395191" data-claire-element-id="7775231"> </p></td><td id="r-4395194" data-claire-element-id="7775234"><p id="r-4395193" data-claire-element-id="7775233">Balou</p></td><td id="r-4395196" data-claire-element-id="7775236"><p id="r-4395195" data-claire-element-id="7775235">Hermione</p></td><td id="r-4395198" data-claire-element-id="7775238"><p id="r-4395197" data-claire-element-id="7775237">Chuck Norris</p></td><td id="r-4395200" data-claire-element-id="7775240"><p id="r-4395199" data-claire-element-id="7775239">Elsa</p></td><td id="r-4395202" data-claire-element-id="7775242"><p id="r-4395201" data-claire-element-id="7775241">Gandalf</p></td><td id="r-4395204" data-claire-element-id="7775244"><p id="r-4395203" data-claire-element-id="7775243">Beyonce</p></td></tr><tr id="r-4395220" data-claire-element-id="29071121"><td id="r-4395207" data-claire-element-id="29071120"><p id="r-4395206" data-claire-element-id="29071119">6 - À rejeter</p></td><td id="r-4395209" data-claire-element-id="7775249"><p id="r-4395208" data-claire-element-id="7775248"> </p></td><td id="r-4395211" data-claire-element-id="7775251"><p id="r-4395210" data-claire-element-id="7775250"> </p></td><td id="r-4395213" data-claire-element-id="7775253"><p id="r-4395212" data-claire-element-id="7775252"> </p></td><td id="r-4395215" data-claire-element-id="7775255"><p id="r-4395214" data-claire-element-id="7775254"> </p></td><td id="r-4395217" data-claire-element-id="7775257"><p id="r-4395216" data-claire-element-id="7775256"> </p></td><td id="r-4395219" data-claire-element-id="7775259"><p id="r-4395218" data-claire-element-id="7775258"> </p></td></tr><tr id="r-4395235" data-claire-element-id="8016937"><td id="r-4395222" data-claire-element-id="8016936"><p id="r-4395221" data-claire-element-id="8016935">5 - Insuffisant</p></td><td id="r-4395224" data-claire-element-id="7775264"><p id="r-4395223" data-claire-element-id="7775263"> </p></td><td id="r-4395226" data-claire-element-id="7775266"><p id="r-4395225" data-claire-element-id="7775265"> </p></td><td id="r-4395228" data-claire-element-id="7775268"><p id="r-4395227" data-claire-element-id="7775267"> </p></td><td id="r-4395230" data-claire-element-id="7775270"><p id="r-4395229" data-claire-element-id="7775269"> </p></td><td id="r-4395232" data-claire-element-id="7775272"><p id="r-4395231" data-claire-element-id="7775271"> </p></td><td id="r-4395234" data-claire-element-id="7775274"><p id="r-4395233" data-claire-element-id="7775273"> </p></td></tr><tr id="r-4395250" data-claire-element-id="8016940"><td id="r-4395237" data-claire-element-id="8016939"><p id="r-4395236" data-claire-element-id="8016938">4 - Passable</p></td><td id="r-4395239" data-claire-element-id="7775279"><p id="r-4395238" data-claire-element-id="7775278"> </p></td><td id="r-4395241" data-claire-element-id="7775281"><p id="r-4395240" data-claire-element-id="7775280"> </p></td><td id="r-4395243" data-claire-element-id="7775283"><p id="r-4395242" data-claire-element-id="7775282"> </p></td><td id="r-4395245" data-claire-element-id="7775285"><p id="r-4395244" data-claire-element-id="7775284"> </p></td><td id="r-4395247" data-claire-element-id="7775287"><p id="r-4395246" data-claire-element-id="7775286"> </p></td><td id="r-4395249" data-claire-element-id="7775289"><p id="r-4395248" data-claire-element-id="7775288"> </p></td></tr><tr id="r-4395265" data-claire-element-id="7775305"><td id="r-4395252" data-claire-element-id="7775292"><p id="r-4395251" data-claire-element-id="7775291">3 - Assez bien</p></td><td id="r-4395254" data-claire-element-id="7775294"><p id="r-4395253" data-claire-element-id="7775293"> </p></td><td id="r-4395256" data-claire-element-id="7775296"><p id="r-4395255" data-claire-element-id="7775295"> </p></td><td id="r-4395258" data-claire-element-id="7775298"><p id="r-4395257" data-claire-element-id="7775297"> </p></td><td id="r-4395260" data-claire-element-id="7775300"><p id="r-4395259" data-claire-element-id="7775299"> </p></td><td id="r-4395262" data-claire-element-id="7775302"><p id="r-4395261" data-claire-element-id="7775301"> </p></td><td id="r-4395264" data-claire-element-id="7775304"><p id="r-4395263" data-claire-element-id="7775303"> </p></td></tr><tr id="r-4395280" data-claire-element-id="8016943"><td id="r-4395267" data-claire-element-id="8016942"><p id="r-4395266" data-claire-element-id="8016941">2 - Bien</p></td><td id="r-4395269" data-claire-element-id="7775309"><p id="r-4395268" data-claire-element-id="7775308"> </p></td><td id="r-4395271" data-claire-element-id="7775311"><p id="r-4395270" data-claire-element-id="7775310"> </p></td><td id="r-4395273" data-claire-element-id="7775313"><p id="r-4395272" data-claire-element-id="7775312"> </p></td><td id="r-4395275" data-claire-element-id="7775315"><p id="r-4395274" data-claire-element-id="7775314"> </p></td><td id="r-4395277" data-claire-element-id="7775317"><p id="r-4395276" data-claire-element-id="7775316"> </p></td><td id="r-4395279" data-claire-element-id="7775319"><p id="r-4395278" data-claire-element-id="7775318"> </p></td></tr><tr id="r-4395295" data-claire-element-id="8016946"><td id="r-4395282" data-claire-element-id="8016945"><p id="r-4395281" data-claire-element-id="8016944">1 - Très bien</p></td><td id="r-4395284" data-claire-element-id="7775324"><p id="r-4395283" data-claire-element-id="7775323"> </p></td><td id="r-4395286" data-claire-element-id="7775326"><p id="r-4395285" data-claire-element-id="7775325"> </p></td><td id="r-4395288" data-claire-element-id="7775328"><p id="r-4395287" data-claire-element-id="7775327"> </p></td><td id="r-4395290" data-claire-element-id="7775330"><p id="r-4395289" data-claire-element-id="7775329"> </p></td><td id="r-4395292" data-claire-element-id="7775332"><p id="r-4395291" data-claire-element-id="7775331"> </p></td><td id="r-4395294" data-claire-element-id="7775334"><p id="r-4395293" data-claire-element-id="7775333"> </p></td></tr><tr id="r-4395310" data-claire-element-id="8016949"><td id="r-4395297" data-claire-element-id="8016948"><p id="r-4395296" data-claire-element-id="8016947">0 - Excellent</p></td><td id="r-4395299" data-claire-element-id="7775339"><p id="r-4395298" data-claire-element-id="7775338"> </p></td><td id="r-4395301" data-claire-element-id="7775341"><p id="r-4395300" data-claire-element-id="7775340"> </p></td><td id="r-4395303" data-claire-element-id="7775343"><p id="r-4395302" data-claire-element-id="7775342"> </p></td><td id="r-4395305" data-claire-element-id="7775345"><p id="r-4395304" data-claire-element-id="7775344"> </p></td><td id="r-4395307" data-claire-element-id="7775347"><p id="r-4395306" data-claire-element-id="7775346"> </p></td><td id="r-4395309" data-claire-element-id="7775349"><p id="r-4395308" data-claire-element-id="7775348"> </p></td></tr></tbody></table><p id="r-4385389" data-claire-element-id="29081855">Comment le créer en Python ? En créant un tableau à l’intérieur d’un hash. Comme ceci :</p><pre id="r-4385390" data-claire-element-id="7775353"><code data-claire-semantic="python">candidates = {
+    'hermione': [0, 0, 0, 0, 0, 0, 0],
+    'balou': [0, 0, 0, 0, 0, 0, 0],
+    'chuck-norris': [0, 0, 0, 0, 0, 0, 0],
+    'elsa': [0, 0, 0, 0, 0, 0, 0],
+    'gandalf': [0, 0, 0, 0, 0, 0, 0],
+    'beyonce': [0, 0, 0, 0, 0, 0, 0]
+}
+</code></pre><aside id="r-4385392" data-claire-element-id="29925353" data-claire-semantic="information"><p id="r-4385391" data-claire-element-id="29925352">Chaque nombre dans le tableau est le nombre de votes pour chaque mention ! Le nombre à l’index 0 sera le nombre total de mentions 0 (Excellent, celui à l’index 1 le nombre total de mentions 5 (Insuffisant), etc.</p></aside><p id="r-4385393" data-claire-element-id="29081858">Créons une fonction qui prendra en entrée une liste de votes et renverra, en sortie, un dictionnaire contenant le résultat des candidats :</p><pre id="r-4385394" data-claire-element-id="7745996"><code data-claire-semantic="python">def results_hash(votes):
+    candidates_results = {
+        candidate: [0]*len(MENTIONS)
+        for candidate in CANDIDATES.keys()
+    }
+    for vote in votes:
+        for candidate, mention in vote.items():
+            candidates_results[candidate][mention] += 1
+    return candidates_results
+</code></pre><p id="r-4385395" data-claire-element-id="29081859">Et ajoutons dans la fonction  <code data-claire-semantic="text">main</code>  son exécution :</p><pre id="r-4385396" data-claire-element-id="7744716"><code data-claire-semantic="python">def main():
+    votes = create_votes()
+    results = results_hash(votes)
+</code></pre><p id="r-4385397" data-claire-element-id="29081860">Décomposons-le :</p><pre id="r-4385398" data-claire-element-id="7745998"><code data-claire-semantic="python">candidates_results = {
+    candidate: [0]*len(MENTIONS)
+    for candidate in CANDIDATES.keys()
+}</code></pre><p id="r-4385399" data-claire-element-id="29081861">Je commence par créer un premier tableau dont toutes les valeurs sont à zéro. C’est normal : pour l’instant, chaque candidat a zéro vote ! Exactement de la même manière que nous l’avons fait à la main précédemment !</p><p id="r-4385400" data-claire-element-id="29081862">Cette fonction crée le dictionnaire suivant :</p><pre id="r-4385401" data-claire-element-id="7744721"><code data-claire-semantic="python">{
+    &quot;hermione&quot;: [0, 0, 0, 0, 0, 0, 0], 
+    &quot;balou&quot;: [0, 0, 0, 0, 0, 0, 0], 
+    &quot;chuck-norris&quot;: [0, 0, 0, 0, 0, 0, 0], 
+    &quot;elsa&quot;: [0, 0, 0, 0, 0, 0, 0], 
+    &quot;gandalf&quot;: [0, 0, 0, 0, 0, 0, 0], 
+    &quot;beyonce&quot;: [0, 0, 0, 0, 0, 0, 0]
+}
+</code></pre><p id="r-4385402" data-claire-element-id="29081863">Puis, je vais parcourir chaque vote et ajouter 1 quand un candidat recevra une mention :</p><pre id="r-4385403" data-claire-element-id="7744723"><code data-claire-semantic="text">for vote in votes:
+    for candidate, mention in vote.items():
+        candidates_results[candidate][mention] += 1
+return candidates_results
+</code></pre><p id="r-4385404" data-claire-element-id="29081864">Cela va générer un dictionnaire similaire à celui-ci :</p><pre id="r-4385405" data-claire-element-id="7745999"><code data-claire-semantic="python">{
+    'hermione': [0, 0, 0, 25333, 24796, 24871, 25000], 
+    'balou': [14404, 14311, 14305, 14250, 14195, 14231, 14304], 
+    'chuck-norris': [33320, 33436, 33244, 0, 0, 0, 0], 
+    'elsa': [0, 49969, 50031, 0, 0, 0, 0], 
+    'gandalf': [0, 0, 0, 25023, 25033, 25039, 24905], 
+    'beyonce': [0, 0, 19926, 20099, 19835, 20214, 19926]
+}
+</code></pre><p id="r-4385406" data-claire-element-id="29081865">Nous allons maintenant calculer la mention médiane !</p><h3 id="r-4385440" data-claire-element-id="29925357">Calculer la mention médiane de chaque candidat</h3><p id="r-4385409" data-claire-element-id="29081868">Commencez par regarder cette vidéo :</p><video id="r-6564957" data-claire-element-id="29925356" src="https://www.youtube.com/watch?v=uIx2xvdwIIo"><a href="https://www.youtube.com/watch?v=uIx2xvdwIIo">https://www.youtube.com/watch?v=uIx2xvdwIIo</a></video><p id="r-4386165" data-claire-element-id="29081870">Nous atteignons la médiane lorsque 50 % des votes pour un candidat sont représentés. Prenons un exemple.</p><p id="r-4385411" data-claire-element-id="29081871">Considérons les résultats d’Hermione : [0, 0, 0, 25333, 24796, 24871, 25000]</p><p id="r-4385412" data-claire-element-id="29081872">Nous allons calculer les résultats cumulés afin d’atteindre 50 000 votes (100 000 / 2).</p><ul id="r-4385423" data-claire-element-id="29081883"><li id="r-4385414" data-claire-element-id="29081874"><p id="r-4385413" data-claire-element-id="29081873">Mention 0 : 0 + 0 = 0 =&gt; atteint-on 50 000 ? Non. Alors on continue avec la mention suivante.</p></li><li id="r-4385416" data-claire-element-id="29081876"><p id="r-4385415" data-claire-element-id="29081875">Mention 1 : 0 + 0 = 0 =&gt; atteint-on 50 000 ? Non. Alors on continue avec la mention suivante.</p></li><li id="r-4385418" data-claire-element-id="29081878"><p id="r-4385417" data-claire-element-id="29081877">Mention 2 : 0 + 0 = 0 =&gt; atteint-on 50 000 ? Non. Alors on continue avec la mention suivante.</p></li><li id="r-4385420" data-claire-element-id="29081880"><p id="r-4385419" data-claire-element-id="29081879">Mention 3 : 0 + 25333 = 25333 =&gt; atteint-on 50 000 ? Non. Alors on continue avec la mention suivante.</p></li><li id="r-4385422" data-claire-element-id="29081882"><p id="r-4385421" data-claire-element-id="29081881">Mention 4 : 25333 + 24796 = 50129 =&gt; atteint-on 50 000 ? Oui ! La boucle s’arrête.</p></li></ul><p id="r-4385424" data-claire-element-id="29081884">La mention médiane d’Hermione sera &quot;Passable&quot;, car au moins 50 % des votants lui ont accordé cette mention ou une supérieure.</p><p id="r-4385425" data-claire-element-id="29081885">Commençons par coder cette première boucle :</p><pre id="r-4385426" data-claire-element-id="8274853"><code data-claire-semantic="python">def majoritary_mentions_hash(candidates_results):
+    cumulated_votes = 0
+    for mention, vote_count in enumerate(candidates_results[&quot;hermione&quot;]):
+        cumulated_votes += vote_count
+        if MEDIAN &lt; cumulated_votes:
+                # add a key in a dictionary
+            break
+    print(cumulated_votes)
+</code></pre><p id="r-6225633" data-claire-element-id="29081671">Et ajoutons son exécution dans la fonction  <code data-claire-semantic="text">main()</code>.</p><pre id="r-4385428" data-claire-element-id="7744748"><code data-claire-semantic="python">def main():
+    votes = create_votes()
+    results = results_hash(votes)
+    majoritary_mentions = majoritary_mentions_hash(results)
+</code></pre><p id="r-4385429" data-claire-element-id="29081886">Résultat :</p><pre id="r-4385430" data-claire-element-id="7746007"><code data-claire-semantic="sh">50129</code></pre><p id="r-4385431" data-claire-element-id="29081887">Ajoutons maintenant un dictionnaire dans lequel nous garderons la mention et les votes cumulés, sous cette forme :</p><pre id="r-4385432" data-claire-element-id="7746008"><code data-claire-semantic="python">{'hermione': {'mention': 4, 'score': 50129}}</code></pre><pre id="r-4385433" data-claire-element-id="7744753"><code data-claire-semantic="python">def majoritary_mentions_hash(candidates_results):
+  r = {}
+  cumulated_votes = 0
+  for mention, vote_count in enumerate(candidates_results[&quot;hermione&quot;]):
+      cumulated_votes += vote_count
+      if MEDIAN &lt; cumulated_votes:
+          r[&quot;hermione&quot;] = {
+              &quot;mention&quot;: mention,
+              &quot;score&quot;: cumulated_votes
+          }
+          break
+  print(r)
+</code></pre><p id="r-4385434" data-claire-element-id="29081888">Ajoutons désormais une boucle pour réaliser cette opération pour tous nos candidats :</p><pre id="r-4385435" data-claire-element-id="7744755"><code data-claire-semantic="python">def majoritary_mentions_hash(candidates_results):
+    r = {}
+    for candidate, candidate_result in candidates_results.items():
+        cumulated_votes = 0
+        for mention, vote_count in enumerate(candidate_result):
+            cumulated_votes += vote_count
+            if MEDIAN &lt; cumulated_votes:
+                r[candidate] = {
+                    &quot;mention&quot;: mention,
+                    &quot;score&quot;: cumulated_votes
+                }
+                break
+    print(r)
+</code></pre><p id="r-4385436" data-claire-element-id="29081889">Résultat :</p><pre id="r-4385437" data-claire-element-id="7746009"><code data-claire-semantic="sh">{
+    'hermione': {'mention': 4, 'score': 50129}, 
+    'balou': {'mention': 3, 'score': 57270}, 
+    'chuck-norris': {'mention': 1, 'score': 66756}, 
+    'elsa': {'mention': 2, 'score': 100000}, 
+    'gandalf': {'mention': 4, 'score': 50056}, 
+    'beyonce': {'mention': 4, 'score': 59860}
+}
+</code></pre><p id="r-4385438" data-claire-element-id="29081890">Enfin, remplaçons notre <code data-claire-semantic="text">print</code> final (uniquement utilisé à des fins de débug) par un return :</p><pre id="r-4385439" data-claire-element-id="7744759"><code data-claire-semantic="python">def majoritary_mentions_hash(candidates_results):
+    r = {}
+    for candidate, candidate_result in candidates_results.items():
+        cumulated_votes = 0
+        for mention, vote_count in enumerate(candidate_result):
+            cumulated_votes += vote_count
+            if MEDIAN &lt; cumulated_votes:
+                r[candidate] = {
+                    &quot;mention&quot;: mention,
+                    &quot;score&quot;: cumulated_votes
+                }
+                break
+    return r
+</code></pre><p id="r-6225638" data-claire-element-id="29081683"></p><h3 id="r-4385458" data-claire-element-id="29081902">Trier les candidats par mention</h3><p id="r-4385441" data-claire-element-id="29081892">Bien. Maintenant que nous savons comment trouver la mention médiane d’un candidat, je vous propose de les trier par mention ! Celui ayant la meilleure mention devra arriver en haut de la liste et celui ayant la mention la plus basse (À rejeter) en bas.</p><p id="r-4385442" data-claire-element-id="29081893">Cela tombe bien, nous avons justement déjà vu un algorithme de tri : le tri par bulles !</p><aside id="r-4385444" data-claire-element-id="29081895" data-claire-semantic="information"><p id="r-4385443" data-claire-element-id="29081894">La librairie standard de Python inclut des méthodes de tri, mais l’objectif de ce cours étant de mieux comprendre les algorithmes, autant les essayer !</p></aside><p id="r-4385445" data-claire-element-id="29081896">Notre fonction prend en paramètre un dictionnaire. Or, le tri par bulles n’est possible que sur un tableau, car vous avez besoin des index pour réordonner les items. La première étape va donc être de recréer un tableau comprenant les informations suivantes : le nom du candidat (cela nous sera utile, plus tard, pour retrouver ses résultats) et sa mention.</p><pre id="r-4385446" data-claire-element-id="8274855"><code data-claire-semantic="python">def sort_candidates_by(mention):
+    unsorted = [(key, (mention[&quot;mention&quot;], mention[&quot;score&quot;])) for key, mention in mentions.items()]
+</code></pre><p id="r-4385447" data-claire-element-id="29081897">À présent, nous allons utiliser la forme du tri à bulles que nous avons vue précédemment. Attention, détail important : vous comparez les valeurs des <em>mentions</em> et non de l’élément en lui-même !</p><pre id="r-4385448" data-claire-element-id="7744768"><code data-claire-semantic="python">def sort_candidates_by(mentions):
+    ## bubble sort here we go!
+    unsorted = [(key, (mention[&quot;mention&quot;], mention[&quot;score&quot;])) for key, mention in mentions.items()]
+    swapped = True
+    while swapped:
+        swapped = False
+        for j in range(0, len(unsorted) - 1):
+            ## but we need REVERSE bubble sort ;-)
+            # (note that here we compare tuples, which is pretty neat)
+            if unsorted[j + 1][1] &lt; unsorted[j][1]:
+                unsorted[j+1], unsorted[j] = unsorted[j], unsorted[j+1]
+                swapped = True
+</code></pre><p id="r-4385449" data-claire-element-id="29081898">Et ajoutons un bout de code dans la fonction  <code data-claire-semantic="text">main()</code>  pour l’exécuter :</p><pre id="r-4385450" data-claire-element-id="7746013"><code data-claire-semantic="python">def main():
+    votes = create_votes()
+    results = results_hash(votes)
+    majoritary_mentions = majoritary_mentions_hash(results)
+    sorted_candidates = sort_candidates_by(majoritary_mentions)</code></pre><p id="r-4385451" data-claire-element-id="29081899">Cela fonctionne, sauf que la mention la plus haute se trouve ainsi à la fin de la liste, or nous voulions qu’elle apparaisse au début ! Changeons la comparaison en ligne 3 : nous dirons que, si l’élément suivant est plus grand, il doit être interverti !</p><pre id="r-4385452" data-claire-element-id="7744772"><code data-claire-semantic="python">def sort_candidates_by(mentions):
+    unsorted = [(key, (mention[&quot;mention&quot;], mention[&quot;score&quot;])) for key, mention in mentions.items()]
+    swapped = True
+    while swapped:
+        swapped = False
+        for j in range(0, len(unsorted) - 1):
+            if unsorted[j + 1][1] &gt; unsorted[j][1]:
+                unsorted[j+1], unsorted[j] = unsorted[j], unsorted[j+1]
+                swapped = True
+    print(unsorted)
+</code></pre><p id="r-4385453" data-claire-element-id="7744773">Voici le résultat :</p><pre id="r-4504228" data-claire-element-id="8016994"><samp>[('hermione', (0, 50044)), ('beyonce', (1, 66748)), ('balou', (3, 66575)), ('elsa', (4, 100000)), ('chuck-norris', (5, 66648)), ('gandalf', (6, 100000))]</samp></pre><p id="r-4385455" data-claire-element-id="29081900">Nos candidats sont bien classés !</p><p id="r-4385456" data-claire-element-id="29081901">Ajoutons un petit peu de code pour renvoyer un tableau tout joli tout beau :</p><pre id="r-4385457" data-claire-element-id="7744777"><code data-claire-semantic="python">def sort_candidates_by(mentions):
+    ## bubble sort here we go!
+    unsorted = [(key, (mention[&quot;mention&quot;], mention[&quot;score&quot;])) for key, mention in mentions.items()]
+    swapped = True
+    while swapped:
+        swapped = False
+        for j in range(0, len(unsorted) - 1):
+            ## but we need REVERSE bubble sort ;-)
+            # (note that here we compare tuples, which is pretty neat)
+            if unsorted[j + 1][1] &gt; unsorted[j][1]:
+                unsorted[j+1], unsorted[j] = unsorted[j], unsorted[j+1]
+                swapped = True
+    print(unsorted)
+
+    return [
+        {
+            &quot;name&quot;: candidate[0],
+            &quot;mention&quot;: candidate[1][0],
+            &quot;score&quot;: candidate[1][1],
+        }
+        for candidate in unsorted
+    ]
+</code></pre><p id="r-6225643" data-claire-element-id="29081695"></p><h3 id="r-4385469" data-claire-element-id="29081911">Afficher les résultats dans la console</h3><p id="r-4385459" data-claire-element-id="7767611">Créons une nouvelle fonction qui tranformera nos résultats en plusieurs chaînes de caractères agréables à lire.</p><p id="r-4385460" data-claire-element-id="29081903">Utilisons le dictionnaire  <code data-claire-semantic="text">CANDIDATES</code>  afin de retrouver le nom du candidat grâce à sa clé. Quant à chaque mention, il est assez simple d’afficher son nom &quot;humain&quot; grâce à son index.</p><pre id="r-4385461" data-claire-element-id="8017114"><code data-claire-semantic="python">def print_results(results):
+    for i, result in enumerate(results):
+        name = CANDIDATES[result[&quot;name&quot;]]
+        mention = MENTIONS[result[&quot;mention&quot;]]
+        score = result[&quot;score&quot;] * 100. / VOTES
+        print(&quot;- {} avec {:.2f}% de mentions {}&quot;.format(
+            name, score, mention
+        ))
+</code></pre><p id="r-4385462" data-claire-element-id="29081904">Puisque je souhaite mettre à l’honneur notre vainqueur, j’ajoute une structure conditionnelle pour créer une chaîne de caractères différente :</p><pre id="r-4385463" data-claire-element-id="8017097"><code data-claire-semantic="python">def print_results(results):
+    for i, result in enumerate(results):
+        name = CANDIDATES[result[&quot;name&quot;]]
+        mention = MENTIONS[result[&quot;mention&quot;]]
+        score = result[&quot;score&quot;] * 100. / VOTES
+        if i == 0:
+            print(&quot;Gagnant: {} avec {:.2f}% de mentions {}&quot;.format(
+                name, score, mention
+            ))
+            continue
+        else:
+            print(&quot;- {} avec {:.2f}% de mentions {}&quot;.format(
+                name, score, mention
+            ))
+</code></pre><p id="r-4385464" data-claire-element-id="29081905">Enfin, mettons à jour notre fonction  <code data-claire-semantic="text">main</code>  pour qu’elle exécute cette dernière fonction :</p><pre id="r-4385465" data-claire-element-id="8274864"><code data-claire-semantic="python">def main():
+    votes = create_votes()
+    results = results_hash(votes)
+    majoritary_mentions = majoritary_mentions_hash(results)
+    sorted_candidates = sort_candidates_by(majoritary_mentions)
+    print_results(sorted_candidates)
+</code></pre><div id="r-4395098" data-claire-element-id="29081907" data-claire-semantic="question"><p id="r-4395097" data-claire-element-id="29081906">Alors, qui gagne l’élection ? </p></div><p id="r-4395099" data-claire-element-id="29081908">Bonne question ! Chez moi, c’est Hermione (youpi !), mais chez vous, le résultat est certainement différent !</p><p id="r-4504259" data-claire-element-id="8017055"><img id="r-4504258" data-claire-element-id="8017054" src="https://user.oc-static.com/upload/2017/06/15/14975342038124_Capture d’écran 2017-06-15 à 15.44.29.png" alt="" /></p><p id="r-4395101" data-claire-element-id="29042652"></p><aside id="r-4385468" data-claire-element-id="29081910" data-claire-semantic="information"><p id="r-4385467" data-claire-element-id="29081909">Retrouvez le code de ce chapitre dans son intégralité dans ce dépôt Github : <a href="https://github.com/celine-m-s/majoritary-judgment/blob/master/program.py">algorithme de jugement majoritaire</a>.</p></aside>
+</div>
+<div class="js-courseSelementActions sideActions">
+<ul class="sideActions__container">
+<li>
+<a class="sideActions__item  js-courseElementActions-copyUrl  js-tooltip" href="#" data-tooltip="Copier le lien" data-tooltip-done="Lien copié !">
+#
+</a>
+</li>
+</ul>
+</div>
+</div>
+<nav id="course-pagination" class="course-pagination    clearfix">
+<a href="4385343-voyez-le-monde-autrement-avec-la-recursivite.html" class="button button--secondary  course-pagination__btn course-pagination__btn--previous">
+<i class="icon-previous"></i>
+<span>Voyez le monde autrement avec la récursivité</span>
+</a>
+<span class="course-pagination__separator"></span>
+<a href="4385496-plongez-dans-le-monde-des-algorithmes.html" class="button button--secondary  course-pagination__btn course-pagination__btn--next">
+<span>Plongez dans le monde des algorithmes</span>
+<i class="icon-next"></i>
+</a>
+</nav>
+<div tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="popin-view-restriction_popin_title" class="popin popin--illustrated  js-popin" id="popin-view-restriction">
+<button class="popin__close-button  js-close-button" title="Fermer" aria-label="Fermer">
+<i class="icon-close" aria-hidden="true"></i>
+</button>
+<div class="popin__inner">
+<div class="popin__illustrationWrapper">
+<div class="popin__illustration illustration--balloon"></div>
+</div>
+<div class="popin__mainContainer">
+<div class="popin__gigTitleContainer js-popin-title">
+<div class="gigWorkersPopin__timeline">
+<div class="gigWorkersPopin__dot">1</div>
+<div class="gigWorkersPopin__line"></div>
+<div class="gigWorkersPopin__dot gigWorkersPopin__dot--disabled">2</div>
+</div>
+<div class="popin__title">Créez un compte <br /> OpenClassrooms</div>
+</div>
+<div id="popin-view-restriction_popin_title" class="popin__title  js-popin-title">Waouh !</div>
+<div class="popin__content  js-popin-content">
+<div class="popin__contentWrapper">
+<p>
+Très heureux de voir que nos cours vous plaisent, déjà 5 pages lues aujourd&#039;hui ! Vous pouvez continuer la lecture de nos cours en devenant un membre de la communauté d&#039;OpenClassrooms. C&#039;est gratuit !
+</p>
+<p>
+Vous pourrez aussi suivre votre avancement dans le cours, faire les exercices et discuter avec les autres membres.
+</p>
+</div>
+</div>
+<div class="popin__actions  js-popin-actions">
+<span class="u--inlineBlock">
+<a class="button button--primary " href="https://openclassrooms.com/fr/register">S'inscrire</a>
+</span>
+<span class="u--inlineBlock">
+<a class="button button--secondary " href="https://openclassrooms.com/fr/login">Se connecter</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script type="text/template" class="js-single-video-download-info">
+            <div class="videoDownload js-download-video-popin-link">
+                <a href="#popin-download-video" class="js-popin-activator">
+                    <i class="icon-download videoDownload__icon"></i> Télécharger la vidéo
+                </a>
+            </div>
+        </script>
+<script type="text/template" class="js-all-video-download-info">
+            <div class="videoDownload js-download-video-popin-link">
+                <a href="#popin-download-all-videos" class="js-popin-activator">
+                    <i class="icon-download videoDownload__icon"></i> Télécharger toutes les vidéos de ce cours
+                </a>
+            </div>
+        </script>
+<div id="popin-not-certifying-yet_795068" class="popin" data-popin-title="Vous ne pouvez pas encore obtenir de certificat de réussite à l&#039;issue de ce cours.
+                            <span><i class='icon-star'></i> Devenez Premium</span>
+                    ">
+<img alt="Exemple de certificat de réussite" src="http://static.oc-static.com/prod/images/courses/certif.jpg" />
+</div>
+<div tabindex="-1" role="dialog" aria-hidden="true" class="popin popin--small  js-popin" id="popin-download-video">
+<button class="popin__close-button  js-close-button" title="Fermer" aria-label="Fermer">
+<i class="icon-close" aria-hidden="true"></i>
+</button>
+<div class="popin__inner">
+<div class="popin__mainContainer">
+<div class="popin__gigTitleContainer js-popin-title">
+<div class="gigWorkersPopin__timeline">
+<div class="gigWorkersPopin__dot">1</div>
+<div class="gigWorkersPopin__line"></div>
+<div class="gigWorkersPopin__dot gigWorkersPopin__dot--disabled">2</div>
+</div>
+<div id="popin-download-video_popin_title" class="popin__title">Créez un compte <br /> OpenClassrooms</div>
+</div>
+<i class="icon-video popin__icon  js-popin-icon"></i>
+<div class="popin__content  js-popin-content">
+<div class="popin__contentWrapper">
+<p>
+Le téléchargement des vidéos de nos cours est accessible pour les membres Premium. Vous pouvez toutefois les visionner en streaming gratuitement.
+</p>
+</div>
+</div>
+<div class="popin__actions  js-popin-actions">
+<a class="button button--primary js-close-button" href="#">Devenez Premium</a>
+</div>
+</div>
+</div>
+</div>
+<div id="popin-not-certifying-yet_249392" class="popin" data-popin-title="Vous ne pouvez pas encore obtenir de certificat de réussite à l&#039;issue de ce cours.
+                            <span><i class='icon-star'></i> Devenez Premium</span>
+                    ">
+<img alt="Exemple de certificat de réussite" src="http://static.oc-static.com/prod/images/courses/certif.jpg" />
+</div>
+<div tabindex="-1" role="dialog" aria-hidden="true" class="popin popin--small  js-popin" id="popin-download-video">
+<button class="popin__close-button  js-close-button" title="Fermer" aria-label="Fermer">
+<i class="icon-close" aria-hidden="true"></i>
+</button>
+<div class="popin__inner">
+<div class="popin__mainContainer">
+<div class="popin__gigTitleContainer js-popin-title">
+<div class="gigWorkersPopin__timeline">
+<div class="gigWorkersPopin__dot">1</div>
+<div class="gigWorkersPopin__line"></div>
+<div class="gigWorkersPopin__dot gigWorkersPopin__dot--disabled">2</div>
+</div>
+<div id="popin-download-video_popin_title" class="popin__title">Créez un compte <br /> OpenClassrooms</div>
+</div>
+<i class="icon-video popin__icon  js-popin-icon"></i>
+<div class="popin__content  js-popin-content">
+<div class="popin__contentWrapper">
+<p>
+Le téléchargement des vidéos de nos cours est accessible pour les membres Premium. Vous pouvez toutefois les visionner en streaming gratuitement.
+</p>
+</div>
+</div>
+<div class="popin__actions  js-popin-actions">
+<a class="button button--primary js-close-button" href="#">Devenez Premium</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<aside id="content-with-sidebar" class="contentWithSidebar__sidebar  js-contentWithSidebar-slidingElement">
+<nav class="col-nav">
+<div id="tab-courseMenu" class="col-nav__inner js-sidebar-inner">
+<div class="col-nav__block  col-nav__block--summary">
+<div class="side-paginate">
+<a href="4385343-voyez-le-monde-autrement-avec-la-recursivite.html" class="side-paginate__previous" title="Chapitre précédent">
+<i class="icon-previous"></i>
+</a>
+<span class="side-paginate__separator"></span>
+<h6 class="side-paginate__title">
+Allez plus loin
+</h6>
+<span class="side-paginate__separator"></span>
+<a href="4385496-plongez-dans-le-monde-des-algorithmes.html" class="side-paginate__next" title="Chapitre suivant">
+<i class="icon-next"></i>
+</a>
+</div>
+<div class="col-nav__block--summary-list">
+<ol class="col-nav__chapters">
+<li class="">
+<a class="col-nav__chapterTitle" href="4385150-triez-des-informations.html">Triez des informations</a>
+</li>
+<li class="">
+<a class="col-nav__chapterTitle" href="4420551-comprenez-la-complexite-algorithmique.html">Comprenez la complexité algorithmique</a>
+</li>
+<li class="">
+<a class="col-nav__chapterTitle" href="4385343-voyez-le-monde-autrement-avec-la-recursivite.html">Voyez le monde autrement avec la récursivité</a>
+</li>
+<li class="selected">
+<span class="col-nav__chapterTitle">Codez l&#039;algorithme en Python</span>
+</li>
+ <li class="">
+<a class="col-nav__chapterTitle" href="4385496-plongez-dans-le-monde-des-algorithmes.html">Plongez dans le monde des algorithmes</a>
+</li>
+</ol>
+<div class="tocExercise"><ul class="tocExercise__list"><li class="tocExercise__item "><a class="tocExercise__link " href="exercises/1621.html"><i class="tocExercise__icon icon-lock"></i><span class="tocExercise__text">Quiz : Vers l&#039;infini et au-delà !</span></a></li></ul></div> </div>
+</div>
+<div class="col-nav__block col-nav__block--button">
+<a href="https://openclassrooms.com/forum/categorie/autres-sciences" class="button button--secondary">
+Accéder au forum
+</a>
+</div>
+<div class="col-nav__block col-nav__block--institution">
+<div class="col-nav__title">Créé par</div>
+<a href="https://openclassrooms.com/fr/partners/openclassrooms" target="_blank" rel="nofollow">
+<span data-image-cdn-attr-src="https://course.oc-static.com/partners/19/15433053814225_short-200x200.png" data-image-cdn-attr-alt="logo OpenClassrooms" data-image-cdn-width="165" data-image-cdn-attr-class="col-nav__institutionLogo"><img class="col-nav__institutionLogo" width="165" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></span>
+<p class="col-nav__block--institutionDescription">
+OpenClassrooms, Leading <span class='nowrap'>E-Learning<span> Platform in Europe
+</p>
+</a>
+</div>
+<div class="socialNetwork col-nav__block">
+<ul class="socialButtons  js-socialButtons" data-options="
+                title: 'Codez l&#039;algorithme en Python @OCFrance',
+        mailTitle: 'Cours &quot;Codez l&#039;algorithme en Python&quot; sur OpenClassrooms',
+        mailContent: 'Découvrez le cours &quot;Codez l&#039;algorithme en Python&quot; sur OpenClassrooms.'">
+<li>
+<a class="roundIcon  roundIcon--twitter addthis_button_twitter  js-socialButtons-btn" data-tooltip="Partagez sur Twitter">
+<i class="roundIcon__icon  icon-twitter"></i>
+</a>
+</li>
+<li>
+<a class="roundIcon  roundIcon--facebook  addthis_button_facebook  js-socialButtons-btn" data-tooltip="Partagez sur Facebook">
+<i class="roundIcon__icon  icon-facebook"></i>
+</a>
+</li>
+<li>
+<a class="roundIcon  addthis_button_email  js-socialButtons-btn  js-socialButtons-email" data-tooltip="Partagez par e-mail">
+<i class="roundIcon__icon  icon-letter"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</aside>
+</div>
+</div>
+</div>
+<footer id="course-footer" class="alt-section noMarginBottom">
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="grid-inner-content  courseFooter">
+<div class="courseFooter__authorsOnly course-bottom__category">
+<div class="course-bottom__title">
+Le professeur
+</div>
+<div>
+<div class="course-bottom__text-illustrated">
+<span data-author="Céline Martinet Sanchez" data-image-cdn-background-image="https://user.oc-static.com/users/avatars/15058367148057_cms_carree.jpeg" data-image-cdn-width="120"></span>
+<div class="course-bottom__subtitle" itemprop="name">Céline Martinet Sanchez</div>
+<p itemprop="description">
+Développeuse freelance, entrepreneure et formatrice. Diplômée du Master Grande École d&#039;Audencia.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</article>
+</main>
+</div>
+<div id="mainSearchLegacy" class="mainSearch"></div>
+<div id="footerWrapper">
+<footer id="footer" class="oc-footerSkeleton">
+<hr style="margin-bottom: 8px" />
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="oc-footerSkeleton__container">
+<div class="oc-footerSkeleton__item">
+<div class="oc-footerSkeleton__itemTitle"><span class="skeleton" style="height: 20px; width: 80%"></span></div>
+<ul class="oc-footerSkeleton__linksList">
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 70%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 60%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 65%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 40%"></span></a></p>
+</li>
+</ul>
+</div>
+<div class="oc-footerSkeleton__item">
+<div class="oc-footerSkeleton__itemTitle"><span class="skeleton" style="height: 20px; width: 85%"></span></div>
+<ul class="oc-footerSkeleton__linksList">
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 40%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 60%"></span></a></p>
+</li>
+</ul>
+</div>
+<div class="oc-footerSkeleton__item">
+<div class="oc-footerSkeleton__itemTitle"><span class="skeleton" style="height: 20px; width: 75%"></span></div>
+<ul class="oc-footerSkeleton__linksList">
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 65%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 40%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 50%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 40%"></span></a></p>
+</li>
+</ul>
+</div>
+<div class="oc-footerSkeleton__item">
+<span class="skeleton" style="height: 25px; width: 65%"></span>
+<div class="oc-footerSkeleton__socialButtonWrapper">
+<div><span class="skeleton skeleton--round" style="width: 40px; height: 40px"></span></div>
+<div><span class="skeleton skeleton--round" style="width: 40px; height: 40px;"></span></div>
+<div><span class="skeleton skeleton--round" style="width: 40px; height: 40px;"></span></div>
+<div><span class="skeleton skeleton--round" style="width: 40px; height: 40px;"></span></div>
+<div><span class="skeleton skeleton--round" style="width: 40px; height: 40px;"></span></div>
+</div>
+<div><span class="skeleton skeleton--width50" style="height: 40px;"></span></div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div id="showDisclaimer" class="cookiesDisclaimer"></div>
+<script>
+  var isPrerender = !!navigator.userAgent.match(/github\.com\/prerender\/prerender/);
+  var preRenderBrowserFakeUa = "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163 Safari/537.36";
+  var polyfillUrl = "https://cdn.polyfill.io/v3/polyfill.min.js?unknown=polyfill&amp;features=default,es6,IntersectionObserver,Object.values,Array.prototype.includes,Array.prototype.findIndex,Array.prototype.find,Array.from,Promise.prototype.finally,fetch,String.prototype.includes,Object.entries,Array.prototype.entries,Intl.~locale,Array.prototype.flat.fr";
+
+    if (isPrerender) {
+    polyfillUrl+= "&ua=" + encodeURIComponent(preRenderBrowserFakeUa);
+  }
+
+  App.translations = {};
+
+  App.scripts.push(polyfillUrl);
+
+  App.script = {
+      DASHBOARD: 'dashboard',
+      MENTORSHIP_STUDENT_DASHBOARD: 'mentorshipStudentdashboard',
+      SHOP: 'shop',
+      PAYMENT: 'payment',
+      PROJECTS: 'projects',
+      TEAM: 'team',
+      COURSE_EDIT: 'course_edit',
+      COURSE_VIEW: 'course_view',
+      ADMIN: 'admin',
+      ADMIN_STUDENT_CREDENTIAL: 'adminStudentCredential',
+      ADMIN_STUDENT_CREDENTIAL_EDIT: 'adminStudentCredentialEdit',
+      POST_A_JOB: 'postAJob',
+      GIG_WORKERS: 'gigWorkers',
+      JOB_SURVEY: 'jobSurvey',
+      MCQ_EDIT: 'mcqEdit',
+      MCQ_VIEW: 'mcqView',
+      MENTOR_EDIT: 'mentorEdit',
+      MENTORSHIP_DASHBOARD: 'mentorshipDashboard',
+      MENTORSHIP_SESSION: 'mentorshipSession',
+      MENTORSHIP_SESSION_CREATE: 'mentorshipSessionCreate',
+      MENTORSHIP_SESSION_NON_ASSESSOR_CREATE: 'mentorshipSessionNonAssessorCreate',
+    PATHS: 'paths',
+    PRIVATE_CONVERSATIONS: 'privateConversations',
+    USER_PROFILE: 'userProfile',
+    WELCOME: 'welcome',
+    APPRENTICESHIP: 'apprenticeship',
+    WEBAPP: 'webapp',
+    PROJECTS_ADMIN: 'projectsAdmin',
+    SECURITY: 'security',
+  };
+</script>
+<script>App.scripts.push("https://openclassrooms.com/js/runtime.4c4ad3f6a13cc20ab325.js");</script>
+<script>App.scripts.push("https://openclassrooms.com/js/index.28cedfedcf6a0f3797d8.js");</script>
+<script type="text/javascript">
+        function getConsentedSegmentIntegrations() {
+            // getCookie from https://www.w3schools.com/js/js_cookies.asp
+            function getCookie(cname) {
+                var name = cname + "=";
+                var decodedCookie = decodeURIComponent(document.cookie);
+
+                var ca = decodedCookie.split(';');
+                for(var i = 0; i <ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) === ' ') {
+                        c = c.substring(1);
+                    }
+                    if (c.indexOf(name) === 0) {
+                        return c.substring(name.length, c.length);
+                    }
+                }
+                return "";
+            }
+
+            var consent = getCookie('cmapi_cookie_privacy');
+
+            function isCookieAllowedByConsent(consent, level) {
+              return !!consent && consent.search(level) !== -1;
+            }
+
+            var isFunctionalCookieAllowed = isCookieAllowedByConsent(consent, 2);
+            var isAdvertisingCookieAllowed = isCookieAllowedByConsent(consent, 3);
+
+            var isAppCuesPremiumUser = false;
+
+            var isOnPoleEmploiPage = !!window && window.location.pathname.indexOf('partners/pole-emploi/offers') >= 0;
+
+            return {
+                Amplitude: isFunctionalCookieAllowed,
+                'Bing Ads': isAdvertisingCookieAllowed,
+                'Google Ads': isAdvertisingCookieAllowed,
+                'Google Analytics': isFunctionalCookieAllowed,
+                'Zendesk': isFunctionalCookieAllowed,
+                Appcues: (isAppCuesPremiumUser || isOnPoleEmploiPage) && isFunctionalCookieAllowed,
+            };
+        }
+
+        var consentedSegmentIntegrations = getConsentedSegmentIntegrations();
+
+        !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+            window.loadAnalytics = function () { window.analytics.load('mou95e6tdn', {integrations: consentedSegmentIntegrations}) };
+        }}();
+    </script>
+
+<script>App.scriptToLoad = App.script.COURSE_VIEW</script>
+
+<script>
+    (function () {
+        function loadScripts(cb) {
+            App.scripts.forEach(function (src, index) {
+                var script = document.createElement('script');
+                script.src = src;
+                script.async = false;
+                document.body.appendChild(script);
+
+                if (cb && index === App.scripts.length - 1) {
+                    script.onload = cb;
+                }
+            });
+        }
+
+        function boot() {
+            loadScripts(function () {
+                if (App.modules) {
+                    App.modules.startAll();
+                }
+            });
+        }
+
+        if (window.addEventListener) {
+            window.addEventListener('load', boot, false);
+        } else if (window.attachEvent) {
+            window.attachEvent('onload', boot);
+        } else {
+            window.onload = boot;
+        }
+    }());
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.eu01.nr-data.net","licenseKey":"NRJS-5b58725ce0d442079d0","applicationID":"156815673","transactionName":"MhBSZQoZVhJWB0xfDAtac0QLDFcMGAtbaQAJFFlDHSdbDkIWS1M8FRRCRScIWRNDO05fBhI=","queueTime":0,"applicationTime":214,"atts":"HldRE0IDRRw=","errorBeacon":"bam.eu01.nr-data.net","agent":""}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"68b3c2c56c7f0897","token":"8e698008242e427fae12788d79d12ecf","version":"2021.8.1","si":10}'></script>
+</body>
+
+<!-- Mirrored from openclassrooms.com/fr/courses/4366701-decouvrez-le-fonctionnement-des-algorithmes/4385470-codez-lalgorithme-en-python by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Sep 2021 23:37:16 GMT -->
+</html>

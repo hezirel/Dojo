@@ -1,0 +1,455 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.9.6)  7 SEP 2021 14:48
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**template.tex
+(./template.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18>
+
+! LaTeX Error: File `twentysecondcv.cls' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: cls)
+
+Enter file name: 
+! Undefined control sequence.
+l.30 \profilepic
+                {alice.jpeg} % Profile picture
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 \profilepic{a
+                  lice.jpeg} % Profile picture
+? 
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 30--31
+[] 
+ []
+
+! Undefined control sequence.
+l.32 \cvname
+            {Alice} % Your name
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 \cvname{A
+              lice} % Your name
+? 
+Missing character: There is no A in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.33 \cvjobtitle
+                {Adventurer} % Job title/career
+? 
+Missing character: There is no A in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 32--34
+[]
+ []
+
+! Undefined control sequence.
+l.35 \cvdate
+            {26 November 1865} % Date of birth
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 \cvdate{2
+              6 November 1865} % Date of birth
+? 
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+! Undefined control sequence.
+l.36 \cvaddress
+               {United Kingdom} % Short address/location, use \newline if mo...
+
+? 
+Missing character: There is no U in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+! Undefined control sequence.
+l.37 \cvnumberphone
+                   {+39 0325658974} % Phone number
+? 
+Missing character: There is no + in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 7 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+! Undefined control sequence.
+l.38 \cvsite
+            {http://en.wikipedia.org} % Personal website
+? 
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no g in font nullfont!
+! Undefined control sequence.
+l.39 \cvmail
+            {alice@wonderland.com} % Email address
+? 
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 35--40
+[]
+ []
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count179
+\l__pdf_internal_box=\box47
+)
+(./template.aux)
+\openout1 = `template.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.43 \begin{document}
+                     
+? 
+! Undefined control sequence.
+l.49 \aboutme
+             {Alice is a sensible prepubescent girl from a wealthy English f...
+
+? 
+! Undefined control sequence.
+l.56 \skills
+            {{pursuer of rabbits/5.8},{good manners/4},{outgoing/4.3},{polit...
+
+? 
+! Undefined control sequence.
+l.61 \skillstext
+                {{lovely/4},{narcissistic/3}}
+? 
+! Undefined control sequence.
+l.65 \makeprofile
+                  % Print the sidebar
+? 
+! Undefined control sequence.
+l.71 \section
+             {Interests}
+? 
+! Undefined control sequence.
+l.79 \section
+             {Education}
+? 
+
+! LaTeX Error: Environment twenty undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.81 \begin{twenty}
+                    % Environment for a list with descriptions
+? 
+! Undefined control sequence.
+l.82 	\twentyitem
+                 {since 1865}{Ph.D. {\normalfont candidate in Computer Scien...
+
+? 
+! Undefined control sequence.
+l.83 	\twentyitem
+                 {1863-1865}{M.Sc. magna cum laude}{Wonderland}{Majoring in ...
+
+? 
+! Undefined control sequence.
+l.84 	\twentyitem
+                 {1861-1863}{B.Sc. magna cum laude}{Wonderland}{Majoring in ...
+
+? 
+! Undefined control sequence.
+l.85 	\twentyitem
+                 {1856-1861}{High school}{Wonderland}{Specializing in mathem...
+
+? 
+
+! LaTeX Error: \begin{document} ended by \end{twenty}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.87 \end{twenty}
+                 
+? 
+! Undefined control sequence.
+l.93 \section
+             {Publications}
+? 
+
+! LaTeX Error: Environment twentyshort undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.95 \begin{twentyshort}
+                         % Environment for a short list with no descriptions
+? 
+! Undefined control sequence.
+l.96 	\twentyitemshort
+                      {1865}{Chapter One, Down the Rabbit Hole.}
+? 
+! Undefined control sequence.
+l.97 	\twentyitemshort
+                      {1865}{Chapter Two, The Pool of Tears.}
+? 
+! Undefined control sequence.
+l.98 	\twentyitemshort
+                      {1865}{Chapter Three,  The Caucus Race and a Long Tale.}
+? 
+! Undefined control sequence.
+l.99 	\twentyitemshort
+                      {1865}{Chapter Four,  The Rabbit Sends a Little Bill.}
+? 
+! Undefined control sequence.
+l.100 	\twentyitemshort
+                       {1865}{Chapter Five,  Advice from a Caterpillar.}
+? 
+
+! LaTeX Error: \begin{document} ended by \end{twentyshort}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.102 \end{twentyshort}
+                       
+? 
+! Undefined control sequence.
+l.108 \section
+              {Awards}
+? 
+
+! LaTeX Error: Environment twentyshort undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.110 \begin{twentyshort}
+                          % Environment for a short list with no descriptions
+? 
+! Undefined control sequence.
+l.111 	\twentyitemshort
+                       {1987}{All-Time Best Fantasy Novel.}
+? 
+! Undefined control sequence.
+l.112 	\twentyitemshort
+                       {1998}{All-Time Best Fantasy Novel before 1990.}
+? 
+
+! LaTeX Error: \begin{document} ended by \end{twentyshort}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.114 \end{twentyshort}
+                       
+? 
+! Undefined control sequence.
+l.120 \section
+              {Experience}
+? 
+
+! LaTeX Error: Environment twenty undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.122 \begin{twenty}
+                     % Environment for a list with descriptions
+? 
+! Undefined control sequence.
+l.123 	\twentyitem
+                  {1900}{Alice in Wonderland-The Circra (1900's) Silent Film...
+
+? 
+! Undefined control sequence.
+l.124 	\twentyitem
+                  {1933}{Alice in Wonderland 1933 version.}{Film}{This film ...
+
+? 
+! Undefined control sequence.
+l.125 	\twentyitem
+                  {1951}{Disney Film.}{Film}{Walt Disney brings Lewis Carrol...
+
+? 
+
+! LaTeX Error: \begin{document} ended by \end{twenty}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.127 \end{twenty}
+                  
+? 
+! Undefined control sequence.
+l.133 \section
+              {Other information}
+? 
+! Undefined control sequence.
+l.135 \subsection
+                 {Review}
+? 
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.161 \end{document}
+                    
+? 
+[1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./template.aux) ) 
+Here is how much of TeX's memory you used:
+ 191 strings out of 478994
+ 4837 string characters out of 5858185
+ 293114 words of memory out of 5000000
+ 17764 multiletter control sequences out of 15000+600000
+ 403776 words of font info for 28 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 37i,4n,46p,711b,69s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmti10.pfb>
+Output written on template.pdf (1 page, 38079 bytes).
+PDF statistics:
+ 16 PDF objects out of 1000 (max. 8388607)
+ 10 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

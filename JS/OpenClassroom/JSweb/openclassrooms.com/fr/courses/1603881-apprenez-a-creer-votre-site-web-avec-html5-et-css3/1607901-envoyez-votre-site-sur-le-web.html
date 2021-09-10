@@ -1,0 +1,983 @@
+
+<!DOCTYPE html>
+<html class="no-js " lang="fr" prefix="og: http://ogp.me/ns#">
+
+<!-- Mirrored from openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1607901-envoyez-votre-site-sur-le-web by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Sep 2021 23:36:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>
+                            Envoyez votre site sur le Web - Apprenez à créer votre site web avec HTML5 et CSS3 - OpenClassrooms
+                    </title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-5b58725ce0d442079d0",applicationID:"156815673"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){"hidden"===t&&d("pageHide",[p.now()])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https:///")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1210.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<meta name="application-name" content="OpenClassrooms" />
+<meta name="msapplication-TileColor" content="#7451eb" />
+<meta name="msapplication-TileImage" content="/fav-icon.png?v=3" />
+<meta name="theme-color" content="#7451eb">
+<meta property="og:locale" content="fr" />
+<link rel="icon" sizes="144x144" href="https://openclassrooms.com/fav-icon.png?v=3">
+<link rel="apple-touch-icon" href="https://openclassrooms.com/apple-touch-icon.png?v=3" />
+<link rel="apple-touch-icon" href="https://openclassrooms.com/apple-touch-icon-iphone.png?v=3" />
+<link rel="apple-touch-icon" sizes="72x72" href="https://openclassrooms.com/apple-touch-icon-ipad.png?v=3" />
+<link rel="apple-touch-icon" sizes="114x114" href="https://openclassrooms.com/apple-touch-icon-iphone-retina-display.png?v=3" />
+<link rel="apple-touch-icon" sizes="144x144" href="https://openclassrooms.com/apple-touch-icon-ipad-retina-display.png?v=3" />
+<link rel="apple-touch-icon-precomposed" href="https://openclassrooms.com/apple-touch-icon-precomposed.png?v=3" />
+<link rel="shortcut icon" href="https://openclassrooms.com/favicon.ico?83212fe7" />
+<style>.async-hide { opacity: 0 !important} </style>
+<script>
+          window.dataLayer = window.dataLayer || [];
+
+          (function(a,s,y,n,c,h,i,d,e){
+            var isEnabled = [
+              /\/paths/,
+              /\/apprenticeship/,
+              /\/employer/,
+            ].reduce(function (acc, pathReg) {
+                var matchUrl = !!document.location.pathname.match(pathReg);
+                return acc || matchUrl;
+            }, false);
+
+            if (!isEnabled) {
+              return;
+            }
+
+            s.className+=' '+y;
+            h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+            (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);
+          })(window,document.documentElement,'async-hide','dataLayer',2000,{'GTM-5WM9PV':true});
+        </script>
+<link href="https://openclassrooms.com/bundles/common/css/master-8bf9878d.css" type="text/css" rel="stylesheet" media="all" />
+<link href="https://openclassrooms.com/bundles/course/css/main-29e81ced.css" type="text/css" rel="stylesheet" media="all" />
+<link href="https://vjs.zencdn.net/6.2.5/video-js.css" rel="stylesheet">
+<script>
+    /*! modernizr 3.3.1 (Custom Build) | MIT *
+    * https://modernizr.com/download/?-cssfilters-touchevents-setclasses !*/
+    !function(e,n,t){function o(e,n){return typeof e===n}function r(){var e,n,t,r,s,i,a;for(var l in C)if(C.hasOwnProperty(l)){if(e=[],n=C[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(r=o(n.fn,"function")?n.fn():n.fn,s=0;s<e.length;s++)i=e[s],a=i.split("."),1===a.length?Modernizr[a[0]]=r:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=r),g.push((r?"":"no-")+a.join("-"))}}function s(e){var n=w.className,t=Modernizr._config.classPrefix||"";if(x&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(o,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),x?w.className.baseVal=n:w.className=n)}function i(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):x?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function a(){var e=n.body;return e||(e=i(x?"svg":"body"),e.fake=!0),e}function l(e,t,o,r){var s,l,u,f,p="modernizr",c=i("div"),d=a();if(parseInt(o,10))for(;o--;)u=i("div"),u.id=r?r[o]:p+(o+1),c.appendChild(u);return s=i("style"),s.type="text/css",s.id="s"+p,(d.fake?d:c).appendChild(s),d.appendChild(c),s.styleSheet?s.styleSheet.cssText=e:s.appendChild(n.createTextNode(e)),c.id=p,d.fake&&(d.style.background="",d.style.overflow="hidden",f=w.style.overflow,w.style.overflow="hidden",w.appendChild(d)),l=t(c,e),d.fake?(d.parentNode.removeChild(d),w.style.overflow=f,w.offsetHeight):c.parentNode.removeChild(c),!!l}function u(e,n){return!!~(""+e).indexOf(n)}function f(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function p(e,n){return function(){return e.apply(n,arguments)}}function c(e,n,t){var r;for(var s in e)if(e[s]in n)return t===!1?e[s]:(r=n[e[s]],o(r,"function")?p(r,t||n):r);return!1}function d(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function m(n,o){var r=n.length;if("CSS"in e&&"supports"in e.CSS){for(;r--;)if(e.CSS.supports(d(n[r]),o))return!0;return!1}if("CSSSupportsRule"in e){for(var s=[];r--;)s.push("("+d(n[r])+":"+o+")");return s=s.join(" or "),l("@supports ("+s+") { #modernizr { position: absolute; } }",function(e){return"absolute"==getComputedStyle(e,null).position})}return t}function h(e,n,r,s){function a(){p&&(delete k.style,delete k.modElem)}if(s=o(s,"undefined")?!1:s,!o(r,"undefined")){var l=m(e,r);if(!o(l,"undefined"))return l}for(var p,c,d,h,v,y=["modernizr","tspan","samp"];!k.style&&y.length;)p=!0,k.modElem=i(y.shift()),k.style=k.modElem.style;for(d=e.length,c=0;d>c;c++)if(h=e[c],v=k.style[h],u(h,"-")&&(h=f(h)),k.style[h]!==t){if(s||o(r,"undefined"))return a(),"pfx"==n?h:!0;try{k.style[h]=r}catch(g){}if(k.style[h]!=v)return a(),"pfx"==n?h:!0}return a(),!1}function v(e,n,t,r,s){var i=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+j.join(i+" ")+i).split(" ");return o(n,"string")||o(n,"undefined")?h(a,n,r,s):(a=(e+" "+E.join(i+" ")+i).split(" "),c(a,n,t))}function y(e,n,o){return v(e,t,t,n,o)}var g=[],C=[],S={_version:"3.3.1",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){C.push({name:e,fn:n,options:t})},addAsyncTest:function(e){C.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=S,Modernizr=new Modernizr;var w=n.documentElement,x="svg"===w.nodeName.toLowerCase(),_=S._config.usePrefixes?" -webkit- -moz- -o- -ms- ".split(" "):["",""];S._prefixes=_;var b="CSS"in e&&"supports"in e.CSS,T="supportsCSS"in e;Modernizr.addTest("supports",b||T);var z=S.testStyles=l;Modernizr.addTest("touchevents",function(){var t;if("ontouchstart"in e||e.DocumentTouch&&n instanceof DocumentTouch)t=!0;else{var o=["@media (",_.join("touch-enabled),("),"heartz",")","{#modernizr{top:9px;position:absolute}}"].join("");z(o,function(e){t=9===e.offsetTop})}return t});var P="Moz O ms Webkit",j=S._config.usePrefixes?P.split(" "):[];S._cssomPrefixes=j;var E=S._config.usePrefixes?P.toLowerCase().split(" "):[];S._domPrefixes=E;var N={elem:i("modernizr")};Modernizr._q.push(function(){delete N.elem});var k={style:N.elem.style};Modernizr._q.unshift(function(){delete k.style}),S.testAllProps=v,S.testAllProps=y,Modernizr.addTest("cssfilters",function(){if(Modernizr.supports)return y("filter","blur(2px)");var e=i("a");return e.style.cssText=_.join("filter:blur(2px); "),!!e.style.length&&(n.documentMode===t||n.documentMode>9)}),r(),s(g),delete S.addTest,delete S.addAsyncTest;for(var A=0;A<Modernizr._q.length;A++)Modernizr._q[A]();e.Modernizr=Modernizr}(window,document);
+    </script>
+<script type="text/javascript">
+    var App = {
+        startTime: (new Date()).getTime(),
+        pageGenerationDate: 1631057751000
+    };
+
+    App.user = {
+                    locale: 'fr',
+            language: 'fr',
+            country: 'FR',
+            isPremium: false,
+            isMentor: false,
+            anonymous: true
+            };
+
+    App.preferences = {
+        debug: false,
+        assetVersion: '83212fe7',
+        contactPhone: '\u002B33\u00201\u002080\u002088\u002080\u002030',
+        phoneNumbersByCountry: {"uk":{"contact":"+44 16 1768 1880"},"ca":{"contact":"+1 929-376-0101"},"us":{"contact":"+1 929-376-0101"},"fr":{"contact":"+33 1 80 88 80 30","b2b_contact":"+33 1 80 88 80 40"},"es":{"contact":"+33 1 80 88 80 30"}},
+        adyenPublicKey: '10001\u007C889EBFD4D434B82683E21DCA26E77C3E20E0EE09A5ECE3830B0ED51F2FA721A2F7E9EC871C6AB9A1E12C4492F4717673047757E02C5256D8E265CD51E413E5EFCCFEAC41B39C662A424ADC13EE187C38C372A7FCCEC1EA5DF841989437D78B252A8EB51008E60BB55B1E55A7A80DE1A9D60D998C128A576BFAE1DDB97D514AF0A073AEDDE84CEE40D1F8F6ECE85D0FFA50C95C06DB274021C1371376C6EB16561FD65C5E2704B570A7504D617D0F3820F176A0609F6162BDF5890533289FDC3DA7DB03B50BB3BD60A613E1FF72060F22987627E8F1A29F0128A94EC4C8FF7CF6B7AB9558D8433BF86D7A388AB927641CD6C02689139CEE3AAC9ACBFFE83806CB',
+        application: {
+            form: {
+              funnelUrl: 'https\u003A\/\/www.tfaforms.com\/responses\/processor',
+              fields: {"firstname":"tfa_6","lastname":"tfa_4","email":"tfa_2","path_id":"tfa_138","source_name":"tfa_165","record_type_id":"tfa_217","utm_medium":"tfa_203","utm_source":"tfa_201","utm_term":"tfa_207","utm_campaign":"tfa_205","gclid":"tfa_209","fbclid":"tfa_211","consent":"tfa_150","user_locale":"tfa_125","userId":"tfa_3","gender":"tfa_10","user_study_motivation":"tfa_171","diploma_level":"tfa_30","user_diploma":"tfa_173","language_proficiency_fr":"tfa_40","language_proficiency_en":"tfa_42","ha_addressline_1":"tfa_16","ha_city":"tfa_18","ha_zip_code":"tfa_24","ha_state":"tfa_163","ha_country":"tfa_22","professional_status":"tfa_94","public_employment_agency_id":"tfa_159","user_public_employment_agency_certificate":"tfa_167","user_pe_advisor_email":"tfa_199","disabled_worker":"tfa_67","veteran":"tfa_73","athlete":"tfa_79","refugee":"tfa_85","rsa":"tfa_91","are":"tfa_175","api":"tfa_177","cui":"tfa_179","aah":"tfa_222","other_allocs":"tfa_223","can_work_in_france":"tfa_142","user_resume":"tfa_1","online_cv":"tfa_157","user_has_mobility":"tfa_193","user_mobility_departamental":"tfa_187","user_mobility_national":"tfa_189","user_mobility_regional":"tfa_191","user_mobility_cities":"tfa_195","work_location_1":"tfa_128","work_location_2":"tfa_130","work_location_3":"tfa_132","work_location_4":"tfa_134","work_location_5":"tfa_136","career_motivation":"tfa_123","has_computer":"tfa_43","has_mic":"tfa_49","has_webcam":"tfa_169","has_fast_internet_connection":"tfa_55","has_quiet_space":"tfa_61","has_online_courses_xp":"tfa_118","has_online_courses_xp_text":"tfa_121","found_a_company":"tfa_146","date_of_birth":"tfa_9","phone_number":"tfa_126","user_desired_start_date":"tfa_161","video_link":"tfa_213","tfa_dbFormId":"tfa_dbFormId","tfa_dbControl":"tfa_dbControl","experiment_id":"tfa_219","full_time_available":"tfa_220","with_prerequisite":"tfa_221"}
+            },
+        },
+        routes: {
+            COURSE_EVENT: '/components/courses/:courseId',
+            COURSE_PART_EVENT: '/components/courses/:courseId/parts/:partId',
+
+            ACCEPT_COOKIE: '\/ajax\/components\/user\u002Daccept\u002Dconsent\u002Dcookie'
+        },
+
+                    };
+
+    App.preferences.navigationPreference = {
+            };
+
+    App.preferences.modules = {
+        'smiley': {
+            basePath: '/bundles/common/images/smiley/'
+        }
+    };
+
+    App.notifications = {};
+    App.scripts = [];
+
+    if (App.user.id) {
+        (function(){
+            var userData = { userId: App.user.id };
+
+            if (App.user.premiumType) {
+                userData.status = (App.user.premiumType === 'Premium Solo') ? 'premium solo student' : 'path student';
+            } else {
+                userData.status = 'free student';
+            }
+
+            if (App.user.isMentor) {
+                userData.status = App.user.premiumType ? (userData.status + '|mentor') : 'mentor';
+            }
+
+            if (!window.dataLayer) {
+              return;
+            }
+            window.dataLayer.push(userData);
+        })();
+    }
+</script>
+<script>    
+    App.preferences.modules['course/view/internalFolding'] = {
+        isBigCourse: true
+    };
+
+    App.data = App.data || {};
+App.data.currentCourse = {"partId":1607901,"partTitle":"Envoyez votre site sur le Web","partSlug":"envoyez-votre-site-sur-le-web-2","courseId":1603881,"courseTitle":"Apprenez \u00e0 cr\u00e9er votre site web avec HTML5 et CSS3","courseSlug":"apprenez-a-creer-votre-site-web-avec-html5-et-css3","courseLanguage":"fr","isIntroduction":false,"isCertifying":true};
+App.preferences.modules['view/currentCoursePage'] = App.data.currentCourse;
+
+</script>
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Envoyez votre site sur le Web" />
+<meta property="og:url" content="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1607901-envoyez-votre-site-sur-le-web" />
+<meta property="og:site_name" content="OpenClassrooms" />
+<meta property="og:image" content="https://course.oc-static.com/courses/1603881/1603881_teaser_picture_1614871846.jpg" />
+<meta property="og:description" content="Vous rêvez d&#039;apprendre à créer des sites web ? Débutez avec ce cours qui vous enseignera tout ce qu&#039;il faut savoir sur le développement de sites web en HTML5 et CSS3 !" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@OCFrance" />
+<meta name="twitter:title" content="Envoyez votre site sur le Web" />
+<meta name="twitter:image" content="https://course.oc-static.com/courses/1603881/1603881_teaser_picture_1614871846.jpg" />
+<meta name="twitter:description" content="Vous rêvez d&#039;apprendre à créer des sites web ? Débutez avec ce cours qui vous enseignera tout ce qu&#039;il faut savoir sur le développement de sites web en HTML5 et CSS3 !" />
+<link rel="canonical" href="1607901-envoyez-votre-site-sur-le-web.html" />
+</head>
+<body class="course oc-body   breadcrumbFluid breadcrumbOnContrasted">
+<ul class="skipLink">
+<li>
+<a class="skipLink__item" href="#mainContent">Aller au contenu</a>
+</li>
+<li>
+<a class="skipLink__item" href="#footerChangeLanguage">Choisir la langue</a>
+</li>
+<li id="skipLink_search">
+<a class="skipLink__item" href="#algolia-search-input">Aller à la recherche</a>
+</li>
+</ul>
+<script id="_EVENTS-IDENTIFY" type="application/json">
+        </script>
+<script id="_EVENTS-PAGE" type="application/json">
+        {"type":"page","integrations":{"Blueshift":false,"HubSpot":false},"properties":{"pageCategory":"courses","courseTitle":"Apprenez \u00e0 cr\u00e9er votre site web avec HTML5 et CSS3"}}
+    </script>
+<script id="fundingMechanisms" type="application/json">
+    {
+        "fundingMechanisms": [{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":24,"name":"Action de Formation Pr\u00e9alable au Recrutement","shortName":"AFPR","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":25,"name":"Aide collective priv\u00e9e \u00e0 la formation","shortName":"Aide priv\u00e9e","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":20,"name":"Aide Individuelle \u00e0 la Formation","shortName":"AIF","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":28,"name":"Aide individuelle priv\u00e9e \u00e0 la formation","shortName":"Aide priv\u00e9e","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":21,"name":"Compte Personnel de Formation","shortName":"CPF","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":15,"name":"Contrat d'apprentissage","shortName":"Apprentissage","type":"apprenticeship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":16,"name":"Contrat de professionnalisation","shortName":"Contrat pro","type":"apprenticeship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":19,"name":"P\u00e9riode de professionnalisation","shortName":"P\u00e9riode pro","type":"apprenticeship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":23,"name":"Pr\u00e9paration Op\u00e9rationnelle \u00e0 l'Emploi Collective","shortName":"POEC","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":17,"name":"Pr\u00e9paration Op\u00e9rationnelle \u00e0 l'Emploi Individuelle","shortName":"POEI","type":"apprenticeship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":22,"name":"Programme R\u00e9gional de Formation pour l'Emploi","shortName":"PRFE","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":18,"name":"Reconversion ou promotion par l'alternance","shortName":"Pro-A","type":"apprenticeship"}]
+    }
+</script>
+<div id="oc-header">
+<div class="oc-mainHeader oc-mainHeader--notLogged oc-mainHeader--skeleton">
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div style="display: flex;">
+<div class="oc-mainHeaderLogo oc-mainHeaderLogo--skeleton">
+<a href="https://openclassrooms.com/fr/" class="oc-mainHeaderLogo__link">
+<svg fill="none" height="51" width="668" viewBox="0 0 668 51" xmlns="http://www.w3.org/2000/svg">
+<title>OpenClassrooms.com</title>
+<path d="M406.011 35.018c0 2.82-.71 5.641-2.368 7.991-1.659 2.35-3.79 4.23-6.87 5.64-3.079 1.41-6.869 2.116-11.37 2.116-3.79 0-7.343-.47-10.897-1.41-3.553-.94-6.395-2.35-8.527-3.996l7.106-8.46c1.421.705 2.843 1.175 4.501 1.88 2.842.94 5.448 1.41 8.054 1.41 4.974 0 7.58-1.41 7.58-3.995 0-1.41-.711-2.35-2.132-3.056-1.421-.705-3.79-1.41-6.87-2.115-3.553-.705-6.395-1.645-8.764-2.585s-4.264-2.35-6.159-4.23c-1.658-1.88-2.606-4.701-2.606-7.991 0-3.056.711-5.641 2.369-7.991 1.658-2.35 3.79-4.23 6.87-5.64 3.079-1.41 6.869-2.116 11.37-2.116 3.079 0 6.159.47 9.001 1.175 3.08.705 5.685 1.88 7.817 3.055l-7.343 8.696c-3.316-1.41-6.633-2.115-9.712-2.115-2.606 0-4.501.47-5.685 1.175-1.185.705-1.895 1.88-1.895 3.056 0 1.41.711 2.35 2.132 2.82 1.421.705 3.79 1.41 6.869 2.115a49.4 49.4 0 0 1 8.765 2.585c2.369.94 4.264 2.35 6.159 4.23 1.658 1.646 2.605 4.466 2.605 7.756zm261.989 0c0 2.82-.711 5.641-2.369 7.991s-3.79 4.23-6.869 5.64c-3.08 1.41-6.87 2.116-11.371 2.116-3.79 0-7.343-.47-10.896-1.41s-6.396-2.35-8.528-3.996l7.107-8.46c1.421.705 2.842 1.175 4.501 1.88 2.842.94 5.448 1.41 8.053 1.41 4.975 0 7.581-1.41 7.581-3.995 0-1.41-.711-2.35-2.132-3.056-1.422-.705-3.791-1.41-6.87-2.115a49.361 49.361 0 0 1-8.764-2.585c-2.369-.94-4.264-2.35-6.159-4.23-1.658-1.88-2.606-4.701-2.606-7.991 0-3.056.711-5.641 2.369-7.991 1.658-2.35 3.79-4.23 6.869-5.64 3.08-1.41 6.87-2.116 11.371-2.116 3.079 0 6.158.47 9.001 1.175 3.079.705 5.685 1.88 7.817 3.055l-7.343 8.696c-3.317-1.41-6.633-2.115-9.712-2.115-2.606 0-4.501.47-5.685 1.175-1.185.705-1.896 1.88-1.896 3.056 0 1.41.711 2.35 2.132 2.82 1.422.705 3.791 1.41 6.87 2.115a49.361 49.361 0 0 1 8.764 2.585c2.369.94 4.264 2.35 6.159 4.23 1.895 1.646 2.606 4.466 2.606 7.756zM87.882 19.037c0 3.76-.947 6.816-2.605 9.4-1.659 2.586-4.027 4.701-7.107 6.111s-6.87 2.116-10.896 2.116H59.22v12.69H45.955V.706h21.319c4.264 0 7.817.705 10.896 2.115 3.08 1.41 5.448 3.526 7.107 6.346 1.895 3.055 2.605 6.346 2.605 9.87zm-13.265 0c0-2.35-.71-3.995-2.132-5.17s-3.316-1.88-6.159-1.88h-7.343v14.336h7.343c2.606 0 4.738-.706 6.16-1.88s2.131-3.056 2.131-5.406zm55.904 20.212v10.576h-37.19V1.175h36.242v10.576h-23.214v8.226h18.476v10.341h-18.476v8.93zm50.218-38.074v48.65h-10.896l-20.609-25.853v25.853h-13.028V1.175h10.896l20.609 25.853V1.175zm84.092 37.604v10.81h-32.926V.94h13.265v37.604h19.661zm56.851 11.046h-13.739l-3.553-9.401h-19.661l-3.553 9.4h-13.502l20.608-48.649h13.029zM300.6 30.083l-5.922-15.512-5.922 15.512zm62.536 4.935c0 2.82-.71 5.641-2.369 7.991-1.658 2.35-3.79 4.23-6.869 5.64-3.08 1.41-6.87 2.116-11.37 2.116-3.79 0-7.344-.47-10.897-1.41s-6.396-2.35-8.527-3.996l7.106-8.46c1.421.705 2.842 1.175 4.501 1.88 2.842.94 5.448 1.41 8.054 1.41 4.974 0 7.58-1.41 7.58-3.995 0-1.41-.711-2.35-2.132-3.056-1.421-.705-3.79-1.41-6.87-2.115-3.553-.705-6.395-1.645-8.764-2.585s-4.264-2.35-6.159-4.23c-1.658-1.88-2.606-4.701-2.606-7.991 0-3.056.711-5.641 2.369-7.991 1.658-2.35 3.79-4.23 6.87-5.64 3.079-1.41 6.869-2.116 11.37-2.116 3.079 0 6.159.47 9.001 1.175 3.08.705 5.448 1.88 7.817 3.055l-7.343 8.696c-3.316-1.41-6.633-2.115-9.712-2.115-2.606 0-4.501.47-5.685 1.175-1.185.705-1.895 1.88-1.895 3.056 0 1.41.71 2.35 2.132 2.82 1.421.705 3.79 1.41 6.869 2.115a49.4 49.4 0 0 1 8.765 2.585c2.368.94 4.263 2.35 6.158 4.23 1.659 1.646 2.606 4.466 2.606 7.756zm-322.63-9.636c0 13.867-11.37 25.383-25.583 25.383-5.685 0-10.66-1.88-14.923-4.936l8.528-10.105c1.895 1.175 4.027 1.88 6.395 1.88 6.633 0 12.081-5.406 12.081-11.986 0-6.581-5.448-11.987-12.08-11.987-2.37 0-4.501.705-6.396 1.88L0 5.407C4.264 2.35 9.475.47 14.923.47 29.136.235 40.506 11.516 40.506 25.383zm177.66 10.341l8.528 10.107c-4.264 3.055-9.476 4.935-14.924 4.935-13.976 0-25.583-11.281-25.583-25.383C186.187 11.517 197.557 0 211.77 0c5.685 0 10.66 1.88 14.924 4.936l-8.528 10.105c-1.895-1.175-4.027-1.88-6.396-1.88-6.632 0-12.081 5.406-12.081 11.986 0 6.581 5.449 11.987 12.081 11.987 2.369.47 4.501-.235 6.396-1.41zm236.169 14.102l-10.423-15.042c3.079-1.41 5.211-3.525 6.87-6.11 1.658-2.585 2.605-5.876 2.605-9.401 0-3.76-.947-6.816-2.605-9.636-1.659-2.82-4.027-4.7-7.107-6.346-3.079-1.41-6.869-2.115-10.896-2.115H411.46v48.65h13.028V37.134h6.159l8.764 12.69zm-29.847-37.839h7.58c2.606 0 4.738.705 6.159 1.88s2.132 3.056 2.132 5.17c0 2.351-.711 3.996-2.132 5.171s-3.316 1.88-6.159 1.88h-7.58zM483.945.235c13.976 0 25.583 11.281 25.583 25.382S498.157 51 483.945 51c-13.976 0-25.583-11.281-25.583-25.383S469.732.235 483.945.235zm-13.029 25.147c0 7.051 5.685 12.692 12.792 12.692 7.106 0 12.791-5.64 12.791-12.692s-5.685-12.69-12.791-12.69c-6.87 0-12.792 5.64-12.792 12.69zM538.901.235c13.976 0 25.583 11.281 25.583 25.382S553.114 51 538.901 51c-13.976 0-25.583-11.281-25.583-25.383S524.925.235 538.901.235zm-12.792 25.147c0 7.051 5.685 12.692 12.792 12.692 7.106 0 12.791-5.64 12.791-12.692s-5.685-12.69-12.791-12.69c-7.107 0-12.792 5.64-12.792 12.69zm70.353 6.816L580.828 1.175h-10.896v48.65h11.607V28.438l11.607 21.387h6.87l11.607-21.387v21.387h11.607V1.175h-10.897z" />
+</svg>
+</a>
+</div>
+<nav class="oc-mainHeader__navWrapper" role="navigation" aria-label="Menu principal">
+<div class="oc-mainHeader__linksWrapper">
+<div class="oc-mainHeader__navLinkWrapper"><a class="oc-mainHeader__navLink" data-event="click|Header|Trainings" href="https://openclassrooms.com/fr/paths">Formations</a></div>
+<div class="oc-mainHeader__navLinkWrapper"><a class="oc-mainHeader__navLink" data-event="click|Header|Apprenticeship" href="https://openclassrooms.com/fr/apprenticeship">Alternance</a></div>
+<div class="oc-mainHeader__navLinkWrapper"><a class="oc-mainHeader__navLink" data-event="click|Header|Funding" href="https://openclassrooms.com/fr/funding">Financements</a></div>
+<div class="oc-mainHeader__navLinkWrapper--separator"></div>
+<div class="oc-mainHeader__navLinkWrapper"><a class="oc-mainHeader__navLink" data-event="click|Header|Business" href="https://openclassrooms.com/fr/business">Pour les entreprises</a></div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="disclaimers-container" style="display:none;">
+<!--[if lt IE 10]>
+        <div class="alertMessage">
+        <span class="bullet bullet--small bullet--orange alertMessage__icon"> <i class="icon-exclamation"></i></span>
+        <p class="alertMessage__text">
+            Vous utilisez un navigateur obsolète, veuillez le <a href="https://browser-update.org/update.html">mettre à jour</a>.
+        </p>
+    </div>
+    <![endif]-->
+
+<div id="modern-ie-disclaimer" style="display:none">
+<div class="alertMessage">
+<span class="bullet bullet--small bullet--orange alertMessage__icon"> <i class="icon-exclamation"></i></span>
+<p class="alertMessage__text">
+Vous utilisez un navigateur obsolète, veuillez le <a href="https://browser-update.org/update.html">mettre à jour</a>.
+</p>
+</div>
+</div>
+<script id="webapp-ie-disclaimer" type="application/json">{"message":"Vous utilisez un navigateur obsol\u00e8te, veuillez le <a href=\"https:\/\/browser-update.org\/update.html\">mettre \u00e0 jour<\/a>."}</script>
+<script>
+      var isModernIE =  document.documentMode === 10 || document.documentMode === 11;
+      var isEdgeLegacy = navigator.userAgent.indexOf('Edge') > -1; // Luckily for us, Edge Chromium uses string "Edg" without final "e"
+
+      if (isModernIE || isEdgeLegacy) {
+        document.getElementById('modern-ie-disclaimer').style.display = 'block';
+        document.getElementById('webapp-ie-disclaimer').setAttribute('data-role', 'disclaimer-message-data');
+      }
+    </script>
+<noscript>
+        <div class="alertMessage">
+            <span class="bullet bullet--small bullet--orange alertMessage__icon"> <i class="icon-exclamation"></i></span>
+            <p class="alertMessage__text">
+                Veuillez utiliser un <a href="https://browser-update.org/update.html">navigateur internet moderne</a> avec JavaScript activé pour naviguer sur OpenClassrooms.com
+            </p>
+        </div>
+    </noscript>
+</div>
+<div id="mainContentWithHeader">
+<section class="breadcrumb  inset no-padding">
+<div class="grid-wrapper">
+<div class="grid-inner">
+<nav class="breadcrumb__wrapper" role="navigation" aria-label="Fil d&#039;Ariane">
+<ul class="breadcrumb__trail">
+<li class="breadcrumb__item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a class="breadcrumb__link" href="https://openclassrooms.com/fr/" itemprop="url">
+<span itemprop="title">Accueil</span
+                                    ></a>
+<span class="breadcrumb__separator"> > </span>
+</li>
+<li class="breadcrumb__item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a class="breadcrumb__link" href="https://openclassrooms.com/fr/courses" itemprop="url">
+<span itemprop="title">Cours</span
+                                    ></a>
+<span class="breadcrumb__separator"> > </span>
+</li>
+<li class="breadcrumb__item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a class="breadcrumb__link" href="../1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css36f1b.html?status=published" itemprop="url">
+<span itemprop="title">Apprenez à créer votre site web avec HTML5 et CSS3</span
+                                    ></a>
+<span class="breadcrumb__separator"> > </span>
+</li>
+<li class="breadcrumb__item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+Envoyez votre site sur le Web
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</section>
+<div id="pre-main-part">
+</div>
+<main class="claire clearfix" role="main" id="mainContent">
+<article itemscope itemtype="http://schema.org/Article" lang="fr">
+<header id="course-header" class="courseHeader" xmlns="http://www.w3.org/1999/html">
+<div class="grid-wrapper"><div class="grid-inner"><div class="grid-inner-content"><div class="courseHeader__topPart"><a itemprop="url" href="../1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3.html"><h1 class="oc-typography-h2 typoColorOnContrastedBg  courseHeader__title" data-course-title="Apprenez à créer votre site web avec HTML5 et CSS3">Apprenez à créer votre site web avec HTML5 et CSS3</h1></a></div></div></div></div><div class="grid-wrapper"><div class="grid-inner"><div class="grid-inner-content"><div class="courseHeader__bottomPart"><div class="courseHeader__details"><div class="courseHeader__detailsGroup"><ul class="courseHeader__detailsList"><li class="courseHeader__detailsItem"><img class="courseHeader__icon js-tooltip" src="https://openclassrooms.com/images/icons/schedule.svg?83212fe7" width="16" title="Ce cours demande en moyenne 20 heures de travail pour être réussi." /><span class="courseHeader__label">20 heures</span></li><li class="courseHeader__detailsItem"><i class="icon-level courseHeader__icon"></i><span class="courseHeader__label">Facile</span></li></ul></div><div class="courseHeader__detailsGroup courseHeader--license"><a class="courseHeader__license" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0"><span class="courseHeader__label">Licence</span><ul class="courseHeader__detailsList"><li class="iconBar__item"><i class="icon-cc iconBar__icon" title="CC"></i></li><li class="iconBar__item"><i class="icon-ccby iconBar__icon" title="BY"></i></li><li class="iconBar__item"><i class="icon-ccsa iconBar__icon" title="SA"></i></li></ul></a></div></div></div></div></div></div>
+<div id="popin-formats-availables" class="popin popin--course-formats-availables">
+<i class="popin__close-button icon-close js-close-button"></i>
+<div class="course-types course-types--withSpace">
+<a class="course-types__item" href="../1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3.html">
+<i class="icon-desktop course-types__icon"></i>
+</a>
+<a class="course-types__item" href="https://openclassrooms.com/fr/courses?video=true">
+<i class="icon-video course-types__icon"></i>
+</a>
+<a class="course-types__item" href="http://www.eyrolles.com/Informatique/Livre/realisez-votre-site-web-avec-html5-et-css3-9782953527889?societe=openclassrooms">
+<i class="icon-book course-types__icon"></i>
+</a>
+<a class="course-types__item" href="../1603881/certificate_example.pdf" target="_blank">
+<i class="icon-badge course-types__icon js-close-button"></i>
+</a>
+</div>
+<p>Ce cours est visible <a href="../1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3.html">gratuitement en ligne</a>.</p>
+<p>course.header.alt.is_video</p>
+<p>
+Ce cours existe en livre papier.
+</p>
+<p>
+course.header.alt.is_certifying
+</p>
+<a class="button button--primary js-close-button" href="#">J&#039;ai tout compris !</a>
+</div>
+</header>
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="grid-inner-content">
+<p class="courseHeader__updatedTime">
+Mis à jour le 25/06/2021 </p>
+</div>
+</div>
+</div>
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="grid-inner-content">
+<nav id="course-timeline" class="timeline">
+<div class="timeline__inner">
+<span class="timeline__iconContainer">
+<a href="../1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3.html" title="Retour sur le sommaire du cours" class="roundIcon timeline__roundIcon">
+<i class="icon-home roundIcon__icon"></i>
+</a>
+</span>
+<div class="timeline__steps">
+<span class="timeline__splitChapter"></span>
+<a href="1604192-decouvrez-le-fonctionnement-des-sites-web.html" class="timeline__step" title="Découvrez le fonctionnement des sites web">
+<span class="timeline__stepName">
+Découvrez le fonctionnement des sites web
+</span>
+</a>
+<a href="1604361-creez-votre-premiere-page-web-en-html.html" class="timeline__step" title="Créez votre première page web en HTML">
+<span class="timeline__stepName">
+Créez votre première page web en HTML
+</span>
+</a>
+<a href="1604534-organisez-votre-texte.html" class="timeline__step" title="Organisez votre texte">
+<span class="timeline__stepName">
+Organisez votre texte
+</span>
+</a>
+<a href="4004681-pratiquez.html" class="timeline__step" title="Pratiquez !">
+<span class="timeline__stepName">
+Pratiquez !
+</span>
+</a>
+<a href="1604646-creez-des-liens.html" class="timeline__step" title="Créez des liens">
+<span class="timeline__stepName">
+Créez des liens
+</span>
+</a>
+<a href="1604791-inserez-des-images.html" class="timeline__step" title="Insérez des images">
+<span class="timeline__stepName">
+Insérez des images
+</span>
+</a>
+<a href="6725196-entrainez-vous-en-structurant-votre-cv.html" class="timeline__step" title="Entraînez-vous en structurant votre CV">
+<span class="timeline__stepName">
+Entraînez-vous en structurant votre CV
+</span>
+</a>
+<span class="timeline__splitChapter"></span>
+<a href="1605060-mettez-en-place-le-css.html" class="timeline__step" title="Mettez en place le CSS">
+<span class="timeline__stepName">
+Mettez en place le CSS
+</span>
+</a>
+<a href="1605329-formatez-du-texte.html" class="timeline__step" title="Formatez du texte">
+<span class="timeline__stepName">
+Formatez du texte
+</span>
+</a>
+<a href="1605551-ajoutez-de-la-couleur-et-un-fond.html" class="timeline__step" title="Ajoutez de la couleur et un fond">
+<span class="timeline__stepName">
+Ajoutez de la couleur et un fond
+</span>
+</a>
+<a href="1605694-creez-des-bordures-et-des-ombres.html" class="timeline__step" title="Créez des bordures et des ombres">
+<span class="timeline__stepName">
+Créez des bordures et des ombres
+</span>
+</a>
+<a href="1605763-creez-des-apparences-dynamiques.html" class="timeline__step" title="Créez des apparences dynamiques">
+<span class="timeline__stepName">
+Créez des apparences dynamiques
+</span>
+</a>
+<a href="4214566-pratiquez.html" class="timeline__step" title="Pratiquez !">
+<span class="timeline__stepName">
+Pratiquez !
+</span>
+</a>
+<a href="6725256-entrainez-vous-en-mettant-en-forme-votre-cv.html" class="timeline__step" title="Entraînez-vous en mettant en forme votre CV">
+<span class="timeline__stepName">
+Entraînez-vous en mettant en forme votre CV
+</span>
+</a>
+<a href="exercises/92.html" class="timeline__step" title="Quiz : Utilisez du code CSS">
+<span class="timeline__stepName">
+Quiz : Utilisez du code CSS
+</span>
+</a>
+<span class="timeline__splitChapter"></span>
+<a href="1605881-structurez-votre-page.html" class="timeline__step" title="Structurez votre page">
+<span class="timeline__stepName">
+Structurez votre page
+</span>
+</a>
+<a href="1606168-decouvrez-le-modele-des-boites.html" class="timeline__step" title="Découvrez le modèle des boîtes">
+<span class="timeline__stepName">
+Découvrez le modèle des boîtes
+</span>
+</a>
+<a href="3298561-faites-votre-mise-en-page-avec-flexbox.html" class="timeline__step" title="Faites votre mise en page avec Flexbox">
+<span class="timeline__stepName">
+Faites votre mise en page avec Flexbox
+</span>
+</a>
+<a href="4214576-pratiquez.html" class="timeline__step" title="Pratiquez !">
+<span class="timeline__stepName">
+Pratiquez !
+</span>
+</a>
+<a href="1606402-decouvrez-dautres-techniques-de-mise-en-page.html" class="timeline__step" title="Découvrez d&#039;autres techniques de mise en page">
+<span class="timeline__stepName">
+Découvrez d&#039;autres techniques de mise en page
+</span>
+</a>
+<a href="1606688-tp-creez-un-site-pas-a-pas.html" class="timeline__step" title="TP : Créez un site pas à pas">
+<span class="timeline__stepName">
+TP : Créez un site pas à pas
+</span>
+</a>
+<a href="6725301-entrainez-vous-en-organisant-votre-cv.html" class="timeline__step" title="Entraînez-vous en organisant votre CV">
+<span class="timeline__stepName">
+Entraînez-vous en organisant votre CV
+</span>
+</a>
+<a href="exercises/1236.html" class="timeline__step" title="Quiz : Organisez les éléments d&#039;une page web grâce aux règles CSS">
+<span class="timeline__stepName">
+Quiz : Organisez les éléments d&#039;une page web grâce aux règles CSS
+</span>
+</a>
+<span class="timeline__splitChapter"></span>
+<a href="1606851-ajoutez-des-tableaux.html" class="timeline__step" title="Ajoutez des tableaux">
+<span class="timeline__stepName">
+Ajoutez des tableaux
+</span>
+</a>
+<a href="1607171-creez-des-formulaires.html" class="timeline__step" title="Créez des formulaires">
+<span class="timeline__stepName">
+Créez des formulaires
+</span>
+</a>
+<a href="1607438-enrichissez-votre-site-avec-de-la-video-et-de-laudio.html" class="timeline__step" title="Enrichissez votre site avec de la vidéo et de l&#039;audio">
+<span class="timeline__stepName">
+Enrichissez votre site avec de la vidéo et de l&#039;audio
+</span>
+</a>
+<a href="1607616-utilisez-le-responsive-design-avec-les-media-queries.html" class="timeline__step" title="Utilisez le responsive design avec les Media Queries">
+<span class="timeline__stepName">
+Utilisez le responsive design avec les Media Queries
+</span>
+</a>
+<a href="1607717-allez-plus-loin.html" class="timeline__step" title="Allez plus loin">
+<span class="timeline__stepName">
+Allez plus loin
+</span>
+</a>
+<a href="6725346-entrainez-vous-en-adaptant-votre-cv-en-responsive.html" class="timeline__step" title="Entraînez-vous en adaptant votre CV en responsive">
+<span class="timeline__stepName">
+Entraînez-vous en adaptant votre CV en responsive
+</span>
+</a>
+<a href="exercises/96.html" class="timeline__step" title="Quiz : Intégrez des formulaires dans une page web">
+<span class="timeline__stepName">
+Quiz : Intégrez des formulaires dans une page web
+</span>
+</a>
+<span class="timeline__splitChapter"></span>
+<a href="1607901-envoyez-votre-site-sur-le-web.html" class="timeline__step js-current-timeline-step" title="Envoyez votre site sur le Web">
+<span class="timeline__stepName">
+Envoyez votre site sur le Web
+</span>
+<span class="timeline__progressMarker"></span>
+ </a>
+<a href="1608357-memento-des-balises-html.html" class="timeline__step" title="Mémento des balises HTML">
+<span class="timeline__stepName">
+Mémento des balises HTML
+</span>
+</a>
+<a href="1608902-memento-des-proprietes-css.html" class="timeline__step" title="Mémento des propriétés CSS">
+<span class="timeline__stepName">
+Mémento des propriétés CSS
+</span>
+</a>
+<span class="timeline__splitChapter"></span>
+</div>
+<span class="timeline__iconContainer">
+<a href="../1603881/certificate_example.pdf" title="Certificat de réussite (voir un exemple)" class="roundIcon timeline__roundIcon">
+<i class="icon-trophy roundIcon__icon"></i>
+</a>
+</span>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="contentWithSidebar  spacer  js-contentWithSidebar  grid-inner-content">
+<div class="contentWithSidebar__content">
+<div id="js-courseRedirection" data-courseInfo-course_id="1603881"></div>
+<div class="relative js-sidebar-container">
+<div class="static">
+<h2 itemprop="name" data-part-title="Envoyez votre site sur le Web" class="part-title">Envoyez votre site sur le Web</h2>
+<section class="space-bottom js-desktop-sticky-container">
+<div class="tooltipMessage tooltipMessage--noArrow">
+<i class="tooltipMessage__icon  icon-lock"></i>
+<a href="https://openclassrooms.com/fr/login">Connectez-vous</a> ou <a href="https://openclassrooms.com/fr/register">inscrivez-vous</a> gratuitement pour bénéficier de toutes les fonctionnalités de ce cours !
+</div>
+<div itemprop="articleBody" data-page-indentifier="/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1607901-envoyez-votre-site-sur-le-web" class="js-isRestrictablePage js-course-container js-smilize " data-video-blocked-wrapper="<a href='https://openclassrooms.com/fr/login#popin-log-in' class='js-popin-activator'>">
+<div class="userContent js-userContent">
+<p id="r-1612730" data-claire-element-id="7446471">Votre site est tout beau, tout propre, tout prêt… mais comme il est sur votre disque dur, personne d'autre ne va pouvoir en profiter !</p><p id="r-1612731" data-claire-element-id="1635606">Vous aimeriez donc l'envoyer sur le Web, mais… vous ne savez pas comment faire.<br /> Nous allons découvrir dans cette annexe tout ce qu'il faut savoir pour envoyer son site sur le Web :</p><ol id="r-1612738" data-claire-element-id="1635613"><li id="r-1612733" data-claire-element-id="1635608"><p id="r-1612732" data-claire-element-id="1635607">Comment réserver un <strong>nom de domaine</strong> ?</p></li><li id="r-1612735" data-claire-element-id="1635610"><p id="r-1612734" data-claire-element-id="1635609">Qu'est-ce qu'un <strong>hébergeur</strong> et comment cela fonctionne-t-il ?</p></li><li id="r-1612737" data-claire-element-id="1635612"><p id="r-1612736" data-claire-element-id="1635611">Enfin, comment utiliser un <strong>client FTP</strong> pour pouvoir transférer les fichiers sur le Net ?</p></li></ol><h3 id="r-1607755" data-claire-element-id="30958203">Le nom de domaine</h3><p id="r-1612739" data-claire-element-id="30958031">Savez-vous ce qu'est un <strong>nom de domaine</strong> ?<br /> Il s'agit en fait d'une adresse sur le Web : <code data-claire-semantic="text">openclassrooms.com</code>  est par exemple un nom de domaine.</p><p id="r-1612740" data-claire-element-id="4755802">Un nom de domaine est constitué de deux parties, ici &quot;openclassrooms&quot; et &quot;.com&quot;.</p><ul id="r-1612745" data-claire-element-id="30958093"><li id="r-1612742" data-claire-element-id="4755804"><p id="r-1612741" data-claire-element-id="4755803">Dans le cas présent, &quot;openclassrooms&quot; est le nom de domaine proprement dit. Il s'agit d'un nom que l'on peut en général choisir librement, tant que personne ne l'a réservé avant nous. Il peut contenir des lettres et des chiffres, et depuis 2012, certains caractères accentués (comme le « ç » français, le « é » ou le « è »).</p></li><li id="r-1612744" data-claire-element-id="30958092"><p id="r-1612743" data-claire-element-id="30958091">Le &quot;.com&quot; est l'extension (aussi appelée « TLD », de l'anglais <em>top-level domain</em>). Il existe grosso modo une extension par pays ( <code data-claire-semantic="text">.fr</code>  pour la France, <code data-claire-semantic="text">.be</code>  pour la Belgique, <code data-claire-semantic="text">.ca</code>  pour le Canada, etc.). Toutefois, il y a aussi des extensions utilisées au niveau international comme <code data-claire-semantic="text">.com</code>  , <code data-claire-semantic="text">.net</code>  , <code data-claire-semantic="text">.org</code>  . Elles étaient au départ réservées aux sites commerciaux, aux organisations… mais cela fait longtemps que tout le monde peut les réserver. D'ailleurs, <code data-claire-semantic="text">.com</code>  est très probablement l'extension la plus utilisée sur le Web.</p></li></ul><aside id="r-1612747" data-claire-element-id="30958095" data-claire-semantic="information"><p id="r-1612746" data-claire-element-id="30958094">En général, un site web voit son adresse précédée par <code data-claire-semantic="text">www</code>  , comme par exemple <code data-claire-semantic="text">www.lemonde.fr</code>  . Cela ne fait pas partie du nom de domaine : en fait, <code data-claire-semantic="text">www</code>  est ce qu'on appelle un <em>sous-domaine</em>, et on peut en théorie en créer autant qu'on veut une fois qu'on est propriétaire du nom de domaine.<br /> Le <code data-claire-semantic="text">www</code>  est présent sur la plupart des sites web, c'est une sorte de convention, mais elle n'est absolument pas obligatoire.</p></aside><h4 id="r-1612764" data-claire-element-id="30958202">Réserver un nom de domaine</h4><div id="r-1612749" data-claire-element-id="30958132" data-claire-semantic="question"><p id="r-1612748" data-claire-element-id="30958131">Moi aussi, je veux un nom de domaine pour mon site ! Comment dois-je faire ?</p></div><p id="r-1612750" data-claire-element-id="1635625">Alors j'ai une bonne et une mauvaise nouvelle. Comme d'habitude, on va commencer par la mauvaise :</p><ul id="r-1612755" data-claire-element-id="1635630"><li id="r-1612752" data-claire-element-id="1635627"><p id="r-1612751" data-claire-element-id="1635626"><strong>la mauvaise</strong> : ce n'est pas gratuit…</p></li><li id="r-1612754" data-claire-element-id="1635629"><p id="r-1612753" data-claire-element-id="1635628"><strong>la bonne</strong> : … ce n'est vraiment pas cher du tout.</p></li></ul><p id="r-1612756" data-claire-element-id="30958133">En effet, un nom de domaine coûte entre 7 et 12 euros par an.<br /> Le prix peut varier en fonction de l'extension. Ainsi, l'extension <code data-claire-semantic="text">.info</code>  est généralement proposée à plus bas prix et peut s'avérer être une alternative intéressante. Mais si vous voulez une adresse plus « courante », il faudra plutôt viser une extension de type <code data-claire-semantic="text">.com</code>  ou encore <code data-claire-semantic="text">.fr</code>  .</p><p id="r-1612757" data-claire-element-id="1635632">Pour réserver un nom de domaine, deux solutions :</p><ul id="r-1612762" data-claire-element-id="30958165"><li id="r-1612759" data-claire-element-id="30958162"><p id="r-1612758" data-claire-element-id="30958161">passer par un <strong>registrar</strong> spécialisé. C'est un organisme qui sert d'intermédiaire entre l'ICANN (l'organisation qui gère l'ensemble des noms de domaine au niveau international) et vous. 1&amp;1 IONOS, OVH et Gandi sont de célèbres registrars français ;</p></li><li id="r-1612761" data-claire-element-id="30958164"><p id="r-1612760" data-claire-element-id="30958163">encore mieux : vous pouvez commander le nom de domaine en même temps que l'hébergement (c'est ce que je vous conseille). De cette manière, vous faites d'une pierre deux coups, vu que vous aurez de toute façon besoin de l'hébergement <em>et</em> du nom de domaine.</p></li></ul><p id="r-1612763" data-claire-element-id="30958201">Dans ce chapitre, nous allons voir comment commander un nom de domaine en même temps que l'hébergement ; c'est de loin la solution la plus simple et la moins coûteuse pour vous.</p><h3 id="r-1607818" data-claire-element-id="30958458">L'hébergeur</h3><p id="r-1612765" data-claire-element-id="1635641">Intéressons-nous maintenant à l'hébergeur.</p><div id="r-1612767" data-claire-element-id="30958205" data-claire-semantic="question"><p id="r-1612766" data-claire-element-id="30958204">Qu'est-ce qu'un hébergeur et pourquoi aurai-je besoin de lui ?</p></div><p id="r-1612768" data-claire-element-id="30958231">Sur Internet, tous les sites web sont stockés sur des ordinateurs particuliers appelés <strong><em>serveurs</em></strong> (figure suivante). Ce sont des ordinateurs généralement très puissants, qui restent tout le temps allumés. Ils contiennent les pages des sites web et les délivrent aux internautes qui les demandent, à toute heure du jour et de la nuit.</p><figure id="r-1612771" data-claire-element-id="30958452"><img id="r-1612769" data-claire-element-id="4755811" src="https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/serveur3.jpg" alt="Un serveur" /><figcaption>Un serveur</figcaption></figure><p id="r-1612772" data-claire-element-id="1635648">Un serveur ne possède pas d'écran car, la plupart du temps, il tourne tout seul sans qu'il y ait besoin de faire quoi que ce soit dessus. Comme vous le voyez, les serveurs sont très plats : c'est un format spécial de serveur (appelé « 1U »). Cela permet de les empiler dans des <strong>baies</strong>, c'est-à-dire une sorte d'armoire climatisée pour serveurs (figure suivante).</p><figure id="r-1612775" data-claire-element-id="30958454"><img id="r-1612773" data-claire-element-id="1635649" src="https://user.oc-static.com/files/40001_41000/40007.jpg" alt="Une baie de serveurs" /><figcaption>Une baie de serveurs</figcaption></figure><p id="r-1612776" data-claire-element-id="1635652">Comme vous le voyez, il y a un écran pour toute la baie. C'est suffisant car on ne branche l'écran sur un serveur que si celui-ci rencontre un problème. La plupart du temps, heureusement, le serveur travaille sans broncher.</p><h4 id="r-1612785" data-claire-element-id="30958457">Le rôle de l'hébergeur</h4><p id="r-1612777" data-claire-element-id="1635653">L'hébergeur est une entreprise qui se charge de gérer des baies de serveurs. Elle s'assure du bon fonctionnement des serveurs 24h/24, 7j/7. En effet, si l'un d'eux tombe en panne, tous les sites présents sur la machine deviennent inaccessibles (et cela fait des clients mécontents).</p><p id="r-1612778" data-claire-element-id="30958265">Ces baies se situent dans des lieux particuliers appelés <em><strong>datacenters </strong></em>(figure suivante). Les datacenters sont donc en quelque sorte des « entrepôts à serveurs », et leur accès est très protégé.</p><figure id="r-1612781" data-claire-element-id="30958456"><img id="r-1612779" data-claire-element-id="1635655" src="https://user.oc-static.com/files/81001_82000/81378.gif" alt="Un datacenter, dans lequel on voit plusieurs baies de serveurs" /><figcaption>Un datacenter, dans lequel on voit plusieurs baies de serveurs</figcaption></figure><aside id="r-1612783" data-claire-element-id="1635659" data-claire-semantic="information"><p id="r-1612782" data-claire-element-id="1635658">Il est aussi possible, en théorie, d'héberger un site sur son propre ordinateur. Toutefois, c'est complexe : il vaut mieux avoir des connaissances en Linux, l'ordinateur doit être assez puissant, tourner jour et nuit et… surtout… la connexion doit être à très très haut débit (surtout en <strong>upload</strong>, la vitesse d'envoi des fichiers compte énormément). Les particuliers n'ont en règle générale pas une connexion suffisamment puissante pour héberger des sites, contrairement aux datacenters : ceux-ci sont câblés en fibre optique (ce qui permet d'atteindre des vitesses de plusieurs Gbps !)</p></aside><p id="r-1612784" data-claire-element-id="1635660">Bref, gérer un serveur soi-même est complexe et, la plupart du temps, les particuliers et les entreprises font appel à un hébergeur dont c'est le métier.</p><h4 id="r-1612807" data-claire-element-id="30958347">Trouver un hébergeur</h4><p id="r-1612786" data-claire-element-id="1635662">Les hébergeurs, contrairement aux registrars, sont très très nombreux. Il y en a de tous types, à tous les prix. Il y a un vocabulaire à connaître pour vous repérer dans leurs offres :</p><ul id="r-1774934" data-claire-element-id="30958346"><li id="r-3834290" data-claire-element-id="30958339"><p id="r-3834289" data-claire-element-id="30958338"><strong>hébergement mutualisé</strong> : si vous optez pour une offre d'hébergement mutualisé, votre site sera placé sur un serveur gérant plusieurs sites à la fois (peut-être une centaine, peut-être plus). <em>C'est l'offre la moins chère et c'est celle que je vous recommande de viser</em> si vous démarrez votre site web ;</p></li><li id="r-3834292" data-claire-element-id="30958341"><p id="r-3834291" data-claire-element-id="30958340"><strong>hébergement dédié virtuel</strong> : cette fois, le serveur ne gère que très peu de sites (généralement moins d'une dizaine). Cette offre est généralement adaptée aux sites qui d'un côté ne peuvent plus tenir sur un hébergement mutualisé car ils ont trop de trafic (trop de visiteurs), mais qui par ailleurs ne peuvent pas se payer un hébergement dédié (voir ci-dessous) ;</p></li><li id="r-3834294" data-claire-element-id="30958343"><p id="r-3834293" data-claire-element-id="30958342"><strong>hébergement dédié</strong> (on parle aussi de « serveur dédié ») : c'est le nec plus ultra. Le serveur gère uniquement votre site et aucun autre. Attention, cela coûte assez cher et il vaut mieux avoir des connaissances en Linux pour administrer le serveur à distance ;</p></li><li id="r-3834296" data-claire-element-id="30958345"><p id="r-3834295" data-claire-element-id="30958344"><strong>hébergement cloud</strong> : de plus en plus en vogue, cela consiste à envoyer notre site sur des serveurs virtuels. En fait, c'est l'équivalent d'un hébergement dédié virtuel, mais avec tout un tas de services autour pour nous permettre de gérer plus facilement le réseau, les bases de données, etc. C'est la tendance pour de plus en plus de moyens et gros sites. Parmi les hébergeurs cloud, on peut citer Amazon Web Services, Google Cloud, Microsoft Azure, etc.<br />Ce type d'hébergement est en revanche un peu <em>trop complexe</em> pour nous qui débutons dans la création de sites web. Je recommande plutôt un hébergement mutualisé, dans notre cas.</p></li></ul><div id="r-1612796" data-claire-element-id="1635672" data-claire-semantic="question"><p id="r-1612795" data-claire-element-id="1635671">Mais où puis-je trouver un hébergeur ?</p></div><p id="r-1612797" data-claire-element-id="1635673">Oh ça, c'est très simple.<br /> Une recherche dans Google de « hébergeur web » vous donnera plusieurs millions de résultats. Vous n'aurez que l'embarras du choix.</p><p id="r-1612798" data-claire-element-id="30577518"></p><h3 id="r-1607900" data-claire-element-id="30958477">Utiliser un client FTP</h3><h4 id="r-1612852" data-claire-element-id="30958463">Installer un client FTP</h4><p id="r-1612827" data-claire-element-id="1635704">FTP signifie <em>File Transfer Protocol</em> et, pour faire court et simple, c'est le moyen que l'on utilise pour envoyer nos fichiers.<br /> Il existe des logiciels permettant d'utiliser le FTP pour transférer vos fichiers sur Internet.</p><p id="r-1612828" data-claire-element-id="1635705">Bien entendu, des logiciels FTP, il en existe des centaines, gratuits, payants, français, anglais, etc.<br /> Pour que nous soyons sur la même longueur d'onde, je vais vous proposer celui que j'utilise, qui est gratuit et en français : <strong>FileZilla</strong> (figure suivante).</p><figure id="r-1612831" data-claire-element-id="30958460"><img id="r-1612829" data-claire-element-id="1635706" src="https://user.oc-static.com/files/380001_381000/380712.jpg" alt="L'icône du célèbre client FTP FileZilla" /><figcaption>L'icône du célèbre client FTP FileZilla</figcaption></figure><aside id="r-1612833" data-claire-element-id="5522686" data-claire-semantic="information"><p id="r-1612832" data-claire-element-id="5522685">Ce logiciel n'a rien à voir avec Mozilla, si ce n'est qu'il se termine lui aussi par « zilla ». N'allez donc pas croire que je vous force à utiliser des logiciels d'un même éditeur, c'est tout à fait faux. D'ailleurs, vous pouvez utiliser n'importe quel autre logiciel FTP si cela vous chante, cela ne me dérange absolument pas.</p></aside><p id="r-1612834" data-claire-element-id="5522687">Quoi qu'il en soit, je vais vous montrer quelle est la marche à suivre avec FileZilla. Et la première étape, c'est bien entendu de le télécharger !</p><p id="r-1612835" data-claire-element-id="7902120"><a href="https://filezilla-project.org/download.php?type=client">Télécharger FileZilla</a></p><p id="r-1612836" data-claire-element-id="1635713">Prenez la version correspondant à votre système d'exploitation (Windows, Mac OS X ou Linux).</p><p id="r-1612837" data-claire-element-id="1635714">Je vous fais confiance pour l'installation, elle est toute simple et vous ne devriez pas avoir de problème. <br /> Lancez le logiciel, vous devriez voir quelque chose ressemblant à la figure suivante.</p><figure id="r-1612840" data-claire-element-id="30958462"><img id="r-1612838" data-claire-element-id="1635715" src="https://user.oc-static.com/files/5001_6000/5918.png" alt="FileZilla est ouvert" /><figcaption>FileZilla est ouvert</figcaption></figure><p id="r-1612841" data-claire-element-id="1635718">À première vue, cela semble un peu compliqué (à première vue seulement). En fait, le principe est très simple.<br /> Il y a quatre grandes zones à connaître dans la fenêtre :</p><ol id="r-1612850" data-claire-element-id="1635727"><li id="r-1612843" data-claire-element-id="1635720"><p id="r-1612842" data-claire-element-id="1635719">En haut, vous verrez apparaître les messages qu'envoie et reçoit le logiciel. Si vous avez un peu de chance, vous verrez même la machine vous dire bonjour (si si, je vous jure). En général, cette zone ne nous intéresse pas vraiment, sauf s'il y a des messages d'erreur en rouge…</p></li><li id="r-1612845" data-claire-element-id="1635722"><p id="r-1612844" data-claire-element-id="1635721">À gauche, c'est votre disque dur. Dans la partie du haut, vous avez les dossiers et, dans la partie du bas, la liste des fichiers du dossier actuel.</p></li><li id="r-1612847" data-claire-element-id="1635724"><p id="r-1612846" data-claire-element-id="1635723">À droite, c'est la liste des fichiers envoyés sur le serveur sur Internet. Pour le moment il n'y a rien car on ne s'est pas connecté, mais cela va venir, ne vous en faites pas.</p></li><li id="r-1612849" data-claire-element-id="1635726"><p id="r-1612848" data-claire-element-id="1635725">Enfin, en bas, vous verrez apparaître les fichiers en cours d'envoi (et le pourcentage d'envoi).</p></li></ol><p id="r-1612851" data-claire-element-id="1635728">La première étape va être de se connecter au serveur de votre hébergeur.</p><h4 id="r-1612873" data-claire-element-id="30958468">Configurer le client FTP</h4><p id="r-1612853" data-claire-element-id="1635730">Quel que soit l'hébergeur que vous avez choisi, cela fonctionne toujours de la même manière. On va vous fournir <em>trois informations</em> qui sont indispensables pour que FileZilla puisse se connecter au serveur :</p><ul id="r-1612860" data-claire-element-id="30958390"><li id="r-1612855" data-claire-element-id="30958385"><p id="r-1612854" data-claire-element-id="30958384"><strong>l'IP</strong> : c'est « l'adresse » du serveur. Le plus souvent, on vous donnera une information du type <code data-claire-semantic="text">ftp.mon-site.com</code>  , mais il peut aussi s'agir d'une suite de nombres comme <code data-claire-semantic="text">122.65.203.27</code>  ;</p></li><li id="r-1612857" data-claire-element-id="30958387"><p id="r-1612856" data-claire-element-id="30958386"><strong>le login</strong> : c'est votre identifiant, on vous a probablement demandé de le choisir. Vous avez peut-être mis votre pseudo, ou le nom de votre site. Mon login pourrait par exemple être <code data-claire-semantic="text">mateo21</code>  .</p></li><li id="r-1612859" data-claire-element-id="30958389"><p id="r-1612858" data-claire-element-id="30958388"><strong>le mot de passe</strong> : soit on vous a demandé de choisir un mot de passe, soit (c'est plus probable) on vous en a attribué un d'office (un truc imprononçable du genre <code data-claire-semantic="text">crf45u7h</code>  ).</p></li></ul><p id="r-1612861" data-claire-element-id="1635738">Si vous avez ces trois informations, vous allez pouvoir continuer.<br /> Si vous ne les avez pas, il faut que vous les cherchiez, c'est indispensable. On vous les a probablement envoyées par e-mail. Sinon, n'hésitez pas à les demander à votre hébergeur (IP, login et mot de passe).</p><p id="r-1612862" data-claire-element-id="1635739">Maintenant que nous sommes en possession de ces informations, nous allons les donner à FileZilla, qui en a besoin pour se connecter au serveur.</p><p id="r-1612863" data-claire-element-id="1635740">Cliquez sur la petite icône en haut à gauche (pas sur la petite flèche à droite, mais bien sur l'image), représentée à la figure suivante.</p><figure id="r-1612866" data-claire-element-id="30958465"><img id="r-1612864" data-claire-element-id="1635741" src="https://user.oc-static.com/files/5001_6000/5919.png" alt="L'icône de connexion de FileZilla" /><figcaption>L'icône de connexion de FileZilla</figcaption></figure><p id="r-1612867" data-claire-element-id="30958393">Une fenêtre s'ouvre. Cliquez sur <code data-claire-semantic="text">Nouveau site</code> et donnez-lui le nom que vous voulez (par exemple « Mon site »). À droite, vous allez devoir indiquer les trois informations dont je viens de vous parler, comme sur la figure suivante.</p><figure id="r-1612870" data-claire-element-id="30958467"><img id="r-1612868" data-claire-element-id="1635745" src="https://user.oc-static.com/files/5001_6000/5920.png" alt="Les trois informations à donner à FileZilla" /><figcaption>Les trois informations à donner à FileZilla</figcaption></figure><p id="r-1612871" data-claire-element-id="30958428">Vous pouvez distinguer en haut l'hôte (c'est là qu'il faut indiquer <code data-claire-semantic="text">ftp.monsite.com</code>  , par exemple). Cochez <code data-claire-semantic="text">Type d'authentification : Normale</code>  pour pouvoir saisir le login et le mot de passe.</p><p id="r-1612872" data-claire-element-id="30958429">Cliquez sur <code data-claire-semantic="text">Connexion</code>  et le tour est (presque) joué.</p><h4 id="r-1612892" data-claire-element-id="30958476">Transférer les fichiers</h4><p id="r-1612874" data-claire-element-id="1635751">À ce stade, deux possibilités :</p><ul id="r-1612879" data-claire-element-id="30958435"><li id="r-1612876" data-claire-element-id="30958432"><p id="r-1612875" data-claire-element-id="30958431">soit la connexion a réussi : vous voyez alors apparaître en haut des messages en vert, comme « Connecté ». Dans ce cas, la zone de droite de la fenêtre de FileZilla devrait s'activer et vous verrez les fichiers qui se trouvent déjà sur le serveur (il se peut qu'il y en ait déjà quelques-uns) ;</p></li><li id="r-1612878" data-claire-element-id="30958434"><p id="r-1612877" data-claire-element-id="30958433">soit cela a planté, vous avez plein de messages écrits en rouge et là, eh bien… il n'y a pas trente-six solutions : vous vous êtes trompé en tapant l'IP, ou le login, ou le mot de passe. Un de ces éléments est incorrect, veillez à les redemander à votre hébergeur car s'ils sont bons, cela <em>doit</em> marcher.</p></li></ul><p id="r-1612880" data-claire-element-id="30958436">Si la connexion a réussi, alors ce que vous avez à faire est très simple : dans la partie de gauche, cherchez où se trouvent, sur votre disque dur, vos fichiers <code data-claire-semantic="text">.html</code>  et <code data-claire-semantic="text">.css</code>  (mais aussi vos images <code data-claire-semantic="text">.jpg</code>  , <code data-claire-semantic="text">.png</code>  , <code data-claire-semantic="text">.gif</code>  , etc.).<br /> À gauche, faites un double-clic sur le fichier que vous voulez transférer. Au bout de quelques secondes, il apparaîtra à droite, ce qui voudra dire qu'il a été correctement envoyé sur le serveur, et donc qu'il est accessible sur Internet !</p><aside id="r-1612882" data-claire-element-id="30958470" data-claire-semantic="information"><p id="r-1612881" data-claire-element-id="30958469">Vous pouvez envoyer n'importe quel type de fichier. Bien entendu, généralement on envoie des fichiers <code data-claire-semantic="text">.php</code>  , <code data-claire-semantic="text">.html</code>  , <code data-claire-semantic="text">.css</code>  et des images, mais vous pouvez aussi très bien envoyer des <code data-claire-semantic="text">.pdf</code>  , des programmes, des <code data-claire-semantic="text">.zip</code>  , etc.</p></aside><p id="r-1612883" data-claire-element-id="30958471">La figure suivante, par exemple, représente le résultat que l'on obtient après avoir transféré un fichier <code data-claire-semantic="text">index.html</code>  et quelques autres fichiers.</p><figure id="r-1612886" data-claire-element-id="30958473"><img id="r-1612884" data-claire-element-id="1635761" src="https://user.oc-static.com/files/5001_6000/5926.png" alt="Des fichiers sont hébergés sur le FTP" /><figcaption>Des fichiers sont hébergés sur le FTP</figcaption></figure><p id="r-1612887" data-claire-element-id="1635764">Il apparaît à droite, ce qui veut dire qu'il est maintenant disponible sur le serveur.</p><aside id="r-1612889" data-claire-element-id="30958475" data-claire-semantic="information"><p id="r-1612888" data-claire-element-id="30958474">Veuillez noter qu'il <em>faut</em> que votre page d'accueil s'appelle <code data-claire-semantic="text">index.html</code>  . C'est la page qui sera chargée lorsqu'un nouveau visiteur arrivera sur votre site.</p></aside><p id="r-1612890" data-claire-element-id="1635767">Vous pouvez aussi transférer des dossiers entiers d'un seul coup : il suffit de faire un glisser-déposer du dossier depuis la partie de gauche (ou directement de la fenêtre de votre système d'exploitation) jusqu'à la partie de droite de la fenêtre de FileZilla.</p><p id="r-1612891" data-claire-element-id="1635768">Une fois configuré, vous pouvez voir que l'envoi de fichiers est très simple.</p><h3 id="r-3211431" data-claire-element-id="30958485">En résumé</h3><ul id="r-1612906" data-claire-element-id="30958484"><li id="r-1612894" data-claire-element-id="1635771"><p id="r-1612893" data-claire-element-id="1635770">Pour le moment, votre site web n'est visible que par vous, sur votre ordinateur. Il faut l'envoyer sur le Web pour qu'il soit visible par tout le monde.</p></li><li id="r-1612901" data-claire-element-id="30958483"><p id="r-1612895" data-claire-element-id="1635772">Vous avez besoin de deux éléments :</p><ul id="r-1612900" data-claire-element-id="30958482"><li id="r-1612897" data-claire-element-id="30958479"><p id="r-1612896" data-claire-element-id="30958478">un nom de domaine : c'est l'adresse de votre site web. Vous pouvez réserver une adresse en <code data-claire-semantic="text">.com</code>  , <code data-claire-semantic="text">.fr</code>  , <code data-claire-semantic="text">.net</code>  … Par exemple : <code data-claire-semantic="text">openclassrooms.com</code>  .</p></li><li id="r-1612899" data-claire-element-id="30958481"><p id="r-1612898" data-claire-element-id="30958480">un hébergeur : c'est lui qui va stocker votre site web sur une machine appelée « serveur ». Son rôle sera d'envoyer votre site à vos visiteurs à toute heure du jour et de la nuit.</p></li></ul></li><li id="r-1612903" data-claire-element-id="1635780"><p id="r-1612902" data-claire-element-id="1635779">Pour transmettre les fichiers de votre site au serveur de votre hébergeur, il faut utiliser un client FTP comme FileZilla.</p></li><li id="r-1612905" data-claire-element-id="1635782"><p id="r-1612904" data-claire-element-id="1635781">Pour vous connecter au serveur, vous avez besoin de trois informations : l'adresse IP du serveur (ou son nom d'hôte), votre login et votre mot de passe. Ceux-ci vous sont fournis par votre hébergeur.</p></li></ul><aside id="r-3847490" data-claire-element-id="30845984" data-claire-semantic="information"><p id="r-3847489" data-claire-element-id="30845983"><a href="https://forms.gle/gyzQWZcqHaHq7snSA">Que pensez-vous de ce cours ?</a></p></aside>
+</div>
+<div class="js-courseSelementActions sideActions">
+<ul class="sideActions__container">
+<li>
+<a class="sideActions__item  js-courseElementActions-copyUrl  js-tooltip" href="#" data-tooltip="Copier le lien" data-tooltip-done="Lien copié !">
+#
+</a>
+</li>
+</ul>
+</div>
+</div>
+<nav id="course-pagination" class="course-pagination    clearfix">
+<a href="exercises/96.html" class="button button--secondary  course-pagination__btn course-pagination__btn--previous">
+<i class="icon-previous"></i>
+<span>Quiz : Intégrez des formulaires dans une page web</span>
+</a>
+<span class="course-pagination__separator"></span>
+<a href="1608357-memento-des-balises-html.html" class="button button--secondary  course-pagination__btn course-pagination__btn--next">
+<span>Mémento des balises HTML</span>
+<i class="icon-next"></i>
+</a>
+</nav>
+<div tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="popin-view-restriction_popin_title" class="popin popin--illustrated  js-popin" id="popin-view-restriction">
+<button class="popin__close-button  js-close-button" title="Fermer" aria-label="Fermer">
+<i class="icon-close" aria-hidden="true"></i>
+</button>
+<div class="popin__inner">
+<div class="popin__illustrationWrapper">
+<div class="popin__illustration illustration--balloon"></div>
+</div>
+<div class="popin__mainContainer">
+<div class="popin__gigTitleContainer js-popin-title">
+<div class="gigWorkersPopin__timeline">
+<div class="gigWorkersPopin__dot">1</div>
+<div class="gigWorkersPopin__line"></div>
+<div class="gigWorkersPopin__dot gigWorkersPopin__dot--disabled">2</div>
+</div>
+<div class="popin__title">Créez un compte <br /> OpenClassrooms</div>
+</div>
+<div id="popin-view-restriction_popin_title" class="popin__title  js-popin-title">Waouh !</div>
+<div class="popin__content  js-popin-content">
+<div class="popin__contentWrapper">
+<p>
+Très heureux de voir que nos cours vous plaisent, déjà 5 pages lues aujourd&#039;hui ! Vous pouvez continuer la lecture de nos cours en devenant un membre de la communauté d&#039;OpenClassrooms. C&#039;est gratuit !
+</p>
+<p>
+Vous pourrez aussi suivre votre avancement dans le cours, faire les exercices et discuter avec les autres membres.
+</p>
+</div>
+</div>
+<div class="popin__actions  js-popin-actions">
+<span class="u--inlineBlock">
+<a class="button button--primary " href="https://openclassrooms.com/fr/register">S'inscrire</a>
+</span>
+<span class="u--inlineBlock">
+<a class="button button--secondary " href="https://openclassrooms.com/fr/login">Se connecter</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script type="text/template" class="js-single-video-download-info">
+            <div class="videoDownload js-download-video-popin-link">
+                <a href="#popin-download-video" class="js-popin-activator">
+                    <i class="icon-download videoDownload__icon"></i> Télécharger la vidéo
+                </a>
+            </div>
+        </script>
+<script type="text/template" class="js-all-video-download-info">
+            <div class="videoDownload js-download-video-popin-link">
+                <a href="#popin-download-all-videos" class="js-popin-activator">
+                    <i class="icon-download videoDownload__icon"></i> Télécharger toutes les vidéos de ce cours
+                </a>
+            </div>
+        </script>
+<div id="popin-not-certifying-yet_910538" class="popin" data-popin-title="Vous ne pouvez pas encore obtenir de certificat de réussite à l&#039;issue de ce cours.
+                            <span><i class='icon-star'></i> Devenez Premium</span>
+                    ">
+<img alt="Exemple de certificat de réussite" src="http://static.oc-static.com/prod/images/courses/certif.jpg" />
+</div>
+<div tabindex="-1" role="dialog" aria-hidden="true" class="popin popin--small  js-popin" id="popin-download-video">
+<button class="popin__close-button  js-close-button" title="Fermer" aria-label="Fermer">
+<i class="icon-close" aria-hidden="true"></i>
+</button>
+<div class="popin__inner">
+<div class="popin__mainContainer">
+<div class="popin__gigTitleContainer js-popin-title">
+<div class="gigWorkersPopin__timeline">
+<div class="gigWorkersPopin__dot">1</div>
+<div class="gigWorkersPopin__line"></div>
+<div class="gigWorkersPopin__dot gigWorkersPopin__dot--disabled">2</div>
+</div>
+<div id="popin-download-video_popin_title" class="popin__title">Créez un compte <br /> OpenClassrooms</div>
+</div>
+<i class="icon-video popin__icon  js-popin-icon"></i>
+<div class="popin__content  js-popin-content">
+<div class="popin__contentWrapper">
+<p>
+Le téléchargement des vidéos de nos cours est accessible pour les membres Premium. Vous pouvez toutefois les visionner en streaming gratuitement.
+</p>
+</div>
+</div>
+<div class="popin__actions  js-popin-actions">
+<a class="button button--primary js-close-button" href="#">Devenez Premium</a>
+</div>
+</div>
+</div>
+</div>
+<div id="popin-not-certifying-yet_19123" class="popin" data-popin-title="Vous ne pouvez pas encore obtenir de certificat de réussite à l&#039;issue de ce cours.
+                            <span><i class='icon-star'></i> Devenez Premium</span>
+                    ">
+<img alt="Exemple de certificat de réussite" src="http://static.oc-static.com/prod/images/courses/certif.jpg" />
+</div>
+<div tabindex="-1" role="dialog" aria-hidden="true" class="popin popin--small  js-popin" id="popin-download-video">
+<button class="popin__close-button  js-close-button" title="Fermer" aria-label="Fermer">
+<i class="icon-close" aria-hidden="true"></i>
+</button>
+<div class="popin__inner">
+<div class="popin__mainContainer">
+<div class="popin__gigTitleContainer js-popin-title">
+<div class="gigWorkersPopin__timeline">
+<div class="gigWorkersPopin__dot">1</div>
+<div class="gigWorkersPopin__line"></div>
+<div class="gigWorkersPopin__dot gigWorkersPopin__dot--disabled">2</div>
+</div>
+<div id="popin-download-video_popin_title" class="popin__title">Créez un compte <br /> OpenClassrooms</div>
+</div>
+<i class="icon-video popin__icon  js-popin-icon"></i>
+<div class="popin__content  js-popin-content">
+<div class="popin__contentWrapper">
+<p>
+Le téléchargement des vidéos de nos cours est accessible pour les membres Premium. Vous pouvez toutefois les visionner en streaming gratuitement.
+</p>
+</div>
+</div>
+<div class="popin__actions  js-popin-actions">
+<a class="button button--primary js-close-button" href="#">Devenez Premium</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<aside id="content-with-sidebar" class="contentWithSidebar__sidebar  js-contentWithSidebar-slidingElement">
+<nav class="col-nav">
+<div id="tab-courseMenu" class="col-nav__inner js-sidebar-inner">
+<div class="col-nav__block  col-nav__block--summary">
+<div class="side-paginate">
+<a href="exercises/96.html" class="side-paginate__previous" title="Chapitre précédent">
+<i class="icon-previous"></i>
+</a>
+<span class="side-paginate__separator"></span>
+<h6 class="side-paginate__title">
+Annexes
+</h6>
+<span class="side-paginate__separator"></span>
+<a href="1608357-memento-des-balises-html.html" class="side-paginate__next" title="Chapitre suivant">
+<i class="icon-next"></i>
+</a>
+</div>
+<div class="col-nav__block--summary-list">
+<ol class="col-nav__chapters">
+<li class="selected">
+<span class="col-nav__chapterTitle">Envoyez votre site sur le Web</span>
+</li>
+<li class="">
+<a class="col-nav__chapterTitle" href="1608357-memento-des-balises-html.html">Mémento des balises HTML</a>
+</li>
+<li class="">
+<a class="col-nav__chapterTitle" href="1608902-memento-des-proprietes-css.html">Mémento des propriétés CSS</a>
+</li>
+</ol>
+</div>
+</div>
+<div class="col-nav__block col-nav__block--button">
+<a href="https://openclassrooms.com/forum/categorie/html-css" class="button button--secondary">
+Accéder au forum
+</a>
+</div>
+<div class="socialNetwork col-nav__block">
+<ul class="socialButtons  js-socialButtons" data-options="
+                title: 'Envoyez votre site sur le Web @OCFrance',
+        mailTitle: 'Cours &quot;Envoyez votre site sur le Web&quot; sur OpenClassrooms',
+        mailContent: 'Découvrez le cours &quot;Envoyez votre site sur le Web&quot; sur OpenClassrooms.'">
+<li>
+<a class="roundIcon  roundIcon--twitter addthis_button_twitter  js-socialButtons-btn" data-tooltip="Partagez sur Twitter">
+<i class="roundIcon__icon  icon-twitter"></i>
+</a>
+</li>
+<li>
+<a class="roundIcon  roundIcon--facebook  addthis_button_facebook  js-socialButtons-btn" data-tooltip="Partagez sur Facebook">
+<i class="roundIcon__icon  icon-facebook"></i>
+</a>
+</li>
+<li>
+<a class="roundIcon  addthis_button_email  js-socialButtons-btn  js-socialButtons-email" data-tooltip="Partagez par e-mail">
+<i class="roundIcon__icon  icon-letter"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</aside>
+</div>
+</div>
+</div>
+<footer id="course-footer" class="alt-section noMarginBottom">
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="grid-inner-content  courseFooter">
+<div class="courseFooter__authors course-bottom__category">
+<div class="course-bottom__title">
+Le professeur
+</div>
+<div>
+<div class="course-bottom__text-illustrated">
+<span data-author="Mathieu Nebra" data-image-cdn-background-image="https://user.oc-static.com/users/avatars/16010488280562_MathieuNebra_square.jpg" data-image-cdn-width="120"></span>
+<div class="course-bottom__subtitle" itemprop="name">Mathieu Nebra</div>
+<p itemprop="description">
+Entrepreneur à plein temps, auteur à plein temps et co-fondateur d&#039;OpenClassrooms :o)
+</p>
+</div>
+</div>
+</div>
+<div class="courseFooter__courseFormat course-bottom__category">
+<h2>Découvrez aussi ce cours en...</h2>
+<ul class="course-bottom__format">
+<li>
+<a href="http://www.eyrolles.com/Informatique/Livre/realisez-votre-site-web-avec-html5-et-css3-9782953527889?societe=openclassrooms" target="_blank" class="text-decoration-none">
+<div class="circle circle--x-small">
+<span class="circle__content"></span>
+<i class="icon-book"></i>
+</div>
+<div class="course-bottom__format-entitled">
+Livre
+</div>
+</a>
+</li>
+<li>
+<a href="https://openclassrooms.com/fr/old-courses-pdf" class="text-decoration-none">
+<div class="circle circle--x-small">
+ <span class="circle__content"></span>
+<i class="icon-pdf"></i>
+</div>
+<div class="course-bottom__format-entitled">
+PDF
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</article>
+</main>
+</div>
+<div id="mainSearchLegacy" class="mainSearch"></div>
+<div id="footerWrapper">
+<footer id="footer" class="oc-footerSkeleton">
+<hr style="margin-bottom: 8px" />
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="oc-footerSkeleton__container">
+<div class="oc-footerSkeleton__item">
+<div class="oc-footerSkeleton__itemTitle"><span class="skeleton" style="height: 20px; width: 80%"></span></div>
+<ul class="oc-footerSkeleton__linksList">
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 70%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 60%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 65%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 40%"></span></a></p>
+</li>
+</ul>
+</div>
+<div class="oc-footerSkeleton__item">
+<div class="oc-footerSkeleton__itemTitle"><span class="skeleton" style="height: 20px; width: 85%"></span></div>
+<ul class="oc-footerSkeleton__linksList">
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 40%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 60%"></span></a></p>
+</li>
+</ul>
+</div>
+<div class="oc-footerSkeleton__item">
+<div class="oc-footerSkeleton__itemTitle"><span class="skeleton" style="height: 20px; width: 75%"></span></div>
+<ul class="oc-footerSkeleton__linksList">
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 65%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 40%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 50%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 40%"></span></a></p>
+</li>
+ </ul>
+</div>
+<div class="oc-footerSkeleton__item">
+<span class="skeleton" style="height: 25px; width: 65%"></span>
+<div class="oc-footerSkeleton__socialButtonWrapper">
+<div><span class="skeleton skeleton--round" style="width: 40px; height: 40px"></span></div>
+<div><span class="skeleton skeleton--round" style="width: 40px; height: 40px;"></span></div>
+<div><span class="skeleton skeleton--round" style="width: 40px; height: 40px;"></span></div>
+<div><span class="skeleton skeleton--round" style="width: 40px; height: 40px;"></span></div>
+<div><span class="skeleton skeleton--round" style="width: 40px; height: 40px;"></span></div>
+</div>
+<div><span class="skeleton skeleton--width50" style="height: 40px;"></span></div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div id="showDisclaimer" class="cookiesDisclaimer"></div>
+<script>
+  var isPrerender = !!navigator.userAgent.match(/github\.com\/prerender\/prerender/);
+  var preRenderBrowserFakeUa = "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163 Safari/537.36";
+  var polyfillUrl = "https://cdn.polyfill.io/v3/polyfill.min.js?unknown=polyfill&amp;features=default,es6,IntersectionObserver,Object.values,Array.prototype.includes,Array.prototype.findIndex,Array.prototype.find,Array.from,Promise.prototype.finally,fetch,String.prototype.includes,Object.entries,Array.prototype.entries,Intl.~locale,Array.prototype.flat.fr";
+
+    if (isPrerender) {
+    polyfillUrl+= "&ua=" + encodeURIComponent(preRenderBrowserFakeUa);
+  }
+
+  App.translations = {};
+
+  App.scripts.push(polyfillUrl);
+
+  App.script = {
+      DASHBOARD: 'dashboard',
+      MENTORSHIP_STUDENT_DASHBOARD: 'mentorshipStudentdashboard',
+      SHOP: 'shop',
+      PAYMENT: 'payment',
+      PROJECTS: 'projects',
+      TEAM: 'team',
+      COURSE_EDIT: 'course_edit',
+      COURSE_VIEW: 'course_view',
+      ADMIN: 'admin',
+      ADMIN_STUDENT_CREDENTIAL: 'adminStudentCredential',
+      ADMIN_STUDENT_CREDENTIAL_EDIT: 'adminStudentCredentialEdit',
+      POST_A_JOB: 'postAJob',
+      GIG_WORKERS: 'gigWorkers',
+      JOB_SURVEY: 'jobSurvey',
+      MCQ_EDIT: 'mcqEdit',
+      MCQ_VIEW: 'mcqView',
+      MENTOR_EDIT: 'mentorEdit',
+      MENTORSHIP_DASHBOARD: 'mentorshipDashboard',
+      MENTORSHIP_SESSION: 'mentorshipSession',
+      MENTORSHIP_SESSION_CREATE: 'mentorshipSessionCreate',
+      MENTORSHIP_SESSION_NON_ASSESSOR_CREATE: 'mentorshipSessionNonAssessorCreate',
+    PATHS: 'paths',
+    PRIVATE_CONVERSATIONS: 'privateConversations',
+    USER_PROFILE: 'userProfile',
+    WELCOME: 'welcome',
+    APPRENTICESHIP: 'apprenticeship',
+    WEBAPP: 'webapp',
+    PROJECTS_ADMIN: 'projectsAdmin',
+    SECURITY: 'security',
+  };
+</script>
+<script>App.scripts.push("https://openclassrooms.com/js/runtime.4c4ad3f6a13cc20ab325.js");</script>
+<script>App.scripts.push("https://openclassrooms.com/js/index.28cedfedcf6a0f3797d8.js");</script>
+<script type="text/javascript">
+        function getConsentedSegmentIntegrations() {
+            // getCookie from https://www.w3schools.com/js/js_cookies.asp
+            function getCookie(cname) {
+                var name = cname + "=";
+                var decodedCookie = decodeURIComponent(document.cookie);
+
+                var ca = decodedCookie.split(';');
+                for(var i = 0; i <ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) === ' ') {
+                        c = c.substring(1);
+                    }
+                    if (c.indexOf(name) === 0) {
+                        return c.substring(name.length, c.length);
+                    }
+                }
+                return "";
+            }
+
+            var consent = getCookie('cmapi_cookie_privacy');
+
+            function isCookieAllowedByConsent(consent, level) {
+              return !!consent && consent.search(level) !== -1;
+            }
+
+            var isFunctionalCookieAllowed = isCookieAllowedByConsent(consent, 2);
+            var isAdvertisingCookieAllowed = isCookieAllowedByConsent(consent, 3);
+
+            var isAppCuesPremiumUser = false;
+
+            var isOnPoleEmploiPage = !!window && window.location.pathname.indexOf('partners/pole-emploi/offers') >= 0;
+
+            return {
+                Amplitude: isFunctionalCookieAllowed,
+                'Bing Ads': isAdvertisingCookieAllowed,
+                'Google Ads': isAdvertisingCookieAllowed,
+                'Google Analytics': isFunctionalCookieAllowed,
+                'Zendesk': isFunctionalCookieAllowed,
+                Appcues: (isAppCuesPremiumUser || isOnPoleEmploiPage) && isFunctionalCookieAllowed,
+            };
+        }
+
+        var consentedSegmentIntegrations = getConsentedSegmentIntegrations();
+
+        !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+            window.loadAnalytics = function () { window.analytics.load('mou95e6tdn', {integrations: consentedSegmentIntegrations}) };
+        }}();
+    </script>
+
+<script>App.scriptToLoad = App.script.COURSE_VIEW</script>
+
+<script>
+    (function () {
+        function loadScripts(cb) {
+            App.scripts.forEach(function (src, index) {
+                var script = document.createElement('script');
+                script.src = src;
+                script.async = false;
+                document.body.appendChild(script);
+
+                if (cb && index === App.scripts.length - 1) {
+                    script.onload = cb;
+                }
+            });
+        }
+
+        function boot() {
+            loadScripts(function () {
+                if (App.modules) {
+                    App.modules.startAll();
+                }
+            });
+        }
+
+        if (window.addEventListener) {
+            window.addEventListener('load', boot, false);
+        } else if (window.attachEvent) {
+            window.attachEvent('onload', boot);
+        } else {
+            window.onload = boot;
+        }
+    }());
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.eu01.nr-data.net","licenseKey":"NRJS-5b58725ce0d442079d0","applicationID":"156815673","transactionName":"MhBSZQoZVhJWB0xfDAtac0QLDFcMGAtbaQAJFFlDHSdbDkIWS1M8FRRCRScIWRNDO05fBhI=","queueTime":0,"applicationTime":131,"atts":"HldRE0IDRRw=","errorBeacon":"bam.eu01.nr-data.net","agent":""}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"68b3c1807e500897","token":"8e698008242e427fae12788d79d12ecf","version":"2021.8.1","si":10}'></script>
+</body>
+
+<!-- Mirrored from openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1607901-envoyez-votre-site-sur-le-web by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Sep 2021 23:36:21 GMT -->
+</html>

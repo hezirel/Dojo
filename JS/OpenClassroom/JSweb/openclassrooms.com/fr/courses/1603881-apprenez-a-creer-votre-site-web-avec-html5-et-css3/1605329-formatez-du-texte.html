@@ -1,0 +1,1095 @@
+
+<!DOCTYPE html>
+<html class="no-js " lang="fr" prefix="og: http://ogp.me/ns#">
+
+<!-- Mirrored from openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1605329-formatez-du-texte by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Sep 2021 23:36:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>
+                            Formatez du texte - Apprenez à créer votre site web avec HTML5 et CSS3 - OpenClassrooms
+                    </title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-5b58725ce0d442079d0",applicationID:"156815673"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){"hidden"===t&&d("pageHide",[p.now()])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https:///")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1210.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<meta name="application-name" content="OpenClassrooms" />
+<meta name="msapplication-TileColor" content="#7451eb" />
+<meta name="msapplication-TileImage" content="/fav-icon.png?v=3" />
+<meta name="theme-color" content="#7451eb">
+<meta property="og:locale" content="fr" />
+<link rel="icon" sizes="144x144" href="https://openclassrooms.com/fav-icon.png?v=3">
+<link rel="apple-touch-icon" href="https://openclassrooms.com/apple-touch-icon.png?v=3" />
+<link rel="apple-touch-icon" href="https://openclassrooms.com/apple-touch-icon-iphone.png?v=3" />
+<link rel="apple-touch-icon" sizes="72x72" href="https://openclassrooms.com/apple-touch-icon-ipad.png?v=3" />
+<link rel="apple-touch-icon" sizes="114x114" href="https://openclassrooms.com/apple-touch-icon-iphone-retina-display.png?v=3" />
+<link rel="apple-touch-icon" sizes="144x144" href="https://openclassrooms.com/apple-touch-icon-ipad-retina-display.png?v=3" />
+<link rel="apple-touch-icon-precomposed" href="https://openclassrooms.com/apple-touch-icon-precomposed.png?v=3" />
+<link rel="shortcut icon" href="https://openclassrooms.com/favicon.ico?83212fe7" />
+<style>.async-hide { opacity: 0 !important} </style>
+<script>
+          window.dataLayer = window.dataLayer || [];
+
+          (function(a,s,y,n,c,h,i,d,e){
+            var isEnabled = [
+              /\/paths/,
+              /\/apprenticeship/,
+              /\/employer/,
+            ].reduce(function (acc, pathReg) {
+                var matchUrl = !!document.location.pathname.match(pathReg);
+                return acc || matchUrl;
+            }, false);
+
+            if (!isEnabled) {
+              return;
+            }
+
+            s.className+=' '+y;
+            h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+            (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);
+          })(window,document.documentElement,'async-hide','dataLayer',2000,{'GTM-5WM9PV':true});
+        </script>
+<link href="https://openclassrooms.com/bundles/common/css/master-8bf9878d.css" type="text/css" rel="stylesheet" media="all" />
+<link href="https://openclassrooms.com/bundles/course/css/main-29e81ced.css" type="text/css" rel="stylesheet" media="all" />
+<link href="https://vjs.zencdn.net/6.2.5/video-js.css" rel="stylesheet">
+<script>
+    /*! modernizr 3.3.1 (Custom Build) | MIT *
+    * https://modernizr.com/download/?-cssfilters-touchevents-setclasses !*/
+    !function(e,n,t){function o(e,n){return typeof e===n}function r(){var e,n,t,r,s,i,a;for(var l in C)if(C.hasOwnProperty(l)){if(e=[],n=C[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(r=o(n.fn,"function")?n.fn():n.fn,s=0;s<e.length;s++)i=e[s],a=i.split("."),1===a.length?Modernizr[a[0]]=r:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=r),g.push((r?"":"no-")+a.join("-"))}}function s(e){var n=w.className,t=Modernizr._config.classPrefix||"";if(x&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(o,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),x?w.className.baseVal=n:w.className=n)}function i(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):x?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function a(){var e=n.body;return e||(e=i(x?"svg":"body"),e.fake=!0),e}function l(e,t,o,r){var s,l,u,f,p="modernizr",c=i("div"),d=a();if(parseInt(o,10))for(;o--;)u=i("div"),u.id=r?r[o]:p+(o+1),c.appendChild(u);return s=i("style"),s.type="text/css",s.id="s"+p,(d.fake?d:c).appendChild(s),d.appendChild(c),s.styleSheet?s.styleSheet.cssText=e:s.appendChild(n.createTextNode(e)),c.id=p,d.fake&&(d.style.background="",d.style.overflow="hidden",f=w.style.overflow,w.style.overflow="hidden",w.appendChild(d)),l=t(c,e),d.fake?(d.parentNode.removeChild(d),w.style.overflow=f,w.offsetHeight):c.parentNode.removeChild(c),!!l}function u(e,n){return!!~(""+e).indexOf(n)}function f(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function p(e,n){return function(){return e.apply(n,arguments)}}function c(e,n,t){var r;for(var s in e)if(e[s]in n)return t===!1?e[s]:(r=n[e[s]],o(r,"function")?p(r,t||n):r);return!1}function d(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function m(n,o){var r=n.length;if("CSS"in e&&"supports"in e.CSS){for(;r--;)if(e.CSS.supports(d(n[r]),o))return!0;return!1}if("CSSSupportsRule"in e){for(var s=[];r--;)s.push("("+d(n[r])+":"+o+")");return s=s.join(" or "),l("@supports ("+s+") { #modernizr { position: absolute; } }",function(e){return"absolute"==getComputedStyle(e,null).position})}return t}function h(e,n,r,s){function a(){p&&(delete k.style,delete k.modElem)}if(s=o(s,"undefined")?!1:s,!o(r,"undefined")){var l=m(e,r);if(!o(l,"undefined"))return l}for(var p,c,d,h,v,y=["modernizr","tspan","samp"];!k.style&&y.length;)p=!0,k.modElem=i(y.shift()),k.style=k.modElem.style;for(d=e.length,c=0;d>c;c++)if(h=e[c],v=k.style[h],u(h,"-")&&(h=f(h)),k.style[h]!==t){if(s||o(r,"undefined"))return a(),"pfx"==n?h:!0;try{k.style[h]=r}catch(g){}if(k.style[h]!=v)return a(),"pfx"==n?h:!0}return a(),!1}function v(e,n,t,r,s){var i=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+j.join(i+" ")+i).split(" ");return o(n,"string")||o(n,"undefined")?h(a,n,r,s):(a=(e+" "+E.join(i+" ")+i).split(" "),c(a,n,t))}function y(e,n,o){return v(e,t,t,n,o)}var g=[],C=[],S={_version:"3.3.1",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){C.push({name:e,fn:n,options:t})},addAsyncTest:function(e){C.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=S,Modernizr=new Modernizr;var w=n.documentElement,x="svg"===w.nodeName.toLowerCase(),_=S._config.usePrefixes?" -webkit- -moz- -o- -ms- ".split(" "):["",""];S._prefixes=_;var b="CSS"in e&&"supports"in e.CSS,T="supportsCSS"in e;Modernizr.addTest("supports",b||T);var z=S.testStyles=l;Modernizr.addTest("touchevents",function(){var t;if("ontouchstart"in e||e.DocumentTouch&&n instanceof DocumentTouch)t=!0;else{var o=["@media (",_.join("touch-enabled),("),"heartz",")","{#modernizr{top:9px;position:absolute}}"].join("");z(o,function(e){t=9===e.offsetTop})}return t});var P="Moz O ms Webkit",j=S._config.usePrefixes?P.split(" "):[];S._cssomPrefixes=j;var E=S._config.usePrefixes?P.toLowerCase().split(" "):[];S._domPrefixes=E;var N={elem:i("modernizr")};Modernizr._q.push(function(){delete N.elem});var k={style:N.elem.style};Modernizr._q.unshift(function(){delete k.style}),S.testAllProps=v,S.testAllProps=y,Modernizr.addTest("cssfilters",function(){if(Modernizr.supports)return y("filter","blur(2px)");var e=i("a");return e.style.cssText=_.join("filter:blur(2px); "),!!e.style.length&&(n.documentMode===t||n.documentMode>9)}),r(),s(g),delete S.addTest,delete S.addAsyncTest;for(var A=0;A<Modernizr._q.length;A++)Modernizr._q[A]();e.Modernizr=Modernizr}(window,document);
+    </script>
+<script type="text/javascript">
+    var App = {
+        startTime: (new Date()).getTime(),
+        pageGenerationDate: 1631057729000
+    };
+
+    App.user = {
+                    locale: 'fr',
+            language: 'fr',
+            country: 'FR',
+            isPremium: false,
+            isMentor: false,
+            anonymous: true
+            };
+
+    App.preferences = {
+        debug: false,
+        assetVersion: '83212fe7',
+        contactPhone: '\u002B33\u00201\u002080\u002088\u002080\u002030',
+        phoneNumbersByCountry: {"uk":{"contact":"+44 16 1768 1880"},"ca":{"contact":"+1 929-376-0101"},"us":{"contact":"+1 929-376-0101"},"fr":{"contact":"+33 1 80 88 80 30","b2b_contact":"+33 1 80 88 80 40"},"es":{"contact":"+33 1 80 88 80 30"}},
+        adyenPublicKey: '10001\u007C889EBFD4D434B82683E21DCA26E77C3E20E0EE09A5ECE3830B0ED51F2FA721A2F7E9EC871C6AB9A1E12C4492F4717673047757E02C5256D8E265CD51E413E5EFCCFEAC41B39C662A424ADC13EE187C38C372A7FCCEC1EA5DF841989437D78B252A8EB51008E60BB55B1E55A7A80DE1A9D60D998C128A576BFAE1DDB97D514AF0A073AEDDE84CEE40D1F8F6ECE85D0FFA50C95C06DB274021C1371376C6EB16561FD65C5E2704B570A7504D617D0F3820F176A0609F6162BDF5890533289FDC3DA7DB03B50BB3BD60A613E1FF72060F22987627E8F1A29F0128A94EC4C8FF7CF6B7AB9558D8433BF86D7A388AB927641CD6C02689139CEE3AAC9ACBFFE83806CB',
+        application: {
+            form: {
+              funnelUrl: 'https\u003A\/\/www.tfaforms.com\/responses\/processor',
+              fields: {"firstname":"tfa_6","lastname":"tfa_4","email":"tfa_2","path_id":"tfa_138","source_name":"tfa_165","record_type_id":"tfa_217","utm_medium":"tfa_203","utm_source":"tfa_201","utm_term":"tfa_207","utm_campaign":"tfa_205","gclid":"tfa_209","fbclid":"tfa_211","consent":"tfa_150","user_locale":"tfa_125","userId":"tfa_3","gender":"tfa_10","user_study_motivation":"tfa_171","diploma_level":"tfa_30","user_diploma":"tfa_173","language_proficiency_fr":"tfa_40","language_proficiency_en":"tfa_42","ha_addressline_1":"tfa_16","ha_city":"tfa_18","ha_zip_code":"tfa_24","ha_state":"tfa_163","ha_country":"tfa_22","professional_status":"tfa_94","public_employment_agency_id":"tfa_159","user_public_employment_agency_certificate":"tfa_167","user_pe_advisor_email":"tfa_199","disabled_worker":"tfa_67","veteran":"tfa_73","athlete":"tfa_79","refugee":"tfa_85","rsa":"tfa_91","are":"tfa_175","api":"tfa_177","cui":"tfa_179","aah":"tfa_222","other_allocs":"tfa_223","can_work_in_france":"tfa_142","user_resume":"tfa_1","online_cv":"tfa_157","user_has_mobility":"tfa_193","user_mobility_departamental":"tfa_187","user_mobility_national":"tfa_189","user_mobility_regional":"tfa_191","user_mobility_cities":"tfa_195","work_location_1":"tfa_128","work_location_2":"tfa_130","work_location_3":"tfa_132","work_location_4":"tfa_134","work_location_5":"tfa_136","career_motivation":"tfa_123","has_computer":"tfa_43","has_mic":"tfa_49","has_webcam":"tfa_169","has_fast_internet_connection":"tfa_55","has_quiet_space":"tfa_61","has_online_courses_xp":"tfa_118","has_online_courses_xp_text":"tfa_121","found_a_company":"tfa_146","date_of_birth":"tfa_9","phone_number":"tfa_126","user_desired_start_date":"tfa_161","video_link":"tfa_213","tfa_dbFormId":"tfa_dbFormId","tfa_dbControl":"tfa_dbControl","experiment_id":"tfa_219","full_time_available":"tfa_220","with_prerequisite":"tfa_221"}
+            },
+        },
+        routes: {
+            COURSE_EVENT: '/components/courses/:courseId',
+            COURSE_PART_EVENT: '/components/courses/:courseId/parts/:partId',
+
+            ACCEPT_COOKIE: '\/ajax\/components\/user\u002Daccept\u002Dconsent\u002Dcookie'
+        },
+
+                    };
+
+    App.preferences.navigationPreference = {
+            };
+
+    App.preferences.modules = {
+        'smiley': {
+            basePath: '/bundles/common/images/smiley/'
+        }
+    };
+
+    App.notifications = {};
+    App.scripts = [];
+
+    if (App.user.id) {
+        (function(){
+            var userData = { userId: App.user.id };
+
+            if (App.user.premiumType) {
+                userData.status = (App.user.premiumType === 'Premium Solo') ? 'premium solo student' : 'path student';
+            } else {
+                userData.status = 'free student';
+            }
+
+            if (App.user.isMentor) {
+                userData.status = App.user.premiumType ? (userData.status + '|mentor') : 'mentor';
+            }
+
+            if (!window.dataLayer) {
+              return;
+            }
+            window.dataLayer.push(userData);
+        })();
+    }
+</script>
+<script>    
+    App.preferences.modules['course/view/internalFolding'] = {
+        isBigCourse: true
+    };
+
+    App.data = App.data || {};
+App.data.currentCourse = {"partId":1605329,"partTitle":"Formatez du texte","partSlug":"formatage-du-texte","courseId":1603881,"courseTitle":"Apprenez \u00e0 cr\u00e9er votre site web avec HTML5 et CSS3","courseSlug":"apprenez-a-creer-votre-site-web-avec-html5-et-css3","courseLanguage":"fr","isIntroduction":false,"isCertifying":true};
+App.preferences.modules['view/currentCoursePage'] = App.data.currentCourse;
+
+</script>
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Formatez du texte" />
+<meta property="og:url" content="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1605329-formatez-du-texte" />
+<meta property="og:site_name" content="OpenClassrooms" />
+<meta property="og:image" content="https://course.oc-static.com/courses/1603881/1603881_teaser_picture_1614871846.jpg" />
+<meta property="og:description" content="Vous rêvez d&#039;apprendre à créer des sites web ? Débutez avec ce cours qui vous enseignera tout ce qu&#039;il faut savoir sur le développement de sites web en HTML5 et CSS3 !" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@OCFrance" />
+<meta name="twitter:title" content="Formatez du texte" />
+<meta name="twitter:image" content="https://course.oc-static.com/courses/1603881/1603881_teaser_picture_1614871846.jpg" />
+<meta name="twitter:description" content="Vous rêvez d&#039;apprendre à créer des sites web ? Débutez avec ce cours qui vous enseignera tout ce qu&#039;il faut savoir sur le développement de sites web en HTML5 et CSS3 !" />
+<link rel="canonical" href="1605329-formatez-du-texte.html" />
+</head>
+<body class="course oc-body   breadcrumbFluid breadcrumbOnContrasted">
+<ul class="skipLink">
+<li>
+<a class="skipLink__item" href="#mainContent">Aller au contenu</a>
+</li>
+<li>
+<a class="skipLink__item" href="#footerChangeLanguage">Choisir la langue</a>
+</li>
+<li id="skipLink_search">
+<a class="skipLink__item" href="#algolia-search-input">Aller à la recherche</a>
+</li>
+</ul>
+<script id="_EVENTS-IDENTIFY" type="application/json">
+        </script>
+<script id="_EVENTS-PAGE" type="application/json">
+        {"type":"page","integrations":{"Blueshift":false,"HubSpot":false},"properties":{"pageCategory":"courses","courseTitle":"Apprenez \u00e0 cr\u00e9er votre site web avec HTML5 et CSS3"}}
+    </script>
+<script id="fundingMechanisms" type="application/json">
+    {
+        "fundingMechanisms": [{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":24,"name":"Action de Formation Pr\u00e9alable au Recrutement","shortName":"AFPR","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":25,"name":"Aide collective priv\u00e9e \u00e0 la formation","shortName":"Aide priv\u00e9e","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":20,"name":"Aide Individuelle \u00e0 la Formation","shortName":"AIF","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":28,"name":"Aide individuelle priv\u00e9e \u00e0 la formation","shortName":"Aide priv\u00e9e","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":21,"name":"Compte Personnel de Formation","shortName":"CPF","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":15,"name":"Contrat d'apprentissage","shortName":"Apprentissage","type":"apprenticeship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":16,"name":"Contrat de professionnalisation","shortName":"Contrat pro","type":"apprenticeship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":19,"name":"P\u00e9riode de professionnalisation","shortName":"P\u00e9riode pro","type":"apprenticeship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":23,"name":"Pr\u00e9paration Op\u00e9rationnelle \u00e0 l'Emploi Collective","shortName":"POEC","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":17,"name":"Pr\u00e9paration Op\u00e9rationnelle \u00e0 l'Emploi Individuelle","shortName":"POEI","type":"apprenticeship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":22,"name":"Programme R\u00e9gional de Formation pour l'Emploi","shortName":"PRFE","type":"scholarship"},{"country":"FR","eligibleCountries":["FR","RE","GP","MQ","PF","GF","YT","NC","BL","PM","WF"],"id":18,"name":"Reconversion ou promotion par l'alternance","shortName":"Pro-A","type":"apprenticeship"}]
+    }
+</script>
+<div id="oc-header">
+<div class="oc-mainHeader oc-mainHeader--notLogged oc-mainHeader--skeleton">
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div style="display: flex;">
+<div class="oc-mainHeaderLogo oc-mainHeaderLogo--skeleton">
+<a href="https://openclassrooms.com/fr/" class="oc-mainHeaderLogo__link">
+<svg fill="none" height="51" width="668" viewBox="0 0 668 51" xmlns="http://www.w3.org/2000/svg">
+<title>OpenClassrooms.com</title>
+<path d="M406.011 35.018c0 2.82-.71 5.641-2.368 7.991-1.659 2.35-3.79 4.23-6.87 5.64-3.079 1.41-6.869 2.116-11.37 2.116-3.79 0-7.343-.47-10.897-1.41-3.553-.94-6.395-2.35-8.527-3.996l7.106-8.46c1.421.705 2.843 1.175 4.501 1.88 2.842.94 5.448 1.41 8.054 1.41 4.974 0 7.58-1.41 7.58-3.995 0-1.41-.711-2.35-2.132-3.056-1.421-.705-3.79-1.41-6.87-2.115-3.553-.705-6.395-1.645-8.764-2.585s-4.264-2.35-6.159-4.23c-1.658-1.88-2.606-4.701-2.606-7.991 0-3.056.711-5.641 2.369-7.991 1.658-2.35 3.79-4.23 6.87-5.64 3.079-1.41 6.869-2.116 11.37-2.116 3.079 0 6.159.47 9.001 1.175 3.08.705 5.685 1.88 7.817 3.055l-7.343 8.696c-3.316-1.41-6.633-2.115-9.712-2.115-2.606 0-4.501.47-5.685 1.175-1.185.705-1.895 1.88-1.895 3.056 0 1.41.711 2.35 2.132 2.82 1.421.705 3.79 1.41 6.869 2.115a49.4 49.4 0 0 1 8.765 2.585c2.369.94 4.264 2.35 6.159 4.23 1.658 1.646 2.605 4.466 2.605 7.756zm261.989 0c0 2.82-.711 5.641-2.369 7.991s-3.79 4.23-6.869 5.64c-3.08 1.41-6.87 2.116-11.371 2.116-3.79 0-7.343-.47-10.896-1.41s-6.396-2.35-8.528-3.996l7.107-8.46c1.421.705 2.842 1.175 4.501 1.88 2.842.94 5.448 1.41 8.053 1.41 4.975 0 7.581-1.41 7.581-3.995 0-1.41-.711-2.35-2.132-3.056-1.422-.705-3.791-1.41-6.87-2.115a49.361 49.361 0 0 1-8.764-2.585c-2.369-.94-4.264-2.35-6.159-4.23-1.658-1.88-2.606-4.701-2.606-7.991 0-3.056.711-5.641 2.369-7.991 1.658-2.35 3.79-4.23 6.869-5.64 3.08-1.41 6.87-2.116 11.371-2.116 3.079 0 6.158.47 9.001 1.175 3.079.705 5.685 1.88 7.817 3.055l-7.343 8.696c-3.317-1.41-6.633-2.115-9.712-2.115-2.606 0-4.501.47-5.685 1.175-1.185.705-1.896 1.88-1.896 3.056 0 1.41.711 2.35 2.132 2.82 1.422.705 3.791 1.41 6.87 2.115a49.361 49.361 0 0 1 8.764 2.585c2.369.94 4.264 2.35 6.159 4.23 1.895 1.646 2.606 4.466 2.606 7.756zM87.882 19.037c0 3.76-.947 6.816-2.605 9.4-1.659 2.586-4.027 4.701-7.107 6.111s-6.87 2.116-10.896 2.116H59.22v12.69H45.955V.706h21.319c4.264 0 7.817.705 10.896 2.115 3.08 1.41 5.448 3.526 7.107 6.346 1.895 3.055 2.605 6.346 2.605 9.87zm-13.265 0c0-2.35-.71-3.995-2.132-5.17s-3.316-1.88-6.159-1.88h-7.343v14.336h7.343c2.606 0 4.738-.706 6.16-1.88s2.131-3.056 2.131-5.406zm55.904 20.212v10.576h-37.19V1.175h36.242v10.576h-23.214v8.226h18.476v10.341h-18.476v8.93zm50.218-38.074v48.65h-10.896l-20.609-25.853v25.853h-13.028V1.175h10.896l20.609 25.853V1.175zm84.092 37.604v10.81h-32.926V.94h13.265v37.604h19.661zm56.851 11.046h-13.739l-3.553-9.401h-19.661l-3.553 9.4h-13.502l20.608-48.649h13.029zM300.6 30.083l-5.922-15.512-5.922 15.512zm62.536 4.935c0 2.82-.71 5.641-2.369 7.991-1.658 2.35-3.79 4.23-6.869 5.64-3.08 1.41-6.87 2.116-11.37 2.116-3.79 0-7.344-.47-10.897-1.41s-6.396-2.35-8.527-3.996l7.106-8.46c1.421.705 2.842 1.175 4.501 1.88 2.842.94 5.448 1.41 8.054 1.41 4.974 0 7.58-1.41 7.58-3.995 0-1.41-.711-2.35-2.132-3.056-1.421-.705-3.79-1.41-6.87-2.115-3.553-.705-6.395-1.645-8.764-2.585s-4.264-2.35-6.159-4.23c-1.658-1.88-2.606-4.701-2.606-7.991 0-3.056.711-5.641 2.369-7.991 1.658-2.35 3.79-4.23 6.87-5.64 3.079-1.41 6.869-2.116 11.37-2.116 3.079 0 6.159.47 9.001 1.175 3.08.705 5.448 1.88 7.817 3.055l-7.343 8.696c-3.316-1.41-6.633-2.115-9.712-2.115-2.606 0-4.501.47-5.685 1.175-1.185.705-1.895 1.88-1.895 3.056 0 1.41.71 2.35 2.132 2.82 1.421.705 3.79 1.41 6.869 2.115a49.4 49.4 0 0 1 8.765 2.585c2.368.94 4.263 2.35 6.158 4.23 1.659 1.646 2.606 4.466 2.606 7.756zm-322.63-9.636c0 13.867-11.37 25.383-25.583 25.383-5.685 0-10.66-1.88-14.923-4.936l8.528-10.105c1.895 1.175 4.027 1.88 6.395 1.88 6.633 0 12.081-5.406 12.081-11.986 0-6.581-5.448-11.987-12.08-11.987-2.37 0-4.501.705-6.396 1.88L0 5.407C4.264 2.35 9.475.47 14.923.47 29.136.235 40.506 11.516 40.506 25.383zm177.66 10.341l8.528 10.107c-4.264 3.055-9.476 4.935-14.924 4.935-13.976 0-25.583-11.281-25.583-25.383C186.187 11.517 197.557 0 211.77 0c5.685 0 10.66 1.88 14.924 4.936l-8.528 10.105c-1.895-1.175-4.027-1.88-6.396-1.88-6.632 0-12.081 5.406-12.081 11.986 0 6.581 5.449 11.987 12.081 11.987 2.369.47 4.501-.235 6.396-1.41zm236.169 14.102l-10.423-15.042c3.079-1.41 5.211-3.525 6.87-6.11 1.658-2.585 2.605-5.876 2.605-9.401 0-3.76-.947-6.816-2.605-9.636-1.659-2.82-4.027-4.7-7.107-6.346-3.079-1.41-6.869-2.115-10.896-2.115H411.46v48.65h13.028V37.134h6.159l8.764 12.69zm-29.847-37.839h7.58c2.606 0 4.738.705 6.159 1.88s2.132 3.056 2.132 5.17c0 2.351-.711 3.996-2.132 5.171s-3.316 1.88-6.159 1.88h-7.58zM483.945.235c13.976 0 25.583 11.281 25.583 25.382S498.157 51 483.945 51c-13.976 0-25.583-11.281-25.583-25.383S469.732.235 483.945.235zm-13.029 25.147c0 7.051 5.685 12.692 12.792 12.692 7.106 0 12.791-5.64 12.791-12.692s-5.685-12.69-12.791-12.69c-6.87 0-12.792 5.64-12.792 12.69zM538.901.235c13.976 0 25.583 11.281 25.583 25.382S553.114 51 538.901 51c-13.976 0-25.583-11.281-25.583-25.383S524.925.235 538.901.235zm-12.792 25.147c0 7.051 5.685 12.692 12.792 12.692 7.106 0 12.791-5.64 12.791-12.692s-5.685-12.69-12.791-12.69c-7.107 0-12.792 5.64-12.792 12.69zm70.353 6.816L580.828 1.175h-10.896v48.65h11.607V28.438l11.607 21.387h6.87l11.607-21.387v21.387h11.607V1.175h-10.897z" />
+</svg>
+</a>
+</div>
+<nav class="oc-mainHeader__navWrapper" role="navigation" aria-label="Menu principal">
+<div class="oc-mainHeader__linksWrapper">
+<div class="oc-mainHeader__navLinkWrapper"><a class="oc-mainHeader__navLink" data-event="click|Header|Trainings" href="https://openclassrooms.com/fr/paths">Formations</a></div>
+<div class="oc-mainHeader__navLinkWrapper"><a class="oc-mainHeader__navLink" data-event="click|Header|Apprenticeship" href="https://openclassrooms.com/fr/apprenticeship">Alternance</a></div>
+<div class="oc-mainHeader__navLinkWrapper"><a class="oc-mainHeader__navLink" data-event="click|Header|Funding" href="https://openclassrooms.com/fr/funding">Financements</a></div>
+<div class="oc-mainHeader__navLinkWrapper--separator"></div>
+<div class="oc-mainHeader__navLinkWrapper"><a class="oc-mainHeader__navLink" data-event="click|Header|Business" href="https://openclassrooms.com/fr/business">Pour les entreprises</a></div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="disclaimers-container" style="display:none;">
+<!--[if lt IE 10]>
+        <div class="alertMessage">
+        <span class="bullet bullet--small bullet--orange alertMessage__icon"> <i class="icon-exclamation"></i></span>
+        <p class="alertMessage__text">
+            Vous utilisez un navigateur obsolète, veuillez le <a href="https://browser-update.org/update.html">mettre à jour</a>.
+        </p>
+    </div>
+    <![endif]-->
+
+<div id="modern-ie-disclaimer" style="display:none">
+<div class="alertMessage">
+<span class="bullet bullet--small bullet--orange alertMessage__icon"> <i class="icon-exclamation"></i></span>
+<p class="alertMessage__text">
+Vous utilisez un navigateur obsolète, veuillez le <a href="https://browser-update.org/update.html">mettre à jour</a>.
+</p>
+</div>
+</div>
+<script id="webapp-ie-disclaimer" type="application/json">{"message":"Vous utilisez un navigateur obsol\u00e8te, veuillez le <a href=\"https:\/\/browser-update.org\/update.html\">mettre \u00e0 jour<\/a>."}</script>
+<script>
+      var isModernIE =  document.documentMode === 10 || document.documentMode === 11;
+      var isEdgeLegacy = navigator.userAgent.indexOf('Edge') > -1; // Luckily for us, Edge Chromium uses string "Edg" without final "e"
+
+      if (isModernIE || isEdgeLegacy) {
+        document.getElementById('modern-ie-disclaimer').style.display = 'block';
+        document.getElementById('webapp-ie-disclaimer').setAttribute('data-role', 'disclaimer-message-data');
+      }
+    </script>
+<noscript>
+        <div class="alertMessage">
+            <span class="bullet bullet--small bullet--orange alertMessage__icon"> <i class="icon-exclamation"></i></span>
+            <p class="alertMessage__text">
+                Veuillez utiliser un <a href="https://browser-update.org/update.html">navigateur internet moderne</a> avec JavaScript activé pour naviguer sur OpenClassrooms.com
+            </p>
+        </div>
+    </noscript>
+</div>
+<div id="mainContentWithHeader">
+<section class="breadcrumb  inset no-padding">
+<div class="grid-wrapper">
+<div class="grid-inner">
+<nav class="breadcrumb__wrapper" role="navigation" aria-label="Fil d&#039;Ariane">
+<ul class="breadcrumb__trail">
+<li class="breadcrumb__item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a class="breadcrumb__link" href="https://openclassrooms.com/fr/" itemprop="url">
+<span itemprop="title">Accueil</span
+                                    ></a>
+<span class="breadcrumb__separator"> > </span>
+</li>
+<li class="breadcrumb__item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a class="breadcrumb__link" href="https://openclassrooms.com/fr/courses" itemprop="url">
+<span itemprop="title">Cours</span
+                                    ></a>
+<span class="breadcrumb__separator"> > </span>
+</li>
+<li class="breadcrumb__item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a class="breadcrumb__link" href="../1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css36f1b.html?status=published" itemprop="url">
+<span itemprop="title">Apprenez à créer votre site web avec HTML5 et CSS3</span
+                                    ></a>
+<span class="breadcrumb__separator"> > </span>
+</li>
+<li class="breadcrumb__item" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+Formatez du texte
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</section>
+<div id="pre-main-part">
+</div>
+<main class="claire clearfix" role="main" id="mainContent">
+<article itemscope itemtype="http://schema.org/Article" lang="fr">
+<header id="course-header" class="courseHeader" xmlns="http://www.w3.org/1999/html">
+<div class="grid-wrapper"><div class="grid-inner"><div class="grid-inner-content"><div class="courseHeader__topPart"><a itemprop="url" href="../1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3.html"><h1 class="oc-typography-h2 typoColorOnContrastedBg  courseHeader__title" data-course-title="Apprenez à créer votre site web avec HTML5 et CSS3">Apprenez à créer votre site web avec HTML5 et CSS3</h1></a></div></div></div></div><div class="grid-wrapper"><div class="grid-inner"><div class="grid-inner-content"><div class="courseHeader__bottomPart"><div class="courseHeader__details"><div class="courseHeader__detailsGroup"><ul class="courseHeader__detailsList"><li class="courseHeader__detailsItem"><img class="courseHeader__icon js-tooltip" src="https://openclassrooms.com/images/icons/schedule.svg?83212fe7" width="16" title="Ce cours demande en moyenne 20 heures de travail pour être réussi." /><span class="courseHeader__label">20 heures</span></li><li class="courseHeader__detailsItem"><i class="icon-level courseHeader__icon"></i><span class="courseHeader__label">Facile</span></li></ul></div><div class="courseHeader__detailsGroup courseHeader--license"><a class="courseHeader__license" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0"><span class="courseHeader__label">Licence</span><ul class="courseHeader__detailsList"><li class="iconBar__item"><i class="icon-cc iconBar__icon" title="CC"></i></li><li class="iconBar__item"><i class="icon-ccby iconBar__icon" title="BY"></i></li><li class="iconBar__item"><i class="icon-ccsa iconBar__icon" title="SA"></i></li></ul></a></div></div></div></div></div></div>
+<div id="popin-formats-availables" class="popin popin--course-formats-availables">
+<i class="popin__close-button icon-close js-close-button"></i>
+<div class="course-types course-types--withSpace">
+<a class="course-types__item" href="../1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3.html">
+<i class="icon-desktop course-types__icon"></i>
+</a>
+<a class="course-types__item" href="https://openclassrooms.com/fr/courses?video=true">
+<i class="icon-video course-types__icon"></i>
+</a>
+<a class="course-types__item" href="http://www.eyrolles.com/Informatique/Livre/realisez-votre-site-web-avec-html5-et-css3-9782953527889?societe=openclassrooms">
+<i class="icon-book course-types__icon"></i>
+</a>
+<a class="course-types__item" href="../1603881/certificate_example.pdf" target="_blank">
+<i class="icon-badge course-types__icon js-close-button"></i>
+</a>
+</div>
+<p>Ce cours est visible <a href="../1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3.html">gratuitement en ligne</a>.</p>
+<p>course.header.alt.is_video</p>
+<p>
+Ce cours existe en livre papier.
+</p>
+<p>
+course.header.alt.is_certifying
+</p>
+<a class="button button--primary js-close-button" href="#">J&#039;ai tout compris !</a>
+</div>
+</header>
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="grid-inner-content">
+<p class="courseHeader__updatedTime">
+Mis à jour le 25/06/2021  </p>
+</div>
+</div>
+</div>
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="grid-inner-content">
+<nav id="course-timeline" class="timeline">
+<div class="timeline__inner">
+<span class="timeline__iconContainer">
+<a href="../1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3.html" title="Retour sur le sommaire du cours" class="roundIcon timeline__roundIcon">
+<i class="icon-home roundIcon__icon"></i>
+</a>
+</span>
+<div class="timeline__steps">
+<span class="timeline__splitChapter"></span>
+<a href="1604192-decouvrez-le-fonctionnement-des-sites-web.html" class="timeline__step" title="Découvrez le fonctionnement des sites web">
+<span class="timeline__stepName">
+Découvrez le fonctionnement des sites web
+</span>
+</a>
+<a href="1604361-creez-votre-premiere-page-web-en-html.html" class="timeline__step" title="Créez votre première page web en HTML">
+<span class="timeline__stepName">
+Créez votre première page web en HTML
+</span>
+</a>
+<a href="1604534-organisez-votre-texte.html" class="timeline__step" title="Organisez votre texte">
+<span class="timeline__stepName">
+Organisez votre texte
+</span>
+</a>
+<a href="4004681-pratiquez.html" class="timeline__step" title="Pratiquez !">
+<span class="timeline__stepName">
+Pratiquez !
+</span>
+</a>
+<a href="1604646-creez-des-liens.html" class="timeline__step" title="Créez des liens">
+<span class="timeline__stepName">
+Créez des liens
+</span>
+</a>
+<a href="1604791-inserez-des-images.html" class="timeline__step" title="Insérez des images">
+<span class="timeline__stepName">
+Insérez des images
+</span>
+</a>
+<a href="6725196-entrainez-vous-en-structurant-votre-cv.html" class="timeline__step" title="Entraînez-vous en structurant votre CV">
+<span class="timeline__stepName">
+Entraînez-vous en structurant votre CV
+</span>
+</a>
+<span class="timeline__splitChapter"></span>
+<a href="1605060-mettez-en-place-le-css.html" class="timeline__step" title="Mettez en place le CSS">
+<span class="timeline__stepName">
+Mettez en place le CSS
+</span>
+</a>
+<a href="1605329-formatez-du-texte.html" class="timeline__step js-current-timeline-step" title="Formatez du texte">
+<span class="timeline__stepName">
+Formatez du texte
+</span>
+<span class="timeline__progressMarker"></span>
+</a>
+<a href="1605551-ajoutez-de-la-couleur-et-un-fond.html" class="timeline__step" title="Ajoutez de la couleur et un fond">
+<span class="timeline__stepName">
+Ajoutez de la couleur et un fond
+</span>
+</a>
+<a href="1605694-creez-des-bordures-et-des-ombres.html" class="timeline__step" title="Créez des bordures et des ombres">
+<span class="timeline__stepName">
+Créez des bordures et des ombres
+</span>
+</a>
+<a href="1605763-creez-des-apparences-dynamiques.html" class="timeline__step" title="Créez des apparences dynamiques">
+<span class="timeline__stepName">
+Créez des apparences dynamiques
+</span>
+</a>
+<a href="4214566-pratiquez.html" class="timeline__step" title="Pratiquez !">
+<span class="timeline__stepName">
+Pratiquez !
+</span>
+</a>
+<a href="6725256-entrainez-vous-en-mettant-en-forme-votre-cv.html" class="timeline__step" title="Entraînez-vous en mettant en forme votre CV">
+<span class="timeline__stepName">
+Entraînez-vous en mettant en forme votre CV
+</span>
+</a>
+<a href="exercises/92.html" class="timeline__step" title="Quiz : Utilisez du code CSS">
+<span class="timeline__stepName">
+Quiz : Utilisez du code CSS
+</span>
+</a>
+<span class="timeline__splitChapter"></span>
+<a href="1605881-structurez-votre-page.html" class="timeline__step" title="Structurez votre page">
+<span class="timeline__stepName">
+Structurez votre page
+</span>
+</a>
+<a href="1606168-decouvrez-le-modele-des-boites.html" class="timeline__step" title="Découvrez le modèle des boîtes">
+<span class="timeline__stepName">
+Découvrez le modèle des boîtes
+</span>
+</a>
+<a href="3298561-faites-votre-mise-en-page-avec-flexbox.html" class="timeline__step" title="Faites votre mise en page avec Flexbox">
+<span class="timeline__stepName">
+Faites votre mise en page avec Flexbox
+</span>
+</a>
+<a href="4214576-pratiquez.html" class="timeline__step" title="Pratiquez !">
+<span class="timeline__stepName">
+Pratiquez !
+</span>
+</a>
+<a href="1606402-decouvrez-dautres-techniques-de-mise-en-page.html" class="timeline__step" title="Découvrez d&#039;autres techniques de mise en page">
+<span class="timeline__stepName">
+Découvrez d&#039;autres techniques de mise en page
+</span>
+</a>
+<a href="1606688-tp-creez-un-site-pas-a-pas.html" class="timeline__step" title="TP : Créez un site pas à pas">
+<span class="timeline__stepName">
+TP : Créez un site pas à pas
+</span>
+</a>
+<a href="6725301-entrainez-vous-en-organisant-votre-cv.html" class="timeline__step" title="Entraînez-vous en organisant votre CV">
+<span class="timeline__stepName">
+Entraînez-vous en organisant votre CV
+</span>
+</a>
+<a href="exercises/1236.html" class="timeline__step" title="Quiz : Organisez les éléments d&#039;une page web grâce aux règles CSS">
+<span class="timeline__stepName">
+Quiz : Organisez les éléments d&#039;une page web grâce aux règles CSS
+</span>
+</a>
+<span class="timeline__splitChapter"></span>
+<a href="1606851-ajoutez-des-tableaux.html" class="timeline__step" title="Ajoutez des tableaux">
+<span class="timeline__stepName">
+Ajoutez des tableaux
+</span>
+</a>
+<a href="1607171-creez-des-formulaires.html" class="timeline__step" title="Créez des formulaires">
+<span class="timeline__stepName">
+Créez des formulaires
+</span>
+</a>
+<a href="1607438-enrichissez-votre-site-avec-de-la-video-et-de-laudio.html" class="timeline__step" title="Enrichissez votre site avec de la vidéo et de l&#039;audio">
+<span class="timeline__stepName">
+Enrichissez votre site avec de la vidéo et de l&#039;audio
+</span>
+</a>
+<a href="1607616-utilisez-le-responsive-design-avec-les-media-queries.html" class="timeline__step" title="Utilisez le responsive design avec les Media Queries">
+<span class="timeline__stepName">
+Utilisez le responsive design avec les Media Queries
+</span>
+</a>
+<a href="1607717-allez-plus-loin.html" class="timeline__step" title="Allez plus loin">
+<span class="timeline__stepName">
+Allez plus loin
+</span>
+</a>
+<a href="6725346-entrainez-vous-en-adaptant-votre-cv-en-responsive.html" class="timeline__step" title="Entraînez-vous en adaptant votre CV en responsive">
+<span class="timeline__stepName">
+Entraînez-vous en adaptant votre CV en responsive
+</span>
+</a>
+<a href="exercises/96.html" class="timeline__step" title="Quiz : Intégrez des formulaires dans une page web">
+<span class="timeline__stepName">
+Quiz : Intégrez des formulaires dans une page web
+</span>
+</a>
+<span class="timeline__splitChapter"></span>
+ <a href="1607901-envoyez-votre-site-sur-le-web.html" class="timeline__step" title="Envoyez votre site sur le Web">
+<span class="timeline__stepName">
+Envoyez votre site sur le Web
+</span>
+</a>
+<a href="1608357-memento-des-balises-html.html" class="timeline__step" title="Mémento des balises HTML">
+<span class="timeline__stepName">
+Mémento des balises HTML
+</span>
+</a>
+<a href="1608902-memento-des-proprietes-css.html" class="timeline__step" title="Mémento des propriétés CSS">
+<span class="timeline__stepName">
+Mémento des propriétés CSS
+</span>
+</a>
+<span class="timeline__splitChapter"></span>
+</div>
+<span class="timeline__iconContainer">
+<a href="../1603881/certificate_example.pdf" title="Certificat de réussite (voir un exemple)" class="roundIcon timeline__roundIcon">
+<i class="icon-trophy roundIcon__icon"></i>
+</a>
+</span>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="contentWithSidebar  spacer  js-contentWithSidebar  grid-inner-content">
+<div class="contentWithSidebar__content">
+<div id="js-courseRedirection" data-courseInfo-course_id="1603881"></div>
+<div class="relative js-sidebar-container">
+<div class="static">
+<h2 itemprop="name" data-part-title="Formatez du texte" class="part-title">Formatez du texte</h2>
+<section class="space-bottom js-desktop-sticky-container">
+<div class="tooltipMessage tooltipMessage--noArrow">
+<i class="tooltipMessage__icon  icon-lock"></i>
+<a href="https://openclassrooms.com/fr/login">Connectez-vous</a> ou <a href="https://openclassrooms.com/fr/register">inscrivez-vous</a> gratuitement pour bénéficier de toutes les fonctionnalités de ce cours !
+</div>
+<div itemprop="articleBody" data-page-indentifier="/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1605329-formatez-du-texte" class="js-isRestrictablePage js-course-container js-smilize " data-video-blocked-wrapper="<a href='https://openclassrooms.com/fr/login#popin-log-in' class='js-popin-activator'>">
+<div class="userContent js-userContent">
+<p id="r-4800716" data-claire-element-id="8796561"></p><video id="r-7302346" data-claire-element-id="31757601" src="https://vimeo.com/243805907"><a href="https://vimeo.com/243805907">https://vimeo.com/243805907</a></video><p id="r-4800718" data-claire-element-id="8796563">Nous arrivons maintenant à un chapitre qui devrait beaucoup vous intéresser.</p><p id="r-1610135" data-claire-element-id="2256203">Non, le « formatage du texte » n'a rien à voir avec la destruction de toutes les données présentes sur votre disque dur ! Cela signifie simplement que l'on va modifier l'apparence du texte (on dit qu'on le « met en forme »).</p><p id="r-1610136" data-claire-element-id="30946852">Pas de surprise particulière : nous sommes toujours dans le CSS, et nous allons réutiliser ce que nous venons d'apprendre dans le chapitre précédent. Nous allons donc travailler directement au sein du fichier <code data-claire-semantic="text">.css</code>  que nous avons créé.</p><p id="r-1610137" data-claire-element-id="1632948">Ce chapitre va être l'occasion de découvrir de nombreuses propriétés CSS : nous allons voir comment modifier la taille du texte, changer la police, aligner le texte…</p><aside id="r-6314133" data-claire-element-id="30946854" data-claire-semantic="information"><p id="r-6314132" data-claire-element-id="30946853">Pour valider vos compétences avec un diplôme bac+2, suivez la <a href="https://openclassrooms.com/fr/paths/185-developpeur-web">formation Développeur web</a> avec OpenClassrooms. 6 mois en moyenne sont nécessaires pour finaliser cette <a href="https://openclassrooms.com/fr/">formation à distance</a>, qui peut aussi être suivie en <a href="https://openclassrooms.com/fr/apprenticeship">alternance ou contrat d’apprentissage</a>.</p></aside><h3 id="r-6413165" data-claire-element-id="30303405"></h3><p id="r-6413163" data-claire-element-id="30303404"><a href="https://openclassrooms.com/fr/paths/185-developpeur-web"><img id="r-6413162" data-claire-element-id="29575882" src="https://user.oc-static.com/upload/2019/07/29/15644157388484_dwj_alternance.png" alt="" /></a></p><p id="r-6413164" data-claire-element-id="29575884"></p><h3 id="r-1605118" data-claire-element-id="31757607">La taille</h3><p id="r-1610138" data-claire-element-id="30946892">Pour modifier la taille du texte, on utilise la propriété CSS <code data-claire-semantic="css">font-size</code>  . Mais comment indiquer la taille du texte ? C'est là que les choses se corsent, car plusieurs techniques vous sont proposées :</p><ul id="r-1610143" data-claire-element-id="30946897"><li id="r-1610140" data-claire-element-id="30946894"><p id="r-1610139" data-claire-element-id="30946893">indiquer une <strong>taille absolue</strong> : en pixels, en centimètres ou millimètres. Cette méthode est très précise, mais il est conseillé de ne l'utiliser que si c'est absolument nécessaire, car on risque d'indiquer une taille trop petite pour certains lecteurs ;</p></li><li id="r-1610142" data-claire-element-id="30946896"><p id="r-1610141" data-claire-element-id="30946895">indiquer une <strong>taille relative</strong> : en pourcentage, « em » ou « ex », cette technique a l'avantage d'être plus souple. Elle s'adapte plus facilement aux préférences de taille des visiteurs.</p></li></ul><h4 id="r-1610158" data-claire-element-id="31757606">Une taille absolue</h4><p id="r-1610144" data-claire-element-id="30946898">Pour indiquer une taille absolue, on utilise généralement les pixels. Pour avoir un texte de 16 pixels de hauteur, vous devez donc écrire :</p><pre id="r-1610145" data-claire-element-id="2256204"><code data-claire-semantic="css">font-size: 16px;</code></pre><p id="r-1610146" data-claire-element-id="1632957">Les lettres auront une taille de 16 pixels, comme le montre la figure suivante.</p><figure id="r-1610149" data-claire-element-id="31757603"><img id="r-1610147" data-claire-element-id="1632958" src="https://user.oc-static.com/files/5001_6000/5552.jpg" alt="Une lettre de 16 pixels de hauteur" /><figcaption>Une lettre de 16 pixels de hauteur</figcaption></figure><p id="r-1610150" data-claire-element-id="30946934">Voici un exemple d'utilisation (placez ce code dans votre fichier <code data-claire-semantic="text">.css</code>  ) :</p><pre id="r-1610151" data-claire-element-id="8113897"><code data-claire-semantic="css">p
+{
+    font-size: 14px; /* Paragraphes de 14 pixels */
+}
+h1
+{
+    font-size: 40px; /* Titres de 40 pixels */
+}</code></pre><p id="r-1610152" data-claire-element-id="1632963">Et le résultat est visible à la figure suivante.</p><figure id="r-1610155" data-claire-element-id="31757605"><img id="r-1610153" data-claire-element-id="1632964" src="https://user.oc-static.com/files/343001_344000/343370.png" alt="Différentes tailles de texte" /><figcaption>Différentes tailles de texte</figcaption></figure><aside id="r-1610157" data-claire-element-id="1632968" data-claire-semantic="information"><p id="r-1610156" data-claire-element-id="1632967">Si vous le souhaitez, vous pouvez également définir des tailles en centimètres ou millimètres. Remplacez « px » par « cm » ou « mm ». Ces unités sont cependant moins bien adaptées aux écrans.</p></aside><h4 id="r-1610191" data-claire-element-id="30947108">Une valeur relative</h4><p id="r-1610159" data-claire-element-id="30946977">C'est la méthode recommandée, car le texte s'adapte alors plus facilement aux préférences de tous les visiteurs.</p><p id="r-1610160" data-claire-element-id="1632971">Il y a plusieurs moyens d'indiquer une valeur relative. Vous pouvez par exemple écrire la taille avec des mots en anglais comme ceux-ci :</p><ul id="r-1610175" data-claire-element-id="30946992"><li id="r-1610162" data-claire-element-id="30946979"><p id="r-1610161" data-claire-element-id="30946978"><code data-claire-semantic="css">xx-small</code>  : minuscule ;</p></li><li id="r-1610164" data-claire-element-id="30946981"><p id="r-1610163" data-claire-element-id="30946980"><code data-claire-semantic="css">x-small</code>  : très petit ;</p></li><li id="r-1610166" data-claire-element-id="30946983"><p id="r-1610165" data-claire-element-id="30946982"><code data-claire-semantic="css">small</code>  : petit ;</p></li><li id="r-1610168" data-claire-element-id="30946985"><p id="r-1610167" data-claire-element-id="30946984"><code data-claire-semantic="css">medium</code>  : moyen ;</p></li><li id="r-1610170" data-claire-element-id="30946987"><p id="r-1610169" data-claire-element-id="30946986"><code data-claire-semantic="css">large</code>  : grand ;</p></li><li id="r-1610172" data-claire-element-id="30946989"><p id="r-1610171" data-claire-element-id="30946988"><code data-claire-semantic="css">x-large</code>  : très grand ;</p></li><li id="r-1610174" data-claire-element-id="30946991"><p id="r-1610173" data-claire-element-id="30946990"><code data-claire-semantic="css">xx-large</code>  : euh… gigantesque.</p></li></ul><p id="r-1610176" data-claire-element-id="1632987">Vous pouvez tester l'utilisation de ces valeurs dans votre code CSS :</p><pre id="r-1610177" data-claire-element-id="8113916"><code data-claire-semantic="css">p
+{
+    font-size: small;
+}
+h1
+{
+    font-size: large;
+}</code></pre><p id="r-1610178" data-claire-element-id="30947027">Bon, cette technique a un défaut : il n'y a que sept tailles disponibles (car il n'y a que sept noms). Heureusement, il existe d'autres moyens. Ma technique préférée consiste à indiquer la taille en « em ».</p><ul id="r-1610185" data-claire-element-id="30947034"><li id="r-1610180" data-claire-element-id="30947029"><p id="r-1610179" data-claire-element-id="30947028">Si vous écrivez <code data-claire-semantic="text">1em</code>  , le texte a une taille normale.</p></li><li id="r-1610182" data-claire-element-id="30947031"><p id="r-1610181" data-claire-element-id="30947030">Si vous voulez grossir le texte, vous pouvez inscrire une valeur supérieure à 1, comme <code data-claire-semantic="text">1.3em</code>  .</p></li><li id="r-1610184" data-claire-element-id="30947033"><p id="r-1610183" data-claire-element-id="30947032">Si vous voulez réduire le texte, inscrivez une valeur inférieure à 1, comme <code data-claire-semantic="text">0.8em</code>  .</p></li></ul><aside id="r-1610187" data-claire-element-id="1632998" data-claire-semantic="warning"><p id="r-1610186" data-claire-element-id="1632997">Faites attention : pour les nombres décimaux, il faut mettre un point et non une virgule. Vous devez donc écrire « 1.4em » et non pas « 1,4em » !</p></aside><p id="r-1610188" data-claire-element-id="1632999">Exemple :</p><pre id="r-1610189" data-claire-element-id="8113924"><code data-claire-semantic="css">p
+{
+    font-size: 0.8em;
+}
+h1
+{
+    font-size: 1.3em;
+}</code></pre><p id="r-1610190" data-claire-element-id="30947107">D'autres unités sont disponibles. Vous pouvez essayer le « ex » (qui fonctionne sur le même principe que le em, mais qui est plus petit de base) et le pourcentage (80 %, 130 %…).</p><h3 id="r-1605200" data-claire-element-id="31757614">La police</h3><p id="r-1610192" data-claire-element-id="30947148">Ah… la police… On touche un point sensible.</p><p id="r-1610193" data-claire-element-id="1633005">En effet, il se pose un problème : pour qu'une police s'affiche correctement, il faut que tous les internautes l'aient. Si un internaute n'a pas la même police que vous, son navigateur prendra une police par défaut (une police standard) qui n'aura peut-être rien à voir avec ce à quoi vous vous attendiez.</p><p id="r-1610194" data-claire-element-id="1633006">La bonne nouvelle, c'est que depuis CSS 3, il est possible de faire télécharger automatiquement une police au navigateur. Je vous expliquerai dans un second temps comment faire cela.</p><h4 id="r-1610232" data-claire-element-id="31757610">Modifier la police utilisée</h4><p id="r-1610195" data-claire-element-id="30947070">La propriété CSS qui permet d'indiquer la police à utiliser est <code data-claire-semantic="css">font-family</code>  . Vous devez écrire le nom de la police comme ceci :</p><pre id="r-1610196" data-claire-element-id="8113928"><code data-claire-semantic="css">balise
+{
+    font-family: police;
+}</code></pre><p id="r-1610197" data-claire-element-id="1633009">Seulement, pour éviter les problèmes si l'internaute n'a pas la même police que vous, on précise en général <em>plusieurs</em> noms de police, séparés par des virgules :</p><pre id="r-1610198" data-claire-element-id="8113929"><code data-claire-semantic="css">balise
+{
+    font-family: police1, police2, police3, police4;
+}</code></pre><p id="r-1610199" data-claire-element-id="30947188">Le navigateur essaiera d'abord d'utiliser la <code data-claire-semantic="text">police1</code>  . S'il ne l'a pas, il essaiera la <code data-claire-semantic="text">police2</code>  . S'il ne l'a pas, il passera à la <code data-claire-semantic="text">police3</code>  , et ainsi de suite.<br /> En général, on indique en tout dernier <code data-claire-semantic="text">serif</code>  , ce qui correspond à une police par défaut (qui ne s'applique que si aucune autre police n'a été trouvée).</p><aside id="r-1610201" data-claire-element-id="30947190" data-claire-semantic="information"><p id="r-1610200" data-claire-element-id="30947189">Il existe aussi une autre police par défaut appelée <code data-claire-semantic="text">sans-serif</code>  . La différence entre les deux est la présence de petites pattes de liaison en bas des lettres, que la police <code data-claire-semantic="text">sans-serif</code>  n'a pas. Oui, c'est subtil.</p></aside><p id="r-1610202" data-claire-element-id="1633014">Oui, mais quelles sont les polices les plus courantes qu'on a le « droit » d'utiliser, me direz-vous ?<br /> Voici une liste de polices qui fonctionnent bien sur la plupart des navigateurs :</p><ul id="r-1610221" data-claire-element-id="1633033"><li id="r-1610204" data-claire-element-id="1633016"><p id="r-1610203" data-claire-element-id="1633015">Arial ;</p></li><li id="r-1610206" data-claire-element-id="1633018"><p id="r-1610205" data-claire-element-id="1633017">Arial Black ;</p></li><li id="r-1610208" data-claire-element-id="1633020"><p id="r-1610207" data-claire-element-id="1633019">Comic Sans MS ;</p></li><li id="r-1610210" data-claire-element-id="1633022"><p id="r-1610209" data-claire-element-id="1633021">Courier New ;</p></li><li id="r-1610212" data-claire-element-id="1633024"><p id="r-1610211" data-claire-element-id="1633023">Georgia ;</p></li><li id="r-1610214" data-claire-element-id="1633026"><p id="r-1610213" data-claire-element-id="1633025">Impact ;</p></li><li id="r-1610216" data-claire-element-id="1633028"><p id="r-1610215" data-claire-element-id="1633027">Times New Roman ;</p></li><li id="r-1610218" data-claire-element-id="1633030"><p id="r-1610217" data-claire-element-id="1633029">Trebuchet MS ;</p></li><li id="r-1610220" data-claire-element-id="1633032"><p id="r-1610219" data-claire-element-id="1633031">Verdana.</p></li></ul><p id="r-1610222" data-claire-element-id="1633034">La figure suivante vous montre à quoi ressemblent ces polices.</p><figure id="r-1610225" data-claire-element-id="31757609"><img id="r-1610223" data-claire-element-id="1633035" src="https://user.oc-static.com/files/343001_344000/343371.png" alt="Différentes polices" /><figcaption>Différentes polices</figcaption></figure><p id="r-1610226" data-claire-element-id="1633038">Ainsi, si j'écris :</p><pre id="r-1610227" data-claire-element-id="8113935"><code data-claire-semantic="css">p
+{
+    font-family: Impact, &quot;Arial Black&quot;, Arial, Verdana, sans-serif;
+}</code></pre><p id="r-1610228" data-claire-element-id="30947270">… cela signifie : « <em>Mets la police Impact ou, si elle n'y est pas, Arial Black, ou sinon Arial, ou sinon Verdana, ou si rien n'a marché, mets une police standard (Sans Serif)</em> ».</p><p id="r-1610229" data-claire-element-id="30947271">En général, il est bien d'indiquer un choix de trois ou quatre polices (+ Serif ou Sans Serif), afin de s'assurer qu'au moins l'une d'entre elles aura été trouvée sur l'ordinateur du visiteur.</p><aside id="r-1610231" data-claire-element-id="1633043" data-claire-semantic="warning"><p id="r-1610230" data-claire-element-id="1633042">Si le nom de la police comporte des espaces, je conseille de l'entourer de guillemets, comme je l'ai fait pour « Arial Black ».</p></aside><h4 id="r-1610272" data-claire-element-id="31757613">Utiliser une police personnalisée avec <code data-claire-semantic="text">@font-face</code></h4><div id="r-1610234" data-claire-element-id="1633046" data-claire-semantic="question"><p id="r-1610233" data-claire-element-id="1633045">Je trouve le choix des polices trop limité. <br /> Comment puis-je utiliser ma police préférée sur mon site web ?</p></div><p id="r-1610235" data-claire-element-id="1633047">Pendant longtemps, cela n'était pas possible. Aujourd'hui, avec CSS 3, il existe heureusement un moyen d'utiliser n'importe quelle police sur son site. Cela fonctionne bien avec la plupart des navigateurs.</p><p id="r-1610236" data-claire-element-id="30947232">Mais attention, il y a des défauts (ce serait trop beau, sinon) :</p><ul id="r-1610243" data-claire-element-id="30947317"><li id="r-1610238" data-claire-element-id="30947312"><p id="r-1610237" data-claire-element-id="30947311">il faudra que le navigateur de vos visiteurs <em>télécharge</em> automatiquement le fichier de la police, dont le poids peut atteindre, voire dépasser 1 Mo… ;</p></li><li id="r-1610240" data-claire-element-id="30947314"><p id="r-1610239" data-claire-element-id="30947313">la plupart des polices sont soumises au droit d'auteur, il n'est donc <em>pas légal</em> de les utiliser sur son site. Heureusement, il existe des sites comme <a href="http://www.fontsquirrel.com/">fontsquirrel.com</a> et <a href="https://www.dafont.com/fr/">dafont.com</a> qui proposent en téléchargement un certain nombre de polices libres de droits. Je recommande en particulier <a href="http://www.fontsquirrel.com/">fontsquirrel.com</a>, car il permet de télécharger des packs prêts à l'emploi pour CSS 3 ;</p></li><li id="r-1610242" data-claire-element-id="30947316"><p id="r-1610241" data-claire-element-id="30947315">il existe <em>plusieurs formats</em> de fichiers de polices, et ceux-ci ne fonctionnent pas sur tous les navigateurs.</p></li></ul><p id="r-1610244" data-claire-element-id="1633056">Voici les différents formats de fichiers de polices qui existent et qu'il faut connaître :</p><ul id="r-1610255" data-claire-element-id="30947328"><li id="r-1610246" data-claire-element-id="30947319"><p id="r-1610245" data-claire-element-id="30947318"><code data-claire-semantic="text">.ttf</code>  : <em>TrueType Font</em>. Fonctionne sur IE9 et tous les autres navigateurs ;</p></li><li id="r-1610248" data-claire-element-id="30947321"><p id="r-1610247" data-claire-element-id="30947320"><code data-claire-semantic="text">.eot</code>  : <em>Embedded OpenType</em>. Fonctionne sur Internet Explorer uniquement, toutes versions. Ce format est propriétaire, produit par Microsoft ;</p></li><li id="r-1610250" data-claire-element-id="30947323"><p id="r-1610249" data-claire-element-id="30947322"><code data-claire-semantic="text">.otf</code>  : <em>OpenType Font</em>. Ne fonctionne pas sur Internet Explorer ;</p></li><li id="r-1610252" data-claire-element-id="30947325"><p id="r-1610251" data-claire-element-id="30947324"><code data-claire-semantic="text">.svg</code>  : <em>SVG Font</em>. Le seul format reconnu sur les iPhone et iPad pour le moment ;</p></li><li id="r-1610254" data-claire-element-id="30947327"><p id="r-1610253" data-claire-element-id="30947326"><code data-claire-semantic="text">.woff</code>  : <em>Web Open Font Format</em>. Nouveau format conçu pour le Web, qui fonctionne sur IE9 et tous les autres navigateurs.</p></li></ul><p id="r-1610256" data-claire-element-id="1633068">En CSS, pour définir une nouvelle police, vous devez la déclarer comme ceci :</p><pre id="r-1610257" data-claire-element-id="8113948"><code data-claire-semantic="css">@font-face {
+    font-family: 'MaSuperPolice';
+    src: url('MaSuperPolice.eot');
+}</code></pre><p id="r-1610258" data-claire-element-id="1633070">Le fichier de police (ici <em>MaSuperPolice.eot</em>) doit ici être situé dans le même dossier que le fichier CSS (ou dans un sous-dossier, si vous utilisez un chemin relatif).</p><div id="r-1610260" data-claire-element-id="1633072" data-claire-semantic="question"><p id="r-1610259" data-claire-element-id="1633071">Je croyais qu'il y avait plusieurs formats de police ?</p></div><p id="r-1610261" data-claire-element-id="8114091">Oui, d'ailleurs les <code data-claire-semantic="text">.eot</code> ne fonctionnent que sur Internet Explorer. L'idéal est de proposer plusieurs formats pour la police : le navigateur téléchargera celui qu'il sait lire. Voici comment indiquer plusieurs formats :</p><pre id="r-1610262" data-claire-element-id="8113950"><code data-claire-semantic="css">@font-face {
+    font-family: 'MaSuperPolice';
+    src: url('MaSuperPolice.eot') format('eot'),
+         url('MaSuperPolice.woff') format('woff'),
+         url('MaSuperPolice.ttf') format('truetype'),
+         url('MaSuperPolice.svg') format('svg');
+}</code></pre><p id="r-1610263" data-claire-element-id="8114151">Pour tester le fonctionnement, je vous propose de télécharger une police sur Font Squirrel, par exemple <a href="https://www.fontsquirrel.com/fonts/CAC-Champagne">CAC Champagne</a>. Cliquez sur « Webfont Kit », cela vous permettra de télécharger un kit prêt à l'emploi avec tous les formats pour cette police. N'oubliez pas de cocher toutes les cases (WOFF, TTF, EOT et SVG).</p><aside id="r-6377366" data-claire-element-id="30947362" data-claire-semantic="information"><p id="r-6377365" data-claire-element-id="30947361">La police CAC Champagne n'est plus disponible, mais vous pouvez télécharger une autre police que vous aimez bien ! ;)</p></aside><aside id="r-4538386" data-claire-element-id="8114153" data-claire-semantic="warning"><p id="r-4538385" data-claire-element-id="8114152">Pour trouver les polices qui vous permettent de télécharger un &quot;pack CSS&quot; comme je le décris ici, activez le filtre &quot;Webfont&quot; dans le menu Font Filter.</p></aside><p id="r-1610264" data-claire-element-id="1633076">Votre fichier CSS ressemblera au final à ceci :</p><pre id="r-1610265" data-claire-element-id="8113952"><code data-claire-semantic="css">@font-face { /* Définition d'une nouvelle police nommée CAC Champagne */
+    font-family: 'cac_champagneregular';
+    src: url('cac_champagne-webfont.eot');
+    src: url('cac_champagne-webfont.eot?#iefix') format('embedded-opentype'),
+         url('cac_champagne-webfont.woff') format('woff'),
+         url('cac_champagne-webfont.ttf') format('truetype'),
+         url('cac_champagne-webfont.svg#cac_champagneregular') format('svg');
+}
+
+h1 /* Utilisation de la police qu'on vient de définir sur les titres */
+{
+    font-family: 'cac_champagneregular', Arial, serif;
+}</code></pre><p id="r-1610266" data-claire-element-id="30947401">La première (grosse) section <code data-claire-semantic="css">@font-face</code> permet de définir un nouveau nom de police qui pourra être utilisé dans le fichier CSS. Ensuite, nous utilisons ce nom de police avec la propriété <code data-claire-semantic="css">font-family</code>  , que nous connaissons, pour modifier l'apparence des titres <code data-claire-semantic="html">&lt;h1&gt;</code>  . Vous pouvez voir le résultat à la figure suivante.</p><figure id="r-1610269" data-claire-element-id="31757612"><img id="r-1610267" data-claire-element-id="1633079" src="https://user.oc-static.com/files/343001_344000/343372.png" alt="Affichage d'une police personnalisée" /><figcaption>Affichage d'une police personnalisée</figcaption></figure><aside id="r-1610271" data-claire-element-id="30947444" data-claire-semantic="information"><p id="r-1610270" data-claire-element-id="30947443">Vous noterez quelques bizarreries dans le CSS généré par le site Font Squirrel. Le but est de pallier certains bugs sur Internet Explorer, car les anciennes versions ne comprennent pas quand on définit plusieurs formats. Cela explique donc la présence d'un <code data-claire-semantic="text">?#iefix</code>  dans le code.</p></aside><h3 id="r-1605248" data-claire-element-id="31757619">Italique, gras, souligné…</h3><p id="r-1610273" data-claire-element-id="1633086">Il existe en CSS une série de propriétés classiques de mise en forme du texte. Nous allons découvrir ici comment afficher le texte en gras, italique, souligné… et au passage nous verrons qu'il est même possible d'aller jusqu'à le faire clignoter !</p><h4 id="r-1610290" data-claire-element-id="30947576">Mettre en italique</h4><div id="r-1610275" data-claire-element-id="30947448" data-claire-semantic="question"><p id="r-1610274" data-claire-element-id="30947447">Attends un peu là ! Je croyais que la balise <code data-claire-semantic="html">&lt;em&gt;</code>  permettait de mettre un texte en italique ?!</p></div><p id="r-1610276" data-claire-element-id="30947535">Je n'ai jamais dit cela. <br /> Retournez voir les chapitres précédents si vous avez des doutes, mais je n'ai <em>jamais</em> dit que la balise <code data-claire-semantic="html">&lt;em&gt;</code>  était faite pour mettre le texte en italique (de même que je n'ai jamais dit que <code data-claire-semantic="html">&lt;strong&gt;</code>  était faite pour mettre en gras).</p><p id="r-1610277" data-claire-element-id="30947486"><code data-claire-semantic="html">&lt;em&gt;</code>  , mettez-vous bien cela dans la tête, est faite pour insister sur des mots. Cela veut dire que les mots qu'elle entoure sont assez importants.<br /> Pour représenter cette importance, la plupart des navigateurs choisissent d'afficher le texte en italique, mais ce n'est pas une obligation.</p><p id="r-1610278" data-claire-element-id="1633091">Le CSS lui, permet de dire réellement : « Je veux que ce texte soit en italique ». Rien ne vous empêche, par exemple, de décider que tous vos titres seront en italique.</p><p id="r-1610279" data-claire-element-id="30947487">Concrètement, en CSS, pour mettre en italique, on utilise <code data-claire-semantic="css">font-style</code>  qui peut prendre trois valeurs :</p><ul id="r-1610286" data-claire-element-id="30947494"><li id="r-1610281" data-claire-element-id="30947489"><p id="r-1610280" data-claire-element-id="30947488"><code data-claire-semantic="text">italic</code>  : le texte sera mis en italique ;</p></li><li id="r-1610283" data-claire-element-id="30947491"><p id="r-1610282" data-claire-element-id="30947490"><code data-claire-semantic="text">oblique</code>  : le texte sera passé en oblique (les lettres sont penchées, le résultat est légèrement différent de l'italique proprement dit) ;</p></li><li id="r-1610285" data-claire-element-id="30947493"><p id="r-1610284" data-claire-element-id="30947492"><code data-claire-semantic="text">normal</code>  : le texte sera normal (par défaut). Cela vous permet d'annuler une mise en italique. Par exemple, si vous voulez que les textes entre <code data-claire-semantic="html">&lt;em&gt;</code>  ne soient plus en italique, vous devrez écrire :</p></li></ul><pre id="r-1610287" data-claire-element-id="8113971"><code data-claire-semantic="css">em
+{
+    font-style: normal;
+}</code></pre><p id="r-1610288" data-claire-element-id="30947575">Ainsi, dans l'exemple suivant, je me sers de <code data-claire-semantic="css">font-style</code>  pour mettre en italique tous mes titres <code data-claire-semantic="html">&lt;h2&gt;</code>  :</p><pre id="r-1610289" data-claire-element-id="8113973"><code data-claire-semantic="css">h2
+{
+    font-style: italic;
+}</code></pre><h4 id="r-1610300" data-claire-element-id="30947584">Mettre en gras</h4><p id="r-1610291" data-claire-element-id="30947577">Et si nous passions à la mise en gras ?<br /> Alors, là encore, n'oubliez pas que ce n'est pas <code data-claire-semantic="html">&lt;strong&gt;</code>  qui permet de mettre en gras (son rôle est d'indiquer que le texte est important, <em>donc</em> le navigateur l'affiche généralement en gras). La mise en gras en CSS peut par exemple s'appliquer aux titres, à certains paragraphes entiers, etc. C'est à vous de voir.</p><p id="r-1610292" data-claire-element-id="30947578">La propriété CSS pour mettre en gras est <code data-claire-semantic="css">font-weight</code>  et prend les valeurs suivantes :</p><ul id="r-1610297" data-claire-element-id="30947583"><li id="r-1610294" data-claire-element-id="30947580"><p id="r-1610293" data-claire-element-id="30947579"><code data-claire-semantic="text">bold</code>  : le texte sera en gras ;</p></li><li id="r-1610296" data-claire-element-id="30947582"><p id="r-1610295" data-claire-element-id="30947581"><code data-claire-semantic="text">normal</code>  : le texte sera écrit normalement (par défaut).</p></li></ul><p id="r-1610298" data-claire-element-id="1633111">Voici par exemple comment écrire les titres en gras :</p><pre id="r-1610299" data-claire-element-id="8113982"><code data-claire-semantic="css">h1
+{
+    font-weight: bold;
+}</code></pre><h4 id="r-1610319" data-claire-element-id="31757618">Soulignement et autres décorations</h4><p id="r-1610301" data-claire-element-id="30947615">La propriété CSS associée porte bien son nom : <code data-claire-semantic="css">text-decoration</code>  . Elle permet, entre autres, de souligner le texte, mais pas seulement. Voici les différentes valeurs qu'elle peut prendre :</p><ul id="r-1610312" data-claire-element-id="31757615"><li id="r-1610303" data-claire-element-id="30947617"><p id="r-1610302" data-claire-element-id="30947616"><code data-claire-semantic="text">underline</code>  : souligné ;</p></li><li id="r-1610305" data-claire-element-id="30947619"><p id="r-1610304" data-claire-element-id="30947618"><code data-claire-semantic="text">line-through</code>  : barré ;</p></li><li id="r-1610307" data-claire-element-id="30947621"><p id="r-1610306" data-claire-element-id="30947620"><code data-claire-semantic="text">overline</code>  : ligne au-dessus ;</p></li><li id="r-1610311" data-claire-element-id="30947625"><p id="r-1610310" data-claire-element-id="30947624"><code data-claire-semantic="text">none</code>  : normal (par défaut).</p></li></ul><p id="r-1610313" data-claire-element-id="30947627">Ce CSS va vous permettre de tester les effets de <code data-claire-semantic="text">text-decoration</code>  :</p><pre id="r-1610314" data-claire-element-id="8113997"><code data-claire-semantic="css">h1
+{
+    text-decoration: blink;
+}
+.souligne
+{
+    text-decoration: underline;
+}
+.barre
+{
+    text-decoration: line-through;
+}
+.ligne_dessus
+{
+    text-decoration: overline;
+}</code></pre><p id="r-1610315" data-claire-element-id="1633128">Et le résultat est visible à la figure suivante.</p><figure id="r-1610318" data-claire-element-id="31757617"><img id="r-1610316" data-claire-element-id="1633129" src="https://user.oc-static.com/files/343001_344000/343381.png" alt="Différentes mises en forme du texte" /><figcaption>Différentes mises en forme du texte</figcaption></figure><h3 id="r-1605268" data-claire-element-id="31757622">L'alignement</h3><p id="r-1610320" data-claire-element-id="1633134">Le langage CSS nous permet de faire tous les alignements connus : à gauche, centré, à droite et justifié.</p><p id="r-1610321" data-claire-element-id="30947669">C'est tout simple. On utilise la propriété <code data-claire-semantic="css">text-align</code>  et on indique l'alignement désiré :</p><ul id="r-1610330" data-claire-element-id="30947678"><li id="r-1610323" data-claire-element-id="30947671"><p id="r-1610322" data-claire-element-id="30947670"><code data-claire-semantic="text">left</code>  : le texte sera aligné à gauche (c'est le réglage par défaut) ;</p></li><li id="r-1610325" data-claire-element-id="30947673"><p id="r-1610324" data-claire-element-id="30947672"><code data-claire-semantic="text">center</code>  : le texte sera centré ;</p></li><li id="r-1610327" data-claire-element-id="30947675"><p id="r-1610326" data-claire-element-id="30947674"><code data-claire-semantic="text">right</code>  : le texte sera aligné à droite ;</p></li><li id="r-1610329" data-claire-element-id="30947677"><p id="r-1610328" data-claire-element-id="30947676"><code data-claire-semantic="text">justify</code>  : le texte sera « justifié ». Justifier le texte permet de faire en sorte qu'il prenne toute la largeur possible sans laisser d'espace blanc à la fin des lignes. Les textes des journaux, par exemple, sont toujours justifiés.</p></li></ul><p id="r-1610331" data-claire-element-id="1633145">Regardez les différents alignements sur cet exemple :</p><pre id="r-1610332" data-claire-element-id="8114012"><code data-claire-semantic="css">h1
+{
+    text-align: center;
+}
+
+p
+{
+    text-align: justify;
+}
+
+.signature
+{
+    text-align: right;
+}</code></pre><p id="r-1610333" data-claire-element-id="30947709">Le résultat est visible sur la figure suivante.</p><figure id="r-1610336" data-claire-element-id="31757621"><img id="r-1610334" data-claire-element-id="1633148" src="https://user.oc-static.com/files/343001_344000/343383.png" alt="Alignements du texte" /><figcaption>Alignements du texte</figcaption></figure><aside id="r-1610338" data-claire-element-id="30947752" data-claire-semantic="error"><p id="r-1610337" data-claire-element-id="30947751">Vous ne pouvez pas modifier l'alignement du texte d'une balise <em>inline</em> (comme <code data-claire-semantic="html">&lt;span&gt;</code>  , <code data-claire-semantic="html">&lt;a&gt;</code>  , <code data-claire-semantic="html">&lt;em&gt;</code>  , <code data-claire-semantic="html">&lt;strong&gt;</code>  …). L'alignement ne fonctionne que sur des balises de type <em>block</em> ( <code data-claire-semantic="html">&lt;p&gt;</code>  , <code data-claire-semantic="html">&lt;div&gt;</code>  , <code data-claire-semantic="html">&lt;h1&gt;</code>  , <code data-claire-semantic="html">&lt;h2&gt;</code>  …) et c'est un peu logique, quand on y pense : on ne peut pas modifier l'alignement de quelques mots au milieu d'un paragraphe !<br /> C'est donc en général le paragraphe entier qu'il vous faudra aligner.</p></aside><h3 id="r-1605328" data-claire-element-id="31757628">Les flottants</h3><p id="r-1610339" data-claire-element-id="30947754">Le CSS nous permet de faire flotter un élément autour du texte. On dit aussi qu'on fait un « habillage ».</p><p id="r-1610340" data-claire-element-id="1633155">Pour que vous voyiez bien de quoi on parle, la figure suivante vous montre ce que nous allons apprendre à faire.</p><figure id="r-1610343" data-claire-element-id="31757624"><img id="r-1610341" data-claire-element-id="1633156" src="https://user.oc-static.com/files/5001_6000/5646.png" alt="Une image flottante entourée par du texte" /><figcaption>Une image flottante entourée par du texte</figcaption></figure><p id="r-1610344" data-claire-element-id="30947794">J'imagine que, maintenant, la question qui vous brûle les lèvres est : « <em>Mais quelle est donc la propriété magique qui fait flotter ?</em> ».<br /> La réponse est… <code data-claire-semantic="css">float</code>  (« flottant » en anglais). Cette propriété peut prendre deux valeurs très simples :</p><ul id="r-1610349" data-claire-element-id="30947799"><li id="r-1610346" data-claire-element-id="30947796"><p id="r-1610345" data-claire-element-id="30947795"><code data-claire-semantic="text">left</code>  : l'élément flottera à gauche ;</p></li><li id="r-1610348" data-claire-element-id="30947798"><p id="r-1610347" data-claire-element-id="30947797"><code data-claire-semantic="text">right</code>  : l'élément flottera… à droite ! Oui, bravo.</p></li></ul><p id="r-1610350" data-claire-element-id="1633165">L'utilisation des flottants est très simple :</p><ol id="r-1610355" data-claire-element-id="30947802"><li id="r-1610352" data-claire-element-id="30947801"><p id="r-1610351" data-claire-element-id="30947800">Vous appliquez un <code data-claire-semantic="css">float</code>  à une balise.</p></li><li id="r-1610354" data-claire-element-id="1633169"><p id="r-1610353" data-claire-element-id="1633168">Puis vous continuez à écrire du texte à la suite normalement.</p></li></ol><aside id="r-1610357" data-claire-element-id="30947804" data-claire-semantic="information"><p id="r-1610356" data-claire-element-id="30947803">On peut aussi bien utiliser la propriété <code data-claire-semantic="css">float</code>  sur des balises <em>block</em> que sur des balises <em>inline</em>. Il est courant de faire flotter une image pour qu'elle soit habillée par du texte, comme dans l'exemple précédent.</p></aside><h4 id="r-1610365" data-claire-element-id="30947845">Faire flotter une image</h4><p id="r-1610358" data-claire-element-id="1633173">Nous allons apprendre ici à faire flotter une image. Voici le code HTML que nous devons taper dans un premier temps :</p><pre id="r-1610359" data-claire-element-id="2256237"><code data-claire-semantic="html">&lt;p&gt;&lt;img src=&quot;flash.gif&quot; class=&quot;imageflottante&quot; alt=&quot;Image flottante&quot; /&gt; Ceci est un texte normal de paragraphe, écrit à la suite de l'image et qui l'habillera car l'image est flottante.&lt;/p&gt;</code></pre><aside id="r-1610361" data-claire-element-id="1633176" data-claire-semantic="error"><p id="r-1610360" data-claire-element-id="1633175">Vous devez placer l'élément flottant en premier dans le code HTML. Si vous placez l'image après le paragraphe, l'effet ne fonctionnera pas.</p></aside><p id="r-1610362" data-claire-element-id="1633177">Voici le seul bout de code CSS qu'on ait besoin de taper, qui permet de faire flotter l'image à gauche :</p><pre id="r-1610363" data-claire-element-id="8114031"><code data-claire-semantic="css">.imageflottante
+{
+    float: left;
+}</code></pre><p id="r-1610364" data-claire-element-id="30947844">Amusez-vous aussi à faire flotter l'image à droite, c'est tout bête : il suffit d'indiquer la valeur <code data-claire-semantic="text">right</code>  , et le tour est joué !</p><h4 id="r-1610385" data-claire-element-id="31757627">Stopper un flottant</h4><p id="r-1610366" data-claire-element-id="30947884">Quand vous mettez en place un flottant, le texte autour l'habille. Mais comment faire si vous voulez qu'au bout d'un moment le texte continue <em>en dessous</em> du flottant ? On pourrait enchaîner plusieurs <code data-claire-semantic="html">&lt;br /&gt;</code>  à la suite, mais cela ne serait ni élégant ni très propre…</p><p id="r-1610367" data-claire-element-id="1633182">En gros, on aimerait pouvoir obtenir le même résultat qu'à la figure suivante.</p><figure id="r-1610370" data-claire-element-id="31757626"><img id="r-1610368" data-claire-element-id="1633183" src="https://user.oc-static.com/files/5001_6000/5650.jpg" alt="Le texte sous l'image ignore la propriété float" /><figcaption>Le texte sous l'image ignore la propriété float</figcaption></figure><p id="r-1610371" data-claire-element-id="30947887">Il existe en fait une propriété CSS qui permet de dire : « <em>Stop, ce texte doit être en-dessous du flottant et non plus à côté</em> ». C'est la propriété <code data-claire-semantic="css">clear</code>  , qui peut prendre ces trois valeurs :</p><ul id="r-1610378" data-claire-element-id="30947932"><li id="r-1610373" data-claire-element-id="30947927"><p id="r-1610372" data-claire-element-id="30947926"><code data-claire-semantic="text">left</code>  : le texte se poursuit en dessous après un <code data-claire-semantic="css">float: left;</code></p></li><li id="r-1610375" data-claire-element-id="30947929"><p id="r-1610374" data-claire-element-id="30947928"><code data-claire-semantic="text">right</code>  : le texte se poursuit en dessous après un <code data-claire-semantic="css">float: right;</code></p></li><li id="r-1610377" data-claire-element-id="30947931"><p id="r-1610376" data-claire-element-id="30947930"><code data-claire-semantic="text">both</code>  : le texte se poursuit en dessous, que ce soit après un <code data-claire-semantic="css">float: left;</code>  ou après un <code data-claire-semantic="css">float: right;</code>  .</p></li></ul><p id="r-1610379" data-claire-element-id="30947895">Pour simplifier, on va utiliser tout le temps le <code data-claire-semantic="css">clear: both</code>  , qui marche après un flottant à gauche et après un flottant à droite (cela fonctionne donc à tous les coups). Pour illustrer son fonctionnement, on va prendre ce code HTML :</p><pre id="r-1610380" data-claire-element-id="8114046"><code data-claire-semantic="html">&lt;p&gt;&lt;img src=&quot;flash.gif&quot; class=&quot;imageflottante&quot; alt=&quot;Image flottante&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Ce texte est écrit à côté de l'image flottante.&lt;/p&gt;
+&lt;p class=&quot;dessous&quot;&gt;Ce texte est écrit sous l'image flottante.&lt;/p&gt;</code></pre><p id="r-1610381" data-claire-element-id="1633196">Et ce code CSS :</p><pre id="r-1610382" data-claire-element-id="8114047"><code data-claire-semantic="css">.imageflottante
+{
+    float: left;
+}
+.dessous
+{
+    clear: both;
+}</code></pre><p id="r-1610383" data-claire-element-id="1633198">Et voilà le travail.</p><p id="r-1610384" data-claire-element-id="30947933">On applique un <code data-claire-semantic="css">clear: both;</code>  au paragraphe que l'on veut voir continuer sous l'image flottante, et le tour est joué !</p><h3 id="r-3198510" data-claire-element-id="30947947">En résumé</h3><ul id="r-1610396" data-claire-element-id="30947946"><li id="r-1610387" data-claire-element-id="30947937"><p id="r-1610386" data-claire-element-id="30947936">On modifie la taille du texte avec la propriété CSS <code data-claire-semantic="css">font-size</code>  . On peut indiquer la taille en pixels (16px), en « em » (1.3em), en pourcentage (110 %), etc.</p></li><li id="r-1610389" data-claire-element-id="30947939"><p id="r-1610388" data-claire-element-id="30947938">On change la police du texte avec <code data-claire-semantic="css">font-family</code>  . Attention, seules quelques polices sont connues par tous les ordinateurs. Vous pouvez cependant utiliser une police personnalisée avec la directive <code data-claire-semantic="css">@font-face</code>  : cela forcera les navigateurs à télécharger la police de votre choix.</p></li><li id="r-1610391" data-claire-element-id="30947941"><p id="r-1610390" data-claire-element-id="30947940">De nombreuses propriétés de mise en forme du texte existent : <code data-claire-semantic="css">font-style</code>  pour l'italique, <code data-claire-semantic="css">font-weight</code>  pour la mise en gras, <code data-claire-semantic="css">text-decoration</code>  pour le soulignement, etc.</p></li><li id="r-1610393" data-claire-element-id="30947943"><p id="r-1610392" data-claire-element-id="30947942">Le texte peut être aligné avec <code data-claire-semantic="css">text-align</code>  .</p></li><li id="r-1610395" data-claire-element-id="30947945"><p id="r-1610394" data-claire-element-id="30947944">On peut faire en sorte qu'une image soit habillée (« entourée ») de texte avec <code data-claire-semantic="css">float</code>  .</p></li></ul>
+</div>
+<div class="js-courseSelementActions sideActions">
+<ul class="sideActions__container">
+<li>
+<a class="sideActions__item  js-courseElementActions-copyUrl  js-tooltip" href="#" data-tooltip="Copier le lien" data-tooltip-done="Lien copié !">
+#
+</a>
+</li>
+</ul>
+</div>
+</div>
+<nav id="course-pagination" class="course-pagination    clearfix">
+<a href="1605060-mettez-en-place-le-css.html" class="button button--secondary  course-pagination__btn course-pagination__btn--previous">
+<i class="icon-previous"></i>
+<span>Mettez en place le CSS</span>
+</a>
+<span class="course-pagination__separator"></span>
+<a href="1605551-ajoutez-de-la-couleur-et-un-fond.html" class="button button--secondary  course-pagination__btn course-pagination__btn--next">
+<span>Ajoutez de la couleur et un fond</span>
+<i class="icon-next"></i>
+</a>
+</nav>
+<div tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="popin-view-restriction_popin_title" class="popin popin--illustrated  js-popin" id="popin-view-restriction">
+<button class="popin__close-button  js-close-button" title="Fermer" aria-label="Fermer">
+<i class="icon-close" aria-hidden="true"></i>
+</button>
+<div class="popin__inner">
+<div class="popin__illustrationWrapper">
+<div class="popin__illustration illustration--balloon"></div>
+ </div>
+<div class="popin__mainContainer">
+<div class="popin__gigTitleContainer js-popin-title">
+<div class="gigWorkersPopin__timeline">
+<div class="gigWorkersPopin__dot">1</div>
+<div class="gigWorkersPopin__line"></div>
+<div class="gigWorkersPopin__dot gigWorkersPopin__dot--disabled">2</div>
+</div>
+<div class="popin__title">Créez un compte <br /> OpenClassrooms</div>
+</div>
+<div id="popin-view-restriction_popin_title" class="popin__title  js-popin-title">Waouh !</div>
+<div class="popin__content  js-popin-content">
+<div class="popin__contentWrapper">
+<p>
+Très heureux de voir que nos cours vous plaisent, déjà 5 pages lues aujourd&#039;hui ! Vous pouvez continuer la lecture de nos cours en devenant un membre de la communauté d&#039;OpenClassrooms. C&#039;est gratuit !
+</p>
+<p>
+Vous pourrez aussi suivre votre avancement dans le cours, faire les exercices et discuter avec les autres membres.
+</p>
+</div>
+</div>
+<div class="popin__actions  js-popin-actions">
+<span class="u--inlineBlock">
+<a class="button button--primary " href="https://openclassrooms.com/fr/register">S'inscrire</a>
+</span>
+<span class="u--inlineBlock">
+<a class="button button--secondary " href="https://openclassrooms.com/fr/login">Se connecter</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script type="text/template" class="js-single-video-download-info">
+            <div class="videoDownload js-download-video-popin-link">
+                <a href="#popin-download-video" class="js-popin-activator">
+                    <i class="icon-download videoDownload__icon"></i> Télécharger la vidéo
+                </a>
+            </div>
+        </script>
+<script type="text/template" class="js-all-video-download-info">
+            <div class="videoDownload js-download-video-popin-link">
+                <a href="#popin-download-all-videos" class="js-popin-activator">
+                    <i class="icon-download videoDownload__icon"></i> Télécharger toutes les vidéos de ce cours
+                </a>
+            </div>
+        </script>
+<div id="popin-not-certifying-yet_560266" class="popin" data-popin-title="Vous ne pouvez pas encore obtenir de certificat de réussite à l&#039;issue de ce cours.
+                            <span><i class='icon-star'></i> Devenez Premium</span>
+                    ">
+<img alt="Exemple de certificat de réussite" src="http://static.oc-static.com/prod/images/courses/certif.jpg" />
+</div>
+<div tabindex="-1" role="dialog" aria-hidden="true" class="popin popin--small  js-popin" id="popin-download-video">
+<button class="popin__close-button  js-close-button" title="Fermer" aria-label="Fermer">
+<i class="icon-close" aria-hidden="true"></i>
+</button>
+<div class="popin__inner">
+<div class="popin__mainContainer">
+<div class="popin__gigTitleContainer js-popin-title">
+<div class="gigWorkersPopin__timeline">
+<div class="gigWorkersPopin__dot">1</div>
+<div class="gigWorkersPopin__line"></div>
+<div class="gigWorkersPopin__dot gigWorkersPopin__dot--disabled">2</div>
+</div>
+<div id="popin-download-video_popin_title" class="popin__title">Créez un compte <br /> OpenClassrooms</div>
+</div>
+<i class="icon-video popin__icon  js-popin-icon"></i>
+<div class="popin__content  js-popin-content">
+<div class="popin__contentWrapper">
+<p>
+Le téléchargement des vidéos de nos cours est accessible pour les membres Premium. Vous pouvez toutefois les visionner en streaming gratuitement.
+</p>
+</div>
+</div>
+<div class="popin__actions  js-popin-actions">
+<a class="button button--primary js-close-button" href="#">Devenez Premium</a>
+</div>
+</div>
+</div>
+</div>
+<div id="popin-not-certifying-yet_462656" class="popin" data-popin-title="Vous ne pouvez pas encore obtenir de certificat de réussite à l&#039;issue de ce cours.
+                            <span><i class='icon-star'></i> Devenez Premium</span>
+                    ">
+<img alt="Exemple de certificat de réussite" src="http://static.oc-static.com/prod/images/courses/certif.jpg" />
+</div>
+<div tabindex="-1" role="dialog" aria-hidden="true" class="popin popin--small  js-popin" id="popin-download-video">
+<button class="popin__close-button  js-close-button" title="Fermer" aria-label="Fermer">
+<i class="icon-close" aria-hidden="true"></i>
+</button>
+<div class="popin__inner">
+<div class="popin__mainContainer">
+<div class="popin__gigTitleContainer js-popin-title">
+<div class="gigWorkersPopin__timeline">
+<div class="gigWorkersPopin__dot">1</div>
+<div class="gigWorkersPopin__line"></div>
+<div class="gigWorkersPopin__dot gigWorkersPopin__dot--disabled">2</div>
+</div>
+ <div id="popin-download-video_popin_title" class="popin__title">Créez un compte <br /> OpenClassrooms</div>
+</div>
+<i class="icon-video popin__icon  js-popin-icon"></i>
+<div class="popin__content  js-popin-content">
+<div class="popin__contentWrapper">
+<p>
+Le téléchargement des vidéos de nos cours est accessible pour les membres Premium. Vous pouvez toutefois les visionner en streaming gratuitement.
+</p>
+</div>
+</div>
+<div class="popin__actions  js-popin-actions">
+<a class="button button--primary js-close-button" href="#">Devenez Premium</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<aside id="content-with-sidebar" class="contentWithSidebar__sidebar  js-contentWithSidebar-slidingElement">
+<nav class="col-nav">
+<div id="tab-courseMenu" class="col-nav__inner js-sidebar-inner">
+<div class="col-nav__block  col-nav__block--summary">
+<div class="side-paginate">
+<a href="1605060-mettez-en-place-le-css.html" class="side-paginate__previous" title="Chapitre précédent">
+<i class="icon-previous"></i>
+</a>
+<span class="side-paginate__separator"></span>
+<h6 class="side-paginate__title">
+Mettez en forme vos pages avec CSS
+</h6>
+<span class="side-paginate__separator"></span>
+<a href="1605551-ajoutez-de-la-couleur-et-un-fond.html" class="side-paginate__next" title="Chapitre suivant">
+<i class="icon-next"></i>
+</a>
+</div>
+<div class="col-nav__block--summary-list">
+<ol class="col-nav__chapters">
+<li class="">
+<a class="col-nav__chapterTitle" href="1605060-mettez-en-place-le-css.html">Mettez en place le CSS</a>
+</li>
+<li class="selected">
+<span class="col-nav__chapterTitle">Formatez du texte</span>
+</li>
+<li class="">
+<a class="col-nav__chapterTitle" href="1605551-ajoutez-de-la-couleur-et-un-fond.html">Ajoutez de la couleur et un fond</a>
+</li>
+<li class="">
+<a class="col-nav__chapterTitle" href="1605694-creez-des-bordures-et-des-ombres.html">Créez des bordures et des ombres</a>
+</li>
+<li class="">
+ <a class="col-nav__chapterTitle" href="1605763-creez-des-apparences-dynamiques.html">Créez des apparences dynamiques</a>
+</li>
+<li class="">
+<a class="col-nav__chapterTitle" href="4214566-pratiquez.html">Pratiquez !</a>
+</li>
+<li class="">
+<a class="col-nav__chapterTitle" href="6725256-entrainez-vous-en-mettant-en-forme-votre-cv.html">Entraînez-vous en mettant en forme votre CV</a>
+</li>
+</ol>
+<div class="tocExercise"><ul class="tocExercise__list"><li class="tocExercise__item "><a class="tocExercise__link " href="exercises/92.html"><i class="tocExercise__icon icon-lock"></i><span class="tocExercise__text">Quiz : Utilisez du code CSS</span></a></li></ul></div> </div>
+</div>
+<div class="col-nav__block col-nav__block--button">
+<a href="https://openclassrooms.com/forum/categorie/html-css" class="button button--secondary">
+Accéder au forum
+</a>
+</div>
+<div class="socialNetwork col-nav__block">
+<ul class="socialButtons  js-socialButtons" data-options="
+                title: 'Formatez du texte @OCFrance',
+        mailTitle: 'Cours &quot;Formatez du texte&quot; sur OpenClassrooms',
+        mailContent: 'Découvrez le cours &quot;Formatez du texte&quot; sur OpenClassrooms.'">
+<li>
+<a class="roundIcon  roundIcon--twitter addthis_button_twitter  js-socialButtons-btn" data-tooltip="Partagez sur Twitter">
+<i class="roundIcon__icon  icon-twitter"></i>
+</a>
+</li>
+<li>
+<a class="roundIcon  roundIcon--facebook  addthis_button_facebook  js-socialButtons-btn" data-tooltip="Partagez sur Facebook">
+<i class="roundIcon__icon  icon-facebook"></i>
+</a>
+</li>
+<li>
+<a class="roundIcon  addthis_button_email  js-socialButtons-btn  js-socialButtons-email" data-tooltip="Partagez par e-mail">
+<i class="roundIcon__icon  icon-letter"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</aside>
+</div>
+</div>
+</div>
+<footer id="course-footer" class="alt-section noMarginBottom">
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="grid-inner-content  courseFooter">
+<div class="courseFooter__authors course-bottom__category">
+<div class="course-bottom__title">
+Le professeur
+</div>
+<div>
+<div class="course-bottom__text-illustrated">
+<span data-author="Mathieu Nebra" data-image-cdn-background-image="https://user.oc-static.com/users/avatars/16010488280562_MathieuNebra_square.jpg" data-image-cdn-width="120"></span>
+<div class="course-bottom__subtitle" itemprop="name">Mathieu Nebra</div>
+<p itemprop="description">
+Entrepreneur à plein temps, auteur à plein temps et co-fondateur d&#039;OpenClassrooms :o)
+</p>
+</div>
+</div>
+</div>
+<div class="courseFooter__courseFormat course-bottom__category">
+<h2>Découvrez aussi ce cours en...</h2>
+<ul class="course-bottom__format">
+<li>
+<a href="http://www.eyrolles.com/Informatique/Livre/realisez-votre-site-web-avec-html5-et-css3-9782953527889?societe=openclassrooms" target="_blank" class="text-decoration-none">
+<div class="circle circle--x-small">
+<span class="circle__content"></span>
+<i class="icon-book"></i>
+</div>
+<div class="course-bottom__format-entitled">
+Livre
+</div>
+</a>
+</li>
+<li>
+<a href="https://openclassrooms.com/fr/old-courses-pdf" class="text-decoration-none">
+<div class="circle circle--x-small">
+<span class="circle__content"></span>
+<i class="icon-pdf"></i>
+</div>
+<div class="course-bottom__format-entitled">
+PDF
+</div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</article>
+</main>
+</div>
+<div id="mainSearchLegacy" class="mainSearch"></div>
+<div id="footerWrapper">
+<footer id="footer" class="oc-footerSkeleton">
+<hr style="margin-bottom: 8px" />
+<div class="grid-wrapper">
+<div class="grid-inner">
+<div class="oc-footerSkeleton__container">
+<div class="oc-footerSkeleton__item">
+<div class="oc-footerSkeleton__itemTitle"><span class="skeleton" style="height: 20px; width: 80%"></span></div>
+<ul class="oc-footerSkeleton__linksList">
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 70%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 60%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 65%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 40%"></span></a></p>
+</li>
+</ul>
+</div>
+<div class="oc-footerSkeleton__item">
+<div class="oc-footerSkeleton__itemTitle"><span class="skeleton" style="height: 20px; width: 85%"></span></div>
+<ul class="oc-footerSkeleton__linksList">
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 40%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 60%"></span></a></p>
+</li>
+</ul>
+</div>
+<div class="oc-footerSkeleton__item">
+<div class="oc-footerSkeleton__itemTitle"><span class="skeleton" style="height: 20px; width: 75%"></span></div>
+<ul class="oc-footerSkeleton__linksList">
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 65%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 40%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 50%"></span></a></p>
+</li>
+<li class="oc-footerSkeleton__linksListItem">
+<p><a tabindex="inherit"><span class="skeleton" style="height: 14px; width: 40%"></span></a></p>
+</li>
+</ul>
+</div>
+<div class="oc-footerSkeleton__item">
+<span class="skeleton" style="height: 25px; width: 65%"></span>
+<div class="oc-footerSkeleton__socialButtonWrapper">
+<div><span class="skeleton skeleton--round" style="width: 40px; height: 40px"></span></div>
+<div><span class="skeleton skeleton--round" style="width: 40px; height: 40px;"></span></div>
+<div><span class="skeleton skeleton--round" style="width: 40px; height: 40px;"></span></div>
+<div><span class="skeleton skeleton--round" style="width: 40px; height: 40px;"></span></div>
+<div><span class="skeleton skeleton--round" style="width: 40px; height: 40px;"></span></div>
+</div>
+<div><span class="skeleton skeleton--width50" style="height: 40px;"></span></div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div id="showDisclaimer" class="cookiesDisclaimer"></div>
+<script>
+  var isPrerender = !!navigator.userAgent.match(/github\.com\/prerender\/prerender/);
+  var preRenderBrowserFakeUa = "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163 Safari/537.36";
+  var polyfillUrl = "https://cdn.polyfill.io/v3/polyfill.min.js?unknown=polyfill&amp;features=default,es6,IntersectionObserver,Object.values,Array.prototype.includes,Array.prototype.findIndex,Array.prototype.find,Array.from,Promise.prototype.finally,fetch,String.prototype.includes,Object.entries,Array.prototype.entries,Intl.~locale,Array.prototype.flat.fr";
+
+    if (isPrerender) {
+    polyfillUrl+= "&ua=" + encodeURIComponent(preRenderBrowserFakeUa);
+  }
+
+  App.translations = {};
+
+  App.scripts.push(polyfillUrl);
+
+  App.script = {
+      DASHBOARD: 'dashboard',
+      MENTORSHIP_STUDENT_DASHBOARD: 'mentorshipStudentdashboard',
+      SHOP: 'shop',
+      PAYMENT: 'payment',
+      PROJECTS: 'projects',
+      TEAM: 'team',
+      COURSE_EDIT: 'course_edit',
+      COURSE_VIEW: 'course_view',
+      ADMIN: 'admin',
+      ADMIN_STUDENT_CREDENTIAL: 'adminStudentCredential',
+      ADMIN_STUDENT_CREDENTIAL_EDIT: 'adminStudentCredentialEdit',
+      POST_A_JOB: 'postAJob',
+      GIG_WORKERS: 'gigWorkers',
+      JOB_SURVEY: 'jobSurvey',
+      MCQ_EDIT: 'mcqEdit',
+      MCQ_VIEW: 'mcqView',
+      MENTOR_EDIT: 'mentorEdit',
+      MENTORSHIP_DASHBOARD: 'mentorshipDashboard',
+      MENTORSHIP_SESSION: 'mentorshipSession',
+      MENTORSHIP_SESSION_CREATE: 'mentorshipSessionCreate',
+      MENTORSHIP_SESSION_NON_ASSESSOR_CREATE: 'mentorshipSessionNonAssessorCreate',
+    PATHS: 'paths',
+    PRIVATE_CONVERSATIONS: 'privateConversations',
+    USER_PROFILE: 'userProfile',
+    WELCOME: 'welcome',
+    APPRENTICESHIP: 'apprenticeship',
+    WEBAPP: 'webapp',
+    PROJECTS_ADMIN: 'projectsAdmin',
+    SECURITY: 'security',
+  };
+</script>
+<script>App.scripts.push("https://openclassrooms.com/js/runtime.4c4ad3f6a13cc20ab325.js");</script>
+<script>App.scripts.push("https://openclassrooms.com/js/index.28cedfedcf6a0f3797d8.js");</script>
+<script type="text/javascript">
+        function getConsentedSegmentIntegrations() {
+            // getCookie from https://www.w3schools.com/js/js_cookies.asp
+            function getCookie(cname) {
+                var name = cname + "=";
+                var decodedCookie = decodeURIComponent(document.cookie);
+
+                var ca = decodedCookie.split(';');
+                for(var i = 0; i <ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) === ' ') {
+                        c = c.substring(1);
+                    }
+                    if (c.indexOf(name) === 0) {
+                        return c.substring(name.length, c.length);
+                    }
+                }
+                return "";
+            }
+
+            var consent = getCookie('cmapi_cookie_privacy');
+
+            function isCookieAllowedByConsent(consent, level) {
+              return !!consent && consent.search(level) !== -1;
+            }
+
+            var isFunctionalCookieAllowed = isCookieAllowedByConsent(consent, 2);
+            var isAdvertisingCookieAllowed = isCookieAllowedByConsent(consent, 3);
+
+            var isAppCuesPremiumUser = false;
+
+            var isOnPoleEmploiPage = !!window && window.location.pathname.indexOf('partners/pole-emploi/offers') >= 0;
+
+            return {
+                Amplitude: isFunctionalCookieAllowed,
+                'Bing Ads': isAdvertisingCookieAllowed,
+                'Google Ads': isAdvertisingCookieAllowed,
+                'Google Analytics': isFunctionalCookieAllowed,
+                'Zendesk': isFunctionalCookieAllowed,
+                Appcues: (isAppCuesPremiumUser || isOnPoleEmploiPage) && isFunctionalCookieAllowed,
+            };
+        }
+
+        var consentedSegmentIntegrations = getConsentedSegmentIntegrations();
+
+        !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+            window.loadAnalytics = function () { window.analytics.load('mou95e6tdn', {integrations: consentedSegmentIntegrations}) };
+        }}();
+    </script>
+
+<script>App.scriptToLoad = App.script.COURSE_VIEW</script>
+
+<script>
+    (function () {
+        function loadScripts(cb) {
+            App.scripts.forEach(function (src, index) {
+                var script = document.createElement('script');
+                script.src = src;
+                script.async = false;
+                document.body.appendChild(script);
+
+                if (cb && index === App.scripts.length - 1) {
+                    script.onload = cb;
+                }
+            });
+        }
+
+        function boot() {
+            loadScripts(function () {
+                if (App.modules) {
+                    App.modules.startAll();
+                }
+            });
+        }
+
+        if (window.addEventListener) {
+            window.addEventListener('load', boot, false);
+        } else if (window.attachEvent) {
+            window.attachEvent('onload', boot);
+        } else {
+            window.onload = boot;
+        }
+    }());
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.eu01.nr-data.net","licenseKey":"NRJS-5b58725ce0d442079d0","applicationID":"156815673","transactionName":"MhBSZQoZVhJWB0xfDAtac0QLDFcMGAtbaQAJFFlDHSdbDkIWS1M8FRRCRScIWRNDO05fBhI=","queueTime":0,"applicationTime":132,"atts":"HldRE0IDRRw=","errorBeacon":"bam.eu01.nr-data.net","agent":""}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"68b3c0f709500897","token":"8e698008242e427fae12788d79d12ecf","version":"2021.8.1","si":10}'></script>
+</body>
+
+<!-- Mirrored from openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1605329-formatez-du-texte by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Sep 2021 23:36:20 GMT -->
+</html>
