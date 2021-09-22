@@ -4,5 +4,5 @@ Feel free to fork and add more quality content to create a nice Syllabus for any
 
 Recommended packages to add to this :
 
-Glow to read Markdown files
-Zeal to have some offline docs at hand for quick reference
+- Glow to read Markdown files
+- Zeal to have some offline docs at hand for quick reference
